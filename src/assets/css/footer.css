@@ -1,0 +1,64 @@
+footer {
+    background: #0E1B2C;
+    padding-top: 60px;
+  }
+  .itemLightwhite{
+    color:#c2c6ca ;
+  }
+  a.itemLightwhite:hover{
+    color:#c2c6ca;
+  }
+  
+  .social a {
+    margin-right: 15px;
+    font-size: 33px;
+  }
+  .social a svg {
+    fill: #55af4d;
+  }
+  .social a:hover svg {
+    fill: #fff;
+  }
+  .fooTerLogo {
+    /* background-color: #fff;
+    padding: 17px;
+    border-radius: 5px; */
+    width: 90%;
+  }
+  @media only screen and (max-width:767px) {
+ 
+}
+footer ul li a:hover{
+  color: var(--colorGreen) !important;
+}
+.themeInput {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 1px solid #9ABAD7;
+  outline: none;
+  color: var(--colorWhite);
+}
+.themeInput:focus {
+  border-color: var(--colorGreen);
+}
+.themeInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  opacity: 1;
+}
+.themeInput::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.themeInput:-ms-input-placeholder { /* IE 10+ */
+ color: #fff;
+  opacity: 1;
+}
+.themeInput:-moz-placeholder { /* Firefox 18- */
+ color: #fff;
+  opacity: 1;
+}
+.themeInput::placeholder {
+    color: #fff;
+     opacity: 1; 
+   }
