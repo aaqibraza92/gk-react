@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Alamo Primary Care</title>
+        <title>Home - GK Builders & Developers</title>
       </Helmet>
     <main>
     <HomeBanner/>
