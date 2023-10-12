@@ -9,7 +9,6 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import PageNotFound from "../../pages/404";
 import AboutUs from "../../pages/about";
-import WhatWeDoPage from "../../pages/What-we-do";
 import OurTeam from "../../pages/OurTeam";
 import SingleTeam from "../../pages/OurTeam/SingleTeam";
 import PreclinicalScientific from "../../pages/home/services/PreclinicalScientific";
@@ -22,7 +21,6 @@ import RegulatoryAffairs from "../../pages/home/services/RegulatoryAffairs";
 import DrugSafetyPV from "../../pages/home/services/DrugSafetyPV";
 import MedicalAffairs from "../../pages/home/services/MedicalAffairs";
 import QualityCompliance from "../../pages/home/services/QualityCompliance";
-import Validation from "../../pages/home/services/Validation";
 import OpenIndustryJobs from "../../pages/open-industry-jobs";
 import UniconPharmaCareers from "../../pages/unicon-pharma-careers";
 import BlogSingle from "../../pages/blogs/BlogSingle";
@@ -67,11 +65,6 @@ let RouterList = [
   {
     element: <GetRoute isprivate={false} role="Default" page={AboutUs} />,
     path: "/about-us",
-    isAdmin: false,
-  },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={WhatWeDoPage} />,
-    path: "/what-we-do",
     isAdmin: false,
   },
   {
@@ -139,11 +132,7 @@ let RouterList = [
     path: "/quality-compliance",
     isAdmin: false,
   },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={Validation} />,
-    path: "/validation",
-    isAdmin: false,
-  },
+ 
   {
     element: <GetRoute isprivate={false} role="Default" page={ContactUs} />,
     path: "/contact-us",
