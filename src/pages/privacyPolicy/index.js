@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 const PrivacyPolicy = () => {
   return (
     <>
-
+  <Helmet>
+        <title>Privacy Policy - GK Builders & Developers</title>
+      </Helmet>
      
       <BreadCrumb
         title="Privacy Policy"
