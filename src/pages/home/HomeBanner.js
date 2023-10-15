@@ -3,9 +3,9 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
+import { arrowDiagonal } from "../../assets/svg/Svg";
 
 const HomeBanner = () => {
-
   return (
     <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
       <img
@@ -14,26 +14,23 @@ const HomeBanner = () => {
         alt="banner"
       />
       <div className="caption position-absolute w-100">
-      <div className="container-xl">
+        <div className="container-xl">
           <Row>
-            <Col lg={5} md={8}>
+            <Col lg={12} md={12}>
               <div>
-                <p className="fs20 colorGreen fw600 tabfs15 mobFs15 mb10">
-                Welcome to Alamo Primary Care
-                </p>
-                <h1 className="fs50 fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorBlue ml0">
-                Compassionate 
-                Primary Care 
-                Services for a 
-                Healthier You
-                </h1>
+                <h2 className="bannerF  fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                  Live Life
+                </h2>
+                <h2 className="bannerF text-end fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                  Sky High
+                </h2>
 
-                <div className="d-flex">
+                <div className="d-flex justify-content-end">
                   <Link
-                    className="btnTheme bgGreen mr12 fMedium btnMob"
-                    to="/contact-us"
+                    className="btnTheme mr12 fMedium btnMob"
+                    to="/#"
                   >
-                    Contact Us
+                   <span className="mr5">Know More</span> <img src={require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>
                 </div>
               </div>

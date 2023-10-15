@@ -1,13 +1,7 @@
 import React from 'react'
 import HomeBanner from './HomeBanner'
 import '../../assets/css/home.css'
-import WhatWeDo from './WhatWeDo'
 import { Helmet } from "react-helmet";
-import ImageContent from './ImageContent'
-import CallToAction from './CallToAction'
-import CallToActionFirst from './CallToActionFirst'
-import OurTeam from './OurTeam'
-import OurServices from './OurServices'
 
 const HomePage = () => {
   return (
@@ -18,16 +12,6 @@ const HomePage = () => {
     <main>
     <HomeBanner/>
    
-    <ImageContent/>
-    <CallToActionFirst/>
-    <OurServices/>
-    {/* <OurTeam/> */}
-    <CallToAction/>
-    {/* <PractiseAreas/> */}
-    {/* <WhyChosseUs/> */}
-    {/* <Testomonial/> */}
-    {/* <Counter/> */}
-    <WhatWeDo/>
     </main>
     </>
 

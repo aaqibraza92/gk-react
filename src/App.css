@@ -1,16 +1,22 @@
-
+@font-face {
+  font-family: heading;
+  src: url('./assets/fonts/Nephilm.otf');
+}
+@font-face {
+  font-family: para;
+  src: url('./assets/fonts/Sora-VariableFont_wght.ttf');
+}
+  
   body,html,li,a,p,div,.roboto{
-    font-family: 'Roboto', sans-serif;
+    font-family: para;
   }
   h1,h2,h3,h4,h5,h6,.barlow{
-    font-family: 'Barlow', sans-serif;
+    font-family: heading;
   }
 .breadCrumb{
 
 }
-.single_bg{
-  background: url('./assets/img/single_bg.jpg');
-}
+
 
 .bgGradient{
 background: #f1faf4; /* Old browsers */
@@ -292,4 +298,11 @@ body{
   to {
     background-position: right -40px top 0;
  }
+}
+
+.bannerF {
+  font-size: 9vw;
+}
+.btnTheme img {
+  width: 20px;
 }

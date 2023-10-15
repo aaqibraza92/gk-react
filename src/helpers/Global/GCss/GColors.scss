@@ -1,7 +1,7 @@
 :root {
-  --colorBlack: #000000;
+  --colorBlack: #222222;
   --colorWhite: #fff;
-  --colorGrey: #F7F8F9;
+  --colorGrey: #c4c2c2;
   --colorLightBlue: #E3F3FD;
   --colorOrange: #ec7523;
   --colorRed: #ff5757;
@@ -9,8 +9,12 @@
   --colorYellow: yellow;
   --colorPara: #1B2B40BF;
   --colorBlue: #2A3379;
+  --colorBrown: #a07f50;
+  --colorLightBrown: #f4f4f4;
 }
-
+.colorLightBrown{
+  color: var(--colorLightBrown);
+}
 body .colorBlack {
   color: var(--colorBlack);
 }
@@ -65,4 +69,8 @@ body .btnBlack {
 }
 .bgLightOrange {
   background: var(--colorLightOrange);
+}
+
+.fRounder {
+  background: rgba(160, 127, 80,0.2);
 }

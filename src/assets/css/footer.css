@@ -1,5 +1,4 @@
 footer {
-    background: #0E1B2C;
     padding-top: 60px;
   }
   .itemLightwhite{
@@ -29,7 +28,7 @@ footer {
  
 }
 footer ul li a:hover{
-  color: var(--colorGreen) !important;
+  color: var(--colorBrown) !important;
 }
 .themeInput {
   width: 100%;
@@ -62,3 +61,20 @@ footer ul li a:hover{
     color: #fff;
      opacity: 1; 
    }
+   .fRounder{
+    border: 1px solid var(--colorBrown);
+    background: rgba(160, 127, 80,0.2);
+   }
+   .fNav a::before {
+    position: absolute;
+    content: "";
+    background: var(--colorLightBrown);
+    width: 7px;
+    height: 7px;
+    border-radius: 30px;
+    display: flex;
+    top: 7px;
+  }
+  .colorLightBrown:hover{
+    color: var(--colorBrown);
+  }

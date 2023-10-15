@@ -8,14 +8,8 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import PageNotFound from "../../pages/404";
 import AboutUs from "../../pages/about";
-import OurTeam from "../../pages/OurTeam";
-import SingleTeam from "../../pages/OurTeam/SingleTeam";
 import ContactUs from "../../pages/contact-us";
-import Blogs from "../../pages/blogs";
-import BlogSingle from "../../pages/blogs/BlogSingle";
-import BlogCategory from "../../pages/Category";
 import PrivacyPolicy from "../../pages/privacyPolicy";
-import Service from "../../pages/services";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -58,33 +52,6 @@ let RouterList = [
   },
 
   {
-    element: <GetRoute isprivate={false} role="Default" page={OurTeam} />,
-    path: "/our-team",
-    isAdmin: false,
-  },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={SingleTeam} />,
-    path: "/team/:slug",
-    isAdmin: false,
-  },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={Blogs} />,
-    path: "/blogs",
-    isAdmin: false,
-  },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={BlogSingle} />,
-    path: "/blog/:slug/",
-    isAdmin: false,
-  },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={BlogCategory} />,
-    path: "/category/:name/",
-    isAdmin: false,
-  },
-
- 
-  {
     element: <GetRoute isprivate={false} role="Default" page={ContactUs} />,
     path: "/contact-us",
     isAdmin: false,
@@ -94,13 +61,6 @@ let RouterList = [
     path: "/privacy-policy",
     isAdmin: false,
   },
-  {
-    element: <GetRoute isprivate={false} role="Default" page={Service} />,
-    path: "/services",
-    isAdmin: false,
-  },
-
-
   {
     element: (
       <GetRoute isprivate={false} role="Default" page={PageNotFound} hideHeaderFooter={true} />
