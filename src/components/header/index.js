@@ -46,6 +46,8 @@ const Header = () => {
       <div id="myNav" className={`overlay`}>
         <button id="closeMenu" className="closebtn noBtn">
           {closeIcon}
+
+          
         </button>
         <div className="overlay-content">
           <Navbar />
