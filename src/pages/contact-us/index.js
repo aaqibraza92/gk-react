@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import BreadCrumb from "../../components/BreadCrumb";
-import Location from "./Location";
 import { Col, Container, Row } from "reactstrap";
 
 import { Helmet } from "react-helmet";
@@ -29,7 +28,7 @@ const ContactUs = (props) => {
             <span className="colorGreen">Us</span>{" "}
           </div>
         }
-        bgImage={require("../../assets/img/contactus.png")}
+        //bgImage={require("../../assets/img/contactus.png")}
       />
 
       <section className="formSectionA pt100 pb100 bgLightBluenew">

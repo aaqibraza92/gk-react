@@ -1,24 +1,5 @@
-  .wrapperArea {
-    background: #fff;
-    border: 2px solid transparent;
-    padding: 20px;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-    transition: all 0.5s;
-  }
-  .wrapperArea:hover {
-    border-color: var(--colorGreen);
-  }
-  .bgTestimonial{
-    background: url('../../assets/img/testi.jpg') ;
-    background-size: cover;
 
-  }
-  .practicalArea{
-    background: url('../../assets/img/area_bg.jpg') ;
-    background-size: cover;
 
-  }
   .testimonialWrapper img {
     width: 50px;
     -webkit-border-radius: 100%;
@@ -86,22 +67,6 @@ body .tabfs24{
   .counterSection {
     padding: 40px 0;
   }
-}
-
-
-.swiper-button-prev::after{
-  background: url('../img/arrow_left.svg') !important;
-  background-repeat: no-repeat !important;
-  content: "" !important;
-  height: 30px;
-width: 50px;
-}
-.swiper-button-next::after{
-  background: url('../img/arrow_right.svg') !important;
-  background-repeat: no-repeat !important;
-  content: "" !important;
-  height: 30px;
-width: 50px;
 }
 
 .shadowContent {

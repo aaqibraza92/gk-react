@@ -10,7 +10,7 @@ const HomeBanner = () => {
     <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
       <img
         className="img-fluid w-100"
-        src={require("../../assets/img/home_banner.png")}
+        //src={require("../../assets/img/home_banner.png")}
         alt="banner"
       />
       <div className="caption position-absolute w-100">
