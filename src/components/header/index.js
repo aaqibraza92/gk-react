@@ -42,7 +42,7 @@ const Header = () => {
         });
   }, []);
   return (
-    <header className={`transition`}>
+    <header className="mainHeader transition">
       <div id="myNav" className={`overlay`}>
         <button id="closeMenu" className="closebtn noBtn">
           {closeIcon}

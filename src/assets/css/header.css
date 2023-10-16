@@ -257,3 +257,9 @@ img.img-fluid.mainLogo {
 .topDown .headerMenu {
   height: 50px;
 }
+.mainHeader.transition {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
