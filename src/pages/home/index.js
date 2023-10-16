@@ -10,14 +10,14 @@ const HomePage = () => {
       <Helmet>
         <title>Home - GK Builders & Developers</title>
       </Helmet>
-    <main>
-    <HomeBanner/>
-    <AboutUs/>
-   
-    </main>
+      <main>
+        <HomeBanner />
+        <AboutUs />
+
+      </main>
     </>
 
-     
+
   )
 }
 
