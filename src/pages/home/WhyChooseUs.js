@@ -9,7 +9,6 @@ const WhyChooseUs = () => {
         <h2 className='colorWhite fs50 fw600'>
         why choose us?
         </h2>
-
     </Container>
   </section>
   )
