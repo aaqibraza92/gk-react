@@ -3,6 +3,8 @@ import HomeBanner from './HomeBanner'
 import '../../assets/css/home.css'
 import { Helmet } from "react-helmet";
 import AboutUs from './AboutUs';
+import Testimonial from './Testimonial';
+import WhoWeAre from './WhoWeAre';
 
 const HomePage = () => {
   return (
@@ -13,7 +15,8 @@ const HomePage = () => {
       <main>
         <HomeBanner />
         <AboutUs />
-
+        <WhoWeAre/>
+        <Testimonial/>
       </main>
     </>
 
