@@ -8,10 +8,10 @@ const AboutUs = () => {
       <Container>
         <Row>
           <Col lg={6} md={6} xl={6}>
-            <p>about us</p>
-            <h4>Exclusive communities</h4>
-            <h3>For Holistic</h3>
-            <h2>Livings</h2>
+            <p className="fs40 colorBlack mb0">about us</p>
+            <h4 className="fs40 mb0 text-uppercase brownGradient">Exclusive communities</h4>
+            <h3 className="fs70 mb0 text-uppercase brownGradient">For Holistic</h3>
+            <h2 className="living mb20 text-uppercase brownGradient">Livings</h2>
             <p>
               GK Builders and Developers aims to enhance the quality of life of
               its customers by translating today’s trends of better and healthy
@@ -20,14 +20,14 @@ const AboutUs = () => {
               record, the company has earned a stellar reputation as one of the
               best real estate builders in Hyderabad.
             </p>
-            <p>
+            <p className="mb70">
               GK Builders and Developers continues to focus on futuristic
               expansion and has chalked out plans to develop more luxurious
               residential projects across Hyderabad and Secunderabad soon.
             </p>
-            <div className="mt20">
-            <Link className="btnTheme mr12 fMedium btnMob" to="/#">
-              <span className="mr5">Know More</span>
+            <div className="mt10">
+            <Link className="btnTransparent mr12 fMedium btnMob" to="/#">
+              <span className="mr5 colorBlack">Know More</span>
               <img
                 src={require("../../assets/img/home/arrDiagonal.png")}
                 className="img-fluid"

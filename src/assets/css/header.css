@@ -259,6 +259,6 @@ img.img-fluid.mainLogo {
 .mainHeader.transition {
   position: absolute;
   width: 100%;
-  top: 0px;
+  top: 10px;
   z-index: 1;
 }

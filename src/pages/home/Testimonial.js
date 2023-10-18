@@ -37,12 +37,12 @@ const Testimonial = () => {
 
 
     return (
-        <section className='testimonial d-flex h-100 pt100 pb100' style={{ backgroundImage: `url(${require('../../assets/img/home/ver_bg.jpg')})` }}>
+        <section className='testimonial d-flex h-100 pt100 pb100' style={{ backgroundImage: `url(${require('../../assets/img/home/what_say.jpg')})` }}>
             <div className='wrapper_what_people w-100'>
                 <Container>
                     <Row>
                         <Col lg={3} md={3} xl={3}>
-                            <h4 className='colorWhite fs20 fw500'>
+                            <h4 className='colorWhite fs58 fw500'>
                                 What <br />
                                 Peaople <br />
                                 Say
@@ -50,12 +50,12 @@ const Testimonial = () => {
 
                         </Col>
                         <Col lg={9} md={9} xl={9}>
-
+                            <div className='pl30 pr30'>
                             <Swiper
                                 modules={[Navigation, Pagination, Autoplay]}
                                 loop={true}
-                                speed={2000}
-                                autoplay={{ delay: 1000 }}
+                                speed={3000}
+                                autoplay={{ delay: 2000 }}
                                 spaceBetween={50}
                                 slidesPerView={1}
                                 onSlideChange={() => { }}
@@ -90,7 +90,11 @@ const Testimonial = () => {
                                     {data.map((e, i) => (
                                         <SwiperSlide key={i}>
                                             <div className='test_wrapper position-relative d-flex align-items-end' >
+                                                <div className='position-relative d-flex justify-content-end'>
                                                 <img src={require("../../assets/img/home/home_frame.png")} className='img-fluid' alt="" />
+                                                <img src={require("../../assets/img/home/heart_testi.png")} className='img-fluid position-absolute heartAuthor' alt="" />
+                                                </div>
+                                                
                                                 <div className='dataTesti position-absolute'>
                                                     <p className='fs16 colorWhite mb30'>
                                                         {e?.para}
@@ -124,6 +128,8 @@ const Testimonial = () => {
 
                                 </div>
                             </Swiper>
+                            </div>
+                        
 
                 
 

@@ -14,7 +14,7 @@ const WhoWeAre = () => {
         <section className='pt100 pb100 bgWhite'>
             <Container>
                 <div className='text-center'>
-                    <h2 className='colorBlack fs35 mb50'>
+                    <h2 className='colorBlack mb50 fs58 fw600 text-center'>
                         who we are?
                     </h2>
 

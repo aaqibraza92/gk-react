@@ -75,3 +75,12 @@ footer ul li a:hover{
   .colorLightBrown:hover{
     color: var(--colorBrown);
   }
+  .viewToggle {
+    position: fixed;
+    right: 23px;
+    bottom: 27px;
+    z-index: 1;
+  }
+  .viewToggle img {
+    width: 82px;
+  }

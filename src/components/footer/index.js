@@ -24,7 +24,11 @@ const Footer = () => {
   }, [videoRef]);
 
   return (
-    <footer className="position-relative h-100 d-flex align-items-end">
+    <>
+    <button className="noBtn viewToggle">
+      <img src={require('../../assets/img/footer/dayview.png')} className="img-fluid " alt="" />
+    </button>
+      <footer className="position-relative h-100 d-flex align-items-end">
       <video className="w-100" ref={videoRef} autoplay loop muted>
         <source
           src={require("../../assets/img/home/footer-day.mp4")}
@@ -209,6 +213,8 @@ const Footer = () => {
         </Container>
       </div>
     </footer>
+    </>
+  
   );
 };
 

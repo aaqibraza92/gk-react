@@ -30,7 +30,7 @@ const HomeBanner = () => {
                     className="btnTheme mr12 fMedium btnMob"
                     to="/#"
                   >
-                   <span className="mr5">Know More</span> <img src={require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
+                   <span className="mr5 brownGradient">Know More</span> <img src={require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>
                 </div>
               </div>

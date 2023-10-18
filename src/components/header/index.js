@@ -55,7 +55,7 @@ const Header = () => {
       </div>
       <div className={`upperHeader pt20 pb20 `}>
         <div className="container-xl">
-          <Row className="align-items-center">
+          <Row className="align-items-top">
             <Col lg={3} md={3} xs={6}>
               <Link to="/">
                 <img

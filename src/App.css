@@ -13,19 +13,7 @@
   h1,h2,h3,h4,h5,h6,.barlow{
     font-family: heading;
   }
-.breadCrumb{
 
-}
-
-
-.bgGradient{
-background: #f1faf4; /* Old browsers */
-background: -moz-linear-gradient(left,  #f1faf4 0%, #f7f3f3 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #f1faf4 0%,#f7f3f3 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #f1faf4 0%,#f7f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1faf4', endColorstr='#f7f3f3',GradientType=1 ); /* IE6-9 */
-
-}
 .teamImgWrp img {
   border: 4px solid #fff;
   border-radius: 16px;
@@ -225,29 +213,8 @@ border-color: #2C367A
 }
 /*slider slick*/
 
-
-.subc:nth-child(1) .countersub::after {
-  content: "+";
-  position: relative;
-  left: 3px;
-}
-.subc:nth-child(2) .countersub::after {
-  content: "+";
-  position: relative;
-  left: 3px;
-}
-.subc:nth-child(3) .countersub::after {
-  content: "+";
-  position: relative;
-  left: 3px;
-}
-.subc:nth-child(4) .countersub::after {
-  content: "K";
-  position: relative;
-  left: 3px;
-}
 a {
-  color: #87a90c;
+  color: #0a3249;
 }
 .validation {
   font-size: 12px;
@@ -263,21 +230,7 @@ a {
   background-repeat: no-repeat !important;
 
 }
-.videoWrapper {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.videoWrapper button {
-  background: transparent;
-  border: none;
-  outline: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+
 .pointer{
   cursor: pointer;
 }
@@ -305,4 +258,26 @@ body{
 }
 .btnTheme img {
   width: 20px;
+}
+.living {
+  font-size: 112px;
+  line-height: 93px;
+}
+.brownGradient{
+  background: #C1B3A1;
+  background: -webkit-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
+  background: -moz-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
+  background: linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.btnTransparent {
+  border: 1px solid var(--colorBrown);
+  padding: 15px 20px;
+}
+.heartAuthor {
+  top: 80px;
+  right: -59px;
+  width: 163px;
 }
