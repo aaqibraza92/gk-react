@@ -19,8 +19,12 @@ const WhoWeAre = () => {
                     </h2>
                     <Row className='align-items-center'>
                         <Col lg={4} md={4}>
-                            <div className='circleAnimate'>
-                                <div className='wrpCircle'>
+                            <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
+                            <div className='circleAnimate position-relative'>
+                           
+                              
+                            </div>
+                            <div className='wrpCircle position-absolute'>
                                 <div className='mb0'>
                                     <span className='fw700 fs60 brownGradient'>
                                         4
@@ -36,8 +40,8 @@ const WhoWeAre = () => {
                                     Families
                                 </div>
                                 </div>
-                              
                             </div>
+                      
                         </Col>
                         <Col lg={8} md={8}>
                             <div className='imgWrp'>

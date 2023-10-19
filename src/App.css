@@ -289,4 +289,20 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: spin 10s linear infinite;
+}
+.circleAnimate::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #000;
+  position: absolute;
+  top: -15px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
 }
