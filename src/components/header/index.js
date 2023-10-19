@@ -109,7 +109,7 @@ const Navbar = (props) => {
   return (
     <div className={`navWrapper mobileheader ${stickyHeader}`}>
       <Container>
-        <div className="d-flex justify-content-end">
+        <div className={`d-flex ${stickyHeader==="topDown" ? "justify-content-center" : "justify-content-end"}`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">
             <li>
               <Link to="/" className="colorBlack clickToClose">
