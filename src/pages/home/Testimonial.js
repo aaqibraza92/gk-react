@@ -42,11 +42,11 @@ const Testimonial = () => {
                 <Container>
                     <Row>
                         <Col lg={3} md={3} xl={3}>
-                            <h4 className='colorWhite fs58 fw500'>
+                            <h2 className='colorWhite fs58 fw500'>
                                 What <br />
                                 Peaople <br />
                                 Say
-                            </h4>
+                            </h2>
 
                         </Col>
                         <Col lg={9} md={9} xl={9}>

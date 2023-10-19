@@ -12,23 +12,28 @@ import { Container } from 'reactstrap';
 const OurProjects = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <section>
+    <section className='position-relative d-flex align-items-end justify-content-end h-100 w-100'>
       <Swiper
         spaceBetween={10}
-        navigation={true}
+        navigation={false}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src={require('../../assets/img/home/pr_c.jpg')} className='img-fluid' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <img src={require('../../assets/img/home/pr_c.jpg')} className='img-fluid' />
         </SwiperSlide>
       </Swiper>
-      <div className='slLayers'>
-        <Container>
+      <div className='slLayers position-absolute w-100 h-100'>
+        <Container className='h-100'>
+          <div className='d-flex align-items-end justify-content-end w-100 h-100'>
+            <div className='h-100'>
+            <h2 className='colorWhite fs58 fw500'>
+          our projects
+          </h2>
           <Swiper
             onSwiper={setThumbsSwiper}
             spaceBetween={10}
@@ -39,12 +44,16 @@ const OurProjects = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src={require('../../assets/img/home/pr_c.jpg')} className='img-fluid' />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <img src={require('../../assets/img/home/pr_c.jpg')} className='img-fluid' />
             </SwiperSlide>
           </Swiper>
+            </div>
+     
+          </div>
+       
         </Container>
       </div>
 
