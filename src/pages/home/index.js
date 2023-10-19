@@ -6,6 +6,7 @@ import AboutUs from './AboutUs';
 import Testimonial from './Testimonial';
 import WhoWeAre from './WhoWeAre';
 import WhyChooseUs from './WhyChooseUs';
+import OurProjects from './OurProjects';
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <main>
         <HomeBanner />
         <AboutUs />
+        <OurProjects/>
         <WhyChooseUs/>
         <WhoWeAre/>
         <Testimonial/>
