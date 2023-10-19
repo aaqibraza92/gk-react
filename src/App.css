@@ -281,3 +281,12 @@ body{
   right: -59px;
   width: 163px;
 }
+.circleAnimate {
+  border: 1px solid #9a9a9a;
+  border-radius: 100%;
+  width: 310px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -27,11 +27,12 @@ const AboutUs = () => {
             </p>
             <div className="mt10">
             <Link className="btnTransparent mr12 fMedium btnMob" to="/#">
-              <span className="mr5 colorBlack">Know More</span>
+              <span className="mr10 colorBlack">Know More</span>
               <img
-                src={require("../../assets/img/home/arrDiagonal.png")}
+                src={require("../../assets/img/home/arrowBrown.png")}
                 className="img-fluid"
                 alt=""
+                style={{width: '28px'}}
               />
             </Link>
             </div>

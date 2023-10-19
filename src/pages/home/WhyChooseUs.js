@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container } from 'reactstrap'
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 const WhyChooseUs = () => {
   return (
