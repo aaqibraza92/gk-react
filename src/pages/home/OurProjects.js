@@ -43,7 +43,7 @@ const OurProjects = () => {
                   className="img-fluid"
                   alt=""
                 />
-                <h2 className="colorWhite fs58 fw500">our projects</h2>
+                <h2 className="colorWhite fs58 fontlight subfont">our projects</h2>
               </div>
 
               <Swiper

@@ -16,13 +16,13 @@ const HomeBanner = () => {
       <div className="caption position-absolute w-100">
         <div className="container-xl">
           <Row>
-            <Col lg={12} md={12}>
+            <Col lg={10} md={10} className="m-auto">
               <div>
-                <h2 className="bannerF  fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                  Live Life
+                <h2 className="bannerF   tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                  Live Life <br></br>  <span className="text-end d-block">Sky High</span>
                 </h2>
-                <h2 className="bannerF text-end fw700 tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                  Sky High
+                <h2 className="bannerF   tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                 
                 </h2>
 
                 <div className="d-flex justify-content-end">

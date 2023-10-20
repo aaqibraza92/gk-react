@@ -16,7 +16,7 @@ const WhoWeAre = () => {
                 <div className='text-center'>
                 <div className="">
             <img src={require('../../assets/img/home/three_dot.png')} className="img-fluid" alt="" />
-            <h2 className="colorBlack mb50 fs58 fw600 text-center">
+            <h2 className="colorBlack mb50 fs58 fontlight subfont text-center">
               who we are?
             </h2>
           </div>
@@ -27,10 +27,10 @@ const WhoWeAre = () => {
                             </div>
                             <div className='wrpCircle position-absolute'>
                                 <div className='mb0'>
-                                    <span className='fw700 fs60 brownGradient'>
+                                    <span className='fontlight subfont fs60 brownGradient'>
                                         4
                                     </span>
-                                    <span className='fw700 fs60 brownGradient'>
+                                    <span className='fontlight subfont fs60 brownGradient'>
                                         k <svg style={{marginLeft: '-12px'}} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
 <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
 </svg>

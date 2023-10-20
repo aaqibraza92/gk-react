@@ -8,7 +8,7 @@ const AboutUs = () => {
       <Container>
         <Row>
           <Col lg={6} md={6} xl={6}>
-            <p className="fs40 colorBlack mb0">about us</p>
+            <p className="fs40 colorBlack mb0 fontlight">about us</p>
             <h4 className="fs40 mb0 text-uppercase brownGradient">Exclusive communities</h4>
             <h3 className="fs70 mb0 text-uppercase brownGradient">For Holistic</h3>
             <h2 className="living mb20 text-uppercase brownGradient">Livings</h2>

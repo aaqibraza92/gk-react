@@ -48,7 +48,7 @@ const Testimonial = () => {
                   className="img-fluid"
                   alt=""
                 />
-                   <h2 className="colorWhite fs58 fw500 mt10">
+                   <h2 className="colorWhite fs58 fontlight subfont mt10">
                 What <br />
                 Peaople <br />
                 Say

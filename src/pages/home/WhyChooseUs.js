@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
             className="img-fluid"
             alt=""
           />
-          <h2 className="colorWhite mb50 fs58 fw600 text-center">
+          <h2 className="colorWhite mb50 fs58 fontlight subfont text-center">
             why choose us?
           </h2>
         </div>
