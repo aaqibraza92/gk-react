@@ -21,8 +21,6 @@ const WhoWeAre = () => {
                         <Col lg={4} md={4}>
                             <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
                             <div className='circleAnimate position-relative'>
-                           
-                              
                             </div>
                             <div className='wrpCircle position-absolute'>
                                 <div className='mb0'>
