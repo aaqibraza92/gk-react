@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const UserSlice= createSlice({
     name: 'theme',
     initialState: {
-        cntType: ""
+        dayTheme: true
     },
     reducers:{
         themeType(state,action){
-            state.cntType=action.payload
+            state.dayTheme=action.payload
         }
     }
 })
