@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
+import { useSelector } from "react-redux";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
@@ -31,6 +32,12 @@ let data = [
 ];
 
 const Testimonial = () => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+  
   return (
     <section
       className="testimonial d-flex h-100 pt100 pb100"

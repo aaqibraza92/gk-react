@@ -4,8 +4,15 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
 import { arrowDiagonal } from "../../assets/svg/Svg";
-
+import { useSelector } from "react-redux";
 const HomeBanner = () => {
+  
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+
   return (
     <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
       <img

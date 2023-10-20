@@ -1,8 +1,14 @@
 import { Container } from 'reactstrap'
 import React, { useRef, useState } from 'react';
-
+import { useSelector } from "react-redux";
 
 const WhyChooseUs = () => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+  
   return (
     <section className='pt100 pb100' style={{ backgroundImage: `url(${require('../../assets/img/home/ver_bg.jpg')})` }}>
       <Container>

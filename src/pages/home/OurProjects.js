@@ -8,8 +8,15 @@ import "swiper/css/thumbs";
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import { Container } from "reactstrap";
+import { useSelector } from "react-redux";
 
 const OurProjects = () => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <section className="position-relative d-flex align-items-end justify-content-end h-100 w-100">

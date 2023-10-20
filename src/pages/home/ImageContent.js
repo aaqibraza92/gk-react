@@ -3,8 +3,14 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
+import { useSelector } from "react-redux";
 
 const ImageContent = () => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
   const dispatch= useDispatch();
 
   const contactTypeHandle=(v)=>{

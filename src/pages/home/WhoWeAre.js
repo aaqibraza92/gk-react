@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
+import { useSelector } from "react-redux";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
@@ -10,6 +11,12 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
 const WhoWeAre = () => {
+    const activeTheme = useSelector((state) => {
+        return (
+          state && state?.persistedReducer?.theme?.dayTheme
+        );
+      });
+
     return (
         <section className='pt100 pb100 bgWhite'>
             <Container>
