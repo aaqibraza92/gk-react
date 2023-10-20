@@ -22,15 +22,11 @@ import { themeType } from "../../store/slices/UserSlices";
 const Footer = () => {
 
   const dispatch = useDispatch();
-
   const activeTheme = useSelector((state) => {
     return (
       state && state?.persistedReducer?.theme?.dayTheme
     );
   });
-
-  console.log("activeTheme", activeTheme);
-
   const themeSwitch = (val) => {
     dispatch(themeType(val));
   }
