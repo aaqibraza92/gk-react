@@ -14,9 +14,12 @@ const WhoWeAre = () => {
         <section className='pt100 pb100 bgWhite'>
             <Container>
                 <div className='text-center'>
-                    <h2 className='colorBlack mb50 fs58 fw600 text-center'>
-                        who we are?
-                    </h2>
+                <div className="">
+            <img src={require('../../assets/img/home/three_dot.png')} className="img-fluid" alt="" />
+            <h2 className="colorBlack mb50 fs58 fw600 text-center">
+              who we are?
+            </h2>
+          </div>
                     <Row className='align-items-center'>
                         <Col lg={4} md={4}>
                             <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>

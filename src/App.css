@@ -308,3 +308,13 @@ body{
 }
 
 
+
+.proMaintitle {
+  z-index: 1;
+  position: relative;
+  margin-top: 40px;
+  text-align: right;
+}
+.swiperThumbnail .swiper-slide.swiper-slide-visible {
+  width: 140px !important;
+}
