@@ -275,8 +275,7 @@ body{
   background: -moz-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   background: linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
+  -webkit-text-fill-color: transparent; 
 }
 .btnTransparent {
   border: 1px solid var(--colorBrown);

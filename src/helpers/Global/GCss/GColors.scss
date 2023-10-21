@@ -8,9 +8,12 @@
   --colorGreen: #55AF4D;
   --colorYellow: yellow;
   --colorPara: #1B2B40BF;
-  --colorBlue: #2A3379;
+  --colorBlue: #0a3249;
   --colorBrown: #a07f50;
-  --colorLightBrown: #f4f4f4;
+  --colorLightBrown: #a1a1a1;
+}
+.colorprimary {
+  color: var(--colorBlue);
 }
 .colorLightBrown{
   color: var(--colorLightBrown);

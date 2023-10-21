@@ -117,23 +117,19 @@ const Navbar = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="/#" className="colorBlack clickToClose">
+              <Link to="/about-us" className="colorBlack clickToClose">
                 About Us
               </Link>
             </li>
 
             <li>
               <Link to="/#" className="colorBlack clickToClose">
-                Services
+                our projects
               </Link>
             </li>
+            
             <li>
-              <Link to="/#" className="colorBlack clickToClose">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/#" className="colorBlack clickToClose">
+              <Link to="/contact-us" className="colorBlack clickToClose">
                 Contact Us
               </Link>
             </li>
