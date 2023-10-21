@@ -71,6 +71,7 @@ footer ul li a:hover{
     border-radius: 30px;
     display: flex;
     top: 7px;
+    left: 0px;
   }
   .colorLightBrown:hover{
     color: var(--colorBrown);

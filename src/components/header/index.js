@@ -3,13 +3,19 @@ import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "../../assets/css/header.css";
 import {
-  angleDownIcon,
   burgerMenu,
-  callSvg,
   closeIcon,
 } from "../../assets/svg/Svg";
+import { useSelector } from "react-redux";
+
 
 const Header = () => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -46,8 +52,6 @@ const Header = () => {
       <div id="myNav" className={`overlay`}>
         <button id="closeMenu" className="closebtn noBtn">
           {closeIcon}
-
-          
         </button>
         <div className="overlay-content">
           <Navbar />
@@ -60,7 +64,7 @@ const Header = () => {
               <Link to="/">
                 <img
                   className="img-fluid mainLogo"
-                  src={require("../../assets/img/logo.png")}
+                  src={activeTheme ? require("../../assets/img/logo.png") : require("../../assets/img/white_logo.png")}
                   alt="logo"
                 />
               </Link>
@@ -87,6 +91,12 @@ const Header = () => {
 export default Header;
 
 const Navbar = (props) => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+
   const [stickyHeader, setstickyHeader] = useState("");
 
   useEffect(() => {
@@ -109,27 +119,27 @@ const Navbar = (props) => {
   return (
     <div className={`navWrapper mobileheader ${stickyHeader}`}>
       <Container>
-        <div className={`d-flex ${stickyHeader==="topDown" ? "justify-content-center" : "justify-content-end"}`}>
+        <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">
             <li>
-              <Link to="/" className="colorBlack clickToClose">
+              <Link to="/" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className="colorBlack clickToClose">
+              <Link to="/about-us" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
                 About Us
               </Link>
             </li>
 
             <li>
-              <Link to="/#" className="colorBlack clickToClose">
+              <Link to="/#" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
                 our projects
               </Link>
             </li>
             
             <li>
-              <Link to="/contact-us" className="colorBlack clickToClose">
+              <Link to="/contact-us" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
                 Contact Us
               </Link>
             </li>

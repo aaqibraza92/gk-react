@@ -29,10 +29,16 @@ const Footer = () => {
   });
   const themeSwitch = (val) => {
     dispatch(themeType(val));
+    window.location.reload();
   }
   const videoRef = useRef(null);
+  const videoRef1 = useRef(null);
   useEffect(() => {
-    videoRef.current.play();
+    if(videoRef && activeTheme){
+      videoRef.current.play();
+    }else{
+      videoRef1.current.play();
+    }
   }, [videoRef]);
 
   return (
@@ -47,12 +53,22 @@ const Footer = () => {
       }
 
       <footer className="position-relative h-100 d-flex align-items-end">
+      {
+        activeTheme ?
         <video className="w-100" ref={videoRef} autoplay loop muted>
           <source
-            src={require("../../assets/img/home/footer-day.mp4")}
+            src={require("../../assets/img/footer/footer-day.mp4")}
+            type="video/mp4"
+          />
+        </video> :
+        <video className="w-100" ref={videoRef1} autoplay loop muted>
+          <source
+            src={require("../../assets/img/footer/night-footer.mp4")}
             type="video/mp4"
           />
         </video>
+      }
+      
         <div className="position-absolute absPos w-100">
           <Container>
             <Row className="gy-5">
@@ -62,7 +78,7 @@ const Footer = () => {
                     <li className="col-md-6">
                       <Link
                         to="#"
-                        className="colorLightBrown position-relative pl17 fs16"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                       >
                         about us
                       </Link>
@@ -70,7 +86,7 @@ const Footer = () => {
                     <li className="col-md-6">
                       <Link
                         to="#"
-                        className="colorLightBrown position-relative pl17 fs16"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                       >
                         our projects
                       </Link>
@@ -78,7 +94,7 @@ const Footer = () => {
                     <li className="col-md-6">
                       <Link
                         to="#"
-                        className="colorLightBrown position-relative pl17 fs16"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                       >
                         why choose us?
                       </Link>
@@ -86,7 +102,7 @@ const Footer = () => {
                     <li className="col-md-6">
                       <Link
                         to="#"
-                        className="colorLightBrown position-relative pl17 fs16"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                       >
                         who we are?
                       </Link>
@@ -94,7 +110,7 @@ const Footer = () => {
                     <li className="col-md-6">
                       <Link
                         to="#"
-                        className="colorLightBrown position-relative pl17 fs16"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                       >
                         testimonials
                       </Link>
@@ -102,7 +118,7 @@ const Footer = () => {
                     <li className="col-md-6">
                       <Link
                         to="#"
-                        className="colorLightBrown position-relative pl17 fs16"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                       >
                         contact us
                       </Link>
@@ -117,7 +133,7 @@ const Footer = () => {
                     <div className="mr8" style={{ width: "28px" }}>
                       {locationSvg}
                     </div>
-                    <div className="fs16 colorLightBrown">
+                    <div className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}>
                       35-8, Beside GK Saraswati Function Hall, GK Colony,
                       Sainikpuri Post, Secunderabad-500094, T.S.
                     </div>
@@ -126,10 +142,10 @@ const Footer = () => {
                     <div className="mr8" style={{ width: "28px" }}>
                       {globleSvg}
                     </div>
-                    <div className="fs16 colorLightBrown">
+                    <div className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}>
                       <a
                         href="https://gkdevelopers.in/"
-                        className="colorLightBrown"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}
                       >
                         www.gkdevelopers.in
                       </a>
@@ -144,18 +160,18 @@ const Footer = () => {
                     <div className="mr8" style={{ width: "28px" }}>
                       {callSvg}
                     </div>
-                    <div className="fs16 colorLightBrown">
-                      <a href="tel:+918951761122" className="colorLightBrown"> +91 895 176 1122</a>
+                    <div className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}>
+                      <a href="tel:+918951761122" className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}> +91 895 176 1122</a>
                     </div>
                   </div>
                   <div className="d-flex">
                     <div className="mr8" style={{ width: "28px" }}>
                       {envelopSvg}
                     </div>
-                    <div className="fs16 colorLightBrown">
+                    <div className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}>
                       <a
                         href="https://gkdevelopers.in/"
-                        className="colorLightBrown"
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}
                       >
                         www.gkdevelopers.in
                       </a>

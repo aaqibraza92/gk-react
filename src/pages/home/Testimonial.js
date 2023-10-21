@@ -42,7 +42,7 @@ const Testimonial = () => {
     <section
       className="testimonial d-flex h-100 pt100 pb100"
       style={{
-        backgroundImage: `url(${require("../../assets/img/home/what_say.jpg")})`,
+        backgroundImage: `url(${activeTheme ? require("../../assets/img/home/what_say.jpg") : require("../../assets/img/home/test_night.jpg")})`,
       }}
     >
       <div className="wrapper_what_people w-100">

@@ -17,7 +17,7 @@ const HomeBanner = () => {
     <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
       <img
         className="img-fluid w-100"
-        src={require("../../assets/img/home/home_sl1.jpg")}
+        src={activeTheme ? require("../../assets/img/home/home_sl1.jpg") : require("../../assets/img/home/banner_night.jpg")}
         alt="banner"
       />
       <div className="caption position-absolute w-100">
@@ -34,10 +34,10 @@ const HomeBanner = () => {
 
                 <div className="d-flex justify-content-end">
                   <Link
-                    className="btnTheme mr12 fMedium btnMob"
+                    className={`${activeTheme ? "bgBlack" : "bgWhite"} btnTheme mr12 fMedium btnMob`}
                     to="/#"
                   >
-                   <span className="mr5 brownGradient">Know More</span> <img src={require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
+                   <span className={`${activeTheme ? "brownGradient" : "colorBlack"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrowBlack.png')} className="img-fluid" alt="" />
                   </Link>
                 </div>
               </div>

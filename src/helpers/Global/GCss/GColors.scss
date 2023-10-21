@@ -2,6 +2,7 @@
   --colorBlack: #222222;
   --colorWhite: #fff;
   --colorGrey: #c4c2c2;
+  --colorGrey1: #f4f4f4;
   --colorLightBlue: #E3F3FD;
   --colorOrange: #ec7523;
   --colorRed: #ff5757;
@@ -15,8 +16,14 @@
 .colorprimary {
   color: var(--colorBlue);
 }
+.colorGrey1{
+  color: var(--colorGrey1);
+}
 .colorLightBrown{
   color: var(--colorLightBrown);
+}
+.bgFullBlack{
+  background: #000;
 }
 body .colorBlack {
   color: var(--colorBlack);
