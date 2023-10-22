@@ -346,4 +346,5 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   max-width: 70%;
   flex-wrap: wrap;
   margin-right: 0px !important;
+  justify-content: flex-end;
 }
