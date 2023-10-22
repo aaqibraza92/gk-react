@@ -337,17 +337,20 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 
 }
 .swiperThumbnail{
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+
   margin-right: 0px !important;
+  margin-bottom: 40px;
 }
 .swiperThumbnail .swiper-wrapper {
   max-width: 70%;
   flex-wrap: wrap;
   margin-right: 0px !important;
-  
+  justify-content: flex-end;
+  background: url('./assets/img/home/bg_ly.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-.swiperThumbnail .swiper-slide img {
-  max-width: 100px;
+.swiperThumbnail .swiper-wrapper img {
+  width: 100px;
 }

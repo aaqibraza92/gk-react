@@ -61,7 +61,6 @@ const OurProjects = () => {
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper swiperThumbnail"
-                style={{ backgroundImage: `url(${require('../../assets/img/home/bg_ly.png')})` }}
               >
                 <SwiperSlide>
                   <img
