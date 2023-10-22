@@ -138,7 +138,7 @@ const Navbar = (props) => {
 
   return (
     <div className={`navWrapper mobileheader `}>
-      <Container>
+      <div className="container-xxl">
         <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">
             <li>
@@ -185,7 +185,7 @@ const Navbar = (props) => {
             </li>
           </ul>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

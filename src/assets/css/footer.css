@@ -89,3 +89,6 @@ footer ul li a:hover{
     height: 700px;
     object-fit: cover;
   }
+  .mainFooer .fRounder {
+    min-height: 230px;
+  }

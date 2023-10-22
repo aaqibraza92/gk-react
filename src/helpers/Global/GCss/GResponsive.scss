@@ -199,6 +199,13 @@
 
 /*All Small Tablets*/
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+  .mainFooer .fs16 {
+    font-size: 14px;
+  }
+  .mainFooer .fRounder {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .newslide .mb20 {
     margin-bottom: 0px;
   }

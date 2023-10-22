@@ -35,7 +35,7 @@ const HomeBanner = () => {
                     className={`${activeTheme ? "bgBlack" : "bgWhite"} btnTheme mr12 fMedium btnMob`}
                     to="/#"
                   >
-                   <span className={`${activeTheme ? "brownGradient" : "colorBlack"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrowBlack.png')} className="img-fluid" alt="" />
+                   <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>
                 </div>
               </div>

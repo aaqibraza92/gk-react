@@ -70,7 +70,7 @@ const Footer = () => {
       }
       
         <div className="position-absolute absPos w-100">
-          <Container>
+          <div className="container-xxl">
             <Row className="gy-3">
               <Col lg={4} md={4} xl={4}>
                 <div className="radius30 fRounder pl30 pr30 pt60 pb60">
@@ -244,7 +244,7 @@ const Footer = () => {
                 </Col>
               </Row>
             </div>
-          </Container>
+          </div>
         </div>
       </footer>
     </>
