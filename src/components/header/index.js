@@ -21,6 +21,8 @@ const Header = () => {
         setstickyHeader("topUp");
       }
     });
+
+  
   }, [pathname]);
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const resizeScreen = () => {
@@ -32,11 +34,14 @@ const Header = () => {
     return () => {
       window.removeEventListener("resize", resizeScreen);
     };
+
+   
   });
 
-  useEffect(() => {
-   
-  }, []);
+  const closeMenu=()=>{
+    document.getElementById("menu-icon").click();
+  }
+
   return (
     <header
       className={`mainHeader transition ${stickyHeader} ${
@@ -85,20 +90,20 @@ const Header = () => {
                       id="menu-icon"
                       name="menu-icon"
                     />
-                    <label for="menu-icon"></label>
-                    <nav class="nav">
+                    <label htmlFor="menu-icon"></label>
+                    <nav class="nav triggerMenu">
                       <ul class="pt-5">
-                        <li>
-                          <Link to="/">Home</Link>
+                        <li onClick={()=>closeMenu()}>
+                         <Link className="makeClose" to="/">Home</Link>
                         </li>
-                        <li>
-                        <Link to="/about-us">About Us</Link>
+                        <li onClick={()=>closeMenu()}>
+                        <Link className="makeClose" to="/about-us">About Us</Link>
                         </li>
-                        <li>
-                        <Link to="#">Our Projects</Link>
+                        <li onClick={()=>closeMenu()}>
+                        <Link className="makeClose" to="#">Our Projects</Link>
                         </li>
-                        <li>
-                        <Link to="/contact-us">Contact Us</Link>
+                        <li onClick={()=>closeMenu()}>
+                        <Link className="makeClose" to="/contact-us">Contact Us</Link>
                         </li>
                       </ul>
                     </nav>
