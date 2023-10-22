@@ -323,6 +323,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible {
   width: 140px !important;
+  height: auto;
 }
 .testimonial{
   background-size: cover;
@@ -337,7 +338,12 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 }
 .swiperThumbnail{
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  margin-right: 0px !important;
+}
+.swiperThumbnail .swiper-wrapper {
+  max-width: 70%;
+  flex-wrap: wrap;
   margin-right: 0px !important;
 }
