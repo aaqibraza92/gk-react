@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.204df47d.css",
+    "main.js": "/static/js/main.ae9814b8.js",
+    "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
+    "static/media/footer-day.mp4": "/static/media/footer-day.22fcfbe8639c0c81e453.mp4",
+    "static/media/ver_bg.jpg": "/static/media/ver_bg.271e75403290938f378d.jpg",
+    "static/media/buildings.png": "/static/media/buildings.3ff1ab83a8f0b493917d.png",
+    "static/media/pr_c.jpg": "/static/media/pr_c.cf025b39c78cb20a0d06.jpg",
+    "static/media/Sora-VariableFont_wght.ttf": "/static/media/Sora-VariableFont_wght.e56298aec2e944c699d8.ttf",
+    "static/media/home_sl1.jpg": "/static/media/home_sl1.8bc766fa0175fa93b8fc.jpg",
+    "static/media/what_say.jpg": "/static/media/what_say.70c414b54919935261a2.jpg",
+    "static/media/Family Outline.png": "/static/media/Family Outline.8855f0ece43f96f49eae.png",
+    "static/media/heart_testi.png": "/static/media/heart_testi.5bcba8806066ecb1bb96.png",
+    "static/media/Nephilm.otf": "/static/media/Nephilm.ef8b5d4d928c73d88bda.otf",
+    "index.html": "/index.html",
+    "main.204df47d.css.map": "/static/css/main.204df47d.css.map",
+    "main.ae9814b8.js.map": "/static/js/main.ae9814b8.js.map",
+    "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.204df47d.css",
+    "static/js/main.ae9814b8.js"
+  ]
+}

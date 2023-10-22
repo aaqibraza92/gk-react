@@ -27,18 +27,18 @@ const OurProjects = () => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        <SwiperSlide>
-          <img
-            src={require("../../assets/img/home/pr_c.jpg")}
-            className="img-fluid"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={require("../../assets/img/home/pr_c.jpg")}
-            className="img-fluid"
-          />
-        </SwiperSlide>
+        {
+          Array(5).fill().map((e,i)=>(
+            <SwiperSlide key={i}>
+            <img
+              src={activeTheme ? require("../../assets/img/home/pr_c.jpg") : require("../../assets/img/home/pr_gr.jpg")}
+              className="img-fluid"
+              alt=""
+            />
+          </SwiperSlide>
+          ))
+        }
+     
       </Swiper>
       <div className="slLayers position-absolute w-100 h-100">
         <Container className="h-100">
@@ -61,17 +61,41 @@ const OurProjects = () => {
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper swiperThumbnail"
+                style={{ backgroundImage: `url(${require('../../assets/img/home/bg_ly.png')})` }}
               >
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/pr_c.jpg")}
+                    src={require("../../assets/img/home/ly1.png")}
                     className="img-fluid"
+                    alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/pr_c.jpg")}
+                    src={require("../../assets/img/home/ly2.png")}
                     className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/ly3.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/ly4.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/ly5.png")}
+                    className="img-fluid"
+                    alt=""
                   />
                 </SwiperSlide>
               </Swiper>

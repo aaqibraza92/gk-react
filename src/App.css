@@ -335,3 +335,9 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
+.swiperThumbnail{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 0px !important;
+}
