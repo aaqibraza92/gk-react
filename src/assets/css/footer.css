@@ -85,3 +85,7 @@ footer ul li a:hover{
   .viewToggle img {
     width: 82px;
   }
+  .mainFooer video {
+    height: 700px;
+    object-fit: cover;
+  }

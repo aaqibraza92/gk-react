@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <section className={`${activeTheme ? "bgWhite" : "bgFullBlack"} pt80 pb80`}> 
       <Container>
-        <Row>
+        <Row className="gy-5">
           <Col lg={6} md={6} xl={6}>
             <p className={`${activeTheme ? "colorBlack" : "colorWhite"} mb0 fontlight fw400 fs40`}>about us</p>
             <h4 className="fs40 mb0 text-uppercase brownGradient">Exclusive communities</h4>
@@ -25,7 +25,7 @@ const AboutUs = () => {
               record, the company has earned a stellar reputation as one of the
               best real estate builders in Hyderabad.
             </p>
-            <p className={`${activeTheme ? "colorBlack" : "colorWhite"} mb70`}>
+            <p className={`${activeTheme ? "colorBlack" : "colorWhite"} mb70 mobMb30`}>
               GK Builders and Developers continues to focus on futuristic
               expansion and has chalked out plans to develop more luxurious
               residential projects across Hyderabad and Secunderabad soon.

@@ -57,14 +57,14 @@ const Testimonial = () => {
                 />
                    <h2 className="colorWhite fs58 fontlight subfont mt10">
                 What <br />
-                Peaople <br />
+                People <br />
                 Say
               </h2>
               </div>
            
             </Col>
             <Col lg={9} md={9} xl={9}>
-              <div className="pl30 pr30">
+              <div className="pl30 pr30 mobPlr0">
                 <Swiper
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
@@ -106,7 +106,7 @@ const Testimonial = () => {
                           <div className="position-relative d-flex justify-content-end">
                             <img
                               src={require("../../assets/img/home/home_frame.png")}
-                              className="img-fluid"
+                              className="img-fluid homeFrameImg"
                               alt=""
                             />
                             <img

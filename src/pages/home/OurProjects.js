@@ -25,7 +25,7 @@ const OurProjects = () => {
         navigation={false}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
+        className="mySwiper2 mainProSl"
       >
         {
           Array(5).fill().map((e,i)=>(

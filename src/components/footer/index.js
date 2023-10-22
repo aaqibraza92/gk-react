@@ -52,7 +52,7 @@ const Footer = () => {
         </button>
       }
 
-      <footer className="position-relative h-100 d-flex align-items-end">
+      <footer className="position-relative h-100 d-flex align-items-end mainFooer">
       {
         activeTheme ?
         <video className="w-100" ref={videoRef} autoplay loop muted>
@@ -71,11 +71,11 @@ const Footer = () => {
       
         <div className="position-absolute absPos w-100">
           <Container>
-            <Row className="gy-5">
+            <Row className="gy-3">
               <Col lg={4} md={4} xl={4}>
                 <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                   <ul className="pl0 noUl fNav row">
-                    <li className="col-md-6">
+                    <li className="col-md-6 col-6">
                       <Link
                         to="#"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
@@ -83,7 +83,7 @@ const Footer = () => {
                         about us
                       </Link>
                     </li>
-                    <li className="col-md-6">
+                    <li className="col-md-6 col-6">
                       <Link
                         to="#"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
@@ -91,7 +91,7 @@ const Footer = () => {
                         our projects
                       </Link>
                     </li>
-                    <li className="col-md-6">
+                    <li className="col-md-6 col-6">
                       <Link
                         to="#"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
@@ -99,7 +99,7 @@ const Footer = () => {
                         why choose us?
                       </Link>
                     </li>
-                    <li className="col-md-6">
+                    <li className="col-md-6 col-6">
                       <Link
                         to="#"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
@@ -107,7 +107,7 @@ const Footer = () => {
                         who we are?
                       </Link>
                     </li>
-                    <li className="col-md-6">
+                    <li className="col-md-6 col-6">
                       <Link
                         to="#"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
@@ -115,7 +115,7 @@ const Footer = () => {
                         testimonials
                       </Link>
                     </li>
-                    <li className="col-md-6">
+                    <li className="col-md-6 col-6">
                       <Link
                         to="#"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}

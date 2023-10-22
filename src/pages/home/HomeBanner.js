@@ -16,7 +16,7 @@ const HomeBanner = () => {
   return (
     <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
       <img
-        className="img-fluid w-100"
+        className="img-fluid w-100 bannerImg"
         src={activeTheme ? require("../../assets/img/home/home_sl1.jpg") : require("../../assets/img/home/banner_night.jpg")}
         alt="banner"
       />
@@ -25,12 +25,10 @@ const HomeBanner = () => {
           <Row>
             <Col lg={10} md={10} className="m-auto">
               <div>
-                <h2 className="bannerF   tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                  Live Life <br></br>  <span className="text-end d-block">Sky High</span>
+                <h2 className="bannerF   tabfs24  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                  Live Life <br/> <span className="text-end d-block">Sky High</span>
                 </h2>
-                <h2 className="bannerF   tabfs24 mobFs18 mobwidth50 mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                 
-                </h2>
+             
 
                 <div className="d-flex justify-content-end">
                   <Link

@@ -57,7 +57,7 @@ const Header = () => {
         });
   }, []);
   return (
-    <header  className={`mainHeader transition ${stickyHeader}`}>
+    <header  className={`mainHeader transition ${stickyHeader} ${!activeTheme && "darkMode"}`}>
       <div id="myNav" className={`overlay`}>
         <button id="closeMenu" className="closebtn noBtn">
           {closeIcon}

@@ -27,7 +27,7 @@ const WhoWeAre = () => {
               who we are?
             </h2>
           </div>
-                    <Row className='align-items-center'>
+                    <Row className='align-items-center gy-3'>
                         <Col lg={4} md={4}>
                             <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
                             <div className='circleAnimate position-relative'>
