@@ -15,10 +15,19 @@ const Header = () => {
       state && state?.persistedReducer?.theme?.dayTheme
     );
   });
+  const [stickyHeader, setstickyHeader] = useState("");
 
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY;
+      if (isTop > 200) {
+        setstickyHeader("topDown");
+      } else {
+        setstickyHeader("topUp");
+      }
+    });
   }, [pathname]);
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const resizeScreen = () => {
@@ -48,7 +57,7 @@ const Header = () => {
         });
   }, []);
   return (
-    <header className="mainHeader transition">
+    <header  className={`mainHeader transition ${stickyHeader}`}>
       <div id="myNav" className={`overlay`}>
         <button id="closeMenu" className="closebtn noBtn">
           {closeIcon}
@@ -97,17 +106,10 @@ const Navbar = (props) => {
     );
   });
 
-  const [stickyHeader, setstickyHeader] = useState("");
+ 
 
   useEffect(() => {
-    document.addEventListener("scroll", () => {
-      const isTop = window.scrollY;
-      if (isTop > 200) {
-        setstickyHeader("topDown");
-      } else {
-        setstickyHeader("topUp");
-      }
-    });
+  
     document.querySelectorAll(".clickToClose").length > 0 &&
       document.querySelectorAll(".clickToClose").forEach((item) => {
         item.addEventListener("click", (event) => {
@@ -117,7 +119,7 @@ const Navbar = (props) => {
   }, []);
 
   return (
-    <div className={`navWrapper mobileheader ${stickyHeader}`}>
+    <div className={`navWrapper mobileheader `}>
       <Container>
         <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">

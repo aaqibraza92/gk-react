@@ -354,3 +354,9 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .swiperThumbnail .swiper-wrapper img {
   width: 100px;
 }
+.mainHeader.transition.topDown {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  top: 0px;
+}
