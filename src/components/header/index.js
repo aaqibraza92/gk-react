@@ -2,18 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "../../assets/css/header.css";
-import {
-  burgerMenu,
-  closeIcon,
-} from "../../assets/svg/Svg";
 import { useSelector } from "react-redux";
-
 
 const Header = () => {
   const activeTheme = useSelector((state) => {
-    return (
-      state && state?.persistedReducer?.theme?.dayTheme
-    );
+    return state && state?.persistedReducer?.theme?.dayTheme;
   });
   const [stickyHeader, setstickyHeader] = useState("");
 
@@ -42,38 +35,38 @@ const Header = () => {
   });
 
   useEffect(() => {
-    document.getElementById("triggerToOpen") !== null &&
-      document
-        .getElementById("triggerToOpen")
-        .addEventListener("click", (event) => {
-          document.getElementById("myNav").classList.add("enableMobileMenu");
-        });
-
-    document.getElementById("closeMenu") !== null &&
-      document
-        .getElementById("closeMenu")
-        .addEventListener("click", (event) => {
-          document.getElementById("myNav").classList.remove("enableMobileMenu");
-        });
+   
   }, []);
   return (
-    <header  className={`mainHeader transition ${stickyHeader} ${!activeTheme && "darkMode"}`}>
+    <header
+      className={`mainHeader transition ${stickyHeader} ${
+        !activeTheme && "darkMode"
+      }`}
+    >
       <div id="myNav" className={`overlay`}>
-        <button id="closeMenu" className="closebtn noBtn">
-          {closeIcon}
-        </button>
+      
         <div className="overlay-content">
           <Navbar />
         </div>
       </div>
       <div className={`upperHeader pt20 pb20 `}>
         <div className="container-xl">
-          <Row className={`${stickyHeader==="topDown" ? "align-items-center" : "align-items-top" }`}>
+          <Row
+            className={`${
+              stickyHeader === "topDown"
+                ? "align-items-center"
+                : "align-items-top"
+            }`}
+          >
             <Col lg={3} md={3} xs={6}>
               <Link className="mainLogo" to="/">
                 <img
                   className="img-fluid mainLogo"
-                  src={activeTheme ? require("../../assets/img/logo.png") : require("../../assets/img/white_logo.png")}
+                  src={
+                    activeTheme
+                      ? require("../../assets/img/logo.png")
+                      : require("../../assets/img/white_logo.png")
+                  }
                   alt="logo"
                 />
               </Link>
@@ -82,9 +75,34 @@ const Header = () => {
             <Col lg={9} md={9} xs={6}>
               {screenWidth < 1024 ? (
                 <div className="d-flex justify-content-end">
-                  <button id="triggerToOpen" className="noBtn triggerMenu">
+                  {/* <button id="triggerToOpen" className="noBtn triggerMenu">
                     {burgerMenu}
-                  </button>
+                  </button> */}
+                  <span class="menuTrigger">
+                    <input
+                      class="menu-icon"
+                      type="checkbox"
+                      id="menu-icon"
+                      name="menu-icon"
+                    />
+                    <label for="menu-icon"></label>
+                    <nav class="nav">
+                      <ul class="pt-5">
+                        <li>
+                          <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                        <Link to="/about-us">About Us</Link>
+                        </li>
+                        <li>
+                        <Link to="#">Our Projects</Link>
+                        </li>
+                        <li>
+                        <Link to="/contact-us">Contact Us</Link>
+                        </li>
+                      </ul>
+                    </nav>
+                  </span>
                 </div>
               ) : (
                 <Navbar />
@@ -101,15 +119,10 @@ export default Header;
 
 const Navbar = (props) => {
   const activeTheme = useSelector((state) => {
-    return (
-      state && state?.persistedReducer?.theme?.dayTheme
-    );
+    return state && state?.persistedReducer?.theme?.dayTheme;
   });
 
- 
-
   useEffect(() => {
-  
     document.querySelectorAll(".clickToClose").length > 0 &&
       document.querySelectorAll(".clickToClose").forEach((item) => {
         item.addEventListener("click", (event) => {
@@ -124,24 +137,44 @@ const Navbar = (props) => {
         <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">
             <li>
-              <Link to="/" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
+              <Link
+                to="/"
+                className={`${
+                  activeTheme ? "colorBlack" : "colorWhite"
+                } clickToClose`}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about-us" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
+              <Link
+                to="/about-us"
+                className={`${
+                  activeTheme ? "colorBlack" : "colorWhite"
+                } clickToClose`}
+              >
                 About Us
               </Link>
             </li>
 
             <li>
-              <Link to="/#" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
+              <Link
+                to="/#"
+                className={`${
+                  activeTheme ? "colorBlack" : "colorWhite"
+                } clickToClose`}
+              >
                 our projects
               </Link>
             </li>
-            
+
             <li>
-              <Link to="/contact-us" className={`${activeTheme ? "colorBlack" : "colorWhite"} clickToClose`}>
+              <Link
+                to="/contact-us"
+                className={`${
+                  activeTheme ? "colorBlack" : "colorWhite"
+                } clickToClose`}
+              >
                 Contact Us
               </Link>
             </li>
