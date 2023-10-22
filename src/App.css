@@ -360,3 +360,10 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   z-index: 99999;
   top: 0px;
 }
+.topDown .mainLogo img {
+  width: 40px;
+}
+.topDown .upperHeader {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

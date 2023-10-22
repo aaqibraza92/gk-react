@@ -68,9 +68,9 @@ const Header = () => {
       </div>
       <div className={`upperHeader pt20 pb20 `}>
         <div className="container-xl">
-          <Row className="align-items-top">
+          <Row className={`${stickyHeader==="topDown" ? "align-items-center" : "align-items-top" }`}>
             <Col lg={3} md={3} xs={6}>
-              <Link to="/">
+              <Link className="mainLogo" to="/">
                 <img
                   className="img-fluid mainLogo"
                   src={activeTheme ? require("../../assets/img/logo.png") : require("../../assets/img/white_logo.png")}
