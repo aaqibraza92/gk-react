@@ -23,7 +23,7 @@
 }
 .bgfiftymission{
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 62%, rgba(0,0,0,0) 62%);
+background: linear-gradient(90deg, rgba(255,255,255,1) 58%, rgba(0,0,0,0) 58%);
 }
 .bgourteam {
   background: rgb(255,255,255);
@@ -41,6 +41,33 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 62%, rgba(0,0,0,0) 62%);
   background-color: #323539;
   margin: 0 auto;
 }
+.mainabhout {
+  position: absolute;
+  width: 100%;
+  top: 59px;
+}
+.aboutusnew {
+  margin: 0 0 0 auto;
+  padding: 50px 0px;
+}
+.bordernew {
+  border-left: 2px solid #ddd;
+  padding-left: 26px;
+}
+.secondaboutus {
+  margin: 0 0 0 auto;
+}
+.mainabhoutnew {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+}
+.newone {
+  position: relative;
+  top: 26px;
+  z-index: 2;
+}
   @media screen and (max-width: 1024px) {
 
   .videoWrapper video {
@@ -48,4 +75,36 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 62%, rgba(0,0,0,0) 62%);
     height: auto;
     object-fit: cover;
   }
+  .devider {
+    height: 1px;
+    width: 158px;
+    background-color: #323539;
+    margin-bottom: 25px;
+  }
+  .bgourteam {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(10,50,73,1) 20%);
+  }
 }
+
+
+@media screen and (max-width: 1024px) {
+
+  .mainabhout {
+    position: relative;
+    width: 100%;
+    top: 0px;
+  }
+  .mainabhoutnew {
+    position: relative;
+  }
+  .bgfifty {
+    background: rgb(42,51,121);
+    background: #fff;
+  }
+  .bgfiftymission {
+    background: rgb(255,255,255);
+    background: #fff;
+  }
+}
+

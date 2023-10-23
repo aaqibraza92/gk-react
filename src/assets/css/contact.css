@@ -2,11 +2,33 @@
     border-bottom: 2px solid #ddd;
     position: relative;
     top: -59px;
-    z-index: 0;
+    z-index: -1;
   }
   .contactusheading {
     background-color: #fff;
     display: inline-block;
     position: relative;
     padding: 0px 15px;
+  }
+  .newboxshadow {
+    box-shadow: 0px 0px 43px 0px #00000085;
+    border-radius: 40px;
+    position: relative;
+    top: 59px;
+    z-index: 1;
+  }
+  @media screen and (max-width: 1024px) {
+
+    .contactusheading {
+      background-color: #fff;
+      display: inline-block;
+      position: relative;
+      padding: 0px 15px;
+    }
+    .bordercontactus {
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      top: -18px;
+      z-index: -1;
+    }
   }

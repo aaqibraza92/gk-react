@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
           </h2>
         </div>
 
-      
+          
             <div className="wrapperData" >
            
               <Swiper
@@ -85,18 +85,9 @@ const WhyChooseUs = () => {
                                 SUPERIOR <br /> CONSTRUCTION
                               </h3>
                               <p className="fs14">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                                Quis ipsum suspendisse ultrices gravida. Risus
-                                commodo viverra maecenas accumsan lacus vel
-                                facilisis.
+                              With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices, and compliance with safety protocol.
                               </p>
-                              <p className="fs14">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                              </p>
+                             
                             </Col>
                             <Col lg={6} md={6}>
                               <img

@@ -12,21 +12,21 @@ import "swiper/css/autoplay";
 
 let data = [
   {
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cupiditate eos, voluptas neque distinctio cumque nostrum laborum consectetur! Aliquam molestiae cumque alias quia aliquid expedita ipsa quidem facilis rerum ab.",
+    para: "GK Builders and Developers helped and supported us throughout the planning and buying process and have been so very professional and truly wonderful. I have had to make so many decisions and they have been with me all the way.",
     author: "Manasa",
     position: "Project Lead, Tech Mahindra",
     tag: "Atmakaru",
   },
   {
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cupiditate eos, voluptas neque distinctio cumque nostrum laborum consectetur! Aliquam molestiae cumque alias quia aliquid expedita ipsa quidem facilis rerum ab.",
-    author: "Manasa",
-    position: "Project Lead, Tech Mahindra",
+    para: "In sum, our experience with GK Builders and Developers was more than satisfactory. The team met deadlines, was easy to work with, helpful in making difficult decisions, respectful of our unique wishes, showed excellent attention to detail and was kind and welcoming to customers.",
+    author: "Prasad G",
+    position: "Senior General Manager, FHPL(Apollo Group)",
     tag: "Atmakaru",
   },
   {
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cupiditate eos, voluptas neque distinctio cumque nostrum laborum consectetur! Aliquam molestiae cumque alias quia aliquid expedita ipsa quidem facilis rerum ab.",
-    author: "Manasa",
-    position: "Project Lead, Tech Mahindra",
+    para: "For us, buying a new home was not just about investing in a property but it was a part of building our dreams. We had so many plans and ideas for our first home together. We felt that GK Builders and Developers is the right choice since the brand has a very good reputation.",
+    author: "Amit Kumar",
+    position: "Project Manager, Crowd Health India",
     tag: "Atmakaru",
   },
 ];

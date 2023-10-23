@@ -382,8 +382,13 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   text-align: right;
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible {
-  width: 140px !important;
+  width: 160px !important;
   height: auto;
+  cursor: pointer;
+}
+.swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(4) {
+  width: 254px !important;
+  margin-top: 25px;
 }
 .testimonial{
   background-size: cover;
@@ -411,9 +416,9 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   background-size: contain;
   background-position: center;
 }
-.swiperThumbnail .swiper-wrapper img {
+/* .swiperThumbnail .swiper-wrapper img {
   width: 100px;
-}
+} */
 .mainHeader.transition.topDown {
   position: fixed;
   width: 100%;
@@ -435,12 +440,13 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 }
 .whyChsWrp {
   background: #ecf7fd;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
+  border-radius: 28px;
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1200px) {

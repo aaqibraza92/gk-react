@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import LookingForJob from "./LookingForJob";
 import LookingForTalent from "./LookingForTalent";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const ContactUs = (props) => {
   const selector= useSelector((state)=>{
     return state
@@ -24,7 +25,7 @@ const ContactUs = (props) => {
        <Row>
           <Col md={12}>
                 <div className="pt200 pb60 text-center position-relative ">
-                <h2 className="fs90 colorprimary contactusheading mb-0">Contact Us</h2>
+                <h2 className="fs90 mobFs32 colorprimary contactusheading mb-0">Contact Us</h2>
                 <div className="bordercontactus"></div>
                 <p className="fs30 colorLightBrown">Get in touch with us today</p>
           </div>
@@ -32,12 +33,23 @@ const ContactUs = (props) => {
        </Row>
      </Container>
 
-      <section className="formSectionA pt100 pb100 bgLightBluenew">
+
+     
+
+      <section className="pt100">
         <Container>
-          <div className="wrapperContact">
-           
-            
-          </div>
+            <Row>
+               <Col md={9} className="m-auto">
+               <Link
+                    className="" target="_blank"
+                    to="https://maps.app.goo.gl/pHyxRxwTHSKB4amb7"
+                  >
+                     <img src={require('../../assets/img/aboutus/gmap.png')} className='img-fluid newboxshadow' alt="" />
+                  </Link>
+
+              
+               </Col>
+              </Row>
         </Container>
       </section>
 

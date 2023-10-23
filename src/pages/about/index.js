@@ -27,9 +27,9 @@ const AboutUs = () => {
       
       <div className="bgWhite pt80 pb80 mobPb30">
         <div className="container-xl">
-          <Row className="align-items-center gy-4 mobilereverse">
+          <Row className="align-items-center gy-4">
             <Col lg={7} md={7}>
-               <h3 className="fs60">Our legacy <br></br> dates back to</h3>
+               <h3 className="fs60 mobFs30">Our legacy <br></br> dates back to</h3>
                <h2 className="fs140">1985</h2>
                <p>When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
                <p>Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
@@ -46,25 +46,56 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="bgmission pt80 pb80 mobPb30">
-        <section className="bgfifty pb40 pt40 mb30">
+      <div className="bgmission pt80 pb80 ">
+        <div className="position-relative mobPb30 mb60">
+            <section className="mb30">
+                <div className="container-xl">
+                  <Row className="align-items-center">
+                    <Col lg={6} md={6}>
+                      <div className="visionvidio">
+                      <video className="w-100" ref={videoRef} autoplay loop muted>
+                          <source
+                            src={require("../../assets/img/home/Visionweb.mp4")}
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </Col>
+
+                    
+                  </Row>
+                </div>
+            </section>
+
+            <section className="bgfifty mainabhout">
+                <div className="container-xl">
+                  <Row className="align-items-center gy-4 ">
+                    <Col lg={6} md={6} className="text-left aboutusnew">
+                        <div className="bordernew">
+                        <h3 className="fs45 subfont">Our Vision</h3>
+                        <p className="fs17 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+
+                        </div>
+                    </Col>
+                  </Row>
+                </div>
+            </section>
+        </div>
+
+        
+
+
+
+        <div className="position-relative mb60">
+        <section className="bgfiftymission pb40 pt40 newone">
             <div className="container-xl">
-              <Row className="align-items-center gy-4 mobilereverse">
-                <Col lg={6} md={6}>
-                   <div className="visionvidio">
-                   <video className="w-100" ref={videoRef} autoplay loop muted>
-                      <source
-                        src={require("../../assets/img/home/Visionweb.mp4")}
-                        type="video/mp4"
-                      />
-                    </video>
-                   </div>
-                </Col>
+              <Row className="align-items-center gy-4 ">
+                
 
                 <Col lg={6} md={6} className="text-left">
-                    <div className="pb-3">
-                    <h3 className="fs45 subfont">Our Vision</h3>
-                    <p className="fs17 colorLight w-85">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+                    <div className="bordernew">
+                    <h3 className="fs45 subfont">Our Mission</h3>
+                    <p className="fs17 colorLight w-85">Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
 
                     </div>
                 </Col>
@@ -72,22 +103,11 @@ const AboutUs = () => {
             </div>
         </section>
 
-
-        <section className="bgfiftymission pb40 pt40">
+        <section className=" mainabhoutnew">
             <div className="container-xl">
-              <Row className="align-items-center gy-4 mobilereverse">
-                
-
-                <Col lg={6} md={6} className="text-left">
-                    <div className="pb-3">
-                    <h3 className="fs45 subfont">Our Mission</h3>
-                    <p className="fs17 colorLight w-85">Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
-
-                    </div>
-                </Col>
-
-                <Col lg={6} md={6}>
-                   <div className="visionvidio">
+              <Row className="align-items-center gy-4 ">   
+                <Col lg={6} md={6} className="secondaboutus">
+                   <div className="visionvidio ">
                    <video className="w-100" ref={videoRefn} autoplay loop muted>
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
@@ -99,16 +119,17 @@ const AboutUs = () => {
               </Row>
             </div>
         </section>
+        </div>
         
       </div>
 
 
       <div className="bgourteam pt80 pb80 mobPb30">
         <div className="container-xl">
-          <Row className="align-items-center gy-4 mobilereverse ">
+          <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
-               <h3 className="fs60  text-uppercase subfont fontlight">Our Pillars</h3>
-               <h3 className="fs30 subfont fontlight">GK Group’s Foundation</h3>
+               <h3 className="fs60 mobFs30  text-uppercase subfont fontlight">Our Pillars</h3>
+               <h3 className="fs30 fs16 subfont fontlight">GK Group’s Foundation</h3>
                <div className="devider">
                  
                </div>
