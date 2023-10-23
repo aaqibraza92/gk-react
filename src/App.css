@@ -32,72 +32,7 @@
 a.line {
   text-decoration: underline !important;
 }
-@media only screen and (max-width: 767px) {
-  body .bannerF {
-    font-size: 16vw;
-    line-height: 9vh;
-  }
-  .homeBanner .bannerImg {
-    height: 510px;
-    object-fit: cover;
-  }
-  body .swiperThumbnail .swiper-wrapper{
-    width: 100%;
-  }
-  body .swiperThumbnail .swiper-slide.swiper-slide-visible {
-    width: auto !important;
-  }
-  body .mainProSl img {
-    height: 400px;
-    object-fit: cover;
-  }
-  body .living {
-    font-size: 80px;
-    line-height: 70px;
-  }
-  .fs40 {
-    font-size: 22px;
-  }
-  body .fs70 {
-    font-size: 41px;
-  }
-  body .swiperThumbnail .swiper-wrapper img {
-    width: 40px;
-  }
-  body .circleAnimate {
-    width: 250px;
-    height: 250px;
-  }
-  .mobPlr0{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  .test_wrapper .dataTesti {
-    position: static !important;
-  }
-  .test_wrapper .homeFrameImg {
-    display: none;
-  }
-  h2 br {
-    display: none;
-  }
-  body .fs58 {
-    font-size: 33px;
-  }
-  .copyright * {
-    font-size: 12px;
-    margin-top: 0px !important;
-  }
-  .copyright {
-    margin-top: 0px !important;
-  }
-  body .viewToggle img{
-    width: 62px;
-  }
-  body .wrapperContact {
-    padding: 15px;
-  }
-}
+
 
 .inputTheme {
   border: 1px solid #D6D6D6;
@@ -453,5 +388,84 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   .cornerHandle {
     margin-left: 30px;
     margin-right: 70px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  body .bannerF {
+    font-size: 16vw;
+    line-height: 9vh;
+  }
+  .homeBanner .bannerImg {
+    height: 510px;
+    object-fit: cover;
+  }
+  body .swiperThumbnail .swiper-wrapper{
+    width: 100%;
+  }
+  body .swiperThumbnail .swiper-slide.swiper-slide-visible {
+    width: auto !important;
+  }
+  body .mainProSl img {
+    height: 400px;
+    object-fit: cover;
+  }
+  body .living {
+    font-size: 80px;
+    line-height: 70px;
+  }
+  .fs40 {
+    font-size: 22px;
+  }
+  body .fs70 {
+    font-size: 41px;
+  }
+  body .swiperThumbnail .swiper-wrapper img {
+    width: 50px;
+  }
+  body .circleAnimate {
+    width: 250px;
+    height: 250px;
+  }
+  .mobPlr0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .test_wrapper .dataTesti {
+    position: static !important;
+    width: 100%;
+  }
+  .dataTesti {
+    width: 100%;
+  }
+  .test_wrapper .homeFrameImg {
+    display: none;
+  }
+  h2 br {
+    display: none;
+  }
+  body .fs58 {
+    font-size: 33px;
+  }
+  .copyright * {
+    font-size: 12px;
+    margin-top: 0px !important;
+  }
+  .copyright {
+    margin-top: 0px !important;
+  }
+  body .viewToggle img{
+    width: 62px;
+  }
+  body .wrapperContact {
+    padding: 15px;
+  }
+  .swiperThumbnail .swiper-wrapper {
+    background-position: right;
+  }
+  .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(4) {
+    width: 46px !important;
+    margin-top: 15px;
   }
 }
