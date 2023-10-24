@@ -18,6 +18,7 @@ import {
 } from "../../assets/svg/Svg";
 import { useDispatch, useSelector } from "react-redux";
 import { themeType } from "../../store/slices/UserSlices";
+import Fade from "react-reveal/Fade";
 
 const Footer = () => {
 
@@ -73,7 +74,8 @@ const Footer = () => {
           <div className="container-xxl">
             <Row className="gy-3">
               <Col lg={4} md={4} xl={4}>
-                <div className="radius30 fRounder pl30 pr30 pt60 pb60">
+              <Fade bottom cascade>
+              <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                   <ul className="pl0 noUl fNav row">
                     <li className="col-md-6 col-6">
                       <Link
@@ -125,10 +127,13 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
+              </Fade>
+             
               </Col>
 
               <Col lg={4} md={4} xl={4}>
-                <div className="radius30 fRounder pl30 pr30 pt60 pb60">
+              <Fade bottom cascade>
+              <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                   <div className="d-flex">
                     <div className="mr8" style={{ width: "28px" }}>
                       {locationSvg}
@@ -152,10 +157,14 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
+              </Fade>
+            
               </Col>
 
               <Col lg={4} md={4} xl={4}>
-                <div className="radius30 fRounder pl30 pr30 pt60 pb60 mb30">
+
+              <Fade bottom cascade>
+              <div className="radius30 fRounder pl30 pr30 pt60 pb60 mb30">
                   <div className="d-flex mb12">
                     <div className="mr8" style={{ width: "28px" }}>
                       {callSvg}
@@ -205,6 +214,8 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
+              </Fade>
+            
 
 
 
@@ -213,22 +224,31 @@ const Footer = () => {
 
             <div className="copyright mt20 pt20 pb20 mb20">
               <Row className="align-items-center">
+            
                 <Col lg={6}>
-                  <Link
+
+                <div className="d-flex flex-wrap">
+                <Link
                     to="#"
                     className="colorGrey fs14 fRegular  mb0 mr10 text-uppercase"
                   >
-                    Privacy Policy
+                   <Fade bottom cascade>Privacy Policy</Fade>  
                   </Link>
+               
                   <Link
                     to="/#"
                     className="colorGrey fs14 fRegular mb0 mr10 text-uppercase"
                   >
-                    Terms & Condition
+                      <Fade bottom cascade>  Terms & Condition    </Fade>
                   </Link>
+                </div>
+               
+            
+               
                 </Col>
                 <Col lg={6}>
-                  <div className="d-flex justify-content-lg-end">
+                <Fade bottom cascade>
+                <div className="d-flex justify-content-lg-end">
                     <p className="colorGrey fs14 fRegular itemLightwhite mb0 text-uppercase">
                       &#169; {new Date().getFullYear()}{" "}
                       <a
@@ -241,6 +261,8 @@ const Footer = () => {
                       PVT LTD. All rights reserved
                     </p>
                   </div>
+                </Fade>
+              
                 </Col>
               </Row>
             </div>
