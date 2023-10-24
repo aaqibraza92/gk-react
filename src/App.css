@@ -10,7 +10,7 @@
   body,html,li,a,p,div,.roboto{
     font-family: para;
   }
-  h1,h2,h3,h4,h5,h6,.barlow{
+  h1,h2,h3,h4,h5,h6,.barlow,h2 .react-reveal *,h1 .react-reveal *,h3 .react-reveal *,h4 .react-reveal *,h5 .react-reveal *{
     font-family: heading;
   }
 .subfont{
