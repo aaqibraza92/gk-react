@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./helpers/Global/GCss/index";
 import { Route, Routes } from "react-router-dom";
 import RouterList from "./helpers/Routes/RoutesList";
-import AlertModal from "./components/AlertModal/AlertModal";
-
+import AnimatedCursor from "react-animated-cursor"
 function App() {
   return (
     <>
-      <AlertModal />
+      <AnimatedCursor color='142, 118, 83'/>
+      {/* <AlertModal /> */}
       <div className="wrapperApp">
         <Routes>
           {RouterList &&
