@@ -5,6 +5,7 @@ import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
 import { arrowDiagonal } from "../../assets/svg/Svg";
 import { useSelector } from "react-redux";
+import Fade from 'react-reveal/Fade';
 const HomeBanner = () => {
   
   const activeTheme = useSelector((state) => {
@@ -25,8 +26,16 @@ const HomeBanner = () => {
           <Row>
             <Col lg={10} md={10} className="m-auto">
               <div>
+
                 <h2 className="bannerF   tabfs24  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                  Live Life <br/> <span className="text-end d-block">Sky High</span>
+                  <Fade left cascade>
+                  <span>Live Life</span>
+        </Fade> 
+                </h2>
+                <h2 className="bannerF   tabfs24  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                <Fade right cascade>
+                <span className="text-end d-block">Sky High</span>
+        </Fade>  
                 </h2>
                 <div className="d-flex justify-content-end">
                   <Link
