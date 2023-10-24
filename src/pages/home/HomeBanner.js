@@ -28,11 +28,9 @@ const HomeBanner = () => {
                 <h2 className="bannerF   tabfs24  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
                   Live Life <br/> <span className="text-end d-block">Sky High</span>
                 </h2>
-             
-
                 <div className="d-flex justify-content-end">
                   <Link
-                    className={`${activeTheme ? "bgBlack" : "bgWhite"} btnTheme mr12 fMedium btnMob`}
+                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob`}
                     to="/#"
                   >
                    <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
