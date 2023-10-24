@@ -12,9 +12,13 @@
   --colorBlue: #0a3249;
   --colorBrown: #a07f50;
   --colorLightBrown: #a1a1a1;
+  --colorPink: #fff7f5;
 }
 .colorprimary {
   color: var(--colorBlue);
+}
+.bgPink {
+  background: var(--colorPink);
 }
 .colorGrey1{
   color: var(--colorGrey1);

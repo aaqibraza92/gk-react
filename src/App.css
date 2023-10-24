@@ -256,6 +256,7 @@ body{
 .bannerF {
   font-size: 168px;
   line-height: 180px;
+  
 }
 .btnTheme img {
   width: 20px;
@@ -468,4 +469,9 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
     width: 46px !important;
     margin-top: 15px;
   }
+}
+.titles {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
 }

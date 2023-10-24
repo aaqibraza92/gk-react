@@ -128,12 +128,12 @@ const Navbar = (props) => {
   });
 
   useEffect(() => {
-    document.querySelectorAll(".clickToClose").length > 0 &&
-      document.querySelectorAll(".clickToClose").forEach((item) => {
-        item.addEventListener("click", (event) => {
-          document.getElementById("myNav").classList.remove("enableMobileMenu");
-        });
-      });
+    // document.querySelectorAll(".clickToClose").length > 0 &&
+    //   document.querySelectorAll(".clickToClose").forEach((item) => {
+    //     item.addEventListener("click", (event) => {
+    //       document.getElementById("myNav").classList.remove("enableMobileMenu");
+    //     });
+    //   });
   }, []);
 
   return (
@@ -141,7 +141,7 @@ const Navbar = (props) => {
       <div className="container-xxl">
         <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">
-            <li>
+            <li className="mr15">
               <Link
                 to="/"
                 className={`${
@@ -151,7 +151,7 @@ const Navbar = (props) => {
                 Home
               </Link>
             </li>
-            <li>
+            <li className="mr15">
               <Link
                 to="/about-us"
                 className={`${
@@ -162,7 +162,7 @@ const Navbar = (props) => {
               </Link>
             </li>
 
-            <li>
+            <li className="mr15">
               <Link
                 to="/#"
                 className={`${

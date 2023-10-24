@@ -16,12 +16,12 @@ const OurProjects = () => {
       state && state?.persistedReducer?.theme?.dayTheme
     );
   });
-
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
     <section className="position-relative d-flex align-items-end justify-content-end h-100 w-100">
       <Swiper
-        spaceBetween={10}
+        spaceBetween={0}
         navigation={false}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
@@ -99,14 +99,14 @@ const OurProjects = () => {
                 </SwiperSlide>
               </Swiper>
 
-              {/* <div className='titles'>
+              <div className='titles'>
       <h2 className='colorWhite fs58 fw500 text-uppercase'>
           Happy Home
           </h2>
           <h2 className='colorWhite fs58 fw500 text-uppercase'>
           <span className='fs40'>For</span> Families
           </h2>
-      </div> */}
+      </div>
             </div>
           </div>
         </Container>

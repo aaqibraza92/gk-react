@@ -18,7 +18,7 @@ const WhoWeAre = () => {
       });
 
     return (
-        <section className={`${activeTheme ? "bgWhite" : "bgFullBlack"} pt100 pb100 `}>
+        <section className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
                 <div className='text-center'>
                 <div className="">
@@ -27,13 +27,13 @@ const WhoWeAre = () => {
               who we are?
             </h2>
           </div>
-                    <Row className='align-items-center gy-3'>
+                    <Row className='align-items-center gy-4'>
                         <Col lg={4} md={4}>
                             <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
                             <div className='circleAnimate position-relative'>
                             </div>
                             <div className='wrpCircle position-absolute'>
-                                <div className='mb20'>
+                                <div className='mb0 lh50'>
                                     <span className='fontlight subfont fs90 mobFs35 brownGradient fw500'>
                                         4
                                     </span>
@@ -43,7 +43,7 @@ const WhoWeAre = () => {
 </svg>
                                     </span>
                                 </div>
-                                <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs35  mobFs18 fontlight`}>
+                                <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs35 lh39 fontlight`}>
                                     Happy <br />
                                     Families
                                 </div>
@@ -51,9 +51,9 @@ const WhoWeAre = () => {
                             </div>
                       
                         </Col>
-                        <Col lg={7} md={7} className='m-auto'>
-                            <div className='imgWrp'>
-                                <img className='img-fluid' src={require('../../assets/img/home/Family Outline.png')} alt="" />
+                        <Col lg={7} md={7} className=''>
+                            <div className='imgWrp mobMt30'>
+                                <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
                             </div>
                         </Col>
                     </Row>
