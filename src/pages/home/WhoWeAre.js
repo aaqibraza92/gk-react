@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
 const WhoWeAre = () => {
     const activeTheme = useSelector((state) => {
@@ -23,13 +25,18 @@ const WhoWeAre = () => {
                 <div className='text-center'>
                 <div className="">
             <img src={require('../../assets/img/home/three_dot.png')} className="img-fluid" alt="" />
+            <Fade bottom cascade>
             <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs58 fontlight subfont text-center`}>
               who we are?
             </h2>
+            </Fade>
+        
           </div>
                     <Row className='align-items-center gy-4'>
                         <Col lg={4} md={4}>
-                            <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
+                        <Zoom top cascade>
+                        <div>
+                        <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
                             <div className='circleAnimate position-relative'>
                             </div>
                             <div className='wrpCircle position-absolute'>
@@ -49,11 +56,18 @@ const WhoWeAre = () => {
                                 </div>
                                 </div>
                             </div>
+                        </div>
+                 
+                        </Zoom>
+                      
                       
                         </Col>
                         <Col lg={7} md={7} className=''>
                             <div className='imgWrp mobMt30'>
-                                <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
+                            <Fade right cascade>
+                            <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
+                            </Fade>
+                          
                             </div>
                         </Col>
                     </Row>

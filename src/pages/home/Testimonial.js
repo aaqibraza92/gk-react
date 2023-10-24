@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import Fade from "react-reveal/Fade";
 
 let data = [
   {
@@ -49,7 +50,8 @@ const Testimonial = () => {
         <Container>
           <Row>
             <Col lg={3} md={3} xl={3}>
-              <div >
+            <Fade bottom cascade>
+            <div >
                 <img
                   src={require("../../assets/img/home/three_dot.png")}
                   className="img-fluid"
@@ -61,6 +63,8 @@ const Testimonial = () => {
                 Say
               </h2>
               </div>
+            </Fade>
+       
            
             </Col>
             <Col lg={9} md={9} xl={9}>
