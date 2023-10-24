@@ -4,11 +4,14 @@ import "./helpers/Global/GCss/index";
 import { Route, Routes } from "react-router-dom";
 import RouterList from "./helpers/Routes/RoutesList";
 import AnimatedCursor from "react-animated-cursor"
+import SmoothScroll from "./components/SmoothScoll";
+
 function App() {
   return (
     <>
       <AnimatedCursor color='142, 118, 83'/>
       {/* <AlertModal /> */}
+      {/* <SmoothScroll> */}
       <div className="wrapperApp">
         <Routes>
           {RouterList &&
@@ -19,6 +22,7 @@ function App() {
             })}
         </Routes>
       </div>
+      {/* </SmoothScroll> */}
     </>
   );
 }
