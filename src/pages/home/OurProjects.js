@@ -10,6 +10,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
 import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
 const OurProjects = () => {
   const activeTheme = useSelector((state) => {
@@ -47,11 +48,13 @@ const OurProjects = () => {
           <div className="d-flex align-items-end justify-content-end w-100 h-100">
             <div className="h-100 d-flex flex-column justify-content-between w-100">
               <div className="proMaintitle">
+              <Zoom left>
                 <img
                   src={require("../../assets/img/home/three_dot.png")}
                   className="img-fluid"
                   alt=""
                 />
+                </Zoom>
                 <Fade bottom cascade>
                 <h2 className="colorWhite fs58 fontlight subfont">
                   our projects

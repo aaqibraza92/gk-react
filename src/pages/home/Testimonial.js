@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
 let data = [
   {
@@ -38,7 +39,7 @@ const Testimonial = () => {
       state && state?.persistedReducer?.theme?.dayTheme
     );
   });
-  
+
   return (
     <section
       className="testimonial d-flex h-100 pt100 pb100"
@@ -50,22 +51,28 @@ const Testimonial = () => {
         <Container>
           <Row>
             <Col lg={2} md={2} xl={2}>
-            <Fade bottom cascade>
-            <div >
-                <img
+
+              <div >
+              <Zoom left>
+              <img
                   src={require("../../assets/img/home/three_dot.png")}
                   className="img-fluid"
                   alt=""
                 />
-                   <h2 className="colorWhite fs58 fontlight subfont mt10">
-                What <br />
-                People <br />
-                Say
-              </h2>
+                </Zoom>
+              
+                <Fade left cascade>
+                  <h2 className="colorWhite fs58 fontlight subfont mt10">
+                    What <br />
+                    People <br />
+                    Say
+
+                  </h2>
+                </Fade>
               </div>
-            </Fade>
-       
-           
+
+
+
             </Col>
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
@@ -76,8 +83,8 @@ const Testimonial = () => {
                   autoPlay={{ delay: 2000 }}
                   spaceBetween={50}
                   slidesPerView={1}
-                  onSlideChange={() => {}}
-                  onSwiper={() => {}}
+                  onSlideChange={() => { }}
+                  onSwiper={() => { }}
                   breakpoints={{
                     // when window width is >= 640px
                     300: {
@@ -114,35 +121,35 @@ const Testimonial = () => {
                               alt=""
                             /> */}
 
-                         <div className="dataTesti">
-                          <img
-                              src={require("../../assets/img/home/heart_testi.png")}
-                              className="img-fluid  heartAuthor"
-                              alt=""
-                            />
-                            <div class="testimonials">
-                            <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
+                            <div className="dataTesti">
+                              <img
+                                src={require("../../assets/img/home/heart_testi.png")}
+                                className="img-fluid  heartAuthor"
+                                alt=""
+                              />
+                              <div class="testimonials">
+                                <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
 
-                              <Row className="align-items-center">
-                                <Col lg={6} md={6}>
-                                  <div className="fs18 fw600 colorWhite text-uppercase">
-                                    {e?.tag}
-                                  </div>
-                                </Col>
-                                <Col lg={6} md={6}>
-                                  <div className="fs18 fw600 colorWhite text-uppercase mb15">
-                                    - {e?.author}
-                                  </div>
+                                <Row className="align-items-center">
+                                  <Col lg={6} md={6}>
+                                    <div className="fs18 fw600 colorWhite text-uppercase">
+                                      {e?.tag}
+                                    </div>
+                                  </Col>
+                                  <Col lg={6} md={6}>
+                                    <div className="fs18 fw600 colorWhite text-uppercase mb15">
+                                      - {e?.author}
+                                    </div>
 
-                                  <p className="colorWhite fs16 fs12 ">{e?.position}</p>
-                                </Col>
-                              </Row>
+                                    <p className="colorWhite fs16 fs12 ">{e?.position}</p>
+                                  </Col>
+                                </Row>
+                              </div>
                             </div>
-                          </div>
-                           
+
                           </div>
 
-                          
+
                         </div>
                       </SwiperSlide>
                     ))}

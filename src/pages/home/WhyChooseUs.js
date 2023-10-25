@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import Fade from "react-reveal/Fade";
+import Zoom from 'react-reveal/Zoom';
 
 const WhyChooseUs = () => {
   const activeTheme = useSelector((state) => {
@@ -24,14 +26,19 @@ const WhyChooseUs = () => {
     >
       <div className="container-xxl">
         <div className="text-center">
-          <img
+        <Zoom left>
+        <img
             src={require("../../assets/img/home/three_dot.png")}
             className="img-fluid"
             alt=""
           />
+          </Zoom>
+          <Fade bottom cascade>
           <h2 className="colorWhite mb50 fs58 fontlight subfont text-center">
             why choose us?
           </h2>
+            </Fade>
+         
         </div>
 
           
