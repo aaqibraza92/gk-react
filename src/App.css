@@ -278,9 +278,13 @@ body{
   padding: 15px 20px;
 }
 .heartAuthor {
-  top: 80px;
-  right: -59px;
-  width: 163px;
+  top: 49px;
+  right: 0px;
+  width: 150px;
+  position: absolute;
+}
+.testimonials {
+  margin-left: 18%;
 }
 .circleAnimate {
   
@@ -326,6 +330,13 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   width: 254px !important;
   margin-top: 25px;
 }
+.swiperThumbnail .swiper-slide.swiper-slide-visible img{
+  transition: transform 0.5s;
+}
+
+.swiperThumbnail .swiper-slide.swiper-slide-visible:hover img{
+  transform: scale(1.1);
+}
 .testimonial{
   background-size: cover;
   background-repeat: no-repeat;
@@ -351,6 +362,16 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.dataTesti {
+  position: relative;
+  background: url('./assets/img/home/home_frame.png');
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding-top: 233px;
+  margin-top: 85px;
 }
 /* .swiperThumbnail .swiper-wrapper img {
   width: 100px;
@@ -468,6 +489,16 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(4) {
     width: 46px !important;
     margin-top: 15px;
+  }
+  .heartAuthor {
+    top: 30px;
+    right: 0px;
+    width: 62px;
+    position: absolute;
+  }
+  .dataTesti {
+    padding-top: 92px;
+    margin-top: 0px;
   }
 }
 .titles {

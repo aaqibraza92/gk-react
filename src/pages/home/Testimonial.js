@@ -49,7 +49,7 @@ const Testimonial = () => {
       <div className="wrapper_what_people w-100">
         <Container>
           <Row>
-            <Col lg={3} md={3} xl={3}>
+            <Col lg={2} md={2} xl={2}>
             <Fade bottom cascade>
             <div >
                 <img
@@ -67,7 +67,7 @@ const Testimonial = () => {
        
            
             </Col>
-            <Col lg={9} md={9} xl={9}>
+            <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
                 <Swiper
                   modules={[Navigation, Pagination, Autoplay]}
@@ -107,37 +107,42 @@ const Testimonial = () => {
                     {data.map((e, i) => (
                       <SwiperSlide key={i}>
                         <div className="test_wrapper position-relative d-flex align-items-end">
-                          <div className="position-relative d-flex justify-content-end">
-                            <img
+                          <div className="position-relative bg-home">
+                            {/* <img
                               src={require("../../assets/img/home/home_frame.png")}
                               className="img-fluid homeFrameImg"
                               alt=""
-                            />
-                            <img
+                            /> */}
+
+                         <div className="dataTesti">
+                          <img
                               src={require("../../assets/img/home/heart_testi.png")}
-                              className="img-fluid position-absolute heartAuthor"
+                              className="img-fluid  heartAuthor"
                               alt=""
                             />
+                            <div class="testimonials">
+                            <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
+
+                              <Row className="align-items-center">
+                                <Col lg={6} md={6}>
+                                  <div className="fs18 fw600 colorWhite text-uppercase">
+                                    {e?.tag}
+                                  </div>
+                                </Col>
+                                <Col lg={6} md={6}>
+                                  <div className="fs18 fw600 colorWhite text-uppercase mb15">
+                                    - {e?.author}
+                                  </div>
+
+                                  <p className="colorWhite fs16 fs12 ">{e?.position}</p>
+                                </Col>
+                              </Row>
+                            </div>
+                          </div>
+                           
                           </div>
 
-                          <div className="dataTesti position-absolute">
-                            <p className="fs16 colorWhite mb30">{e?.para}</p>
-
-                            <Row className="align-items-center">
-                              <Col lg={6} md={6}>
-                                <div className="fs18 fw600 colorWhite text-uppercase">
-                                  {e?.tag}
-                                </div>
-                              </Col>
-                              <Col lg={6} md={6}>
-                                <div className="fs18 fw600 colorWhite text-uppercase mb15">
-                                  - {e?.author}
-                                </div>
-
-                                <p className="colorWhite fs15">{e?.position}</p>
-                              </Col>
-                            </Row>
-                          </div>
+                          
                         </div>
                       </SwiperSlide>
                     ))}

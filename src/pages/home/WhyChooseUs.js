@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
                       <div className="whyChsWrp">
                           <Row className="align-items-center">
                             <Col lg={6} md={6}>
-                              <h3 className="brownGradient fs33 mb25">
+                              <h3 className="brownGradient fs33 mb25 mobFs21">
                                 SUPERIOR <br /> CONSTRUCTION
                               </h3>
                               <p className="fs14">
@@ -98,8 +98,8 @@ const WhyChooseUs = () => {
                             </Col>
                           </Row>
                         </div>
-                      </div>
-                     
+                        
+                      </div>                     
                       </SwiperSlide>
                     ))}
                 </div>
