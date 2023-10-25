@@ -24,7 +24,7 @@ const ContactUs = (props) => {
      <Container>
        <Row>
           <Col md={12}>
-                <div className="pt200 pb60 text-center position-relative ">
+                <div className=" pb60 text-center position-relative ">
                 <h2 className="fs90 mobFs32 colorprimary contactusheading mb-0">Contact Us</h2>
                 <div className="bordercontactus"></div>
                 <p className="fs30 colorLightBrown">Get in touch with us today</p>

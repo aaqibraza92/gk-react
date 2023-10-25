@@ -10,6 +10,7 @@ import PageNotFound from "../../pages/404";
 import AboutUs from "../../pages/about";
 import ContactUs from "../../pages/contact-us";
 import PrivacyPolicy from "../../pages/privacyPolicy";
+import Project from "../../pages/project";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -59,6 +60,11 @@ let RouterList = [
   {
     element: <GetRoute isprivate={false} role="Default" page={PrivacyPolicy} />,
     path: "/privacy-policy",
+    isAdmin: false,
+  },
+  {
+    element: <GetRoute isprivate={false} role="Default" page={Project} />,
+    path: "/project",
     isAdmin: false,
   },
   {

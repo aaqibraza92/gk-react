@@ -5,6 +5,11 @@ import "../../assets/css/header.css";
 import { useSelector } from "react-redux";
 
 const Header = () => {
+  useEffect(() => {
+    document.body.className = window.location.pathname==="/" ? "home" : window.location.pathname;
+    return () => { document.body.className = ''; }
+  },[window.location.pathname]);
+  
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
@@ -100,7 +105,7 @@ const Header = () => {
                         <Link className="makeClose" to="/about-us">About Us</Link>
                         </li>
                         <li onClick={()=>closeMenu()}>
-                        <Link className="makeClose" to="#">Our Projects</Link>
+                        <Link className="makeClose" to="/project">Our Projects</Link>
                         </li>
                         <li onClick={()=>closeMenu()}>
                         <Link className="makeClose" to="/contact-us">Contact Us</Link>
@@ -164,7 +169,7 @@ const Navbar = (props) => {
 
             <li className="mr15">
               <Link
-                to="/#"
+                to="/project"
                 className={`${
                   activeTheme ? "colorBlack" : "colorWhite"
                 } clickToClose`}
