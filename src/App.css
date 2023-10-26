@@ -265,6 +265,7 @@ body{
   font-size: 112px;
   line-height: 93px;
 }
+ 
 .brownGradient{
   background: #b3b3b3;
   background: -webkit-linear-gradient(to right, #b3b3b3 0%, #181818 100%);

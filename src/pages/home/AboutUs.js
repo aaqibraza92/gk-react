@@ -23,11 +23,14 @@ const AboutUs = () => {
                 about us
               </Fade>
             </p>
+            
+            <Fade bottom className="brownGradient">
             <h4 className="fs40 mb0 text-uppercase brownGradient">
-              <Fade bottom cascade>
+           
                 Exclusive communities
-              </Fade>
+          
             </h4>
+            </Fade>
             <h3 className="fs70 mb0 text-uppercase brownGradient">
               <Fade bottom cascade>
                 For Holistic
