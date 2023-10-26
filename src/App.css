@@ -574,3 +574,27 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .crcWrapper img {
   width: 28px;
 }
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+  content: '' !important;
+  background: url('./assets/img/home/arr.png') no-repeat;
+  background-size: 80px;
+  z-index: 1;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  top: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+  align-items: flex-end !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  align-items: flex-end !important;
+  transform: translate(-20px,230px);
+}
+.testimonialSlider {
+  padding-bottom: 50px;
+}
+.swiper-button-prev {
+  display: none;
+}
