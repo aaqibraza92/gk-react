@@ -64,7 +64,7 @@ const Project = () => {
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center">
                       <img
-                        src={require("../../assets/img/project/pr1.png")}
+                        src={require("../../assets/img/project/pr2.jpg")}
                         className="img-fluid"
                         alt=""
                       />
@@ -105,7 +105,7 @@ const Project = () => {
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center">
                       <img
-                        src={require("../../assets/img/project/pr1.png")}
+                        src={require("../../assets/img/project/pr3.jpg")}
                         className="img-fluid"
                         alt=""
                       />
@@ -146,7 +146,7 @@ const Project = () => {
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center">
                       <img
-                        src={require("../../assets/img/project/pr1.png")}
+                        src={require("../../assets/img/project/pr4.jpg")}
                         className="img-fluid"
                         alt=""
                       />
