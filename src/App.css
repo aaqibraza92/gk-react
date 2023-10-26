@@ -599,3 +599,39 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .swiper-button-prev {
   display: none;
 }
+/*project hover*/
+
+
+.imgProject .viewLink,.imgProject2 .viewLink {
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+}
+
+.imgProject .viewLink,.imgProject2 .viewLink { opacity: 1; }
+.imgProject .overtext,.imgProject2 .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+.imgProject .animateUp,.imgProject2 .animateUp {
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+.imgProject:hover .animateUp,.imgProject2:hover .animateUp
+.imgProject:focus .animateUp,.imgProject2:focus .animateUp {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+/*project hover*/

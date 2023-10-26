@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
+import Slide from 'react-reveal/Slide';
 
 const Project = () => {
   const activeTheme = useSelector((state) => {
@@ -27,8 +28,9 @@ const Project = () => {
                         className="img-fluid"
                         alt=""
                       />
-                      <div className="viewLink position-absolute">
-                        <Link to="#">
+                      <div className="viewLink  position-absolute">
+                        
+                        <Link to="#" className="animateUp overtext">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
@@ -69,7 +71,7 @@ const Project = () => {
                         alt=""
                       />
                             <div className="viewLink position-absolute">
-                        <Link to="#">
+                        <Link to="#" className="animateUp overtext">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
@@ -100,7 +102,7 @@ const Project = () => {
 
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
-              <Link to="#">
+              <Link to="#" >
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center">
@@ -110,7 +112,7 @@ const Project = () => {
                         alt=""
                       />
                       <div className="viewLink position-absolute">
-                        <Link to="#">
+                        <Link to="#" className="animateUp overtext">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
@@ -151,7 +153,7 @@ const Project = () => {
                         alt=""
                       />
                             <div className="viewLink position-absolute">
-                        <Link to="#">
+                        <Link to="#" className="animateUp overtext">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
