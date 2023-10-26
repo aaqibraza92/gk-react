@@ -19,18 +19,18 @@ let data = [
     img: require("../../assets/img/home/layer_building.png"),
   },
   {
-    title: "SUPERIOR CONSTRUCTION",
-    para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
+    title: "VALUE FOR MONEY",
+    para: "Even as we remain steadfast in our goal to develop Hyderabad’s most luxurious projects, our prices are among the most competitive in today’s market. We offer our customers the best value for their money and investment. While no compromises are made in the quality of construction, every effort is made to optimise costs and pass on the benefit to the customer.",
     img: require("../../assets/img/home/layer_building.png"),
   },
   {
-    title: "SUPERIOR CONSTRUCTION",
-    para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
+    title: "TRANSPARENCY",
+    para: "All our operations and communication are transparent, and we encourage you to visit our sites at any time to get a look at our practices. We are committed to following all RERA guidelines and comply with all local municipal laws while developing our projects.",
     img: require("../../assets/img/home/layer_building.png"),
   },
   {
-    title: "SUPERIOR CONSTRUCTION",
-    para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
+    title: "TRACK RECORD",
+    para: "We have tirelessly served over 4000 satisfied customers to earn the tag of one of Hyderabad’s most reliable developers. Our customers are truly our brand ambassadors and endorse our brand’s sense of commitment and professionalism. It has taken us over 35 years to build an impeccable track and reputation of one of the best real estate developers of Hyderabad we are committed to take this legacy forward.",
     img: require("../../assets/img/home/layer_building.png"),
   }
 ];
