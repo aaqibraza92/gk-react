@@ -14,7 +14,22 @@ import Zoom from "react-reveal/Zoom";
 
 let data = [
   {
-    title: "SUPERIOR <br /> CONSTRUCTION",
+    title: "SUPERIOR CONSTRUCTION",
+    para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
+    img: require("../../assets/img/home/layer_building.png"),
+  },
+  {
+    title: "SUPERIOR CONSTRUCTION",
+    para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
+    img: require("../../assets/img/home/layer_building.png"),
+  },
+  {
+    title: "SUPERIOR CONSTRUCTION",
+    para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
+    img: require("../../assets/img/home/layer_building.png"),
+  },
+  {
+    title: "SUPERIOR CONSTRUCTION",
     para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
     img: require("../../assets/img/home/layer_building.png"),
   }
@@ -84,30 +99,22 @@ const WhyChooseUs = () => {
             }}
           >
             <div className="wWrp">
-              {Array(3)
-                .fill()
-                .map((e, i) => (
+              {data.map((e, i) => (
                   <SwiperSlide key={i}>
                     <div className="cornerHandle">
                       <div className="whyChsWrp">
                         <Row className="align-items-center">
                           <Col lg={6} md={6}>
                             <h3 className="brownGradient fs33 mb25 mobFs21">
-                              SUPERIOR <br /> CONSTRUCTION
+                            {e.title}
                             </h3>
                             <p className="fs14">
-                              With over three decades of unparalleled experience
-                              in construction and development, the GK group is
-                              one of the most trusted names amongst real estate
-                              developers in Hyderabad. Our name and brand are
-                              synonymous with superior quality of construction
-                              materials, best-in-industry practices, and
-                              compliance with safety protocol.
+                            {e.para}
                             </p>
                           </Col>
                           <Col lg={6} md={6}>
                             <img
-                              src={require("../../assets/img/home/layer_building.png")}
+                              src={e.img}
                               alt="building"
                               className="img-fluid"
                             />
