@@ -266,12 +266,44 @@ body{
   line-height: 93px;
 }
 .brownGradient{
+  background: #b3b3b3;
+  background: -webkit-linear-gradient(to right, #b3b3b3 0%, #181818 100%);
+  background: -moz-linear-gradient(to right, #b3b3b3 0%, #181818 100%);
+  background: linear-gradient(to right, #b3b3b3 0%, #181818 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.blackGradient{
   background: #C1B3A1;
   background: -webkit-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   background: -moz-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   background: linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
+}
+.bgBrownGradient{
+background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.imgProject::after {
+  background: linear-gradient(to right, rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%);
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 80%;
+  height: 100%;
+  top: 0px;
+  z-index: -1;
+}
+.imgProject2::after {
+  background: linear-gradient(to right, rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%);
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 80%;
+  height: 100%;
+  top: 0px;
+  z-index: -1;
 }
 .btnTransparent {
   border: 1px solid var(--colorBrown);
@@ -525,4 +557,19 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 *::-webkit-scrollbar-thumb:hover {
   background-color: #8e7653;
   border: 3px solid #f6f3f0;
+}
+
+.crcWrapper {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crcWrapper img {
+  width: 28px;
 }
