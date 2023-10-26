@@ -65,7 +65,7 @@ const AboutUs = () => {
 
             <div className="mt10">
               <Reveal effect="fadeInUp">
-                <Link className="btnTransparent mr12 fMedium btnMob" to="/#">
+                <Link className="btnTransparent mr12 fMedium btnMob button button--calypso" to="/#">
                   <span
                     className={`${
                       activeTheme ? "colorBlack" : "colorWhite"

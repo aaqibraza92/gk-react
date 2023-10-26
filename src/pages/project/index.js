@@ -191,7 +191,7 @@ const Project = () => {
         <Container>
           <h2 className="colorBlack fs50 mb55">Looking for quality construction?</h2>
           <Link
-                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob`}
+                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"
                   >
                    <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
