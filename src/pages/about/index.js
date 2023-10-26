@@ -67,43 +67,45 @@ const AboutUs = () => {
 
       <div className="bgmission pt80 pb80 ">
         <div className="position-relative mobPb30 mb60">
-          <section className="mb30">
-            <div className="container-xl">
-              <Row className="align-items-center">
-                <Col lg={6} md={6}>
-                  <div className="visionvidio">
-                    <video className="w-100" ref={videoRef} autoplay loop muted>
-                      <source
-                        src={require("../../assets/img/home/Visionweb.mp4")}
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                </Col>
+          <Fade left cascade>
+            <section className="mb30">
+              <div className="container-xl">
+                <Row className="align-items-center">
+                  <Col lg={6} md={6}>
+                    <div className="visionvidio">
+                      <video className="w-100" ref={videoRef} autoplay loop muted>
+                        <source
+                          src={require("../../assets/img/home/Visionweb.mp4")}
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </section>
+          </Fade>
 
 
-              </Row>
-            </div>
-          </section>
+          <Fade right cascade>
+            <section className="bgfifty mainabhout">
+              <div className="container-xl">
+                <Row className="align-items-center gy-4 ">
+                  <Col lg={6} md={6} className="text-left aboutusnew">
+                    <div className="bordernew">
+                      <Fade bottom cascade>
+                        <h3 className="fs45 subfont">Our Vision</h3>
+                      </Fade>
+                      <Fade bottom cascade>
+                        <p className="fs17 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </section>
+          </Fade>
 
-          <section className="bgfifty mainabhout">
-            <div className="container-xl">
-              <Row className="align-items-center gy-4 ">
-                <Col lg={6} md={6} className="text-left aboutusnew">
-                  <div className="bordernew">
-                    <Fade bottom cascade>
-                      <h3 className="fs45 subfont">Our Vision</h3>
-                    </Fade>
-                    <Fade bottom cascade>
-                      <p className="fs17 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
-                    </Fade>
-
-
-                  </div>
-                </Col>
-              </Row>
-            </div>
-          </section>
         </div>
 
 
@@ -111,7 +113,8 @@ const AboutUs = () => {
 
 
         <div className="position-relative mb60">
-          <section className="bgfiftymission pb40 pt40 newone">
+        <Fade right cascade>
+        <section className="bgfiftymission pb40 pt40 newone">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
 
@@ -131,7 +134,8 @@ const AboutUs = () => {
               </Row>
             </div>
           </section>
-
+          </Fade>
+          <Fade left cascade>
           <section className=" mainabhoutnew">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
@@ -148,6 +152,9 @@ const AboutUs = () => {
               </Row>
             </div>
           </section>
+            </Fade>
+
+    
         </div>
 
       </div>
