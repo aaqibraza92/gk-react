@@ -267,20 +267,21 @@ body{
 }
  
 .brownGradient{
-  background: #b3b3b3;
-  background: -webkit-linear-gradient(to right, #b3b3b3 0%, #181818 100%);
-  background: -moz-linear-gradient(to right, #b3b3b3 0%, #181818 100%);
-  background: linear-gradient(to right, #b3b3b3 0%, #181818 100%);
+  background: #A07F50;
+  background: linear-gradient(to top, #A07F50 0%, #ffdfb0 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
 }
 .blackGradient{
   background: #C1B3A1;
   background: -webkit-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   background: -moz-linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
   background: linear-gradient(to right, #C1B3A1 0%, #8E7653 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  
+  -webkit-text-fill-color: transparent;
+   
 }
 .bgBrownGradient{
 background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
