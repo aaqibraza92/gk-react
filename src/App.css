@@ -672,3 +672,8 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 }
 
 /*project hover*/
+.topDown {
+  position: fixed !important;
+  top: 0px !important;
+  z-index: 999999 !important;
+}
