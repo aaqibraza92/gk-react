@@ -578,7 +578,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
   content: '' !important;
   background: url('./assets/img/home/arr.png') no-repeat;
-  background-size: 80px;
+  background-size: 65px !important;
   z-index: 1;
   position: absolute;
   width: 100px;
@@ -594,10 +594,10 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   transform: translate(-20px,230px);
 }
 .testimonialSlider {
-  padding-bottom: 50px;
+  padding-bottom: 60px !important;
 }
 .swiper-button-prev {
-  display: none;
+  display: none !important;
 }
 /*project hover*/
 
