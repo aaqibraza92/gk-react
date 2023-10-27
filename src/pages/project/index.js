@@ -22,12 +22,15 @@ const Project = () => {
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                    <div className="position-relative">
                     <div class="content-overlay"></div>
                       <img
                         src={require("../../assets/img/project/pr1.png")}
                         className="img-fluid"
                         alt=""
                       />
+                    </div>
+                 
                       <div className="viewLink  position-absolute content-details fadeIn-bottom">
                         
                         <Link to="#" className="">
@@ -65,12 +68,15 @@ const Project = () => {
                 <div className=" d-flex">
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
+                    <div className="position-relative">
                     <div class="content-overlay"></div>
                       <img
                         src={require("../../assets/img/project/pr2.jpg")}
                         className="img-fluid"
                         alt=""
                       />
+                    </div>
+                 
                             <div className="viewLink position-absolute content-details fadeIn-bottom">
                         <Link to="#" className="">
                           <div className="circleLink text-center">
@@ -107,12 +113,15 @@ const Project = () => {
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                    <div className="position-relative">
                     <div class="content-overlay"></div>
                       <img
                         src={require("../../assets/img/project/pr3.jpg")}
                         className="img-fluid"
                         alt=""
                       />
+                    </div>
+               
                       <div className="viewLink position-absolute  content-details fadeIn-bottom">
                         <Link to="#" className="">
                           <div className="circleLink text-center ">
@@ -149,12 +158,15 @@ const Project = () => {
                 <div className=" d-flex">
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
+                    <div className="position-relative">
                     <div class="content-overlay"></div>
                       <img
                         src={require("../../assets/img/project/pr4.jpg")}
                         className="img-fluid"
                         alt=""
                       />
+                    </div>
+                
                             <div className="viewLink position-absolute  content-details fadeIn-bottom">
                         <Link to="#" className="">
                           <div className="circleLink text-center">
