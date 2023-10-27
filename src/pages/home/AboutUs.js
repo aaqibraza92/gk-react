@@ -26,9 +26,7 @@ const AboutUs = () => {
             
             <Fade bottom className="brownGradient">
             <h4 className="fs40 mb0 text-uppercase brownGradient">
-           
                 Exclusive communities
-          
             </h4>
             </Fade>
             <h3 className="fs70 mb0 text-uppercase brownGradient">
