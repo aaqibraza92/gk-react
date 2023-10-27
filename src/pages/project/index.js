@@ -48,10 +48,10 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="text-end mt10">
-                      <h3 className="colorBlack fs50 fw500 mb0 text-uppercase">
+                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
                         GK's Casa Grande
                       </h3>
-                      <p className="fs25 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
                   </div>
                 </div>
@@ -90,10 +90,10 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="mt10">
-                      <h3 className="colorBlack fs50 fw500 mb0 text-uppercase">
+                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
                         GK's Casa Grande
                       </h3>
-                      <p className="fs25 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
                   </div>
                 </div>
@@ -132,10 +132,10 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="text-end mt10">
-                      <h3 className="colorBlack fs50 fw500 mb0 text-uppercase">
+                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
                         GK's Casa Grande
                       </h3>
-                      <p className="fs25 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
                   </div>
                 </div>
@@ -174,10 +174,10 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="mt10">
-                      <h3 className="colorBlack fs50 fw500 mb0 text-uppercase">
+                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
                         GK's Casa Grande
                       </h3>
-                      <p className="fs25 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
                   </div>
                 </div>

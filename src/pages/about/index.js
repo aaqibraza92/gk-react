@@ -34,22 +34,22 @@ const AboutUs = () => {
           <Row className="align-items-center gy-4">
             <Col lg={7} md={7}>
               <Fade bottom cascade>
-                <h3 className="fs60 mobFs30">Our legacy <br></br> dates back to</h3>
+                <h3 className="fs50 mobFs30">Our legacy <br></br> dates back to</h3>
               </Fade>
               <Fade left cascade>
                 <h2 className="fs140">1985</h2>
               </Fade>
               <Fade bottom>
-                <p>When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
+                <p className="fs15">When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
               </Fade>
               <Fade bottom>
-                <p>Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
+                <p className="fs15">Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
               </Fade>
               <Fade bottom>
-                <p>Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
+                <p className="fs15">Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
               </Fade>
               <Fade bottom>
-                <p>Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
+                <p className="fs15">Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
               </Fade>
 
 
@@ -97,7 +97,7 @@ const AboutUs = () => {
                         <h3 className="fs45 subfont">Our Vision</h3>
                       </Fade>
                       <Fade bottom cascade>
-                        <p className="fs17 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+                        <p className="fs16 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
                       </Fade>
                     </div>
                   </Col>
@@ -125,7 +125,7 @@ const AboutUs = () => {
                       <h3 className="fs45 subfont">Our Mission</h3>
                     </Fade>
                     <Fade bottom >
-                      <p className="fs17 colorLight w-85">Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
+                      <p className="fs16 colorLight w-85">Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
                     </Fade>
 
 
@@ -165,10 +165,10 @@ const AboutUs = () => {
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
-                <h3 className="fs60 mobFs30  text-uppercase subfont fontlight">Our Pillars</h3>
+                <h3 className="fs50 mobFs30  text-uppercase subfont fontlight">Our Pillars</h3>
               </Fade>
               <Fade bottom cascade>
-                <h3 className="fs30 fs16 subfont fontlight">GK Group’s Foundation</h3>
+                <h3 className="fs28 fs16 subfont fontlight">GK Group’s Foundation</h3>
               </Fade>
 
               <div className="devider">
@@ -177,9 +177,9 @@ const AboutUs = () => {
             </Col>
 
             <Col lg={5} md={5} className="text-center m-auto">
-              <Zoom top cascade>
+              <Fade bottom cascade>
                 <img src={require('../../assets/img/aboutus/teamone.webp')} className='img-fluid w-75' alt="" />
-              </Zoom>
+              </Fade>
               <div className="text-start mt20 border-start pl30 text-white">
                 <Fade bottom>
                   <p>
@@ -194,9 +194,9 @@ const AboutUs = () => {
               </div>
             </Col>
             <Col lg={5} md={5} className="text-center m-auto">
-              <Zoom top cascade>
+              <Fade bottom cascade>
                 <img src={require('../../assets/img/aboutus/teamtwo.webp')} className='img-fluid w-75' alt="" />
-              </Zoom>
+              </Fade>
               <div className="text-start mt20 border-start pl30 text-white">
                 <Fade bottom>
                   <p>

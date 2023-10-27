@@ -260,6 +260,10 @@ body{
 }
 .btnTheme img {
   width: 20px;
+  z-index: 1;
+}
+.btnTransparent img {
+  z-index: 1;
 }
 .living {
   font-size: 100px;
