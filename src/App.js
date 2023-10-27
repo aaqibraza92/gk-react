@@ -9,7 +9,7 @@ import SmoothScroll from "./components/SmoothScoll";
 function App() {
   return (
     <>
-      {/* <AnimatedCursor color='142, 118, 83'/> */}
+      <AnimatedCursor color='142, 118, 83'/>
       {/* <AlertModal /> */}
       {/* <SmoothScroll> */}
       <div className="wrapperApp">
