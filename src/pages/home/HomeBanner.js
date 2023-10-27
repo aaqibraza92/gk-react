@@ -37,7 +37,7 @@ const HomeBanner = () => {
                 <span className="text-end d-block">Sky High</span>
         </Fade>  
                 </h2>
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end mt30">
                   <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"

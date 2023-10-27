@@ -56,7 +56,7 @@ const OurProjects = () => {
                 />
                 </Zoom>
                 <Fade bottom cascade>
-                <h2 className="colorWhite fs58 fontlight subfont">
+                <h2 className="colorWhite fs50 fontlight subfont">
                   our projects
                 </h2>
                 </Fade>
@@ -111,12 +111,12 @@ const OurProjects = () => {
 
               <div className="titles">
                 <Fade bottom cascade>
-                  <h2 className="colorWhite fs80 fw500 text-uppercase">
+                  <h2 className="colorWhite fs60 fw500 text-uppercase">
                     Happy Home
                   </h2>
                 </Fade>
                 <Fade bottom cascade>
-                <h2 className="colorWhite fs80 fw500 text-uppercase">
+                <h2 className="colorWhite fs60 fw500 text-uppercase">
                   <span className="fs60 mobFs15">For</span> Families
                 </h2>
                 </Fade>

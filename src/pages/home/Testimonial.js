@@ -62,7 +62,7 @@ const Testimonial = () => {
                 </Zoom>
               
                 <Fade left cascade>
-                  <h2 className="colorWhite fs58 fontlight subfont mt10">
+                  <h2 className="colorWhite fs50 fontlight subfont mt10">
                     What <br />
                     People <br />
                     Say

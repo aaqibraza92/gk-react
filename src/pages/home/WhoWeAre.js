@@ -28,7 +28,7 @@ const WhoWeAre = () => {
                         </Zoom>
 
                         <Fade bottom cascade>
-                            <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs58 fontlight subfont text-center`}>
+                            <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs50 fontlight subfont text-center`}>
                                 who we are?
                             </h2>
                         </Fade>
@@ -43,16 +43,16 @@ const WhoWeAre = () => {
                                         </div>
                                         <div className='wrpCircle position-absolute'>
                                             <div className='mb0 lh50'>
-                                                <span className='fontlight subfont fs90 mobFs35 brownGradient fw500'>
+                                                <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
                                                     4
                                                 </span>
-                                                <span className='fontlight subfont fs90 mobFs35 brownGradient'>
+                                                <span className='fontlight subfont fs80 mobFs35 brownGradient'>
                                                     K <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
                                                         <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
                                                     </svg>
                                                 </span>
                                             </div>
-                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs35 lh39 fontlight`}>
+                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
                                                 Happy <br />
                                                 Families
                                             </div>

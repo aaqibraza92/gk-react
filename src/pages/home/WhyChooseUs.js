@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
             />
           </Zoom>
           <Fade bottom cascade>
-            <h2 className="colorWhite mb50 fs58 fontlight subfont text-center">
+            <h2 className="colorWhite mb50 fs50 fontlight subfont text-center">
               why choose us?
             </h2>
           </Fade>
@@ -105,7 +105,7 @@ const WhyChooseUs = () => {
                       <div className="whyChsWrp">
                         <Row className="align-items-center">
                           <Col lg={6} md={6}>
-                            <h3 className="brownGradient fs33 mb25 mobFs21">
+                            <h3 className="brownGradient fs30 mb25 mobFs21">
                             {e.title}
                             </h3>
                             <p className="fs14">
