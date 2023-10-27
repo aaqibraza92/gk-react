@@ -64,7 +64,7 @@ const WhoWeAre = () => {
                                         </div>
                                         {
                                             triggerHover &&
-                                            <Fade bottom cascade > 
+                                            <Fade cascade>
                                             <div className='wrpCircle position-absolute'>
                                             <div className='mb0 lh50'>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
