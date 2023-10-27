@@ -1,5 +1,5 @@
-import { Col, Container, Row } from "reactstrap";
-import React, { useRef, useState } from "react";
+import { Col, Row } from "reactstrap";
+import React from "react";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -35,6 +35,8 @@ let data = [
   }
 ];
 const WhyChooseUs = () => {
+
+
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });

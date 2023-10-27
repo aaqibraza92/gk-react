@@ -81,7 +81,7 @@ const Testimonial = () => {
             
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
-                  speed={1500}
+                  speed={1000}
                   autoPlay={{ delay: 1500 }}
                   spaceBetween={50}
                   slidesPerView={1}

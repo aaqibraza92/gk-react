@@ -11,7 +11,28 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
+import { useState } from 'react';
+import { useEffect } from 'react';
 const WhoWeAre = () => {
+
+    const [triggerHover, settriggerHover] = useState(false);
+    const [text1, setText1] = useState('4');
+    const [text2, setText2] = useState('K');
+    const [text3, setText3] = useState('Happy');
+    const [text4, setText4] = useState('Families');
+    useEffect(() => {
+        if(triggerHover){
+            const timeout = setTimeout(() => {
+                setText1('8');
+                setText2('M');
+                setText3('Lorem');
+                setText4('Ipsum');
+              }, 10000);
+              return () => clearTimeout(timeout);
+        }
+     
+    }, [triggerHover]);
+
     const activeTheme = useSelector((state) => {
         return (
             state && state?.persistedReducer?.theme?.dayTheme
@@ -39,24 +60,30 @@ const WhoWeAre = () => {
                             <Zoom top cascade>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
-                                        <div className='circleAnimate position-relative'>
+                                        <div className='circleAnimate position-relative' onMouseOver={()=>settriggerHover(true)}>
                                         </div>
-                                        <div className='wrpCircle position-absolute'>
+                                        {
+                                            triggerHover &&
+                                            <Fade bottom cascade > 
+                                            <div className='wrpCircle position-absolute'>
                                             <div className='mb0 lh50'>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                                    4
+                                                 {text1} 
                                                 </span>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                    K <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
+                                                {text2} <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
                                                         <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
                                                     </svg>
                                                 </span>
                                             </div>
                                             <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                Happy <br />
-                                                Families
+                                                {text3} <br />
+                                                {text4}
                                             </div>
                                         </div>
+                                        </Fade>
+                                        }
+                                     
                                     </div>
                                 </div>
 
