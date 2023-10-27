@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
+import Slide from 'react-reveal/Slide';
 
 const Project = () => {
   const activeTheme = useSelector((state) => {
@@ -15,20 +16,21 @@ const Project = () => {
       <section>
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">Projects</h2>
-
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
               <Link to="#">
                 <div className=" d-flex justify-content-end">
                   <div>
-                    <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center">
+                    <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                    <div class="content-overlay"></div>
                       <img
                         src={require("../../assets/img/project/pr1.png")}
                         className="img-fluid"
                         alt=""
                       />
-                      <div className="viewLink position-absolute">
-                        <Link to="#">
+                      <div className="viewLink  position-absolute content-details fadeIn-bottom">
+                        
+                        <Link to="#" className="">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
@@ -62,14 +64,15 @@ const Project = () => {
               <Link to="#">
                 <div className=" d-flex">
                   <div>
-                    <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center">
+                    <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
+                    <div class="content-overlay"></div>
                       <img
-                        src={require("../../assets/img/project/pr1.png")}
+                        src={require("../../assets/img/project/pr2.jpg")}
                         className="img-fluid"
                         alt=""
                       />
-                            <div className="viewLink position-absolute">
-                        <Link to="#">
+                            <div className="viewLink position-absolute content-details fadeIn-bottom">
+                        <Link to="#" className="">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
@@ -100,18 +103,19 @@ const Project = () => {
 
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
-              <Link to="#">
+              <Link to="#" >
                 <div className=" d-flex justify-content-end">
                   <div>
-                    <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center">
+                    <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                    <div class="content-overlay"></div>
                       <img
-                        src={require("../../assets/img/project/pr1.png")}
+                        src={require("../../assets/img/project/pr3.jpg")}
                         className="img-fluid"
                         alt=""
                       />
-                      <div className="viewLink position-absolute">
-                        <Link to="#">
-                          <div className="circleLink text-center">
+                      <div className="viewLink position-absolute  content-details fadeIn-bottom">
+                        <Link to="#" className="">
+                          <div className="circleLink text-center ">
                           <div className="crcWrapper">
                           <img
                               src={require("../../assets/img/home/arrowBlack.png")}
@@ -144,14 +148,15 @@ const Project = () => {
               <Link to="#">
                 <div className=" d-flex">
                   <div>
-                    <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center">
+                    <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
+                    <div class="content-overlay"></div>
                       <img
-                        src={require("../../assets/img/project/pr1.png")}
+                        src={require("../../assets/img/project/pr4.jpg")}
                         className="img-fluid"
                         alt=""
                       />
-                            <div className="viewLink position-absolute">
-                        <Link to="#">
+                            <div className="viewLink position-absolute  content-details fadeIn-bottom">
+                        <Link to="#" className="">
                           <div className="circleLink text-center">
                           <div className="crcWrapper">
                           <img
@@ -186,7 +191,7 @@ const Project = () => {
         <Container>
           <h2 className="colorBlack fs50 mb55">Looking for quality construction?</h2>
           <Link
-                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob`}
+                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"
                   >
                    <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />

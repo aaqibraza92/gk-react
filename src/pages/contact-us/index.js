@@ -13,12 +13,14 @@ const ContactUs = (props) => {
 });
 
 
-  const [switcher, setswitcher] = useState(selector?.type?.cntType==="talent" ? true : false);
 
   return (
     <>
       <Helmet>
         <title>Contact Us - GK Builders & Developers</title>
+        <script src='https://forms.cdn.sell.do/t/63e46f684443ae6f461f3ca5.js'></script>
+        <script src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"></script>
+   
       </Helmet>
      
      <Container>
@@ -32,6 +34,12 @@ const ContactUs = (props) => {
           </Col>
        </Row>
      </Container>
+
+     <section>
+     <Container>
+
+     </Container>
+     </section>
 
 
      

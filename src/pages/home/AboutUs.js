@@ -25,16 +25,17 @@ const AboutUs = () => {
             </p>
             
             <Fade bottom className="brownGradient">
-            <h4 className="fs40 mb0 text-uppercase brownGradient">
+            <h4 className="fs40 mb0 text-uppercase colorBrown">
+           
                 Exclusive communities
             </h4>
             </Fade>
-            <h3 className="fs70 mb0 text-uppercase brownGradient">
-              <Fade bottom cascade>
+            <Fade bottom cascade>
+            <h3 className="fs70 mb0 text-uppercase colorBrown">
                 For Holistic
-              </Fade>
             </h3>
-            <h2 className="living mb20 text-uppercase brownGradient">
+            </Fade>
+            <h2 className="living mb20 text-uppercase colorBrown">
               <Fade bottom cascade>
                 Livings
               </Fade>
@@ -63,7 +64,7 @@ const AboutUs = () => {
 
             <div className="mt10">
               <Reveal effect="fadeInUp">
-                <Link className="btnTransparent mr12 fMedium btnMob" to="/#">
+                <Link className="btnTransparent mr12 fMedium btnMob button button--calypso" to="/#">
                   <span
                     className={`${
                       activeTheme ? "colorBlack" : "colorWhite"
