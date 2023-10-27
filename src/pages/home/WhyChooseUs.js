@@ -21,17 +21,17 @@ let data = [
   {
     title: "VALUE FOR MONEY",
     para: "Even as we remain steadfast in our goal to develop Hyderabad’s most luxurious projects, our prices are among the most competitive in today’s market. We offer our customers the best value for their money and investment. While no compromises are made in the quality of construction, every effort is made to optimise costs and pass on the benefit to the customer.",
-    img: require("../../assets/img/home/layer_building.png"),
+    img: require("../../assets/img/home/valueformoney.png"),
   },
   {
     title: "TRANSPARENCY",
     para: "All our operations and communication are transparent, and we encourage you to visit our sites at any time to get a look at our practices. We are committed to following all RERA guidelines and comply with all local municipal laws while developing our projects.",
-    img: require("../../assets/img/home/layer_building.png"),
+    img: require("../../assets/img/home/transparency.png"),
   },
   {
     title: "TRACK RECORD",
     para: "We have tirelessly served over 4000 satisfied customers to earn the tag of one of Hyderabad’s most reliable developers. Our customers are truly our brand ambassadors and endorse our brand’s sense of commitment and professionalism. It has taken us over 35 years to build an impeccable track and reputation of one of the best real estate developers of Hyderabad we are committed to take this legacy forward.",
-    img: require("../../assets/img/home/layer_building.png"),
+    img: require("../../assets/img/home/record.png"),
   }
 ];
 const WhyChooseUs = () => {
@@ -66,8 +66,8 @@ const WhyChooseUs = () => {
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             loop={true}
-            speed={3000}
-            autoPlay={{ delay: 2000 }}
+            speed={800}
+            autoPlay={{ delay: 1000 }}
             spaceBetween={30}
             slidesPerView={1}
             centeredSlides={true}
