@@ -16,17 +16,11 @@ import { useEffect } from 'react';
 const WhoWeAre = () => {
 
     const [triggerHover, settriggerHover] = useState(false);
-    const [text1, setText1] = useState('4');
-    const [text2, setText2] = useState('K');
-    const [text3, setText3] = useState('Happy');
-    const [text4, setText4] = useState('Families');
+    const [slide, setSlide] = useState("slide1");
     useEffect(() => {
         if(triggerHover){
             const timeout = setTimeout(() => {
-                setText1('8');
-                setText2('M');
-                setText3('Lorem');
-                setText4('Ipsum');
+                setSlide("slide2");
               }, 10000);
               return () => clearTimeout(timeout);
         }
@@ -63,22 +57,43 @@ const WhoWeAre = () => {
                                         <div className='circleAnimate position-relative' onMouseOver={()=>settriggerHover(true)}>
                                         </div>
                                         {
-                                            triggerHover &&
-                                            <Fade cascade>
+                                            triggerHover && slide==="slide1" &&
+                                            <Fade bottom cascade>
                                             <div className='wrpCircle position-absolute'>
                                             <div className='mb0 lh50'>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                                 {text1} 
+                                              4
                                                 </span>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                {text2} <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
+                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
                                                         <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
                                                     </svg>
                                                 </span>
                                             </div>
                                             <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                {text3} <br />
-                                                {text4}
+                                            Happy <br />
+                                            Families
+                                            </div>
+                                        </div>
+                                        </Fade>
+                                        }
+                                        {
+                                            triggerHover && slide==="slide2" &&
+                                            <Fade bottom cascade>
+                                            <div className='wrpCircle position-absolute'>
+                                            <div className='mb0 lh50'>
+                                                <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
+                                              8
+                                                </span>
+                                                <span className='fontlight subfont fs80 mobFs35 brownGradient'>
+                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
+                                                        <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                            Lorem <br />
+                                            Ipsum
                                             </div>
                                         </div>
                                         </Fade>
