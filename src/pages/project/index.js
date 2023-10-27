@@ -13,7 +13,7 @@ const Project = () => {
 
   return (
     <>
-      <section>
+      <section className="position-relative">
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">Projects</h2>
           <Row className="justify-content-end mb60 projectMainList">
