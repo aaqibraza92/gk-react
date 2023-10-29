@@ -93,7 +93,7 @@ const AboutUs = () => {
 
 
           <Fade right cascade>
-            <section className="bgfifty mainabhout">
+            <section className={`${activeTheme ? "bgfifty" : "bgfiftyBrown"} mainabhout`}>
               <div className="container-xl">
                 <Row className="align-items-center gy-4 ">
                   <Col lg={6} md={6} className="text-left aboutusnew">
@@ -102,7 +102,7 @@ const AboutUs = () => {
                         <h3 className="fs45 subfont">Our Vision</h3>
                       </Fade>
                       <Fade bottom cascade>
-                        <p className="fs16 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+                        <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
                       </Fade>
                     </div>
                   </Col>
@@ -119,7 +119,7 @@ const AboutUs = () => {
 
         <div className="position-relative mb60">
         <Fade right cascade>
-        <section className="bgfiftymission pb40 pt40 newone">
+        <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
 
@@ -130,7 +130,7 @@ const AboutUs = () => {
                       <h3 className="fs45 subfont">Our Mission</h3>
                     </Fade>
                     <Fade bottom >
-                      <p className="fs16 colorLight w-85">Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
+                      <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
                     </Fade>
 
 
