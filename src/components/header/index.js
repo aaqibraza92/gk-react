@@ -5,14 +5,23 @@ import "../../assets/css/header.css";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  useEffect(() => {
-    document.body.className = window.location.pathname==="/" ? "home" : window.location.pathname;
-    return () => { document.body.className = ''; }
-  },[window.location.pathname]);
+
   
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
+  useEffect(() => {
+    
+    if(activeTheme){
+      document.body.className = window.location.pathname==="/" ? "home" : window.location.pathname;
+    }else{
+      document.body.className = window.location.pathname==="/" ? "home darkMode" : window.location.pathname + " darkMode";
+    }
+    
+    return () => { document.body.className = ''; }
+    
+  },[window.location.pathname]);
+
   const [stickyHeader, setstickyHeader] = useState("");
 
   const { pathname } = useLocation();
@@ -142,7 +151,7 @@ const Navbar = (props) => {
   }, []);
 
   return (
-    <div className={`navWrapper mobileheader `}>
+    <div className={`navWrapper mobileheader mt10 `}>
       <div className="container-xxl">
         <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">

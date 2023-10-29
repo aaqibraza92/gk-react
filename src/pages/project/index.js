@@ -51,7 +51,7 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="text-end mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
                         GK's Casa Grande
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
@@ -96,7 +96,7 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
                         GK's Casa Grande
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
@@ -141,7 +141,7 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="text-end mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
                         GK's Casa Grande
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
@@ -186,7 +186,7 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
                         GK's Casa Grande
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
@@ -199,9 +199,9 @@ const Project = () => {
         </Container>
       </section>
 
-      <section className="pt100 pb100 text-center bgGrey mt50">
+      <section className={`${activeTheme ? "bgGrey" : "bgBrown"} pt100 pb100 text-center  mt50`}>
         <Container>
-          <h2 className="colorBlack fs50 mb55">Looking for quality construction?</h2>
+          <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} fs50 mb55`}>Looking for quality construction?</h2>
           <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"

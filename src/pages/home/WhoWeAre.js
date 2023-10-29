@@ -54,8 +54,12 @@ const WhoWeAre = () => {
                             <Zoom top cascade>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
-                                        <div className='circleAnimate position-relative' onMouseOver={()=>settriggerHover(true)}>
+
+                                    {
+                                        triggerHover ?   <div className='circleAnimate position-relative'>
+                                        </div> :   <div className='circleAnimate hideRotate position-relative' onMouseOver={()=>settriggerHover(true)}>
                                         </div>
+                                    }
                                         {
                                             triggerHover && slide==="slide1" &&
                                             <Fade bottom cascade>

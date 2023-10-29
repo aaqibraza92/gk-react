@@ -5,7 +5,12 @@ import "../../assets/css/footer.css"
 import { Helmet } from "react-helmet";
 import Zoom from 'react-reveal/Zoom';
 import Fade from "react-reveal/Fade";
+import { useSelector } from "react-redux";
 const AboutUs = () => {
+  const activeTheme = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.dayTheme;
+  });
+
   const videoRef = useRef(null);
   useEffect(() => {
     videoRef.current.play();
@@ -29,27 +34,27 @@ const AboutUs = () => {
         </Fade>
       </section>
 
-      <div className="bgWhite pt80 pb80 mobPb30">
+      <div className={`${activeTheme ? "bgWhite" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
         <div className="container-xl">
           <Row className="align-items-center gy-4">
             <Col lg={7} md={7}>
               <Fade bottom cascade>
-                <h3 className="fs50 mobFs30">Our legacy <br></br> dates back to</h3>
+                <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs50 mobFs30`}>Our legacy <br></br> dates back to</h3>
               </Fade>
               <Fade left cascade>
-                <h2 className="fs140">1985</h2>
+                <h2 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}>1985</h2>
               </Fade>
               <Fade bottom>
-                <p className="fs15">When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
               </Fade>
               <Fade bottom>
-                <p className="fs15">Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
               </Fade>
               <Fade bottom>
-                <p className="fs15">Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
               </Fade>
               <Fade bottom>
-                <p className="fs15">Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
               </Fade>
 
 

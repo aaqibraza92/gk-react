@@ -265,6 +265,7 @@ img.img-fluid.mainLogo {
   width: 100%;
   top: 10px;
   z-index: 1;
+  background: transparent;
 }
 
 /*menu animated*/

@@ -428,7 +428,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   padding-bottom: 6px;
 }
 .topDown.darkMode {
-  background: #000;
+  background: #000 !important;
 }
 .clickToClose:hover {
   color: var(--colorBrown);
@@ -774,3 +774,14 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 
 
 /*hover effect*/
+.circleAnimate.hideRotate::before{
+  display: none;
+}
+.darkMode{
+  background: #070708;
+}
+.bgBlueGradient{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#070707+0,010733+100 */
+background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
