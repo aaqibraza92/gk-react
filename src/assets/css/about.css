@@ -62,6 +62,10 @@ background: linear-gradient(90deg, #a07f50  58%, rgba(0,0,0,0) 58%);
   border-left: 2px solid #ddd;
   padding-left: 26px;
 }
+.borderBlack {
+  border-left: 2px solid #000;
+  padding-left: 26px;
+}
 .secondaboutus {
   margin: 0 0 0 auto;
 }

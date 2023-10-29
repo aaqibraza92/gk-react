@@ -8,9 +8,9 @@ import LookingForTalent from "./LookingForTalent";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const ContactUs = (props) => {
-  const selector= useSelector((state)=>{
-    return state
-});
+  const activeTheme = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.dayTheme;
+  });
 
 
 
@@ -27,7 +27,7 @@ const ContactUs = (props) => {
        <Row>
           <Col md={12}>
                 <div className=" pb60 text-center position-relative ">
-                <h2 className="fs90 mobFs32 colorprimary contactusheading mb-0">Contact Us</h2>
+                <h2 className={`${activeTheme ? "contactusheading" : "contactusheadingdark"} fs90 mobFs32 colorprimary  mb-0`}>Contact Us</h2>
                 <div className="bordercontactus"></div>
                 <p className="fs30 colorLightBrown">Get in touch with us today</p>
           </div>

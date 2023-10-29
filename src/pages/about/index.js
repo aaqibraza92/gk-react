@@ -97,7 +97,7 @@ const AboutUs = () => {
               <div className="container-xl">
                 <Row className="align-items-center gy-4 ">
                   <Col lg={6} md={6} className="text-left aboutusnew">
-                    <div className="bordernew">
+                    <div className={`${activeTheme ? "bordernew" : "borderBlack"}`}>
                       <Fade bottom cascade>
                         <h3 className="fs45 subfont">Our Vision</h3>
                       </Fade>
@@ -125,7 +125,7 @@ const AboutUs = () => {
 
 
                 <Col lg={6} md={6} className="text-left">
-                  <div className="bordernew">
+                  <div className={`${activeTheme ? "bordernew" : "borderBlack"}`}>
                     <Fade bottom cascade>
                       <h3 className="fs45 subfont">Our Mission</h3>
                     </Fade>
@@ -165,15 +165,15 @@ const AboutUs = () => {
       </div>
 
 
-      <div className="bgourteam pt80 pb80 mobPb30">
+      <div className={`${activeTheme ? "bgourteam" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
         <div className="container-xl">
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
-                <h3 className="fs50 mobFs30  text-uppercase subfont fontlight">Our Pillars</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}>Our Pillars</h3>
               </Fade>
               <Fade bottom cascade>
-                <h3 className="fs28 fs16 subfont fontlight">GK Group’s Foundation</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s Foundation</h3>
               </Fade>
 
               <div className="devider">
@@ -185,14 +185,14 @@ const AboutUs = () => {
               <Fade bottom cascade>
                 <img src={require('../../assets/img/aboutus/teamone.webp')} className='img-fluid w-75' alt="" />
               </Fade>
-              <div className="text-start mt20 border-start pl30 text-white">
+              <div className={` text-start mt20 border-start pl30 `} >
                 <Fade bottom>
-                  <p>
+                  <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
                     Our respected founder Late Sri K Ramakrishnaiah was a retired Subedar in the Indian Army with a prolific record of service spanning 28 years. A visionary and philanthropist, he donated two acres of prime land to a trust to develop educational institutions. He also gifted 1000 square yards of land abutting the main road to a church and provided a place for Brahmakumaris to conduct their programs.
                   </p>
                 </Fade>
 
-                <b>
+                <b className="colorWhite">
                   Late SRI. K Ramakrishnaian<br></br>
                   Founder
                 </b>
@@ -204,11 +204,11 @@ const AboutUs = () => {
               </Fade>
               <div className="text-start mt20 border-start pl30 text-white">
                 <Fade bottom>
-                  <p>
+                  <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
                     A civil engineer from Osmania University Hyderabad, Mr. Rao has more than three decades of experience and involvement in construction of residential complexes. A leader by example, he takes active interest in resolving various issues concerning the development of projects. Mr. Rao also participates in deliberations with the government and other agencies for the welfare of builders’ community.</p>
                 </Fade>
                 <Fade left>
-                  <b>
+                  <b className="colorWhite">
                     Mr.K. Hanumantha Rao<br></br>
                     Managing Partner
                   </b>

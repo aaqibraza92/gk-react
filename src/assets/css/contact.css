@@ -10,6 +10,13 @@
     position: relative;
     padding: 0px 15px;
   }
+  .contactusheadingdark {
+    background-color: #070708;
+    display: inline-block;
+    position: relative;
+    padding: 0px 15px;
+    color: var(--colorBrown);
+  }
   .newboxshadow {
     box-shadow: 0px 0px 43px 0px #00000085;
     border-radius: 40px;

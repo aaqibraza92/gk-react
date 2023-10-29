@@ -500,3 +500,9 @@ img.img-fluid.mainLogo {
   }
 }
 /*menu animated*/
+.topDown .navWrapper.mt10 {
+  margin-top: 0px;
+}
+.lightMode .topDown {
+  background: #fff !important;
+}

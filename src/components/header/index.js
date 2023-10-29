@@ -13,7 +13,7 @@ const Header = () => {
   useEffect(() => {
     
     if(activeTheme){
-      document.body.className = window.location.pathname==="/" ? "home" : window.location.pathname;
+      document.body.className = window.location.pathname==="/" ? "home lightMode" : window.location.pathname + " lightMode";
     }else{
       document.body.className = window.location.pathname==="/" ? "home darkMode" : window.location.pathname + " darkMode";
     }
