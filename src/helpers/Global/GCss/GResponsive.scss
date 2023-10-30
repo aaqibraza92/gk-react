@@ -236,6 +236,30 @@
 
 /*All Small Tablets*/
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+  body .circleAnimate {
+    width: 300px;
+    height: 300px;
+  }
+  body .dataTesti {
+    width: 61%;
+  }
+  body .whyChsWrp {
+    width: 100%;
+  }
+  body .bannerF {
+    font-size: 14vw;
+    line-height: 11vh;
+  }
+  body .swiperThumbnail img {
+    width: 50px;
+  }
+  body .titles h2 {
+    font-size: 5vw;
+    line-height: 4vh;
+  }
+  body .living {
+    font-size: 12vw;
+  }
   .mainFooer .fs16 {
     font-size: 14px;
   }
@@ -290,6 +314,16 @@
 
 /*Only large Tablets*/
 @media only screen and (max-width: 1024px) and (min-width: 992px) {
+  body .nav.triggerMenu {
+    right: 60px;
+  }
+  body .circleAnimate {
+    width: 300px;
+    height: 300px;
+  }
+  body .whyChsWrp {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
   .dNoneLg {

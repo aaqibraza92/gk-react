@@ -50,7 +50,7 @@ const WhoWeAre = () => {
 
                     </div>
                     <Row className='align-items-center gy-4'>
-                        <Col lg={4} md={4}>
+                        <Col lg={4} md={6}>
                             <Zoom top cascade>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
@@ -110,7 +110,7 @@ const WhoWeAre = () => {
 
 
                         </Col>
-                        <Col lg={7} md={7} className=''>
+                        <Col lg={7} md={6} className=''>
                             <div className='imgWrp mobMt30'>
                                 <Fade right cascade>
                                     <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
