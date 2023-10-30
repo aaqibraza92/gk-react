@@ -236,6 +236,7 @@
 
 /*All Small Tablets*/
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+
   body .circleAnimate {
     width: 300px;
     height: 300px;
@@ -298,6 +299,9 @@
 
 /*All large Tablets*/
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  body .bigfont{
+    display: none;
+  }
   header.transition {
     position: sticky;
     top: 0px;

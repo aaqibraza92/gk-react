@@ -68,7 +68,7 @@ const Project = () => {
             </Col>
           </Row>
 
-          <Row className="projectMainList">
+          <Row className="projectMainList mb60">
             <Col lg={7}>
               <Link to="#">
                 <div className=" d-flex">
@@ -158,7 +158,7 @@ const Project = () => {
             </Col>
           </Row>
 
-          <Row className="projectMainList">
+          <Row className="projectMainList mb60">
             <Col lg={7}>
               <Link to="#">
                 <div className=" d-flex">
