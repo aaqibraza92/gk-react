@@ -72,7 +72,6 @@ const AboutUs = () => {
 
       <div className="bgmission pt80 pb80 ">
         <div className="position-relative mobPb30 mb60">
-          <Fade left cascade>
             <section className="mb30">
               <div className="container-xl">
                 <Row className="align-items-center">
@@ -89,7 +88,6 @@ const AboutUs = () => {
                 </Row>
               </div>
             </section>
-          </Fade>
 
 
           <Fade right cascade>
@@ -136,7 +134,6 @@ const AboutUs = () => {
             </div>
           </section>
           </Fade>
-          <Fade left cascade>
           <section className=" mainabhoutnew">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
@@ -153,7 +150,6 @@ const AboutUs = () => {
               </Row>
             </div>
           </section>
-            </Fade>
 
     
         </div>

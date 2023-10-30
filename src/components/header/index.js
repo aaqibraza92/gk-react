@@ -107,16 +107,16 @@ const Header = () => {
                     <label htmlFor="menu-icon"></label>
                     <nav class="nav triggerMenu">
                       <ul class="pt-5">
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                          <Link className="makeClose" to="/">Home</Link>
                         </li>
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/about-us">About Us</Link>
                         </li>
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/project">Our Projects</Link>
                         </li>
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/contact-us">Contact Us</Link>
                         </li>
                       </ul>

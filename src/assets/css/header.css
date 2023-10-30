@@ -431,7 +431,6 @@ img.img-fluid.mainLogo {
   transition-delay: 50ms;
 }
 .menuTrigger .nav ul li a{
-  font-family: 'Montserrat', sans-serif;
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1.2;
