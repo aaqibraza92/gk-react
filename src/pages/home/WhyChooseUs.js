@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
             />
           </Zoom>
           <Fade bottom cascade>
-            <h2 className="colorWhite mb50 fs50 fontlight subfont text-center">
+            <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
               why choose us?
             </h2>
           </Fade>

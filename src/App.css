@@ -549,6 +549,23 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   scrollbar-color: 8e7653 #f6f3f0;
 }
 
+.bigfont {
+  position: sticky;
+  top: 0px;
+  z-index: -1;
+}
+.bigfont h1 {
+  font-size: 230px;
+  text-align: left;
+  position: absolute;
+  left: 0px;
+  color: transparent;
+  -webkit-text-stroke: 2px #b88b4c;
+  z-index: -1;
+  font-family: para;
+  line-height: 240px;
+}
+
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
   width: 10px;

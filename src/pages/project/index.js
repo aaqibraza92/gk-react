@@ -14,8 +14,14 @@ const Project = () => {
   return (
     <>
       <section className="position-relative">
+        
+            <div className="bigfont">
+            <h1>Our Sparkling Gems</h1>
+            </div>
+  
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">Projects</h2>
+          
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
               <Link to="#">
@@ -97,7 +103,7 @@ const Project = () => {
                     </div>
                     <div className="mt10">
                       <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
-                        GK's Casa Grande
+                      GK's Zenith
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
@@ -142,7 +148,7 @@ const Project = () => {
                     </div>
                     <div className="text-end mt10">
                       <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
-                        GK's Casa Grande
+                      GK's Alam Villas
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
@@ -187,7 +193,7 @@ const Project = () => {
                     </div>
                     <div className="mt10">
                       <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
-                        GK's Casa Grande
+                      GK's Festoon
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>

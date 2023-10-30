@@ -111,13 +111,13 @@ const OurProjects = () => {
 
               <div className="titles">
                 <Fade bottom cascade>
-                  <h2 className="colorWhite fs60 fw500 text-uppercase">
+                  <h2 className="colorWhite fs60 fw500 mobFs20 text-uppercase">
                     Happy Home
                   </h2>
                 </Fade>
                 <Fade bottom cascade>
-                <h2 className="colorWhite fs60 fw500 text-uppercase">
-                  <span className="fs60 mobFs15">For</span> Families
+                <h2 className="colorWhite fs60 fw500 mobFs20 text-uppercase">
+                  <span className="fs45 mobFs15">For</span> Families
                 </h2>
                 </Fade>
              
