@@ -123,11 +123,14 @@ const AboutUs = () => {
             <div className="container-xl">
               <Row className="align-items-center gy-4">
                 <Col lg={6} md={6} className="text-left">
-                  <div className={`${activeTheme ? "bordernew" : "borderBlack"}`}>
+                  {
+                      vision &&    <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
                       <h3 className="fs45 subfont">Our Mission</h3>
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
                 
                   </div>
+                  }
+                
                 </Col>
               </Row>
             </div>
