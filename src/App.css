@@ -824,12 +824,7 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 	--animation-duration: var(--duration, 800ms);
 	--animation-iterations: var(--iterations, 1);
 	position: relative;
-	font-size: 3vw;
 	animation-name: clip-text;
-	color: #000;
-	white-space: nowrap;
-	cursor: default;
-  display: inline-block;
 	
 	&::after {
 		content: "";

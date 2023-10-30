@@ -6,7 +6,11 @@ import { Helmet } from "react-helmet";
 import Zoom from 'react-reveal/Zoom';
 import Fade from "react-reveal/Fade";
 import { useSelector } from "react-redux";
+import ScrollTrigger from 'react-scroll-trigger';
+
 const AboutUs = () => {
+  const[vision,setvision]=useState(false);
+
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
@@ -88,24 +92,25 @@ const AboutUs = () => {
             </section>
 
 
-          <Fade right cascade>
             <section className={`${activeTheme ? "bgfifty" : "bgfiftyBrown"} mainabhout`}>
               <div className="container-xl">
                 <Row className="align-items-center gy-4 ">
                   <Col lg={6} md={6} className="text-left aboutusnew">
-                    <div className={`${activeTheme ? "bordernew" : "borderBlack"}`}>
-                      <Fade bottom cascade>
-                        <h3 className="fs45 subfont">Our Vision</h3>
-                      </Fade>
-                      <Fade bottom cascade>
-                        <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
-                      </Fade>
-                    </div>
+                  <ScrollTrigger onEnter={()=>setvision(true)} >
+                    {
+                      vision &&   <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
+                      <h3 className="fs45 subfont">Our Vision</h3>
+                      <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+               
+                  </div>
+                    }
+                
+                    </ScrollTrigger>
+                  
                   </Col>
                 </Row>
               </div>
             </section>
-          </Fade>
 
         </div>
 
@@ -114,24 +119,19 @@ const AboutUs = () => {
 
 
         <div className="position-relative mb60">
-        <Fade right cascade>
         <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
             <div className="container-xl">
               <Row className="align-items-center gy-4">
                 <Col lg={6} md={6} className="text-left">
                   <div className={`${activeTheme ? "bordernew" : "borderBlack"}`}>
-                    <Fade bottom cascade>
                       <h3 className="fs45 subfont">Our Mission</h3>
-                    </Fade>
-                    <Fade bottom >
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
-                    </Fade>
+                
                   </div>
                 </Col>
               </Row>
             </div>
           </section>
-          </Fade>
           <section className=" mainabhoutnew">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
