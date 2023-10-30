@@ -37,13 +37,15 @@ const HomeBanner = () => {
                 <span className="text-end d-block">Sky High</span>
         </Fade>  
                 </h2>
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end mt30">
                   <Link
-                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob`}
+                    className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"
                   >
                    <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>
+
+                  {/* <button class="button button--calypso"><span>aaqib</span></button> */}
                 </div>
               </div>
             </Col>

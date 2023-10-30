@@ -21,9 +21,17 @@
   background: rgb(42,51,121);
   background: linear-gradient(90deg, rgba(42,51,121,0) 43%, rgb(255, 255, 255) 43%);
 }
+.bgfiftyBrown {
+  background: rgb(42,51,121);
+  background: linear-gradient(90deg, rgba(42,51,121,0) 43%, #a07f50 43%);
+}
 .bgfiftymission{
   background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 58%, rgba(0,0,0,0) 58%);
+}
+.bgfiftymissionBrown{
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, #a07f50  58%, rgba(0,0,0,0) 58%);
 }
 .bgourteam {
   background: rgb(255,255,255);
@@ -52,6 +60,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 58%, rgba(0,0,0,0) 58%);
 }
 .bordernew {
   border-left: 2px solid #ddd;
+  padding-left: 26px;
+}
+.borderBlack {
+  border-left: 2px solid #000;
   padding-left: 26px;
 }
 .secondaboutus {

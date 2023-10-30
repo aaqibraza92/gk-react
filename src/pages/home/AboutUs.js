@@ -17,7 +17,7 @@ const AboutUs = () => {
             <p
               className={`${
                 activeTheme ? "colorBlack" : "colorWhite"
-              } mb0 fontlight fw400 fs40`}
+              } mb0 fontlight fw400 fs33`}
             >
               <Fade bottom cascade>
                 about us
@@ -25,23 +25,22 @@ const AboutUs = () => {
             </p>
             
             <Fade bottom className="brownGradient">
-            <h4 className="fs40 mb0 text-uppercase brownGradient">
+            <h4 className="fs36 mb0 text-uppercase colorBrown">
            
                 Exclusive communities
-          
             </h4>
             </Fade>
-            <h3 className="fs70 mb0 text-uppercase brownGradient">
-              <Fade bottom cascade>
+            <Fade bottom cascade>
+            <h3 className="fs60 mb0 text-uppercase colorBrown">
                 For Holistic
-              </Fade>
             </h3>
-            <h2 className="living mb20 text-uppercase brownGradient">
+            </Fade>
+            <h2 className="living mb20 text-uppercase colorBrown">
               <Fade bottom cascade>
                 Livings
               </Fade>
             </h2>
-            <p className={`${activeTheme ? "colorBlack" : "colorWhite"}`}>
+            <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>
               <Fade left cascade>
                 GK Builders and Developers aims to enhance the quality of life
                 of its customers by translating today’s trends of better and
@@ -54,7 +53,7 @@ const AboutUs = () => {
             <p
               className={`${
                 activeTheme ? "colorBlack" : "colorWhite"
-              } mb70 mobMb30`}
+              } mb55 mobMb30 fs15`}
             >
               <Fade left cascade>
                 GK Builders and Developers continues to focus on futuristic
@@ -65,7 +64,7 @@ const AboutUs = () => {
 
             <div className="mt10">
               <Reveal effect="fadeInUp">
-                <Link className="btnTransparent mr12 fMedium btnMob" to="/#">
+                <Link className="btnTransparent mr12 fMedium btnMob button button--calypso" to="/#">
                   <span
                     className={`${
                       activeTheme ? "colorBlack" : "colorWhite"

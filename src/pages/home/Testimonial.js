@@ -62,7 +62,7 @@ const Testimonial = () => {
                 </Zoom>
               
                 <Fade left cascade>
-                  <h2 className="colorWhite fs58 fontlight subfont mt10">
+                  <h2 className="colorWhite fs50 fontlight subfont mt10">
                     What <br />
                     People <br />
                     Say
@@ -77,10 +77,12 @@ const Testimonial = () => {
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
                 <Swiper
+                navigation={true}
+            
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
-                  speed={3000}
-                  autoPlay={{ delay: 2000 }}
+                  speed={1000}
+                  autoPlay={{ delay: 1500 }}
                   spaceBetween={50}
                   slidesPerView={1}
                   onSlideChange={() => { }}
@@ -109,6 +111,7 @@ const Testimonial = () => {
                       slidesPerView: 1,
                     },
                   }}
+                  className="testimonialSlider"
                 >
                   <div className="bloggerList">
                     {data.map((e, i) => (

@@ -8,30 +8,38 @@ import LookingForTalent from "./LookingForTalent";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const ContactUs = (props) => {
-  const selector= useSelector((state)=>{
-    return state
-});
+  const activeTheme = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.dayTheme;
+  });
 
 
-  const [switcher, setswitcher] = useState(selector?.type?.cntType==="talent" ? true : false);
 
   return (
     <>
       <Helmet>
         <title>Contact Us - GK Builders & Developers</title>
+        <script src='https://forms.cdn.sell.do/t/63e46f684443ae6f461f3ca5.js'></script>
+        <script src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"></script>
+   
       </Helmet>
      
      <Container>
        <Row>
           <Col md={12}>
                 <div className=" pb60 text-center position-relative ">
-                <h2 className="fs90 mobFs32 colorprimary contactusheading mb-0">Contact Us</h2>
+                <h2 className={`${activeTheme ? "contactusheading" : "contactusheadingdark"} fs90 mobFs32 colorprimary  mb-0`}>Contact Us</h2>
                 <div className="bordercontactus"></div>
                 <p className="fs30 colorLightBrown">Get in touch with us today</p>
           </div>
           </Col>
        </Row>
      </Container>
+
+     <section>
+     <Container>
+
+     </Container>
+     </section>
 
 
      
