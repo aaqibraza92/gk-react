@@ -121,9 +121,7 @@ const AboutUs = () => {
         <Fade right cascade>
         <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
             <div className="container-xl">
-              <Row className="align-items-center gy-4 ">
-
-
+              <Row className="align-items-center gy-4">
                 <Col lg={6} md={6} className="text-left">
                   <div className={`${activeTheme ? "bordernew" : "borderBlack"}`}>
                     <Fade bottom cascade>
@@ -132,8 +130,6 @@ const AboutUs = () => {
                     <Fade bottom >
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
                     </Fade>
-
-
                   </div>
                 </Col>
               </Row>
