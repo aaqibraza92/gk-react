@@ -1,5 +1,26 @@
 /*All Mobile*/
 @media only screen and (max-width: 767px) {
+  body .heroSection {
+    height: 70vh;
+  }
+  .visionvidio {
+    margin-top: 58px;
+  }
+  .projectMainList .fs22 {
+    font-size: 18px;
+  }
+  .bgfifty .fs45 {
+    font-size: 33px;
+  }
+  .bgfiftymission .fs45 {
+    font-size: 33px;
+  }
+  .projectMainList .fs40 {
+    font-size: 30px;
+  }
+  body .bigfont{
+    display: none;
+  }
   body .titles h2 {
     font-size: 20px;
   }
