@@ -29,9 +29,7 @@ const AboutUs = () => {
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
       <section className="heroSection aboutus">
-        <Fade bottom cascade>
-          <h1 className="text-white fs70 subfont text-uppercase">About Us</h1>
-        </Fade>
+          <h1 className="text-white fs70 subfont text-uppercase reveal-text">About Us</h1>
       </section>
 
       <div className={`${activeTheme ? "bgWhite" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
