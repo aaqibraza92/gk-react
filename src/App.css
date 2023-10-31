@@ -417,7 +417,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .mainHeader.transition.topDown {
   position: fixed;
   width: 100%;
-  z-index: 99999;
+  z-index: 3;
   top: 0px;
 }
 .topDown .mainLogo img {
@@ -679,7 +679,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .topDown {
   position: fixed !important;
   top: 0px !important;
-  z-index: 999999 !important;
+  z-index: 3 !important;
 }
 
 /*hover effect*/
