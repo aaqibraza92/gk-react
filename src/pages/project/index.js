@@ -14,8 +14,14 @@ const Project = () => {
   return (
     <>
       <section className="position-relative">
+        
+            <div className="bigfont">
+            <h1>Our Sparkling Gems</h1>
+            </div>
+  
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">Projects</h2>
+          
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
               <Link to="#">
@@ -51,7 +57,7 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="text-end mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
                         GK's Casa Grande
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
@@ -62,7 +68,7 @@ const Project = () => {
             </Col>
           </Row>
 
-          <Row className="projectMainList">
+          <Row className="projectMainList mb60">
             <Col lg={7}>
               <Link to="#">
                 <div className=" d-flex">
@@ -96,8 +102,8 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
-                        GK's Casa Grande
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
+                      GK's Zenith
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
@@ -141,8 +147,8 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="text-end mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
-                        GK's Casa Grande
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
+                      GK's Alam Villas
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
@@ -152,7 +158,7 @@ const Project = () => {
             </Col>
           </Row>
 
-          <Row className="projectMainList">
+          <Row className="projectMainList mb60">
             <Col lg={7}>
               <Link to="#">
                 <div className=" d-flex">
@@ -186,8 +192,8 @@ const Project = () => {
                       </div>
                     </div>
                     <div className="mt10">
-                      <h3 className="colorBlack fs40 fw500 mb0 text-uppercase">
-                        GK's Casa Grande
+                      <h3 className={`${activeTheme ? "colorBlack" : "colorWhite"}  fs40 fw500 mb0 text-uppercase`}>
+                      GK's Festoon
                       </h3>
                       <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
                     </div>
@@ -199,9 +205,9 @@ const Project = () => {
         </Container>
       </section>
 
-      <section className="pt100 pb100 text-center bgGrey mt50">
+      <section className={`${activeTheme ? "bgGrey" : "bgBrown"} pt100 pb100 text-center  mt50`}>
         <Container>
-          <h2 className="colorBlack fs50 mb55">Looking for quality construction?</h2>
+          <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} fs50 mb55`}>Looking for quality construction?</h2>
           <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"

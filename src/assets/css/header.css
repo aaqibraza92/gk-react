@@ -265,6 +265,7 @@ img.img-fluid.mainLogo {
   width: 100%;
   top: 10px;
   z-index: 1;
+  background: transparent;
 }
 
 /*menu animated*/
@@ -430,7 +431,6 @@ img.img-fluid.mainLogo {
   transition-delay: 50ms;
 }
 .menuTrigger .nav ul li a{
-  font-family: 'Montserrat', sans-serif;
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1.2;
@@ -499,3 +499,9 @@ img.img-fluid.mainLogo {
   }
 }
 /*menu animated*/
+.topDown .navWrapper.mt10 {
+  margin-top: 0px;
+}
+.lightMode .topDown {
+  background: #fff !important;
+}

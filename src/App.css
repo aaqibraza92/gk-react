@@ -428,7 +428,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   padding-bottom: 6px;
 }
 .topDown.darkMode {
-  background: #000;
+  background: #000 !important;
 }
 .clickToClose:hover {
   color: var(--colorBrown);
@@ -547,6 +547,23 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 * {
   scrollbar-width: thin;
   scrollbar-color: 8e7653 #f6f3f0;
+}
+
+.bigfont {
+  position: sticky;
+  top: 0px;
+  z-index: -1;
+}
+.bigfont h1 {
+  font-size: 230px;
+  text-align: left;
+  position: absolute;
+  left: 0px;
+  color: transparent;
+  -webkit-text-stroke: 2px #b88b4c;
+  z-index: -1;
+  font-family: para;
+  line-height: 240px;
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -774,3 +791,86 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 
 
 /*hover effect*/
+.circleAnimate.hideRotate::before{
+  display: none;
+}
+.darkMode{
+  background: #070708;
+}
+.bgBlueGradient{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#070707+0,010733+100 */
+background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+/*slide reveal effect*/
+ 
+:root {
+	--delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
+}
+.reveal-text,
+.reveal-text::after {
+	animation-delay: var(--animation-delay, 2s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	animation-name: clip-text;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #222222;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
+
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
+/*slide reveal effect*/

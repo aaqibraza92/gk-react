@@ -249,7 +249,7 @@ const Footer = () => {
                 <Col lg={6}>
                 <Fade bottom cascade>
                 <div className="d-flex justify-content-lg-end">
-                    <p className="colorGrey fs14 fRegular itemLightwhite mb0 text-uppercase">
+                    <p className="colorGrey fs14 fsm14 fRegular itemLightwhite mb0 text-uppercase">
                       &#169; {new Date().getFullYear()}{" "}
                       <a
                         href="https://emporia.agency/"

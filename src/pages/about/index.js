@@ -5,7 +5,16 @@ import "../../assets/css/footer.css"
 import { Helmet } from "react-helmet";
 import Zoom from 'react-reveal/Zoom';
 import Fade from "react-reveal/Fade";
+import { useSelector } from "react-redux";
+import ScrollTrigger from 'react-scroll-trigger';
+
 const AboutUs = () => {
+  const[vision,setvision]=useState(false);
+
+  const activeTheme = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.dayTheme;
+  });
+
   const videoRef = useRef(null);
   useEffect(() => {
     videoRef.current.play();
@@ -24,32 +33,30 @@ const AboutUs = () => {
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
       <section className="heroSection aboutus">
-        <Fade bottom cascade>
-          <h1 className="text-white fs70 subfont text-uppercase">About Us</h1>
-        </Fade>
+          <h1 className="text-white fs70 subfont text-uppercase reveal-text">About Us</h1>
       </section>
 
-      <div className="bgWhite pt80 pb80 mobPb30">
+      <div className={`${activeTheme ? "bgWhite" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
         <div className="container-xl">
           <Row className="align-items-center gy-4">
             <Col lg={7} md={7}>
               <Fade bottom cascade>
-                <h3 className="fs50 mobFs30">Our legacy <br></br> dates back to</h3>
+                <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs50 mobFs30`}>Our legacy <br></br> dates back to</h3>
               </Fade>
               <Fade left cascade>
-                <h2 className="fs140">1985</h2>
+                <h2 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}>1985</h2>
               </Fade>
               <Fade bottom>
-                <p className="fs15">When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
               </Fade>
               <Fade bottom>
-                <p className="fs15">Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
               </Fade>
               <Fade bottom>
-                <p className="fs15">Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
               </Fade>
               <Fade bottom>
-                <p className="fs15">Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
               </Fade>
 
 
@@ -67,7 +74,6 @@ const AboutUs = () => {
 
       <div className="bgmission pt80 pb80 ">
         <div className="position-relative mobPb30 mb60">
-          <Fade left cascade>
             <section className="mb30">
               <div className="container-xl">
                 <Row className="align-items-center">
@@ -84,27 +90,27 @@ const AboutUs = () => {
                 </Row>
               </div>
             </section>
-          </Fade>
 
 
-          <Fade right cascade>
-            <section className="bgfifty mainabhout">
+            <section className={`${activeTheme ? "bgfifty" : "bgfiftyBrown"} mainabhout`}>
               <div className="container-xl">
                 <Row className="align-items-center gy-4 ">
                   <Col lg={6} md={6} className="text-left aboutusnew">
-                    <div className="bordernew">
-                      <Fade bottom cascade>
-                        <h3 className="fs45 subfont">Our Vision</h3>
-                      </Fade>
-                      <Fade bottom cascade>
-                        <p className="fs16 colorLight w-85 mb-0">Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
-                      </Fade>
-                    </div>
+                  <ScrollTrigger onEnter={()=>setvision(true)} >
+                    {
+                      vision &&   <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
+                      <h3 className="fs45 subfont">Our Vision</h3>
+                      <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+               
+                  </div>
+                    }
+                
+                    </ScrollTrigger>
+                  
                   </Col>
                 </Row>
               </div>
             </section>
-          </Fade>
 
         </div>
 
@@ -113,29 +119,22 @@ const AboutUs = () => {
 
 
         <div className="position-relative mb60">
-        <Fade right cascade>
-        <section className="bgfiftymission pb40 pt40 newone">
+        <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
             <div className="container-xl">
-              <Row className="align-items-center gy-4 ">
-
-
+              <Row className="align-items-center gy-4">
                 <Col lg={6} md={6} className="text-left">
-                  <div className="bordernew">
-                    <Fade bottom cascade>
+                  {
+                      vision &&    <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
                       <h3 className="fs45 subfont">Our Mission</h3>
-                    </Fade>
-                    <Fade bottom >
-                      <p className="fs16 colorLight w-85">Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
-                    </Fade>
-
-
+                      <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
+                
                   </div>
+                  }
+                
                 </Col>
               </Row>
             </div>
           </section>
-          </Fade>
-          <Fade left cascade>
           <section className=" mainabhoutnew">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
@@ -152,7 +151,6 @@ const AboutUs = () => {
               </Row>
             </div>
           </section>
-            </Fade>
 
     
         </div>
@@ -160,15 +158,15 @@ const AboutUs = () => {
       </div>
 
 
-      <div className="bgourteam pt80 pb80 mobPb30">
+      <div className={`${activeTheme ? "bgourteam" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
         <div className="container-xl">
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
-                <h3 className="fs50 mobFs30  text-uppercase subfont fontlight">Our Pillars</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}>Our Pillars</h3>
               </Fade>
               <Fade bottom cascade>
-                <h3 className="fs28 fs16 subfont fontlight">GK Group’s Foundation</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s Foundation</h3>
               </Fade>
 
               <div className="devider">
@@ -180,14 +178,14 @@ const AboutUs = () => {
               <Fade bottom cascade>
                 <img src={require('../../assets/img/aboutus/teamone.webp')} className='img-fluid w-75' alt="" />
               </Fade>
-              <div className="text-start mt20 border-start pl30 text-white">
+              <div className={` text-start mt20 border-start pl30 `} >
                 <Fade bottom>
-                  <p>
+                  <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
                     Our respected founder Late Sri K Ramakrishnaiah was a retired Subedar in the Indian Army with a prolific record of service spanning 28 years. A visionary and philanthropist, he donated two acres of prime land to a trust to develop educational institutions. He also gifted 1000 square yards of land abutting the main road to a church and provided a place for Brahmakumaris to conduct their programs.
                   </p>
                 </Fade>
 
-                <b>
+                <b className="colorWhite">
                   Late SRI. K Ramakrishnaian<br></br>
                   Founder
                 </b>
@@ -199,11 +197,11 @@ const AboutUs = () => {
               </Fade>
               <div className="text-start mt20 border-start pl30 text-white">
                 <Fade bottom>
-                  <p>
+                  <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
                     A civil engineer from Osmania University Hyderabad, Mr. Rao has more than three decades of experience and involvement in construction of residential complexes. A leader by example, he takes active interest in resolving various issues concerning the development of projects. Mr. Rao also participates in deliberations with the government and other agencies for the welfare of builders’ community.</p>
                 </Fade>
                 <Fade left>
-                  <b>
+                  <b className="colorWhite">
                     Mr.K. Hanumantha Rao<br></br>
                     Managing Partner
                   </b>

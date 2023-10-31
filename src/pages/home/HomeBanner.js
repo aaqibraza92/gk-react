@@ -27,12 +27,12 @@ const HomeBanner = () => {
             <Col lg={10} md={10} className="m-auto">
               <div>
 
-                <h2 className="bannerF   tabfs24  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                <h2 className="bannerF  mobMt30  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
                   <Fade left cascade>
                   <span>Live Life</span>
         </Fade> 
                 </h2>
-                <h2 className="bannerF   tabfs24  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
+                <h2 className="bannerF  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
                 <Fade right cascade>
                 <span className="text-end d-block">Sky High</span>
         </Fade>  

@@ -5,14 +5,23 @@ import "../../assets/css/header.css";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  useEffect(() => {
-    document.body.className = window.location.pathname==="/" ? "home" : window.location.pathname;
-    return () => { document.body.className = ''; }
-  },[window.location.pathname]);
+
   
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
+  useEffect(() => {
+    
+    if(activeTheme){
+      document.body.className = window.location.pathname==="/" ? "home lightMode" : window.location.pathname + " lightMode";
+    }else{
+      document.body.className = window.location.pathname==="/" ? "home darkMode" : window.location.pathname + " darkMode";
+    }
+    
+    return () => { document.body.className = ''; }
+    
+  },[window.location.pathname]);
+
   const [stickyHeader, setstickyHeader] = useState("");
 
   const { pathname } = useLocation();
@@ -98,16 +107,16 @@ const Header = () => {
                     <label htmlFor="menu-icon"></label>
                     <nav class="nav triggerMenu">
                       <ul class="pt-5">
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                          <Link className="makeClose" to="/">Home</Link>
                         </li>
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/about-us">About Us</Link>
                         </li>
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/project">Our Projects</Link>
                         </li>
-                        <li onClick={()=>closeMenu()}>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/contact-us">Contact Us</Link>
                         </li>
                       </ul>
@@ -142,7 +151,7 @@ const Navbar = (props) => {
   }, []);
 
   return (
-    <div className={`navWrapper mobileheader `}>
+    <div className={`navWrapper mobileheader mt10 `}>
       <div className="container-xxl">
         <div className={`d-flex justify-content-end`}>
           <ul className="noUl d-flex flex-wrap headerMenu mb0 align-items-center">
