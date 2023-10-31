@@ -33,7 +33,7 @@ const AboutUs = () => {
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
       <section className="heroSection aboutus">
-          <h1 className="text-white fs70 subfont text-uppercase reveal-text">About Us</h1>
+          <h1 className="text-white fs70 subfont text-uppercase reveal-text position-relative leftBorder pl20">About Us</h1>
       </section>
 
       <div className={`${activeTheme ? "bgWhite" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
@@ -44,7 +44,10 @@ const AboutUs = () => {
                 <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs50 mobFs30`}>Our legacy <br></br> dates back to</h3>
               </Fade>
               <Fade left cascade>
-                <h2 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}>1985</h2>
+              <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}> <br style={{display: "none"}}/> 1985</h3>
+                {/* <h2 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}>
+                1985
+                </h2> */}
               </Fade>
               <Fade bottom>
                 <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>

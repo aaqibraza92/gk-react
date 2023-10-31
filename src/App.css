@@ -551,7 +551,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 
 .bigfont {
   position: sticky;
-  top: 0px;
+  top: 80px;
   z-index: -1;
 }
 .bigfont h1 {
@@ -564,6 +564,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   z-index: -1;
   font-family: para;
   line-height: 240px;
+  top: 70px;
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -874,3 +875,12 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 	}
 }
 /*slide reveal effect*/
+.leftBorder::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 3px;
+  height: 100%;
+  background: #000;
+
+}
