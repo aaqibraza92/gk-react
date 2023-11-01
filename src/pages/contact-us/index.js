@@ -25,7 +25,6 @@ const ContactUs = (props) => {
       </Helmet>
      
      <Container>
-     <VerticalImageSlider/>
        <Row>
           <Col md={12}>
                 <div className=" pb60 text-center position-relative ">
