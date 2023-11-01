@@ -15,12 +15,16 @@ const ContactUs = (props) => {
 
 
 
+
   return (
     <>
       <Helmet>
         <title>Contact Us - GK Builders & Developers</title>
-        <script src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"></script>
-   
+        <script
+          src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"
+          crossorigin="anonymous"
+          async
+        ></script>
       </Helmet>
      
      <Container>
