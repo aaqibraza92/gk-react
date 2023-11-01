@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor"
 import SmoothScroll from "./components/SmoothScoll";
 import { useEffect, useState } from "react";
 
+
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const resizeScreen = () => {
@@ -20,12 +21,14 @@ function App() {
     };
   }, []);
 
+
+
   return (
     <>
       {
         screenWidth > 1000 && <AnimatedCursor color='142, 118, 83' />
       }
-      <div className="wrapperApp">
+      <div className="wrapperApp" >
         <Routes>
           {RouterList &&
             RouterList.map((elem, ind) => {

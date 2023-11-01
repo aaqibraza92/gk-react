@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import ScrollTrigger from 'react-scroll-trigger';
 
 const AboutUs = () => {
-  const[vision,setvision]=useState(false);
+  const [vision, setvision] = useState(false);
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -26,6 +26,8 @@ const AboutUs = () => {
   }, [videoRefn]);
   const [playStatus, setplayStatus] = useState(false);
 
+
+
   return (
     <>
 
@@ -33,7 +35,7 @@ const AboutUs = () => {
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
       <section className="heroSection aboutus">
-          <h1 className="text-white fs70 subfont text-uppercase reveal-text">About Us</h1>
+        <h1 className="text-white fs70 subfont text-uppercase reveal-text">About Us</h1>
       </section>
 
       <div className={`${activeTheme ? "bgWhite" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
@@ -72,45 +74,49 @@ const AboutUs = () => {
         </div>
       </div>
 
+
+
+
+
       <div className="bgmission pt80 pb80 ">
         <div className="position-relative mobPb30 mb60">
-            <section className="mb30">
-              <div className="container-xl">
-                <Row className="align-items-center">
-                  <Col lg={6} md={6}>
-                    <div className="visionvidio">
-                      <video className="w-100" ref={videoRef} autoplay loop muted>
-                        <source
-                          src={require("../../assets/img/home/Visionweb.mp4")}
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            </section>
-
-
-            <section className={`${activeTheme ? "bgfifty" : "bgfiftyBrown"} mainabhout`}>
-              <div className="container-xl">
-                <Row className="align-items-center gy-4 ">
-                  <Col lg={6} md={6} className="text-left aboutusnew">
-                  <ScrollTrigger onEnter={()=>setvision(true)} >
-                    {
-                      vision &&   <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
-                      <h3 className="fs45 subfont">Our Vision</h3>
-                      <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
-               
+          <section className="mb30">
+            <div className="container-xl">
+              <Row className="align-items-center">
+                <Col lg={6} md={6}>
+                  <div className="visionvidio">
+                    <video className="w-100" ref={videoRef} autoplay loop muted>
+                      <source
+                        src={require("../../assets/img/home/Visionweb.mp4")}
+                        type="video/mp4"
+                      />
+                    </video>
                   </div>
+                </Col>
+              </Row>
+            </div>
+          </section>
+
+
+          <section className={`${activeTheme ? "bgfifty" : "bgfiftyBrown"} mainabhout`}>
+            <div className="container-xl">
+              <Row className="align-items-center gy-4 ">
+                <Col lg={6} md={6} className="text-left aboutusnew">
+                  <ScrollTrigger onEnter={() => setvision(true)} >
+                    {
+                      vision && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
+                        <h3 className="fs45 subfont">Our Vision</h3>
+                        <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+
+                      </div>
                     }
-                
-                    </ScrollTrigger>
-                  
-                  </Col>
-                </Row>
-              </div>
-            </section>
+
+                  </ScrollTrigger>
+
+                </Col>
+              </Row>
+            </div>
+          </section>
 
         </div>
 
@@ -119,18 +125,18 @@ const AboutUs = () => {
 
 
         <div className="position-relative mb60">
-        <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
+          <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
             <div className="container-xl">
               <Row className="align-items-center gy-4">
                 <Col lg={6} md={6} className="text-left">
                   {
-                      vision &&    <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
+                    vision && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
                       <h3 className="fs45 subfont">Our Mission</h3>
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
-                
-                  </div>
+
+                    </div>
                   }
-                
+
                 </Col>
               </Row>
             </div>
@@ -152,7 +158,7 @@ const AboutUs = () => {
             </div>
           </section>
 
-    
+
         </div>
 
       </div>

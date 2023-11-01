@@ -7,6 +7,7 @@ import Testimonial from './Testimonial';
 import WhoWeAre from './WhoWeAre';
 import WhyChooseUs from './WhyChooseUs';
 import OurProjects from './OurProjects';
+import VerticalImageSlider from './VerticalImageSlider';
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
         <WhyChooseUs/>
         <WhoWeAre/>
         <Testimonial/>
+      
       </main>
     </>
 
