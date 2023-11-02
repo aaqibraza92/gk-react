@@ -120,12 +120,7 @@ const AboutUs = () => {
               </Row>
             </div>
           </section>
-
         </div>
-
-
-
-
 
         <div className="position-relative mb60">
           <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
@@ -139,16 +134,16 @@ const AboutUs = () => {
 
                     </div>
                   }
-
                 </Col>
               </Row>
             </div>
           </section>
-          <section className=" mainabhoutnew">
+          
+          <section className="mainabhoutnew">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
                 <Col lg={6} md={6} className="secondaboutus">
-                  <div className="visionvidio ">
+                  <div className="visionvidio">
                     <video className="w-100" ref={videoRefn} autoplay loop muted>
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
@@ -160,8 +155,6 @@ const AboutUs = () => {
               </Row>
             </div>
           </section>
-
-
         </div>
 
       </div>
@@ -177,9 +170,7 @@ const AboutUs = () => {
               <Fade bottom cascade>
                 <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s <br className="d-none"/> Foundation</h3>
               </Fade>
-
               <div className="devider">
-
               </div>
             </Col>
 
@@ -215,7 +206,6 @@ const AboutUs = () => {
                     Managing Partner
                   </b>
                 </Fade>
-
               </div>
             </Col>
           </Row>
