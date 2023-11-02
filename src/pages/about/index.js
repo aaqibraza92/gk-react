@@ -172,10 +172,10 @@ const AboutUs = () => {
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}>Our Pillars</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}>Our <br className="d-none"/> Pillars</h3>
               </Fade>
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s Foundation</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s <br className="d-none"/> Foundation</h3>
               </Fade>
 
               <div className="devider">
