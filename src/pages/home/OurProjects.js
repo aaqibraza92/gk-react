@@ -9,8 +9,7 @@ import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
-import Fade from "react-reveal/Fade";
-import Zoom from 'react-reveal/Zoom';
+import { Fade,Zoom } from "react-awesome-reveal";
 
 const OurProjects = () => {
   const activeTheme = useSelector((state) => {
@@ -55,11 +54,11 @@ const OurProjects = () => {
                   alt=""
                 />
                 </Zoom>
-                <Fade bottom cascade>
+                <Zoom left cascade damping={1e-1} delay={100}>
                 <h2 className="colorWhite fs50 fontlight subfont">
                   our projects
                 </h2>
-                </Fade>
+                </Zoom>
              
               </div>
 
