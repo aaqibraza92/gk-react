@@ -16,27 +16,27 @@ const AboutUs = () => {
               className={`${activeTheme ? "colorBlack" : "colorWhite"
                 } mb0 fontlight fw400 fs33`}
             >
-              <Fade bottom cascade damping={0.5e-1}>
+              <Fade bottom cascade damping={0.5e-1} delay={100}>
                 about us
               </Fade>
             </p>
 
 
             <h4 className="fs36 mb0 text-uppercase colorBrown">
-              <Fade bottom cascade className="brownGradient" damping={0.5e-1}>
+              <Fade bottom cascade className="brownGradient" damping={0.5e-1} delay={100}>
                 Exclusive communities
               </Fade>
 
             </h4>
 
             <h3 className="fs60 mb0 text-uppercase colorBrown">
-              <Fade bottom cascade damping={0.5e-1}>
+              <Fade bottom cascade damping={0.5e-1} delay={100}>
                 For Holistic
               </Fade>
             </h3>
 
             <h2 className="living mb20 text-uppercase colorBrown">
-              <Fade bottom cascade damping={0.5e-1}>
+              <Fade bottom cascade damping={0.5e-1} delay={100}>
                 Livings
               </Fade>
             </h2>
@@ -85,7 +85,7 @@ const AboutUs = () => {
             </div>
           </Col>
           <Col lg={6} md={6} xl={6}>
-            <Fade right cascade>
+            <Fade right cascade delay={100}>
               <img
                 src={require("../../assets/img/home/buildings.png")}
                 className="img-fluid"

@@ -5,9 +5,9 @@ import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
 import { arrowDiagonal } from "../../assets/svg/Svg";
 import { useSelector } from "react-redux";
-import Fade from 'react-reveal/Fade';
+import ScrollTrigger from 'react-scroll-trigger';
 const HomeBanner = () => {
-  
+
   const activeTheme = useSelector((state) => {
     return (
       state && state?.persistedReducer?.theme?.dayTheme
@@ -28,21 +28,18 @@ const HomeBanner = () => {
               <div>
 
                 <h2 className="bannerF  mobMt30  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                  <Fade left cascade>
-                  <span>Live Life</span>
-        </Fade> 
+                    <span><Fade left cascade damping={0.5e-1} delay={100}>Live Life  </Fade></span>
                 </h2>
                 <h2 className="bannerF  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                <Fade right cascade>
-                <span className="text-end d-block">Sky High</span>
-        </Fade>  
+                    <span className="text-end d-block"><Fade right cascade damping={0.5e-1} delay={100}>Sky High   </Fade></span>
+          
                 </h2>
                 <div className="d-flex justify-content-end mt30">
                   <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"
                   >
-                   <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
+                    <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>
 
                   {/* <button class="button button--calypso"><span>aaqib</span></button> */}
