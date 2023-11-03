@@ -28,21 +28,23 @@ const HomeBanner = () => {
               <div>
 
                 <h2 className="bannerF  mobMt30  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                    <span><Fade left cascade damping={0.5e-1} delay={100}>Live Life  </Fade></span>
+                    <span><Fade left cascade damping={1e-1} delay={100}>Live Life  </Fade></span>
                 </h2>
                 <h2 className="bannerF  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                    <span className="text-end d-block"><Fade right cascade damping={0.5e-1} delay={100}>Sky High   </Fade></span>
+                    <span className="text-end d-block"><Fade right cascade damping={1e-1} delay={100}>Sky High   </Fade></span>
           
                 </h2>
                 <div className="d-flex justify-content-end mt30">
-                  <Link
+                <Fade left cascade damping={1e-1} delay={100}>
+                <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"
                   >
                     <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>
+                  </Fade>
+              
 
-                  {/* <button class="button button--calypso"><span>aaqib</span></button> */}
                 </div>
               </div>
             </Col>
