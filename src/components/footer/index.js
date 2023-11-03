@@ -18,7 +18,7 @@ import {
 } from "../../assets/svg/Svg";
 import { useDispatch, useSelector } from "react-redux";
 import { themeType } from "../../store/slices/UserSlices";
-import Fade from "react-reveal/Fade";
+import { Fade,Zoom } from "react-awesome-reveal";
 
 const Footer = () => {
 
