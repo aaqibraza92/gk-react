@@ -28,14 +28,14 @@ const HomeBanner = () => {
               <div>
 
                 <h2 className="bannerF  mobMt30  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                    <span><Fade left cascade damping={1e-1} delay={100}>Live Life  </Fade></span>
+                    <span><Fade className="headingFont"  left cascade damping={1e-1} delay={100}>Live Life  </Fade></span>
                 </h2>
                 <h2 className="bannerF  mt0 mobmb0 mobmr0 fSemiBold text-start colorWhite ml0 text-uppercase">
-                    <span className="text-end d-block"><Fade right cascade damping={1e-1} delay={100}>Sky High   </Fade></span>
+                    <span className="text-end d-block"><Fade className="headingFont"  right cascade damping={1e-1} delay={100}>Sky High   </Fade></span>
           
                 </h2>
                 <div className="d-flex justify-content-end mt30">
-                <Fade left cascade damping={1e-1} delay={100}>
+                <Fade   left cascade damping={1e-1} delay={100}>
                 <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/#"

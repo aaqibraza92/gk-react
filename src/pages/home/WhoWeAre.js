@@ -9,10 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import Fade from "react-reveal/Fade";
-import Zoom from 'react-reveal/Zoom';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { Fade,Zoom } from "react-awesome-reveal";
+import { useEffect,useState } from 'react';
 const WhoWeAre = () => {
 
     const [triggerHover, settriggerHover] = useState(false);
@@ -42,11 +40,9 @@ const WhoWeAre = () => {
                             <img src={require('../../assets/img/home/three_dot.png')} className="img-fluid" alt="" />
                         </Zoom>
 
-                        <Fade bottom cascade>
                             <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs50 fontlight subfont text-center`}>
-                                who we are?
+                            <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>   who we are? </Fade>
                             </h2>
-                        </Fade>
 
                     </div>
                     <Row className='align-items-center gy-4'>

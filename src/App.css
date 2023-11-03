@@ -16,6 +16,9 @@
 .subfont{
   font-family: para;
 }
+.headingFont{
+  font-family: heading;
+}
 .fontlight{
   font-weight: lighter;
 }

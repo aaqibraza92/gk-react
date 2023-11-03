@@ -109,14 +109,12 @@ const OurProjects = () => {
               </Swiper>
 
               <div className="titles">
-                <Fade bottom cascade>
                   <h2 className="colorWhite fs60 fw500 mobFs20 text-uppercase">
-                    Happy Home
+                  <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>Happy Home </Zoom>
                   </h2>
-                </Fade>
                 <Fade bottom cascade>
                 <h2 className="colorWhite fs60 fw500 mobFs20 text-uppercase">
-                  <span className="fs45 mobFs15">For</span> Families
+                  <span className="fs45 mobFs15"> <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>For </Zoom></span> <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>Families</Zoom>
                 </h2>
                 </Fade>
              

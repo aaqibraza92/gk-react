@@ -9,8 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+import { Fade,Zoom } from "react-awesome-reveal";
 
 let data = [
   {
@@ -57,11 +56,9 @@ const WhyChooseUs = () => {
               alt=""
             />
           </Zoom>
-          <Fade bottom cascade>
             <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-              why choose us?
+            <Fade className="headingFont"  left cascade damping={1e-1} delay={100}> why choose us? </Fade>
             </h2>
-          </Fade>
         </div>
 
         <div className="wrapperData">

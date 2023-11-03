@@ -23,47 +23,47 @@ const AboutUs = () => {
 
 
             <h4 className="fs36 mb0 text-uppercase colorBrown">
-              <Fade bottom cascade className="brownGradient" damping={0.5e-1} delay={100}>
+              <Fade className="headingFont brownGradient"  bottom cascade damping={0.5e-1} delay={100}>
                 Exclusive communities
               </Fade>
 
             </h4>
 
             <h3 className="fs60 mb0 text-uppercase colorBrown">
-              <Fade bottom cascade damping={0.5e-1} delay={100}>
+              <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>
                 For Holistic
               </Fade>
             </h3>
 
             <h2 className="living mb20 text-uppercase colorBrown">
-              <Fade bottom cascade damping={0.5e-1} delay={100}>
+              <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>
                 Livings
               </Fade>
             </h2>
-            <Fade left >
+      
               <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>
-
+              <Fade left delay={200}>
                 GK Builders and Developers aims to enhance the quality of life
                 of its customers by translating today’s trends of better and
                 healthy living into comfortable and pleasant homes. Through its
                 superior craftsmanship, customer-friendly policies and reliable
                 track record, the company has earned a stellar reputation as one
                 of the best real estate builders in Hyderabad.
-
+                </Fade>
               </p>
-            </Fade>
-            <Fade left>
+         
               <p
                 className={`${activeTheme ? "colorBlack" : "colorWhite"
                   } mb55 mobMb30 fs15`}
               >
-
-                GK Builders and Developers continues to focus on futuristic
+   <Fade left delay={200}>
+   GK Builders and Developers continues to focus on futuristic
                 expansion and has chalked out plans to develop more luxurious
                 residential projects across Hyderabad and Secunderabad soon.
+   </Fade>
+           
 
               </p>
-            </Fade>
 
             <div className="mt10">
               <Fade left>
