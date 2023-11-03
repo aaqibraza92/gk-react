@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { useSelector } from "react-redux";
-import Fade from "react-reveal/Fade";
-import Reveal from "react-reveal/Reveal";
-
+import { Fade } from "react-awesome-reveal";
 const AboutUs = () => {
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -19,12 +17,12 @@ const AboutUs = () => {
                 activeTheme ? "colorBlack" : "colorWhite"
               } mb0 fontlight fw400 fs33`}
             >
-              <Fade bottom cascade>
+              <Fade bottom cascade damping={0.5e-1}>
                 about us
               </Fade>
             </p>
             
-            <Fade bottom className="brownGradient">
+            <Fade bottom  className="brownGradient">
             <h4 className="fs36 mb0 text-uppercase colorBrown">
            
                 Exclusive communities
@@ -36,7 +34,7 @@ const AboutUs = () => {
             </h3>
             </Fade>
             <h2 className="living mb20 text-uppercase colorBrown">
-              <Fade bottom cascade>
+              <Fade bottom cascade damping={0.5e-1}>
                 Livings
               </Fade>
             </h2>
@@ -67,7 +65,7 @@ const AboutUs = () => {
             </Fade>
 
             <div className="mt10">
-              <Reveal effect="fadeInUp">
+            <Fade left>
                 <Link className="btnTransparent mr12 fMedium btnMob button button--calypso" to="/#">
                   <span
                     className={`${
@@ -83,7 +81,7 @@ const AboutUs = () => {
                     style={{ width: "28px" }}
                   />
                 </Link>
-              </Reveal>
+              </Fade>
             </div>
           </Col>
           <Col lg={6} md={6} xl={6}>
