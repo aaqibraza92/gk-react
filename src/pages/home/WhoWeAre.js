@@ -58,8 +58,9 @@ const WhoWeAre = () => {
                                     }
                                         {
                                             triggerHover && slide==="slide1" &&
-                                            <Fade bottom cascade>
+                                           
                                             <div className='wrpCircle position-absolute'>
+                                                 <Fade bottom cascade>
                                             <div className='mb0 lh50'>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
                                               4
@@ -74,13 +75,15 @@ const WhoWeAre = () => {
                                             Happy <br />
                                             Families
                                             </div>
+                                            </Fade>
                                         </div>
-                                        </Fade>
+                                     
                                         }
                                         {
                                             triggerHover && slide==="slide2" &&
-                                            <Fade bottom cascade>
+                                         
                                             <div className='wrpCircle position-absolute'>
+                                                   <Fade bottom cascade>
                                             <div className='mb0 lh50'>
                                                 <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
                                               8
@@ -95,8 +98,9 @@ const WhoWeAre = () => {
                                             Lorem <br />
                                             Ipsum
                                             </div>
+                                            </Fade>
                                         </div>
-                                        </Fade>
+                                 
                                         }
                                      
                                     </div>

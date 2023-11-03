@@ -9,8 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import Fade from "react-reveal/Fade";
-import Zoom from 'react-reveal/Zoom';
+import { Fade,Zoom } from "react-awesome-reveal";
 
 let data = [
   {
@@ -61,14 +60,15 @@ const Testimonial = () => {
                 />
                 </Zoom>
               
-                <Fade left cascade>
-                  <h2 className="colorWhite fs50 fontlight subfont mt10">
-                    What <br />
-                    People <br />
-                    Say
+          
+                <h2 className="colorWhite fs50 fontlight subfont mt10">
+                <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>What </Fade> <br />
+                <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>People      </Fade><br />
+                <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>Say      </Fade>
 
                   </h2>
-                </Fade>
+             
+                 
               </div>
 
 
