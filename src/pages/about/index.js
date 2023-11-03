@@ -3,13 +3,13 @@ import { Col, Container, Row } from "reactstrap";
 import '../../assets/css/about.css';
 import "../../assets/css/footer.css"
 import { Helmet } from "react-helmet";
-import Zoom from 'react-reveal/Zoom';
 import Fade from "react-reveal/Fade";
 import { useSelector } from "react-redux";
 import ScrollTrigger from 'react-scroll-trigger';
 
 const AboutUs = () => {
   const [vision, setvision] = useState(false);
+  const [vision1, setvision1] = useState(false);
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -126,14 +126,17 @@ const AboutUs = () => {
           <section className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"}  pb40 pt40 newone`}>
             <div className="container-xl">
               <Row className="align-items-center gy-4">
+         
                 <Col lg={6} md={6} className="text-left">
+                <ScrollTrigger onEnter={() => setvision1(true)} >
                   {
-                    vision && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
+                    vision1 && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
                       <h3 className="fs45 subfont">Our Mission</h3>
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
 
                     </div>
                   }
+                  </ScrollTrigger>
                 </Col>
               </Row>
             </div>
