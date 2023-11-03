@@ -5,7 +5,7 @@ import { Col, Container, Row } from "reactstrap";
 import { contactType } from "../../store/slices/UserSlices";
 import { arrowDiagonal } from "../../assets/svg/Svg";
 import { useSelector } from "react-redux";
-import ScrollTrigger from 'react-scroll-trigger';
+import { Fade } from "react-awesome-reveal";
 const HomeBanner = () => {
 
   const activeTheme = useSelector((state) => {
