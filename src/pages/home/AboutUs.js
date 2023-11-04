@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { useSelector } from "react-redux";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 const AboutUs = () => {
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -11,6 +11,11 @@ const AboutUs = () => {
     <section className={`${activeTheme ? "bgWhite" : "bgFullBlack"} pt80 pb80`}>
       <Container>
         <Row className="gy-5">
+        <Flip>
+          <h1>
+            Aaqib
+          </h1>
+        </Flip>
           <Col lg={6} md={6} xl={6}>
             <p
               className={`${activeTheme ? "colorBlack" : "colorWhite"
