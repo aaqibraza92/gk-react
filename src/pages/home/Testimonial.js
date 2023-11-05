@@ -62,9 +62,9 @@ const Testimonial = () => {
               
           
                 <h2 className="colorWhite fs50 fontlight subfont mt10">
-                <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>What </Fade> <br />
-                <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>People      </Fade><br />
-                <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>Say      </Fade>
+                <Fade left cascade damping={1e-1} delay={100}>What </Fade> <br />
+                <Fade left cascade damping={1e-1} delay={100}>People      </Fade><br />
+                <Fade left cascade damping={1e-1} delay={100}>Say      </Fade>
 
                   </h2>
              
@@ -134,12 +134,12 @@ const Testimonial = () => {
                                 <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
 
                                 <Row className="align-items-center">
-                                  <Col lg={6} md={6}>
-                                    <div className="fs18 fw600 colorWhite text-uppercase">
+                                  <Col lg={4} md={4}>
+                                    {/* <div className="fs18 fw600 colorWhite text-uppercase">
                                       {e?.tag}
-                                    </div>
+                                    </div> */}
                                   </Col>
-                                  <Col lg={6} md={6}>
+                                  <Col lg={8} md={8}>
                                     <div className="fs18 fw600 colorWhite text-uppercase mb15">
                                       - {e?.author}
                                     </div>

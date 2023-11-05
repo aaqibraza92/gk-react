@@ -41,7 +41,7 @@ const WhoWeAre = () => {
                         </Zoom>
 
                             <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs50 fontlight subfont text-center`}>
-                            <Fade className="headingFont"  left cascade damping={1e-1} delay={100}>   who we are? </Fade>
+                            <Fade left cascade damping={1e-1} delay={100}>   who we are? </Fade>
                             </h2>
 
                     </div>

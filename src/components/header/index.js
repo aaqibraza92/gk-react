@@ -10,17 +10,25 @@ const Header = () => {
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
+
+  const homeAnimate = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.flip
+    );
+  });
+
   useEffect(() => {
-    
+
     if(activeTheme){
-      document.body.className = window.location.pathname==="/" ? "home lightMode" : window.location.pathname + " lightMode";
+      document.body.className = window.location.pathname==="/" ? `home lightMode ${homeAnimate ? "disableScroll" : ""}` : window.location.pathname + `lightMode ${homeAnimate ? "disableScroll" : ""}`;
+    
     }else{
-      document.body.className = window.location.pathname==="/" ? "home darkMode" : window.location.pathname + " darkMode";
+      document.body.className = window.location.pathname==="/" ? `${homeAnimate ? "disableScroll" : ""} home darkMode` : window.location.pathname + `${homeAnimate ? "disableScroll" : ""} darkMode`;
     }
     
     return () => { document.body.className = ''; }
     
-  },[window.location.pathname]);
+  },[window.location.pathname,homeAnimate]);
 
   const [stickyHeader, setstickyHeader] = useState("");
 

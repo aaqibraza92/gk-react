@@ -3,9 +3,10 @@ import { Col, Container, Row } from "reactstrap";
 import '../../assets/css/about.css';
 import "../../assets/css/footer.css"
 import { Helmet } from "react-helmet";
-import Fade from "react-reveal/Fade";
 import { useSelector } from "react-redux";
 import ScrollTrigger from 'react-scroll-trigger';
+import Reveal, { Fade, Flip } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 const AboutUs = () => {
   const [vision, setvision] = useState(false);
@@ -26,7 +27,19 @@ const AboutUs = () => {
   }, [videoRefn]);
   const [playStatus, setplayStatus] = useState(false);
 
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+   
+  }
 
+  to {
+    opacity: 1;
+ 
+    transform: translate3d( 200px, -100px, -200px);
+  }
+`;
 
   return (
     <>
@@ -38,37 +51,40 @@ const AboutUs = () => {
           <h1 className="text-white fs70 subfont text-uppercase reveal-text position-relative leftBorder pl20">About Us</h1>
       </section>
 
+
       <div className={`${activeTheme ? "bgWhite" : "bgBlueGradient"} pt80 pb80 mobPb30`}>
         <div className="container-xl">
           <Row className="align-items-center gy-4">
             <Col lg={7} md={7}>
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs50 mobFs30`}>Our legacy <br></br> dates back to</h3>
+                <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs50 mobFs30`}>
+                <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>Our legacy </Fade> <br></br> <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>dates back to</Fade></h3>
               </Fade>
               <Fade left cascade>
-              <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}> <br style={{display: "none"}}/> 1985</h3>
+              <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}> <br style={{display: "none"}}/>   <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>1985 </Fade></h3>
                 {/* <h2 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}>
                 1985
                 </h2> */}
               </Fade>
-              <Fade bottom>
-                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
+              <Fade bottom delay={100}>
+                <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>
+                  When it comes to real estate developers in Hyderabad providing quality, transparency, and professionalism, the name that garners unflinching trust is GK BUILDERS AND DEVELOPERS. Committed to creating well-landscaped luxurious abodes for the elite of the city, the company follows customer-friendly policies and best-in-industry practices.</p>
               </Fade>
-              <Fade bottom>
+              <Fade bottom delay={100}>
                 <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Over a period of three and half decades GK BUILDERS AND DEVELOPERS has carved a distinct niche for itself through several projects spread over mainly in Sainikpuri zone of Secunderabad. The very fact that two colonies have been named after this group shows the strong presence it has in this zone.</p>
               </Fade>
-              <Fade bottom>
+              <Fade bottom delay={100}>
                 <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Having developed about 3 million sq ft., GK BUILDERS AND DEVELOPERS is now focusing on developing large housing schemes in the form of gated communities in the peripheral areas of the twin cities, which are fast developing to meet the housing requirements of middle and upper middle-class customers. From project to project, they strengthened their customer base by improving quality and design as per the changing needs and tastes of the modern customers.</p>
               </Fade>
-              <Fade bottom>
+              <Fade bottom delay={100}>
                 <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
               </Fade>
 
-
+{/* <Reveal keyframes={customAnimation}> <h3 className="text-light">Hello test</h3> </Reveal> */}
             </Col>
 
             <Col lg={5} md={5} className="text-center">
-              <Fade right cascade>
+              <Fade right cascade delay={200}>
                 <img src={require('../../assets/img/aboutus/VectorSmartObject.webp')} className='img-fluid' alt="" />
               </Fade>
 
@@ -108,7 +124,7 @@ const AboutUs = () => {
                   <ScrollTrigger onEnter={() => setvision(true)} >
                     {
                       vision && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
-                        <h3 className="fs45 subfont">Our Vision</h3>
+                        <h3 className="fs45 subfont"> <Fade  bottom cascade damping={0.5e-1} delay={100}>Our Vision </Fade></h3>
                         <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
 
                       </div>
@@ -131,7 +147,7 @@ const AboutUs = () => {
                 <ScrollTrigger onEnter={() => setvision1(true)} >
                   {
                     vision1 && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
-                      <h3 className="fs45 subfont">Our Mission</h3>
+                      <h3 className="fs45 subfont"> <Fade  bottom cascade damping={0.5e-1} delay={100}>Our Mission </Fade> </h3>
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
 
                     </div>
@@ -168,10 +184,10 @@ const AboutUs = () => {
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}>Our <br className="d-none"/> Pillars</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}> <Fade  bottom cascade damping={0.5e-1} delay={100}>Our </Fade> <br className="d-none"/> <Fade  bottom cascade damping={0.5e-1} delay={100}>Pillars </Fade> </h3>
               </Fade>
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s <br className="d-none"/> Foundation</h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} > <Fade  bottom cascade damping={0.5e-1} delay={100}>GK Group’s </Fade>   <br className="d-none"/>  <Fade  bottom cascade damping={0.5e-1} delay={100}>Foundation </Fade> </h3>
               </Fade>
               <div className="devider">
               </div>
@@ -189,7 +205,7 @@ const AboutUs = () => {
                 </Fade>
 
                 <b className="colorWhite">
-                  Late SRI. K Ramakrishnaian<br></br>
+                <Fade  bottom cascade damping={0.5e-1} delay={100}>Late SRI. K Ramakrishnaian </Fade> <br></br>
                   Founder
                 </b>
               </div>
@@ -205,7 +221,7 @@ const AboutUs = () => {
                 </Fade>
                 <Fade left>
                   <b className="colorWhite">
-                    Mr.K. Hanumantha Rao<br></br>
+                  <Fade  bottom cascade damping={0.5e-1} delay={100}>Mr.K. Hanumantha Rao </Fade> <br></br>
                     Managing Partner
                   </b>
                 </Fade>

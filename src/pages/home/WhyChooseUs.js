@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
             />
           </Zoom>
             <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-            <Fade className="headingFont"  left cascade damping={1e-1} delay={100}> why choose us? </Fade>
+            <Fade left cascade damping={1e-1} delay={100}> why choose us? </Fade>
             </h2>
         </div>
 

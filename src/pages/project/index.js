@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import Slide from "react-reveal/Slide";
-import { Zoom } from "react-awesome-reveal";
-import { Fade } from "react-reveal";
+import { Fade,Zoom } from "react-awesome-reveal";
 
 const Project = () => {
   const activeTheme = useSelector((state) => {
@@ -21,7 +20,7 @@ const Project = () => {
         </Fade>
 
         <Container>
-          <h2 className="fs70 mb0 brownGradient text-center mb70">Projects</h2>
+          <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
 
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
@@ -62,9 +61,9 @@ const Project = () => {
                           activeTheme ? "colorBlack" : "colorWhite"
                         }  fs40 fw500 mb0 text-uppercase`}
                       >
-                        GK's Casa Grande
+                      <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Casa Grande</Fade> 
                       </h3>
-                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
                     </div>
                   </div>
                 </div>
@@ -111,9 +110,9 @@ const Project = () => {
                           activeTheme ? "colorBlack" : "colorWhite"
                         }  fs40 fw500 mb0 text-uppercase`}
                       >
-                        GK's Zenith
+                         <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Zenith</Fade>
                       </h3>
-                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
                     </div>
                   </div>
                 </div>
@@ -160,9 +159,9 @@ const Project = () => {
                           activeTheme ? "colorBlack" : "colorWhite"
                         }  fs40 fw500 mb0 text-uppercase`}
                       >
-                        GK's Alam Villas
+                         <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Alam Villas</Fade>
                       </h3>
-                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
                     </div>
                   </div>
                 </div>
@@ -209,9 +208,9 @@ const Project = () => {
                           activeTheme ? "colorBlack" : "colorWhite"
                         }  fs40 fw500 mb0 text-uppercase`}
                       >
-                        GK's Festoon
+                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Festoon</Fade> 
                       </h3>
-                      <p className="fs22 colorBrown">YAPRAL ROAD, SANIKPURI</p>
+                      <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
                     </div>
                   </div>
                 </div>

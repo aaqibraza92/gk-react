@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="container-xxl">
             <Row className="gy-3">
               <Col lg={4} md={4} xl={4}>
-              <Fade bottom cascade>
+              <Fade bottom >
               <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                   <ul className="pl0 noUl fNav row">
                     <li className="col-md-6 col-6">
@@ -132,7 +132,7 @@ const Footer = () => {
               </Col>
 
               <Col lg={4} md={4} xl={4}>
-              <Fade bottom cascade>
+              <Fade bottom >
               <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                   <div className="d-flex">
                     <div className="mr8" style={{ width: "28px" }}>
@@ -163,7 +163,7 @@ const Footer = () => {
 
               <Col lg={4} md={4} xl={4}>
 
-              <Fade bottom cascade>
+              <Fade bottom >
               <div className="radius30 fRounder pl30 pr30 pt60 pb60 mb30">
                   <div className="d-flex mb12">
                     <div className="mr8" style={{ width: "28px" }}>
@@ -232,14 +232,14 @@ const Footer = () => {
                     to="#"
                     className="colorGrey fs14 fRegular  mb0 mr10 text-uppercase"
                   >
-                   <Fade bottom cascade>Privacy Policy</Fade>  
+                   <Fade bottom >Privacy Policy</Fade>  
                   </Link>
                
                   <Link
                     to="/#"
                     className="colorGrey fs14 fRegular mb0 mr10 text-uppercase"
                   >
-                      <Fade bottom cascade>  Terms & Condition    </Fade>
+                      <Fade bottom >  Terms & Condition    </Fade>
                   </Link>
                 </div>
                
@@ -247,7 +247,7 @@ const Footer = () => {
                
                 </Col>
                 <Col lg={6}>
-                <Fade bottom cascade>
+                <Fade bottom >
                 <div className="d-flex justify-content-lg-end">
                     <p className="colorGrey fs14 fsm14 fRegular itemLightwhite mb0 text-uppercase">
                       &#169; {new Date().getFullYear()}{" "}

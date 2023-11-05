@@ -10,9 +10,15 @@ import OurProjects from './OurProjects';
 import VerticalImageSlider from './VerticalImageSlider';
 import HomeAnimate from './HomeAnimate';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const HomePage = () => {
   const [isAnimate,setisAnimate]=useState(true);
+  const homeAnimate = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.flip
+    );
+  });
   return (
     <>
       <Helmet>
@@ -20,7 +26,7 @@ const HomePage = () => {
       </Helmet>
       <main>
       {
-        isAnimate &&  <HomeAnimate/>
+        homeAnimate &&  <HomeAnimate/>
       }
      
         <HomeBanner />
