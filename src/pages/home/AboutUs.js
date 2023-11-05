@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { useSelector } from "react-redux";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 const AboutUs = () => {
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;

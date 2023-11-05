@@ -887,3 +887,12 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
   background: #000;
 
 }
+
+.boxFlip{
+  background: #ddd;
+  height: 80vh;
+  width: 100%;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  margin-top: 20vh;
+}

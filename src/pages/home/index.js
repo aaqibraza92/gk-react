@@ -8,14 +8,21 @@ import WhoWeAre from './WhoWeAre';
 import WhyChooseUs from './WhyChooseUs';
 import OurProjects from './OurProjects';
 import VerticalImageSlider from './VerticalImageSlider';
+import HomeAnimate from './HomeAnimate';
+import { useState } from 'react';
 
 const HomePage = () => {
+  const [isAnimate,setisAnimate]=useState(true);
   return (
     <>
       <Helmet>
         <title>Home - GK Builders & Developers</title>
       </Helmet>
       <main>
+      {
+        isAnimate &&  <HomeAnimate/>
+      }
+     
         <HomeBanner />
         <AboutUs />
         <OurProjects/>
