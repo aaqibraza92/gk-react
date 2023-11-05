@@ -14,7 +14,7 @@ const Project = () => {
   return (
     <>
       <section className="position-relative">
-        <Fade left>
+        <Fade left delay={200}>
           <div className="bigfont">
             <h1>Our Sparkling Gems</h1>
           </div>
