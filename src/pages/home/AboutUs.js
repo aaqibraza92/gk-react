@@ -11,11 +11,6 @@ const AboutUs = () => {
     <section className={`${activeTheme ? "bgWhite" : "bgFullBlack"} pt80 pb80`}>
       <Container>
         <Row className="gy-5">
-        <Flip>
-          <h1>
-            Aaqib
-          </h1>
-        </Flip>
           <Col lg={6} md={6} xl={6}>
             <p
               className={`${activeTheme ? "colorBlack" : "colorWhite"

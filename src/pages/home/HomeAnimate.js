@@ -6,7 +6,7 @@ import { Slide } from "react-awesome-reveal";
 const HomeAnimate = () => {
   return (
     <section className="sectionAnimate">
-      <Container fluid>
+      <Container>
         <Row className="gx-5">
           <Col lg={3} md={3} sm={3} xs={3}>
           <Flip left duration={1200}>
