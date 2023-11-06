@@ -3,14 +3,29 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import Slide from "react-reveal/Slide";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade, Zoom,Reveal } from "react-awesome-reveal";
 import HoverVideoPlayer from 'react-hover-video-player';
 import { Helmet } from "react-helmet";
+import { keyframes } from "@emotion/react";
 
 const Project = () => {
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
+
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-200px, 100px, 0px);
+   
+  }
+
+  to {
+    opacity: 1;
+ 
+    transform: translate3d( 0px, 0px, -200px);
+  }
+`;
 
   return (
     <>
@@ -28,8 +43,9 @@ const Project = () => {
           <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
 
   
+<Reveal keyframes={customAnimation} delay={600}>
 
-          <Row className="justify-content-end mb60 projectMainList">
+<Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
               <Link to="#">
                 <div className=" d-flex justify-content-end">
@@ -82,6 +98,8 @@ const Project = () => {
               </Link>
             </Col>
           </Row>
+</Reveal>
+<Reveal keyframes={customAnimation} delay={600}>
 
           <Row className="projectMainList mb60">
             <Col lg={7}>
@@ -143,7 +161,10 @@ const Project = () => {
               </Link>
             </Col>
           </Row>
+          </Reveal>
 
+
+          <Reveal keyframes={customAnimation} delay={600}>
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
               <Link to="#">
@@ -202,7 +223,10 @@ const Project = () => {
               </Link>
             </Col>
           </Row>
+          </Reveal>
 
+
+          <Reveal keyframes={customAnimation} delay={600}>
           <Row className="projectMainList mb60">
             <Col lg={7}>
               <Link to="#">
@@ -258,6 +282,8 @@ const Project = () => {
               </Link>
             </Col>
           </Row>
+            </Reveal>
+          
         </Container>
       </section>
 
@@ -269,8 +295,10 @@ const Project = () => {
           <h2
             className={`${activeTheme ? "colorBlack" : "colorWhite"} fs50 mb55`}
           >
-            Looking for quality construction?
+            <Fade  bottom cascade damping={0.5e-1} delay={100}> Looking for quality construction?</Fade>
           </h2>
+
+          <Fade>
           <Link
             className={`${activeTheme ? "bgBlack" : "bgBlack"
               } btnTheme mr12 fMedium btnMob button button--calypso`}
@@ -291,6 +319,8 @@ const Project = () => {
               alt=""
             />
           </Link>
+          </Fade>
+        
         </Container>
       </section>
     </>

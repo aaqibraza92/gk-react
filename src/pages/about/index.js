@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { useSelector } from "react-redux";
 import ScrollTrigger from 'react-scroll-trigger';
 import Reveal, { Fade, Flip } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+
 
 const AboutUs = () => {
   const [vision, setvision] = useState(false);
@@ -27,19 +27,7 @@ const AboutUs = () => {
   }, [videoRefn]);
   const [playStatus, setplayStatus] = useState(false);
 
-  const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(0, 0, 0);
-   
-  }
 
-  to {
-    opacity: 1;
- 
-    transform: translate3d( 200px, -100px, -200px);
-  }
-`;
 
   return (
     <>
@@ -80,7 +68,7 @@ const AboutUs = () => {
                 <p className={`${activeTheme ? "colorBlack" : "colorWhite"} fs15`}>Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS groomed many young people to become independent builders by themselves. Many of the reputed builders in this area have their roots with the organisation for whom construction is a profession and community work a passion.</p>
               </Fade>
 
-{/* <Reveal keyframes={customAnimation}> <h3 className="text-light">Hello test</h3> </Reveal> */}
+
             </Col>
 
             <Col lg={5} md={5} className="text-center">
