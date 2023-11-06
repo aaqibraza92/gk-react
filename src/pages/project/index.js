@@ -16,7 +16,7 @@ const Project = () => {
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-200px, 100px, 0px);
+    transform: translate3d(-300px, 200px, 0px);
    
   }
 
