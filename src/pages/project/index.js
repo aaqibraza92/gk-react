@@ -47,8 +47,7 @@ const Project = () => {
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                      <HoverVideoPlayer
+                    <HoverVideoPlayer
                           videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
                           pausedOverlay={
                             <img
@@ -63,17 +62,10 @@ const Project = () => {
                             </div>
                           }
                         />
-                        {/* <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr1.png")}
-                          className="img-fluid"
-                          alt=""
-                        /> */}
-
-                     
+                      <div className="position-relative">
                       </div>
 
-                      {/* <div className="viewLink  position-absolute content-details fadeIn-bottom">
+                      <div className="viewLink  position-absolute content-details fadeIn-bottom">
                         <Link to="#" className="">
                           <div className="circleLink text-center">
                             <div className="crcWrapper">
@@ -89,7 +81,7 @@ const Project = () => {
                             </div>
                           </div>
                         </Link>
-                      </div> */}
+                      </div>
                     </div>
                     <div className="text-end mt10">
                       <h3
