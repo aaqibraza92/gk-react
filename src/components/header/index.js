@@ -20,10 +20,10 @@ const Header = () => {
   useEffect(() => {
 
     if(activeTheme){
-      document.body.className = window.location.pathname==="/" ? `home lightMode ${homeAnimate ? "disableScroll" : ""}` : window.location.pathname + `lightMode ${homeAnimate ? "disableScroll" : ""}`;
+      document.body.className = window.location.pathname==="/" ? `home lightMode ${homeAnimate ? " disableScroll" : ""}` : window.location.pathname + ` lightMode ${homeAnimate ? "disableScroll" : ""}`;
     
     }else{
-      document.body.className = window.location.pathname==="/" ? `${homeAnimate ? "disableScroll" : ""} home darkMode` : window.location.pathname + `${homeAnimate ? "disableScroll" : ""} darkMode`;
+      document.body.className = window.location.pathname==="/" ? `${homeAnimate ? " disableScroll" : ""} home darkMode` : window.location.pathname + `${homeAnimate ? " disableScroll" : ""} darkMode`;
     }
     
     return () => { document.body.className = ''; }

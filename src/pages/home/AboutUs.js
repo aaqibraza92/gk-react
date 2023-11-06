@@ -21,13 +21,16 @@ const AboutUs = () => {
               </Fade>
             </p>
 
-
+            <Fade className="headingFont brownGradient"  bottom cascade damping={0.5e-1}>
             <h4 className="fs36 mb0 text-uppercase colorBrown">
-              <Fade className="headingFont brownGradient"  bottom cascade damping={0.5e-1} delay={100}>
-                Exclusive communities
-              </Fade>
+            
+            
+          
+
+              Exclusive communities
 
             </h4>
+            </Fade>
 
             <h3 className="fs60 mb0 text-uppercase colorBrown">
               <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>
