@@ -104,13 +104,25 @@ const Project = () => {
                 <div className=" d-flex">
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr2.jpg")}
-                          className="img-fluid"
-                          alt=""
+
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr2.jpg")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
+
+                      <div className="position-relative">
+                     
                       </div>
 
                       <div className="viewLink position-absolute content-details fadeIn-bottom">
@@ -152,13 +164,23 @@ const Project = () => {
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr3.jpg")}
-                          className="img-fluid"
-                          alt=""
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr3.jpg")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
+
+                      <div className="position-relative">
                       </div>
 
                       <div className="viewLink position-absolute  content-details fadeIn-bottom">
@@ -200,14 +222,21 @@ const Project = () => {
                 <div className=" d-flex">
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr4.jpg")}
-                          className="img-fluid"
-                          alt=""
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr4.jpg")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
-                      </div>
 
                       <div className="viewLink position-absolute  content-details fadeIn-bottom">
                         <Link to="#" className="">
