@@ -17,29 +17,13 @@ const Project = () => {
      <Helmet>
         <title>Projects - GK Builders & Developers</title>
       </Helmet>
+      
       <section className="position-relative">
         <Fade left delay={200}>
           <div className="bigfont">
             <h1>Our Sparkling Gems</h1>
           </div>
         </Fade>
-{/* 
-        <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
-                          pausedOverlay={
-                            <img
-                            src={require("../../assets/img/project/pr1.png")}
-                            className="img-fluid w-100 h-100"
-                            alt=""
-                          />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                        /> */}
-
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
 
@@ -60,11 +44,7 @@ const Project = () => {
                             alt=""
                           />
                           }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
+                          loadingOverlay={""}
                           preload="metadata"
                         />
                       <div className="position-relative">
