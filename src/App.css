@@ -294,6 +294,9 @@ body{
 background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
+.imgProject{
+  z-index: 1;
+}
 .imgProject::after {
   background: linear-gradient(to right, rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%);
   content: "";
