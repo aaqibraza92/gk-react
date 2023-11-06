@@ -5,6 +5,7 @@ import { Col, Container, Row } from "reactstrap";
 import Slide from "react-reveal/Slide";
 import { Fade, Zoom } from "react-awesome-reveal";
 import HoverVideoPlayer from 'react-hover-video-player';
+import { Helmet } from "react-helmet";
 
 const Project = () => {
   const activeTheme = useSelector((state) => {
@@ -13,6 +14,9 @@ const Project = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Projects - GK Builders & Developers</title>
+      </Helmet>
       <section className="position-relative">
         <Fade left delay={200}>
           <div className="bigfont">
@@ -61,6 +65,7 @@ const Project = () => {
                               <div className="loading-spinner" />
                             </div>
                           }
+                          preload="metadata"
                         />
                       <div className="position-relative">
                       </div>
@@ -119,6 +124,7 @@ const Project = () => {
                               <div className="loading-spinner" />
                             </div>
                           }
+                          preload="metadata"
                         />
 
                       <div className="position-relative">
@@ -178,6 +184,7 @@ const Project = () => {
                               <div className="loading-spinner" />
                             </div>
                           }
+                          preload="metadata"
                         />
 
                       <div className="position-relative">
@@ -236,6 +243,7 @@ const Project = () => {
                               <div className="loading-spinner" />
                             </div>
                           }
+                          preload="metadata"
                         />
 
                       <div className="viewLink position-absolute  content-details fadeIn-bottom">
