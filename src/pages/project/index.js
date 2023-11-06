@@ -38,8 +38,6 @@ const Project = () => {
         </Fade>
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
-
-
           <Reveal keyframes={customAnimation} delay={600}>
 
             <Row className="justify-content-end mb60 projectMainList">
