@@ -20,15 +20,15 @@ const Header = () => {
   useEffect(() => {
 
     if(activeTheme){
-      document.body.className = window.location.pathname==="/" ? `home lightMode ${homeAnimate ? " disableScroll" : ""}` : window.location.pathname + ` lightMode ${homeAnimate ? "disableScroll" : ""}`;
+      document.body.className = window.location.pathname==="/" ? `home lightMode ` : window.location.pathname + ` lightMode`;
     
     }else{
-      document.body.className = window.location.pathname==="/" ? `${homeAnimate ? " disableScroll" : ""} home darkMode` : window.location.pathname + `${homeAnimate ? " disableScroll" : ""} darkMode`;
+      document.body.className = window.location.pathname==="/" ? ` home darkMode` : window.location.pathname + ` darkMode`;
     }
     
     return () => { document.body.className = ''; }
     
-  },[window.location.pathname,homeAnimate]);
+  },[window.location.pathname]);
 
   const [stickyHeader, setstickyHeader] = useState("");
 
@@ -43,9 +43,8 @@ const Header = () => {
         setstickyHeader("topUp");
       }
     });
-
-  
   }, [pathname]);
+  
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const resizeScreen = () => {
     setScreenWidth(window.innerWidth);

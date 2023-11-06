@@ -25,9 +25,9 @@ const HomePage = () => {
         <title>Home - GK Builders & Developers</title>
       </Helmet>
       <main>
-      {
+      {/* {
         homeAnimate &&  <HomeAnimate/>
-      }
+      } */}
      
         <HomeBanner />
         <AboutUs />

@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import Slide from "react-reveal/Slide";
-import { Fade,Zoom } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
+import HoverVideoPlayer from 'react-hover-video-player';
 
 const Project = () => {
   const activeTheme = useSelector((state) => {
@@ -19,10 +20,28 @@ const Project = () => {
             <h1>Our <br></br> Sparkling <br></br> Gems</h1>
              </Fade>
           </div>
-      
+       
+{/* 
+        <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr1.png")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
+                        /> */}
 
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
+
+  
 
           <Row className="justify-content-end mb60 projectMainList">
             <Col lg={7}>
@@ -30,13 +49,22 @@ const Project = () => {
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr1.png")}
-                          className="img-fluid"
-                          alt=""
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr1.png")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
+                      <div className="position-relative">
                       </div>
 
                       <div className="viewLink  position-absolute content-details fadeIn-bottom">
@@ -59,11 +87,10 @@ const Project = () => {
                     </div>
                     <div className="text-end mt10">
                       <h3
-                        className={`${
-                          activeTheme ? "colorBlack" : "colorWhite"
-                        }  fs40 fw500 mb0 text-uppercase`}
+                        className={`${activeTheme ? "colorBlack" : "colorWhite"
+                          }  fs40 fw500 mb0 text-uppercase`}
                       >
-                      <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Casa Grande</Fade> 
+                        <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Casa Grande</Fade>
                       </h3>
                       <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
                     </div>
@@ -79,13 +106,25 @@ const Project = () => {
                 <div className=" d-flex">
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr2.jpg")}
-                          className="img-fluid"
-                          alt=""
+
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr2.jpg")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
+
+                      <div className="position-relative">
+                     
                       </div>
 
                       <div className="viewLink position-absolute content-details fadeIn-bottom">
@@ -108,11 +147,10 @@ const Project = () => {
                     </div>
                     <div className="mt10">
                       <h3
-                        className={`${
-                          activeTheme ? "colorBlack" : "colorWhite"
-                        }  fs40 fw500 mb0 text-uppercase`}
+                        className={`${activeTheme ? "colorBlack" : "colorWhite"
+                          }  fs40 fw500 mb0 text-uppercase`}
                       >
-                         <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Zenith</Fade>
+                        <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Zenith</Fade>
                       </h3>
                       <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL, SECUNDERABAD</Fade></p>
                     </div>
@@ -128,13 +166,23 @@ const Project = () => {
                 <div className=" d-flex justify-content-end">
                   <div>
                     <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/pr3.jpg")}
-                          className="img-fluid"
-                          alt=""
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr3.jpg")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
+
+                      <div className="position-relative">
                       </div>
 
                       <div className="viewLink position-absolute  content-details fadeIn-bottom">
@@ -157,11 +205,10 @@ const Project = () => {
                     </div>
                     <div className="text-end mt10">
                       <h3
-                        className={`${
-                          activeTheme ? "colorBlack" : "colorWhite"
-                        }  fs40 fw500 mb0 text-uppercase`}
+                        className={`${activeTheme ? "colorBlack" : "colorWhite"
+                          }  fs40 fw500 mb0 text-uppercase`}
                       >
-                         <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Alam Villas</Fade>
+                        <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Alam Villas</Fade>
                       </h3>
                       <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL, SECUNDERABAD</Fade></p>
                     </div>
@@ -177,14 +224,21 @@ const Project = () => {
                 <div className=" d-flex">
                   <div>
                     <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-                      <div className="position-relative">
-                        <div class="content-overlay"></div>
-                        <img
-                          src={require("../../assets/img/project/festoon.webp")}
-                          className="img-fluid"
-                          alt=""
+                    <HoverVideoPlayer
+                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                          pausedOverlay={
+                            <img
+                            src={require("../../assets/img/project/pr4.jpg")}
+                            className="img-fluid w-100 h-100"
+                            alt=""
+                          />
+                          }
+                          loadingOverlay={
+                            <div className="loading-overlay">
+                              <div className="loading-spinner" />
+                            </div>
+                          }
                         />
-                      </div>
 
                       <div className="viewLink position-absolute  content-details fadeIn-bottom">
                         <Link to="#" className="">
@@ -206,11 +260,10 @@ const Project = () => {
                     </div>
                     <div className="mt10">
                       <h3
-                        className={`${
-                          activeTheme ? "colorBlack" : "colorWhite"
-                        }  fs40 fw500 mb0 text-uppercase`}
+                        className={`${activeTheme ? "colorBlack" : "colorWhite"
+                          }  fs40 fw500 mb0 text-uppercase`}
                       >
-                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Festoon</Fade> 
+                        <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Festoon</Fade>
                       </h3>
                       <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>SAINIKPURI , SECUNDERABAD</Fade></p>
                     </div>
@@ -373,9 +426,8 @@ const Project = () => {
       </section>
 
       <section
-        className={`${
-          activeTheme ? "bgGrey" : "bgBrown"
-        } pt100 pb100 text-center  mt50`}
+        className={`${activeTheme ? "bgGrey" : "bgBrown"
+          } pt100 pb100 text-center  mt50`}
       >
         <Container>
           <h2
@@ -384,9 +436,8 @@ const Project = () => {
             Looking for quality construction?
           </h2>
           <Link
-            className={`${
-              activeTheme ? "bgBlack" : "bgBlack"
-            } btnTheme mr12 fMedium btnMob button button--calypso`}
+            className={`${activeTheme ? "bgBlack" : "bgBlack"
+              } btnTheme mr12 fMedium btnMob button button--calypso`}
             to="/#"
           >
             <span

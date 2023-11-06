@@ -294,6 +294,9 @@ body{
 background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
+.imgProject{
+  z-index: 1;
+}
 .imgProject::after {
   background: linear-gradient(to right, rgba(234,220,202,1) 0%,rgba(179,156,122,1) 100%);
   content: "";
@@ -661,7 +664,9 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
-  width: 100%;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -989,7 +994,4 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 }
 .sectionAnimate {
   height: 100vh;
-}
-.disableScroll {
-  overflow: hidden;
 }
