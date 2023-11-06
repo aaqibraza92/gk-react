@@ -571,6 +571,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   font-family: para;
   line-height: 240px;
   top: 70px;
+  opacity: 0.6;
 }
 
 /* Works on Chrome/Edge/Safari */
