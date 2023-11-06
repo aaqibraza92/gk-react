@@ -11,9 +11,9 @@
   text-transform: uppercase;
   font-size: 15px;
 }
-.headerMenu > li > a:hover {
+/* .headerMenu > li > a:hover {
   
-}
+} */
 .topDown {
   position: fixed;
   width: 100%;
@@ -260,7 +260,7 @@ img.img-fluid.mainLogo {
 .topDown .headerMenu {
   height: 50px;
 }
-.home .mainHeader.transition,.\/about-us .mainHeader.transition{
+.home .mainHeader.transition, .\/about-us .mainHeader.transition{
   position: absolute;
   width: 100%;
   top: 10px;

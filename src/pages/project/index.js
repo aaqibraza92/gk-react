@@ -13,11 +13,13 @@ const Project = () => {
   return (
     <>
       <section className="position-relative">
-        <Fade left delay={200}>
+       
           <div className="bigfont">
-            <h1>Our Sparkling Gems</h1>
+             <Fade left>
+            <h1>Our <br></br> Sparkling <br></br> Gems</h1>
+             </Fade>
           </div>
-        </Fade>
+      
 
         <Container>
           <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
@@ -112,7 +114,7 @@ const Project = () => {
                       >
                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Zenith</Fade>
                       </h3>
-                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL, SECUNDERABAD</Fade></p>
                     </div>
                   </div>
                 </div>
@@ -161,7 +163,7 @@ const Project = () => {
                       >
                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Alam Villas</Fade>
                       </h3>
-                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL, SECUNDERABAD</Fade></p>
                     </div>
                   </div>
                 </div>
@@ -178,7 +180,7 @@ const Project = () => {
                       <div className="position-relative">
                         <div class="content-overlay"></div>
                         <img
-                          src={require("../../assets/img/project/pr4.jpg")}
+                          src={require("../../assets/img/project/festoon.webp")}
                           className="img-fluid"
                           alt=""
                         />
@@ -210,13 +212,163 @@ const Project = () => {
                       >
                                 <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Festoon</Fade> 
                       </h3>
-                      <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
+                      <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>SAINIKPURI , SECUNDERABAD</Fade></p>
                     </div>
                   </div>
                 </div>
               </Link>
             </Col>
           </Row>
+
+          <Row className="justify-content-end mb60 projectMainList">
+            <Col lg={7}>
+              <Link to="#">
+                <div className=" d-flex justify-content-end">
+                  <div>
+                    <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                      <div className="position-relative">
+                        <div class="content-overlay"></div>
+                        <img
+                          src={require("../../assets/img/project/triad.webp")}
+                          className="img-fluid"
+                          alt=""
+                        />
+                      </div>
+
+                      <div className="viewLink position-absolute  content-details fadeIn-bottom">
+                        <Link to="#" className="">
+                          <div className="circleLink text-center ">
+                            <div className="crcWrapper">
+                              <img
+                                src={require("../../assets/img/home/arrowBlack.png")}
+                                className="img-fluid"
+                                alt=""
+                              />
+                            </div>
+
+                            <div className="colorWhite textLink fs18 fw600">
+                              View Project
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="text-end mt10">
+                      <h3
+                        className={`${
+                          activeTheme ? "colorBlack" : "colorWhite"
+                        }  fs40 fw500 mb0 text-uppercase`}
+                      >
+                         <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK’S TRIAD</Fade>
+                      </h3>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>KAPRA, SECUNDERABAD </Fade></p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </Col>
+          </Row>
+
+
+          <Row className="projectMainList mb60">
+            <Col lg={7}>
+              <Link to="#">
+                <div className=" d-flex">
+                  <div>
+                    <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
+                      <div className="position-relative">
+                        <div class="content-overlay"></div>
+                        <img
+                          src={require("../../assets/img/project/pear.webp")}
+                          className="img-fluid"
+                          alt=""
+                        />
+                      </div>
+
+                      <div className="viewLink position-absolute  content-details fadeIn-bottom">
+                        <Link to="#" className="">
+                          <div className="circleLink text-center">
+                            <div className="crcWrapper">
+                              <img
+                                src={require("../../assets/img/home/arrowBlack.png")}
+                                className="img-fluid"
+                                alt=""
+                              />
+                            </div>
+
+                            <div className="colorWhite textLink fs18 fw600">
+                              View Project
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="mt10">
+                      <h3
+                        className={`${
+                          activeTheme ? "colorBlack" : "colorWhite"
+                        }  fs40 fw500 mb0 text-uppercase`}
+                      >
+                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK’S PEARL ENCLAVE</Fade> 
+                      </h3>
+                      <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>KAPRA, SECUNDERABAD</Fade></p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </Col>
+          </Row>
+
+
+          <Row className="justify-content-end mb60 projectMainList">
+            <Col lg={7}>
+              <Link to="#">
+                <div className=" d-flex justify-content-end">
+                  <div>
+                    <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                      <div className="position-relative">
+                        <div class="content-overlay"></div>
+                        <img
+                          src={require("../../assets/img/project/surya.webp")}
+                          className="img-fluid"
+                          alt=""
+                        />
+                      </div>
+
+                      <div className="viewLink position-absolute  content-details fadeIn-bottom">
+                        <Link to="#" className="">
+                          <div className="circleLink text-center ">
+                            <div className="crcWrapper">
+                              <img
+                                src={require("../../assets/img/home/arrowBlack.png")}
+                                className="img-fluid"
+                                alt=""
+                              />
+                            </div>
+
+                            <div className="colorWhite textLink fs18 fw600">
+                              View Project
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="text-end mt10">
+                      <h3
+                        className={`${
+                          activeTheme ? "colorBlack" : "colorWhite"
+                        }  fs40 fw500 mb0 text-uppercase`}
+                      >
+                         <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK’S SURYA ARCADE</Fade>
+                      </h3>
+                      <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL, SECUNDERABAD</Fade></p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </Col>
+          </Row>
+          
         </Container>
       </section>
 
