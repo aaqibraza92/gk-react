@@ -17,12 +17,9 @@ const Project = () => {
   from {
     opacity: 0;
     transform: translate3d(-300px, 200px, 0px);
-   
   }
-
   to {
     opacity: 1;
- 
     transform: translate3d( 0px, 0px, -200px);
   }
 `;
