@@ -43,9 +43,8 @@ const Header = () => {
         setstickyHeader("topUp");
       }
     });
-
-  
   }, [pathname]);
+  
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const resizeScreen = () => {
     setScreenWidth(window.innerWidth);
