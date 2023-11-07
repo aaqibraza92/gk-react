@@ -32,7 +32,7 @@ const HomeAnimate = () => {
     <section className={`sectionAnimate d-flex align-items-center ${activeTheme ? "" : "bgBlack"}`}>
       <Container fluid>
       <div id="load" class="wrapper containerAnimate row" onMouseEnter={(e)=>handleHover(e)}>
-        <div class=" col-md-2">
+        <div class=" col-md-2 col-2">
           <div class="hover panel">
             <div class="front">
               <div class="box1">
@@ -46,7 +46,7 @@ const HomeAnimate = () => {
           </div>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-md-2 col-2">
           <div class="hover panel">
             <div class="front">
               <div class="box1">
@@ -60,7 +60,7 @@ const HomeAnimate = () => {
           </div>
       </div>
 
-      <div class=" col-md-2">
+      <div class=" col-md-2 col-2">
           <div class="hover panel">
             <div class="front">
               <div class="box1">
@@ -74,7 +74,7 @@ const HomeAnimate = () => {
           </div>
       </div>
   
-      <div class="col-md-2">
+      <div class="col-md-2 col-2">
           <div class="hover panel">
             <div class="front">
               <div class="box1">
@@ -89,7 +89,7 @@ const HomeAnimate = () => {
           </div>
       </div>
   
-      <div class="col-md-2">
+      <div class="col-md-2 col-2">
           <div class="hover panel">
             <div class="front">
               <div class="box1">
@@ -103,7 +103,7 @@ const HomeAnimate = () => {
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-2">
           <div class="hover panel">
             <div class="front">
               <div class="box1">
@@ -118,29 +118,6 @@ const HomeAnimate = () => {
           </div>
         </div>
      </div>
-
-        {/* <Row className="gx-5">
-          <Col lg={3} md={3} sm={3} xs={3}>
-          <Flip left duration={1200}>
-              <div className="boxFlip"></div>
-            </Flip>
-          </Col>
-          <Col lg={3} md={3} sm={3} xs={3}>
-          <Flip left duration={1200}>
-              <div className="boxFlip"></div>
-            </Flip>
-          </Col>
-          <Col lg={3} md={3} sm={3} xs={3}>
-          <Flip left duration={1200}>
-              <div className="boxFlip"></div>
-            </Flip>
-          </Col>
-          <Col lg={3} md={3} sm={3} xs={3}>
-          <Flip left duration={1200}>
-              <div className="boxFlip"></div>
-            </Flip>
-          </Col>
-        </Row> */}
       </Container>
     </section>
   );

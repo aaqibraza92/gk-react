@@ -39,8 +39,8 @@ const Project = () => {
           </div>
         
         <Container>
-          <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
-          <Reveal keyframes={customAnimation} delay={600}>
+        <Fade  bottom delay={100}> <h2 className="fs70 mb0 brownGradient text-center mb70">  Projects</h2> </Fade>
+          <Reveal keyframes={customAnimation} delay={400}>
 
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
@@ -97,7 +97,7 @@ const Project = () => {
             </Row>
           </Reveal>
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
 
             <Row className="projectMainList mb60">
               <Col lg={7}>
@@ -162,7 +162,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="#">
@@ -224,7 +224,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="#">
@@ -283,7 +283,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="#">
@@ -345,7 +345,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="#">
@@ -404,7 +404,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="#">
@@ -473,12 +473,14 @@ const Project = () => {
           } pt100 pb100 text-center  mt50`}
       >
         <Container>
+        <Fade bottom delay={100}>
           <h2
             className={`${activeTheme ? "colorBlack" : "colorWhite"} fs50 mb55`}
           >
-            <Fade bottom cascade damping={0.5e-1} delay={100}> Looking for quality construction?</Fade>
+           Looking for quality construction?
           </h2>
 
+          </Fade>
           <Fade>
             <Link
               className={`${activeTheme ? "bgBlack" : "bgBlack"
