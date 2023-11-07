@@ -3,9 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "../../assets/css/header.css";
 import { useSelector } from "react-redux";
+import HomeAnimate from "../../pages/home/HomeAnimate";
 
 const Header = () => {
-
+  const [isAnimate,setisAnimate]=useState(true);
   
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -17,17 +18,21 @@ const Header = () => {
     );
   });
 
-  useEffect(() => {
 
+  useEffect(()=>{
+    setisAnimate(true);
+    setTimeout(() => {
+      setisAnimate(false);
+    }, 1200);
+  },[window.location.pathname])
+  useEffect(() => {
     if(activeTheme){
       document.body.className = window.location.pathname==="/" ? `home lightMode ` : window.location.pathname + ` lightMode`;
     
     }else{
       document.body.className = window.location.pathname==="/" ? ` home darkMode` : window.location.pathname + ` darkMode`;
     }
-    
     return () => { document.body.className = ''; }
-    
   },[window.location.pathname]);
 
   const [stickyHeader, setstickyHeader] = useState("");
@@ -64,7 +69,11 @@ const Header = () => {
   }
 
   return (
-    <header
+    <>
+      {
+        isAnimate &&  <HomeAnimate/>
+      }
+         <header
       className={`mainHeader transition ${stickyHeader} ${
         !activeTheme && "darkMode"
       }`}
@@ -138,6 +147,8 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </>
+ 
   );
 };
 
