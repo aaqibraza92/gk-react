@@ -25,8 +25,9 @@ const WhoWeAre = () => {
     });
 
     const handleHover=()=>{
-        setBlock('d-block');
         settriggerHover(true);
+        setBlock('d-block');
+       
     }
 
     return (
