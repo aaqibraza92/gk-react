@@ -14,8 +14,8 @@ import { EffectFade, Autoplay } from 'swiper';
 
 const WhoWeAre = () => {
 
-    const [triggerHover, settriggerHover] = useState('d-none');
-
+    const [triggerHover, settriggerHover] = useState(false);
+    const [block, setBlock] = useState('d-none');
 
 
     const activeTheme = useSelector((state) => {
@@ -23,6 +23,11 @@ const WhoWeAre = () => {
             state && state?.persistedReducer?.theme?.dayTheme
         );
     });
+
+    const handleHover=()=>{
+        setBlock('d-block');
+        settriggerHover(true);
+    }
 
     return (
         <section className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
@@ -43,19 +48,18 @@ const WhoWeAre = () => {
                             <Zoom top cascade>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
-                                    <div className='circleAnimate position-relative' onMouseOver={() => settriggerHover('d-block')}>
-                                            </div>
-                                        {/* {
+                             
+                                        {
                                             triggerHover ? <div className='circleAnimate position-relative'>
-                                            </div> : <div className='circleAnimate hideRotate position-relative' onMouseOver={() => settriggerHover('d-block')}>
+                                            </div> : <div className='circleAnimate hideRotate position-relative' onMouseOver={() => handleHover()}>
                                             </div>
 
                                          
-                                        } */}
+                                        }
 
                                         
                                             
-                                            <div className={`${triggerHover} wrpCircle position-absolute`}>
+                                            <div className={`${block} wrpCircle position-absolute`}>
                                                 <Swiper
                                                     autoplay={{
                                                         delay: 2500,
