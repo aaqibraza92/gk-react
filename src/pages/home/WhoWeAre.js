@@ -3,9 +3,6 @@ import { Col, Container, Row } from 'reactstrap'
 import { useSelector } from "react-redux";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { useEffect, useState } from 'react';
-import FadeSlider from './FadeSlider';
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -53,7 +50,6 @@ const WhoWeAre = () => {
     return (
         <section className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
-                {/* <FadeSlider/> */}
                 <div className='text-center'>
                     <div className="">
                         <Zoom left>
@@ -92,15 +88,15 @@ const WhoWeAre = () => {
                                                         clickable: false,
                                                     }}
                                                     modules={[EffectFade, Autoplay]}
-                                                    className="mySwiper"
+                                                    className="mySwiper swiperFadeEff"
                                                 >
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                                                4
+                                                            4000
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
+                                                                <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
                                                                     <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
                                                                 </svg>
                                                             </span>
@@ -113,7 +109,7 @@ const WhoWeAre = () => {
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                                                8
+                                                            63
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient'>
                                                                 k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
@@ -122,8 +118,7 @@ const WhoWeAre = () => {
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                            Lorem <br />
-                                                            Ipsum
+                                                        Projects
                                                         </div>
                                                     </SwiperSlide>
 
