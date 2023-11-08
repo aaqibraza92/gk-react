@@ -994,7 +994,10 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 }
 
 
-
+.plusIcon {
+  position: relative;
+  top: 9px;
+}
 
 
 .swiperFadeEff .swiper-slide {

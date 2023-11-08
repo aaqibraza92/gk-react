@@ -11,34 +11,11 @@ import 'swiper/css/pagination';
 import { EffectFade, Autoplay } from 'swiper';
 
 
-const images = ["0", "1", "2", "3"];
 
 const WhoWeAre = () => {
 
-    const [triggerHover, settriggerHover] = useState(false);
-    const [slide, setSlide] = useState("slide1");
-    useEffect(() => {
-        if (triggerHover) {
-            const timeout = setTimeout(() => {
-                setSlide("slide2");
-            }, 10000);
-            return () => clearTimeout(timeout);
-        }
-    }, [triggerHover]);
+    const [triggerHover, settriggerHover] = useState('d-none');
 
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    useEffect(() => {
-        if (triggerHover) {
-            const interval = setInterval(() => {
-                setCurrentImageIndex((prevIndex) =>
-                    prevIndex === images.length - 1 ? 0 : prevIndex + 1
-                );
-            }, 3000);
-
-            return () => clearInterval(interval);
-        }
-    }, [triggerHover]);
 
 
     const activeTheme = useSelector((state) => {
@@ -66,16 +43,19 @@ const WhoWeAre = () => {
                             <Zoom top cascade>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
-
-                                        {
-                                            triggerHover ? <div className='circleAnimate position-relative'>
-                                            </div> : <div className='circleAnimate hideRotate position-relative' onMouseOver={() => settriggerHover(true)}>
+                                    <div className='circleAnimate position-relative' onMouseOver={() => settriggerHover('d-block')}>
                                             </div>
-                                        }
+                                        {/* {
+                                            triggerHover ? <div className='circleAnimate position-relative'>
+                                            </div> : <div className='circleAnimate hideRotate position-relative' onMouseOver={() => settriggerHover('d-block')}>
+                                            </div>
 
-                                        {
-                                            triggerHover &&
-                                            <div className='wrpCircle position-absolute'>
+                                         
+                                        } */}
+
+                                        
+                                            
+                                            <div className={`${triggerHover} wrpCircle position-absolute`}>
                                                 <Swiper
                                                     autoplay={{
                                                         delay: 2500,
@@ -92,13 +72,11 @@ const WhoWeAre = () => {
                                                 >
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
                                                             4000
                                                             </span>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                                <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
-                                                                    <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-                                                                </svg>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
@@ -108,13 +86,11 @@ const WhoWeAre = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
                                                             63
                                                             </span>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
-                                                                    <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-                                                                </svg>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
@@ -122,55 +98,38 @@ const WhoWeAre = () => {
                                                         </div>
                                                     </SwiperSlide>
 
+                                                    <SwiperSlide>
+                                                        <div className='mb0 lh50'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                            30
+                                                            </span>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
+                                                            </span>
+                                                        </div>
+                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                                        Years <br/> Expertise
+                                                        </div>
+                                                    </SwiperSlide>
+
+                                                    <SwiperSlide>
+                                                        <div className='mb0 lh50'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                            3M
+                                                            </span>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
+                                                            </span>
+                                                        </div>
+                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                                        sq. ft Area <br/> Delivered
+                                                        </div>
+                                                    </SwiperSlide>
+
                                                 </Swiper>
                                             </div>
-                                        }
-                                        {/* {
-                                            triggerHover && slide==="slide1" &&
-                                           
-                                            <div className='wrpCircle position-absolute'>
-                                                 <Fade bottom cascade>
-                                            <div className='mb0 lh50'>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                              4
-                                                </span>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
-                                                        <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                            Happy <br />
-                                            Families
-                                            </div>
-                                            </Fade>
-                                        </div>
+                                    
                                      
-                                        }
-                                        {
-                                            triggerHover && slide==="slide2" &&
-                                         
-                                            <div className='wrpCircle position-absolute'>
-                                                   <Fade bottom cascade>
-                                            <div className='mb0 lh50'>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                              8
-                                                </span>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
-                                                        <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                            Lorem <br />
-                                            Ipsum
-                                            </div>
-                                            </Fade>
-                                        </div>
-                                 
-                                        } */}
 
 
 
