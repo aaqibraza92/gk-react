@@ -11,6 +11,11 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { Fade,Zoom } from "react-awesome-reveal";
 import { useEffect,useState } from 'react';
+import FadeSlider from './FadeSlider';
+
+
+const images = ["0","1","2","3"];
+
 const WhoWeAre = () => {
 
     const [triggerHover, settriggerHover] = useState(false);
@@ -22,8 +27,22 @@ const WhoWeAre = () => {
               }, 10000);
               return () => clearTimeout(timeout);
         }
-     
     }, [triggerHover]);
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        if(triggerHover){
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 3000);
+  
+      return () => clearInterval(interval);
+    }
+    }, [triggerHover]);
+
 
     const activeTheme = useSelector((state) => {
         return (
@@ -34,6 +53,12 @@ const WhoWeAre = () => {
     return (
         <section className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
+            {/* {
+            images.map((val, index)=>(
+                    val===1 ? <h1>One</h1> :  val===2 ?   <h1>Two</h1> :  <h1>three</h1> 
+            ))
+        } */}
+                {/* <FadeSlider/> */}
                 <div className='text-center'>
                     <div className="">
                         <Zoom left>

@@ -1,12 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.21ee0d75.css",
-    "main.js": "/static/js/main.27af3d4a.js",
+    "main.js": "/static/js/main.d2054df4.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
     "static/media/night-footer.mp4": "/static/media/night-footer.9b0d93dd593a81d9114d.mp4",
     "static/media/Visionweb.mp4": "/static/media/Visionweb.d633c8350094b65ccfff.mp4",
     "static/media/Missionweb.mp4": "/static/media/Missionweb.46f56d0aa69039a34408.mp4",
     "static/media/footer-day.mp4": "/static/media/footer-day.22fcfbe8639c0c81e453.mp4",
+    "static/media/zenith.mp4": "/static/media/zenith.c617b849d782c56bad9c.mp4",
+    "static/media/pearl-enclave.mp4": "/static/media/pearl-enclave.824efe9d0f06df05479f.mp4",
+    "static/media/surya.mp4": "/static/media/surya.26c6bcd8f3d856c9ce88.mp4",
+    "static/media/alam-villa.mp4": "/static/media/alam-villa.eff27e470f60d675a315.mp4",
+    "static/media/casa.mp4": "/static/media/casa.1fe168047e711d41d39e.mp4",
+    "static/media/festton.mp4": "/static/media/festton.aabebf4ead08f7a04a6b.mp4",
+    "static/media/triad.mp4": "/static/media/triad.aad29fc953289d26c5fa.mp4",
     "static/media/pear.webp": "/static/media/pear.f27341a1e29ac527220f.webp",
     "static/media/test_night.jpg": "/static/media/test_night.72b06e09a8c59622d4e4.jpg",
     "static/media/pr1.png": "/static/media/pr1.b74dd0e56dcb9dc53cb0.png",
@@ -42,11 +49,11 @@
     "static/media/ly5.png": "/static/media/ly5.d00200f9fef72ccbb888.png",
     "index.html": "/index.html",
     "main.21ee0d75.css.map": "/static/css/main.21ee0d75.css.map",
-    "main.27af3d4a.js.map": "/static/js/main.27af3d4a.js.map",
+    "main.d2054df4.js.map": "/static/js/main.d2054df4.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21ee0d75.css",
-    "static/js/main.27af3d4a.js"
+    "static/js/main.d2054df4.js"
   ]
 }
