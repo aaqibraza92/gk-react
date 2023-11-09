@@ -63,8 +63,8 @@ const Testimonial = () => {
           
                 <h2 className="colorWhite fs50 fontlight subfont mt10">
                 <Fade left cascade damping={1e-1} delay={100}>What </Fade> <br />
-                <Fade left cascade damping={1e-1} delay={100}>People      </Fade><br />
-                <Fade left cascade damping={1e-1} delay={100}>Say      </Fade>
+                <Fade left cascade damping={1e-1} delay={100}>People</Fade><br />
+                <Fade left cascade damping={1e-1} delay={100}>Say</Fade>
 
                   </h2>
              

@@ -179,10 +179,10 @@ const Footer = () => {
                     </div>
                     <div className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}>
                       <a
-                        href="https://gkdevelopers.in/"
+                        href="mailto:salesteam@gkdevelopers.in"
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} fs16`}
                       >
-                        www.gkdevelopers.in
+                        salesteam@gkdevelopers.in
                       </a>
                     </div>
                   </div>
@@ -225,19 +225,19 @@ const Footer = () => {
             <div className="copyright mt20 pt20 pb20 mb20">
               <Row className="align-items-center">
             
-                <Col lg={6}>
+                <Col lg={4}>
 
                 <div className="d-flex flex-wrap">
                 <Link
                     to="#"
-                    className="colorGrey fs14 fRegular  mb0 mr10 text-uppercase"
+                    className="colorGrey fs12 fRegular  mb0 mr10 text-uppercase"
                   >
                    <Fade bottom >Privacy Policy</Fade>  
                   </Link>
                
                   <Link
                     to="/#"
-                    className="colorGrey fs14 fRegular mb0 mr10 text-uppercase"
+                    className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
                   >
                       <Fade bottom >  Terms & Condition    </Fade>
                   </Link>
@@ -246,19 +246,17 @@ const Footer = () => {
             
                
                 </Col>
-                <Col lg={6}>
+                <Col lg={8}>
                 <Fade bottom >
                 <div className="d-flex justify-content-lg-end">
-                    <p className="colorGrey fs14 fsm14 fRegular itemLightwhite mb0 text-uppercase">
+                    <p className="colorGrey fs12 fsm14 fRegular itemLightwhite mb0 text-uppercase">
                       &#169; {new Date().getFullYear()}{" "}
-                      <a
+                     
+                        GK GROUP ALL RIGHTS RESERVED. DESIGNED AND MANAGED BY  <a
                         href="https://emporia.agency/"
                         target="_blank"
                         className="ml2 colorGrey"
-                      >
-                        Emporia Agency
-                      </a>{" "}
-                      PVT LTD. All rights reserved
+                      >EMPORIA AGENCY </a>
                     </p>
                   </div>
                 </Fade>

@@ -56,7 +56,7 @@ const OurProjects = () => {
                 </Zoom>
                 <Zoom left cascade damping={1e-1} delay={100}>
                 <h2 className="colorWhite fs50 fontlight subfont">
-                  our projects
+                  ongoing projects
                 </h2>
                 </Zoom>
              
@@ -109,12 +109,12 @@ const OurProjects = () => {
               </Swiper>
 
               <div className="titles">
-                  <h2 className="colorWhite fs60 fw500 mobFs20 text-uppercase">
+                  <h2 className="colorWhite fs70 fw500 mobFs20 text-uppercase">
                   <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>Happy Home </Zoom>
                   </h2>
                 <Fade bottom cascade>
-                <h2 className="colorWhite fs60 fw500 mobFs20 text-uppercase">
-                  <span className="fs45 mobFs15"> <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>For </Zoom></span> <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>Families</Zoom>
+                <h2 className="colorWhite fs70 fw500 mobFs20 text-uppercase">
+                  <span className="fs50 mobFs15"> <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>For </Zoom></span> <Zoom className="headingFont" left cascade damping={1e-1} delay={100}>Families</Zoom>
                 </h2>
                 </Fade>
              
