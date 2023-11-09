@@ -992,14 +992,10 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 .sectionAnimate {
   height: 100vh;
 }
-
-
 .plusIcon {
   position: relative;
   top: 9px;
 }
-
-
 .swiperFadeEff .swiper-slide {
   opacity: 0 !important;
 }
