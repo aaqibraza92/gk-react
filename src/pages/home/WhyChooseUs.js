@@ -1,21 +1,22 @@
 import { Col, Row } from "reactstrap";
-import React from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
+import { Navigation, Pagination, Autoplay, Mousewheel } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import { Fade,Zoom } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 let data = [
   {
     title: "SUPERIOR CONSTRUCTION",
     para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
     img: require("../../assets/img/home/layer_building.png"),
+    class: "firstSlide",
   },
   {
     title: "VALUE FOR MONEY",
@@ -31,10 +32,47 @@ let data = [
     title: "TRACK RECORD",
     para: "We have tirelessly served over 4000 satisfied customers to earn the tag of one of Hyderabad’s most reliable developers. Our customers are truly our brand ambassadors and endorse our brand’s sense of commitment and professionalism. It has taken us over 35 years to build an impeccable track and reputation of one of the best real estate developers of Hyderabad we are committed to take this legacy forward.",
     img: require("../../assets/img/home/record.png"),
-  }
+  },
 ];
 const WhyChooseUs = () => {
+  const ref1 = useRef(null);
+  const [sl, setSl] = useState(false);
 
+  const slideHandle = (e) => {
+    if (e.activeIndex === 3) {
+      setSl(true);
+    } else {
+      setSl(false);
+    }
+  };
+
+  const sectionEndRef = useRef(null);
+  const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Update the state based on whether the section end is in the viewport
+        setIsSectionEndVisible(entry.isIntersecting);
+      },
+      {
+        root: null, // Use the viewport as the root
+        rootMargin: '600px',
+        threshold: 0, // Use a threshold of 0 for simplicity
+      }
+    );
+
+    if (sectionEndRef.current) {
+      observer.observe(sectionEndRef.current);
+    }
+
+    // Cleanup the observer when the component unmounts
+    return () => {
+      if (sectionEndRef.current) {
+        observer.unobserve(sectionEndRef.current);
+      }
+    };
+  }, []); //
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -42,11 +80,17 @@ const WhyChooseUs = () => {
 
   return (
     <section
+      ref={sectionEndRef}
+      id="target-section"
       className="pt100 pb100"
       style={{
         backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
       }}
     >
+
+{
+  console.log("isSectionEndVisible",isSectionEndVisible)
+}
       <div className="container-xxl">
         <div className="text-center">
           <Zoom left>
@@ -56,22 +100,26 @@ const WhyChooseUs = () => {
               alt=""
             />
           </Zoom>
-            <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-            <Fade left cascade damping={1e-1} delay={100}> why choose us? </Fade>
-            </h2>
+          <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
+            <Fade left cascade damping={1e-1} delay={100}>
+              {" "}
+              why choose us?{" "}
+            </Fade>
+          </h2>
         </div>
 
         <div className="wrapperData">
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            loop={true}
+            modules={[Navigation, Pagination, Mousewheel]}
+            //loop={true}
             speed={800}
-            autoPlay={{ delay: 1000 }}
+            reachEnd={(e) => console.log("rr", e)}
+            //autoPlay={{ delay: 1000 }}
             spaceBetween={30}
             slidesPerView={1}
             centeredSlides={true}
-            onSlideChange={() => {}}
-            onSwiper={() => {}}
+            onSlideChange={(e) => slideHandle(e)}
+            mousewheel={true}
             breakpoints={{
               // when window width is >= 640px
               300: {
@@ -99,30 +147,28 @@ const WhyChooseUs = () => {
           >
             <div className="wWrp">
               {data.map((e, i) => (
-                  <SwiperSlide key={i}>
-                    <div className="cornerHandle">
-                      <div className="whyChsWrp">
-                        <Row className="align-items-center">
-                          <Col lg={6} md={12}>
-                            <h3 className="brownGradient fs30 mb25 mobFs21">
+                <SwiperSlide key={i} className={e.class}>
+                  <div className="cornerHandle">
+                    <div className="whyChsWrp">
+                      <Row className="align-items-center">
+                        <Col lg={6} md={12}>
+                          <h3 className="brownGradient fs30 mb25 mobFs21">
                             {e.title}
-                            </h3>
-                            <p className="fs14">
-                            {e.para}
-                            </p>
-                          </Col>
-                          <Col lg={6} md={12}>
-                            <img
-                              src={e.img}
-                              alt="building"
-                              className="img-fluid"
-                            />
-                          </Col>
-                        </Row>
-                      </div>
+                          </h3>
+                          <p className="fs14">{e.para}</p>
+                        </Col>
+                        <Col lg={6} md={12}>
+                          <img
+                            src={e.img}
+                            alt="building"
+                            className="img-fluid"
+                          />
+                        </Col>
+                      </Row>
                     </div>
-                  </SwiperSlide>
-                ))}
+                  </div>
+                </SwiperSlide>
+              ))}
             </div>
           </Swiper>
         </div>

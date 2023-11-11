@@ -72,6 +72,7 @@ const WhoWeAre = () => {
                                                     pagination={{
                                                         clickable: false,
                                                     }}
+                                                  
                                                     modules={[EffectFade, Autoplay]}
                                                     className="mySwiper swiperFadeEff"
                                                 >

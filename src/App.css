@@ -1002,3 +1002,7 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 .swiperFadeEff .swiper-slide.swiper-slide-active {
   opacity: 1 !important;
 }
+
+#target-section{
+  min-height: 100vh;
+}
