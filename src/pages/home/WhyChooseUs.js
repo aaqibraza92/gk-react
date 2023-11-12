@@ -35,44 +35,28 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
-  const ref1 = useRef(null);
+  const viewPort = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.viewPort;
+  });
   const [sl, setSl] = useState(false);
 
   const slideHandle = (e) => {
-    if (e.activeIndex === 3) {
+    if (e.activeIndex === 3 && viewPort) {
       setSl(true);
     } else {
       setSl(false);
     }
   };
 
-  const sectionEndRef = useRef(null);
-  const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Update the state based on whether the section end is in the viewport
-        setIsSectionEndVisible(entry.isIntersecting);
-      },
-      {
-        root: null, // Use the viewport as the root
-        rootMargin: '600px',
-        threshold: 0, // Use a threshold of 0 for simplicity
-      }
-    );
-
-    if (sectionEndRef.current) {
-      observer.observe(sectionEndRef.current);
+    if (viewPort && sl) {
+      document.body.style.overflow = "auto";
+    }else if(!viewPort){
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
     }
-
-    // Cleanup the observer when the component unmounts
-    return () => {
-      if (sectionEndRef.current) {
-        observer.unobserve(sectionEndRef.current);
-      }
-    };
-  }, []); //
+  }, [viewPort,sl]);
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -80,17 +64,12 @@ const WhyChooseUs = () => {
 
   return (
     <section
-      ref={sectionEndRef}
       id="target-section"
       className="pt100 pb100"
       style={{
         backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
       }}
     >
-
-{
-  console.log("isSectionEndVisible",isSectionEndVisible)
-}
       <div className="container-xxl">
         <div className="text-center">
           <Zoom left>
@@ -102,8 +81,7 @@ const WhyChooseUs = () => {
           </Zoom>
           <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
             <Fade left cascade damping={1e-1} delay={100}>
-              {" "}
-              why choose us?{" "}
+              why choose us?
             </Fade>
           </h2>
         </div>

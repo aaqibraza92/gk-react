@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,13 +9,57 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Autoplay } from 'swiper';
+import { viewPortFunc } from '../../store/slices/UserSlices';
 
 
 
 const WhoWeAre = () => {
+    const [screenWidth, setScreenWidth] = useState(window.screen.width);
+    const resizeScreen = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    const ref1 = useRef(null);
+    const sectionEndRef = useRef(null);
+    const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
+    const dispatch= useDispatch();
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          // Update the state based on whether the section end is in the viewport
+          setIsSectionEndVisible(entry.isIntersecting);
+          dispatch(viewPortFunc(entry.isIntersecting));
+        },
+        {
+          root: null, // Use the viewport as the root
+          rootMargin: '600px',
+          threshold: screenWidth > 767 ? 0.5 : 0.6, // offset
+        }
+      );
+  
+      if (sectionEndRef.current) {
+        observer.observe(sectionEndRef.current);
+      }
+  
+      // Cleanup the observer when the component unmounts
+      return () => {
+        if (sectionEndRef.current) {
+          observer.unobserve(sectionEndRef.current);
+        }
+      };
+    }, []); 
+
+    useEffect(() => {
+        resizeScreen();
+            window.addEventListener("resize", resizeScreen);
+            return () => {
+              window.removeEventListener("resize", resizeScreen);
+            };
+    },[]);
+          
 
     const [triggerHover, settriggerHover] = useState(false);
-    const [block, setBlock] = useState('d-none');
 
 
     const activeTheme = useSelector((state) => {
@@ -26,12 +70,11 @@ const WhoWeAre = () => {
 
     const handleHover=()=>{
         settriggerHover(true);
-        setBlock('d-block');
        
     }
 
     return (
-        <section className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
+        <section  ref={sectionEndRef} className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
                 <div className='text-center'>
                     <div className="">
@@ -44,23 +87,22 @@ const WhoWeAre = () => {
                         </h2>
 
                     </div>
-                    <Row className='align-items-center gy-4'>
+                    <Row className='align-items-center gy-4 mt20'>
                         <Col lg={4} md={6}>
-                            <Zoom top cascade>
+                        <Zoom>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
                              
                                         {
-                                            triggerHover ? <div className='circleAnimate position-relative'>
-                                            </div> : <div className='circleAnimate hideRotate position-relative' onMouseOver={() => handleHover()}>
+                                            triggerHover ? <div className='circleAnimate position-absolute'>
+                                            </div> : <div className='circleAnimate hideRotate position-absolute' onMouseOver={() => handleHover()}>
                                             </div>
 
                                          
                                         }
 
-                                        
-                                            
-                                            <div className={`${block} wrpCircle position-absolute`}>
+                                        {
+                                            triggerHover ?
                                                 <Swiper
                                                     autoplay={{
                                                         delay: 2500,
@@ -132,8 +174,11 @@ const WhoWeAre = () => {
                                                         </div>
                                                     </SwiperSlide>
 
-                                                </Swiper>
-                                            </div>
+                                                </Swiper> :
+                                                <div className='blankData'></div>
+
+                                        }
+                                           
                                     
                                      
 
@@ -142,8 +187,8 @@ const WhoWeAre = () => {
                                     </div>
                                 </div>
 
-                            </Zoom>
-
+                         
+</Zoom>
 
                         </Col>
                         <Col lg={7} md={6} className=''>
