@@ -14,49 +14,47 @@ import { viewPortFunc } from '../../store/slices/UserSlices';
 
 
 const WhoWeAre = () => {
-    const [screenWidth, setScreenWidth] = useState(window.screen.width);
-    const resizeScreen = () => {
-      setScreenWidth(window.innerWidth);
-    };
+    // const [screenWidth, setScreenWidth] = useState(window.screen.width);
+    // const resizeScreen = () => {
+    //   setScreenWidth(window.innerWidth);
+    // };
 
-    const ref1 = useRef(null);
-    const sectionEndRef = useRef(null);
-    const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
-    const dispatch= useDispatch();
+    // const ref1 = useRef(null);
+    // const sectionEndRef = useRef(null);
+    // const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
+    // const dispatch= useDispatch();
   
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          // Update the state based on whether the section end is in the viewport
-          setIsSectionEndVisible(entry.isIntersecting);
-          dispatch(viewPortFunc(entry.isIntersecting));
-        },
-        {
-          root: null, // Use the viewport as the root
-          rootMargin: '600px',
-          threshold: screenWidth > 767 ? 0.5 : 0.6, // offset
-        }
-      );
+    // useEffect(() => {
+    //   const observer = new IntersectionObserver(
+    //     ([entry]) => {
+    //       setIsSectionEndVisible(entry.isIntersecting);
+    //       dispatch(viewPortFunc(entry.isIntersecting));
+    //     },
+    //     {
+    //       root: null, 
+    //       rootMargin: '600px',
+    //       threshold: screenWidth > 767 ? 0.5 : 0.6, 
+    //     }
+    //   );
   
-      if (sectionEndRef.current) {
-        observer.observe(sectionEndRef.current);
-      }
+    //   if (sectionEndRef.current) {
+    //     observer.observe(sectionEndRef.current);
+    //   }
   
-      // Cleanup the observer when the component unmounts
-      return () => {
-        if (sectionEndRef.current) {
-          observer.unobserve(sectionEndRef.current);
-        }
-      };
-    }, []); 
+    //   return () => {
+    //     if (sectionEndRef.current) {
+    //       observer.unobserve(sectionEndRef.current);
+    //     }
+    //   };
+    // }, []); 
 
-    useEffect(() => {
-        resizeScreen();
-            window.addEventListener("resize", resizeScreen);
-            return () => {
-              window.removeEventListener("resize", resizeScreen);
-            };
-    },[]);
+    // useEffect(() => {
+    //     resizeScreen();
+    //         window.addEventListener("resize", resizeScreen);
+    //         return () => {
+    //           window.removeEventListener("resize", resizeScreen);
+    //         };
+    // },[]);
           
 
     const [triggerHover, settriggerHover] = useState(false);
@@ -74,7 +72,7 @@ const WhoWeAre = () => {
     }
 
     return (
-        <section  ref={sectionEndRef} className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
+        <section  className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
                 <div className='text-center'>
                     <div className="">
