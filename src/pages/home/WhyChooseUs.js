@@ -49,13 +49,13 @@ const WhyChooseUs = () => {
   };
 
   useEffect(() => {
-    if (viewPort && sl) {
-      document.body.style.overflow = "auto";
-    }else if(!viewPort){
-      document.body.style.overflow = "auto";
-    } else {
-      document.body.style.overflow = "hidden";
-    }
+    // if (viewPort && sl) {
+    //   document.body.style.overflow = "auto";
+    // }else if(!viewPort){
+    //   document.body.style.overflow = "auto";
+    // } else {
+    //   document.body.style.overflow = "hidden";
+    // }
   }, [viewPort,sl]);
 
   const activeTheme = useSelector((state) => {

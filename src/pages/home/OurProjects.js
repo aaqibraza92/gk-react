@@ -26,7 +26,7 @@ const OurProjects = () => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2 mainProSl"
       >
-        {Array(5)
+        {Array(6)
           .fill()
           .map((e, i) => (
             <SwiperSlide key={i}>
@@ -73,35 +73,42 @@ const OurProjects = () => {
               >
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/ly1.png")}
+                    src={require("../../assets/img/home/prj1.png")}
                     className="img-fluid"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/ly2.png")}
+                    src={require("../../assets/img/home/prj2.png")}
                     className="img-fluid"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/ly3.png")}
+                    src={require("../../assets/img/home/prj3.png")}
                     className="img-fluid"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/ly4.png")}
+                    src={require("../../assets/img/home/prj4.png")}
                     className="img-fluid"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/ly5.png")}
+                    src={require("../../assets/img/home/prj5.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/prj6.png")}
                     className="img-fluid"
                     alt=""
                   />
