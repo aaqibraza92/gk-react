@@ -35,28 +35,28 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
-  const viewPort = useSelector((state) => {
-    return state && state?.persistedReducer?.theme?.viewPort;
-  });
-  const [sl, setSl] = useState(false);
+  // const viewPort = useSelector((state) => {
+  //   return state && state?.persistedReducer?.theme?.viewPort;
+  // });
+  // const [sl, setSl] = useState(false);
 
-  const slideHandle = (e) => {
-    if (e.activeIndex === 3 && viewPort) {
-      setSl(true);
-    } else {
-      setSl(false);
-    }
-  };
+  // const slideHandle = (e) => {
+  //   if (e.activeIndex === 3 && viewPort) {
+  //     setSl(true);
+  //   } else {
+  //     setSl(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    // if (viewPort && sl) {
-    //   document.body.style.overflow = "auto";
-    // }else if(!viewPort){
-    //   document.body.style.overflow = "auto";
-    // } else {
-    //   document.body.style.overflow = "hidden";
-    // }
-  }, [viewPort,sl]);
+  // useEffect(() => {
+  //   if (viewPort && sl) {
+  //     document.body.style.overflow = "auto";
+  //   }else if(!viewPort){
+  //     document.body.style.overflow = "auto";
+  //   } else {
+  //     document.body.style.overflow = "hidden";
+  //   }
+  // }, [viewPort,sl]);
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
             spaceBetween={30}
             slidesPerView={1}
             centeredSlides={true}
-            onSlideChange={(e) => slideHandle(e)}
+            //onSlideChange={(e) => slideHandle(e)}
             mousewheel={true}
             breakpoints={{
               // when window width is >= 640px
