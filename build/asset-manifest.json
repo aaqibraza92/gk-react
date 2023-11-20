@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9ec34b48.css",
-    "main.js": "/static/js/main.dc1a7ad4.js",
+    "main.js": "/static/js/main.005bba05.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
     "static/media/night-footer.mp4": "/static/media/night-footer.9b0d93dd593a81d9114d.mp4",
     "static/media/Visionweb.mp4": "/static/media/Visionweb.d633c8350094b65ccfff.mp4",
@@ -20,20 +20,30 @@
     "static/media/banner_night.jpg": "/static/media/banner_night.00ab56164e69b693233a.jpg",
     "static/media/festoon.webp": "/static/media/festoon.ac80b190affc03022cb6.webp",
     "static/media/surya.webp": "/static/media/surya.56c72e1305b97c7c4bca.webp",
-    "static/media/pr_gr.jpg": "/static/media/pr_gr.090f37827577d090bfbb.jpg",
     "static/media/triad.webp": "/static/media/triad.bad22571b97f26501add.webp",
     "static/media/gmap.png": "/static/media/gmap.9b44fb6dc6dcfb4bf5a5.png",
+    "static/media/nightviewalam.webp": "/static/media/nightviewalam.d9ecfe6fc9a9b9290d07.webp",
+    "static/media/zenithday.webp": "/static/media/zenithday.d13061653024f7d3ffa1.webp",
+    "static/media/zenithdaynight.webp": "/static/media/zenithdaynight.d13061653024f7d3ffa1.webp",
+    "static/media/almvilladay.webp": "/static/media/almvilladay.6844d39401f735d65587.webp",
     "static/media/ver_bg.jpg": "/static/media/ver_bg.51c9fa8137886c755224.jpg",
+    "static/media/casanight.webp": "/static/media/casanight.69e5970259bb01090b8b.webp",
+    "static/media/casaday.webp": "/static/media/casaday.67cabcf3207063c51807.webp",
+    "static/media/suryaday.webp": "/static/media/suryaday.f5aabdd5f9b1e62f355e.webp",
     "static/media/Family-Outline.png": "/static/media/Family-Outline.b56cb7528946574fa4e8.png",
     "static/media/bg_ly.png": "/static/media/bg_ly.f904c1be8c28eaeccb65.png",
+    "static/media/triadday.webp": "/static/media/triadday.f85fbbe77e0e3e51530a.webp",
     "static/media/buildings.png": "/static/media/buildings.3ff1ab83a8f0b493917d.png",
+    "static/media/traidnight.webp": "/static/media/traidnight.0a80202326578ed496d1.webp",
+    "static/media/festoonnight.webp": "/static/media/festoonnight.286c83b41756d2267ac0.webp",
+    "static/media/festoonday.webp": "/static/media/festoonday.dac675234c82a09ed739.webp",
     "static/media/aboutus.webp": "/static/media/aboutus.1f8428682e9c1aaa17b4.webp",
     "static/media/valueformoney.png": "/static/media/valueformoney.b405f656eced2e3720e2.png",
-    "static/media/pr_c.jpg": "/static/media/pr_c.cf025b39c78cb20a0d06.jpg",
     "static/media/Sora-VariableFont_wght.ttf": "/static/media/Sora-VariableFont_wght.e56298aec2e944c699d8.ttf",
     "static/media/VectorSmartObject.webp": "/static/media/VectorSmartObject.d2f52c94f745ff104d21.webp",
     "static/media/home_sl1.jpg": "/static/media/home_sl1.8bc766fa0175fa93b8fc.jpg",
     "static/media/pr2.jpg": "/static/media/pr2.d9a2a669bd72dd9f9f5c.jpg",
+    "static/media/suryanight.webp": "/static/media/suryanight.27faa78612dc7ea66dcf.webp",
     "static/media/record.png": "/static/media/record.b498c85a4d0de1d8c331.png",
     "static/media/what_say.jpg": "/static/media/what_say.70c414b54919935261a2.jpg",
     "static/media/pr3.jpg": "/static/media/pr3.33703938d135aa5e9da2.jpg",
@@ -51,11 +61,11 @@
     "static/media/prj4.png": "/static/media/prj4.e2afaa36fa653ef9d520.png",
     "index.html": "/index.html",
     "main.9ec34b48.css.map": "/static/css/main.9ec34b48.css.map",
-    "main.dc1a7ad4.js.map": "/static/js/main.dc1a7ad4.js.map",
+    "main.005bba05.js.map": "/static/js/main.005bba05.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ec34b48.css",
-    "static/js/main.dc1a7ad4.js"
+    "static/js/main.005bba05.js"
   ]
 }
