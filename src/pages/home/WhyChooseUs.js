@@ -48,7 +48,10 @@ const WhyChooseUs = () => {
     // } else {
     //   setSl(false);
     // }
-  
+    if(e.activeIndex==3){
+      document.getElementById("makeClick").click();
+      
+    }
   };
 
   useMemo(() => {
@@ -60,11 +63,10 @@ const WhyChooseUs = () => {
     // } else {
     //   document.body.style.overflow = "hidden";
     // }
-    console.log("sl",sl);
-    if(sl==3){
-      document.getElementById("makeClick").click();
-      console.log("click");
-    }
+    // console.log("sl",sl);
+    // if(sl==3){
+    //   document.getElementById("makeClick").click();
+    // }
   }, [sl]);
 
   const activeTheme = useSelector((state) => {
