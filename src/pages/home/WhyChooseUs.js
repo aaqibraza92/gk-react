@@ -35,28 +35,37 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
-  // const viewPort = useSelector((state) => {
-  //   return state && state?.persistedReducer?.theme?.viewPort;
-  // });
-  // const [sl, setSl] = useState(false);
+ 
+  const viewPort = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.viewPort;
+  });
+  const [sl, setSl] = useState("");
 
-  // const slideHandle = (e) => {
-  //   if (e.activeIndex === 3 && viewPort) {
-  //     setSl(true);
-  //   } else {
-  //     setSl(false);
-  //   }
-  // };
+  const slideHandle = (e) => {
+    setSl(e.activeIndex);
+    // if (e.activeIndex === 3 && viewPort) {
+    //   setSl(true);
+    // } else {
+    //   setSl(false);
+    // }
+  
+  };
 
-  // useEffect(() => {
-  //   if (viewPort && sl) {
-  //     document.body.style.overflow = "auto";
-  //   }else if(!viewPort){
-  //     document.body.style.overflow = "auto";
-  //   } else {
-  //     document.body.style.overflow = "hidden";
-  //   }
-  // }, [viewPort,sl]);
+  useMemo(() => {
+    
+    // if (viewPort && sl) {
+    //   document.body.style.overflow = "auto";
+    // }else if(!viewPort){
+    //   document.body.style.overflow = "auto";
+    // } else {
+    //   document.body.style.overflow = "hidden";
+    // }
+    console.log("sl",sl);
+    if(sl==3){
+      document.getElementById("makeClick").click();
+      console.log("click");
+    }
+  }, [sl]);
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
@@ -64,13 +73,15 @@ const WhyChooseUs = () => {
 
   return (
     <section
+  
       id="target-section"
       className="pt100 pb100"
       style={{
         backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
       }}
     >
-      <div className="container-xxl">
+     
+      {/* <div className="container-xxl"> */}
         <div className="text-center">
           <Zoom left>
             <img
@@ -96,7 +107,7 @@ const WhyChooseUs = () => {
             spaceBetween={30}
             slidesPerView={1}
             centeredSlides={true}
-            //onSlideChange={(e) => slideHandle(e)}
+            onSlideChange={(e) => slideHandle(e)}
             mousewheel={true}
             breakpoints={{
               // when window width is >= 640px
@@ -125,7 +136,8 @@ const WhyChooseUs = () => {
           >
             <div className="wWrp">
               {data.map((e, i) => (
-                <SwiperSlide key={i} className={e.class}>
+                <SwiperSlide key={i} className={`${e.class} fullHeight`} >
+                  <div className="container">
                   <div className="cornerHandle">
                     <div className="whyChsWrp">
                       <Row className="align-items-center">
@@ -145,12 +157,14 @@ const WhyChooseUs = () => {
                       </Row>
                     </div>
                   </div>
+                  </div>
+              
                 </SwiperSlide>
               ))}
             </div>
           </Swiper>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

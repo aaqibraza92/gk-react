@@ -8,9 +8,14 @@ import WhoWeAre from './WhoWeAre';
 import WhyChooseUs from './WhyChooseUs';
 import OurProjects from './OurProjects';
 import { useSelector } from 'react-redux';
+import { useRef } from 'react';
 
 const HomePage = () => {
+  var myRef = useRef(null);
 
+const executeScroll=()=>{
+  myRef.current.scrollIntoView({behavior:"smooth", block: "end", inline:"nearest"}) 
+}
   const homeAnimate = useSelector((state) => {
     return (
       state && state?.persistedReducer?.theme?.flip
@@ -24,13 +29,17 @@ const HomePage = () => {
         <title>Home - GK Builders & Developers</title>
       </Helmet>
       <main>
-    
+     
      
         <HomeBanner />
         <AboutUs />
+        <button onClick={()=>executeScroll()} id='makeClick'> Click to scroll </button> 
         <OurProjects/>
+   
         <WhyChooseUs/>
         <WhoWeAre/>
+        <div ref={myRef} style={{height: "10px"}}>
+        </div>
         <Testimonial/>
       
       </main>
