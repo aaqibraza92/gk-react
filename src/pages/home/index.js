@@ -37,10 +37,13 @@ const executeScroll=()=>{
         <OurProjects/>
    
         <WhyChooseUs/>
+        <div className='scrollHide'>
         <WhoWeAre/>
         <div ref={myRef} style={{height: "10px"}}>
         </div>
         <Testimonial/>
+        </div>
+     
       
       </main>
     </>
