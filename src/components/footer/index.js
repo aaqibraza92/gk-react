@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "../../assets/css/footer.css";
 import {
@@ -19,15 +19,23 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { themeType } from "../../store/slices/UserSlices";
 import { Fade,Zoom } from "react-awesome-reveal";
+import { viewPortFunc } from "../../store/slices/SliderReducer";
 
 const Footer = () => {
+  const dispatch = useDispatch();
+  const location= useLocation();
+  useEffect(()=>{
+    window.addEventListener('load', function() {
+      dispatch(viewPortFunc(false));
+    });
+    
+  },[])
   const viewPort= useSelector((state)=>{
     return state && state?.persistedReducer?.Slider?.viewPort
   })
 
-  console.log("viewPort111", viewPort)
 
-  const dispatch = useDispatch();
+  
   const activeTheme = useSelector((state) => {
     return (
       state && state?.persistedReducer?.theme?.dayTheme
@@ -49,7 +57,6 @@ const Footer = () => {
 
   return (
     <>
-
       {
         activeTheme ? <button className="noBtn viewToggle" onClick={() => themeSwitch(false)}>
           <img src={require('../../assets/img/footer/dayview.png')} className="img-fluid " alt="" />
@@ -58,7 +65,7 @@ const Footer = () => {
         </button>
       }
 
-<section className={`${viewPort ? "d-block" : "d-none"}`}>
+<section className={`${location?.pathname==="/" && (viewPort ? "d-block" : "d-none")}`}>
 <footer className={`position-relative h-100 d-flex align-items-end mainFooer`}>
         {
           activeTheme ?
