@@ -1003,10 +1003,13 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
   opacity: 1 !important;
 }
 
-.fullHeight{
+/* .fullHeight{
   min-height: 75vh;
-} 
+}  */
 
 .blankData{
   min-height: 200px;
+}
+.scrollHide{
+  display: none;
 }

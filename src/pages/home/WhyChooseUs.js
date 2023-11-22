@@ -1,6 +1,6 @@
 import { Col, Row } from "reactstrap";
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, Mousewheel } from "swiper";
 import "swiper/css";
@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { Fade, Zoom } from "react-awesome-reveal";
+import { viewPortFunc } from "../../store/slices/SliderReducer";
 
 let data = [
   {
@@ -35,10 +36,10 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
- 
-  const viewPort = useSelector((state) => {
-    return state && state?.persistedReducer?.theme?.viewPort;
-  });
+ const dispatch= useDispatch();
+  // const viewPort = useSelector((state) => {
+  //   return state && state?.persistedReducer?.theme?.viewPort;
+  // });
   const [sl, setSl] = useState("");
 
   const slideHandle = (e) => {
@@ -49,8 +50,8 @@ const WhyChooseUs = () => {
     //   setSl(false);
     // }
     if(e.activeIndex==3){
-      document.getElementById("makeClick").click();
-      
+      //  document.getElementById("makeClick").click();
+      dispatch(viewPortFunc(true));
     }
   };
 
@@ -83,7 +84,7 @@ const WhyChooseUs = () => {
       }}
     >
      
-      {/* <div className="container-xxl"> */}
+      <div className="container-xxl">
         <div className="text-center">
           <Zoom left>
             <img
@@ -139,7 +140,7 @@ const WhyChooseUs = () => {
             <div className="wWrp">
               {data.map((e, i) => (
                 <SwiperSlide key={i} className={`${e.class} fullHeight`} >
-                  <div className="container">
+                  {/* <div className="container"> */}
                   <div className="cornerHandle">
                     <div className="whyChsWrp">
                       <Row className="align-items-center">
@@ -159,14 +160,14 @@ const WhyChooseUs = () => {
                       </Row>
                     </div>
                   </div>
-                  </div>
+                  {/* </div> */}
               
                 </SwiperSlide>
               ))}
             </div>
           </Swiper>
         </div>
-      {/* </div> */}
+      </div>
     </section>
   );
 };

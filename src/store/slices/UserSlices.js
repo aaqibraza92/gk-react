@@ -4,8 +4,7 @@ const UserSlice= createSlice({
     name: 'theme',
     initialState: {
         dayTheme: true,
-        flip: true,
-        viewPort: false
+        flip: true
     },
     reducers:{
         themeType(state,action){
@@ -13,9 +12,6 @@ const UserSlice= createSlice({
         },
         actiionFlip(state,action){
             state.flip=action.payload
-        },
-        viewPortFunc(state,action){
-            state.viewPort=action.payload
         }
     }
 })
@@ -23,4 +19,4 @@ const UserSlice= createSlice({
 //console.log(UserSlice);
 
 export default UserSlice.reducer;
-export const {themeType,actiionFlip,viewPortFunc} =UserSlice.actions; // this is action creator yani iske zarye store per data post hoga
+export const {themeType,actiionFlip} =UserSlice.actions; // this is action creator yani iske zarye store per data post hoga
