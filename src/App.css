@@ -366,7 +366,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   text-align: right;
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible {
-  width: 160px !important;
+  width: 130px !important;
   height: auto;
   cursor: pointer;
 }

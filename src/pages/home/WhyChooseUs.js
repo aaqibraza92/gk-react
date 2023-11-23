@@ -52,9 +52,10 @@ const WhyChooseUs = () => {
     if(e.activeIndex==3){
       setTimeout(() => {
         document.getElementById("makeClick").click();
-      }, 300);
-    
+         
+      }, 1800);
       dispatch(viewPortFunc(true));
+     
     }else{
       dispatch(viewPortFunc(false));
     }
