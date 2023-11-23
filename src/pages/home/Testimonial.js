@@ -77,8 +77,8 @@ const Testimonial = () => {
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
                 <Swiper
-                navigation={true}
-            
+                navigation={false}
+                pagination={true}
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
                   speed={1000}

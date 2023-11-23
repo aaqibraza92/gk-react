@@ -50,8 +50,13 @@ const WhyChooseUs = () => {
     //   setSl(false);
     // }
     if(e.activeIndex==3){
-      //  document.getElementById("makeClick").click();
+      setTimeout(() => {
+        document.getElementById("makeClick").click();
+      }, 300);
+    
       dispatch(viewPortFunc(true));
+    }else{
+      dispatch(viewPortFunc(false));
     }
   };
 
