@@ -36,6 +36,7 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
+  const [mouseWheel,setmouseWheel]=useState(false);
  const dispatch= useDispatch();
   // const viewPort = useSelector((state) => {
   //   return state && state?.persistedReducer?.theme?.viewPort;
@@ -51,13 +52,16 @@ const WhyChooseUs = () => {
     // }
     if(e.activeIndex==3){
       setTimeout(() => {
-        document.getElementById("makeClick").click();
+        // document.getElementById("makeClick").click();
+        setmouseWheel(false)
          
       }, 1800);
       dispatch(viewPortFunc(true));
+    
      
     }else{
       dispatch(viewPortFunc(false));
+      setmouseWheel(true)
     }
   };
 
@@ -117,7 +121,7 @@ const WhyChooseUs = () => {
             slidesPerView={1}
             centeredSlides={true}
             onSlideChange={(e) => slideHandle(e)}
-            mousewheel={true}
+            mousewheel={mouseWheel}
             breakpoints={{
               // when window width is >= 640px
               300: {
