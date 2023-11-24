@@ -52,6 +52,8 @@ const WhyChooseUs = () => {
     if(e.activeIndex==3){
       //  document.getElementById("makeClick").click();
       dispatch(viewPortFunc(true));
+    }else{
+      dispatch(viewPortFunc(false));
     }
   };
 
