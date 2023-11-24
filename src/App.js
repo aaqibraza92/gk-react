@@ -25,9 +25,9 @@ function App() {
 
   return (
     <>
-      {
+      {/* {
         screenWidth > 1000 && <AnimatedCursor color='142, 118, 83' />
-      }
+      } */}
       <div className="wrapperApp" >
         <Routes>
           {RouterList &&

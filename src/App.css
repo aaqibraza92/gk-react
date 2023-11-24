@@ -366,7 +366,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   text-align: right;
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible {
-  width: 160px !important;
+  width: 130px !important;
   height: auto;
   cursor: pointer;
 }
@@ -1013,3 +1013,19 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 .scrollHide{
   display: none;
 }
+.swiper-pagination-bullet{
+  position: relative;
+}
+.swiper-pagination-bullet {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 16px 0 16px 29px;
+  border-color: transparent transparent transparent #FFFFFF;
+  transform: rotate(0deg);
+  background: transparent !important;
+  -webkit-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+.swiper-pagination {
+  text-align: right !important;}
