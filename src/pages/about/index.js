@@ -46,10 +46,10 @@ const AboutUs = () => {
             <Col lg={7} md={7}>
               <Fade bottom cascade>
                 <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs50 mobFs30`}>
-                <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>Our legacy </Fade> <br></br> <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>dates back to</Fade></h3>
+                Our legacy <br></br> dates back to</h3>
               </Fade>
               <Fade left cascade>
-              <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}> <br style={{display: "none"}}/>   <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>1985 </Fade></h3>
+              <h3 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}> <br style={{display: "none"}}/>1985</h3>
                 {/* <h2 className={`${activeTheme ? "colorBlack" : "brownGradient"} fs140`}>
                 1985
                 </h2> */}
@@ -172,10 +172,10 @@ const AboutUs = () => {
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}> <Fade  bottom cascade damping={0.5e-1} delay={100}>Our </Fade> <br className="d-none"/> <Fade  bottom cascade damping={0.5e-1} delay={100}>Pillars </Fade> </h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs50 mobFs30  text-uppercase subfont `}>Our<br className="d-none"/> Pillars </h3>
               </Fade>
               <Fade bottom cascade>
-                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} > <Fade  bottom cascade damping={0.5e-1} delay={100}>GK Group’s </Fade>   <br className="d-none"/>  <Fade  bottom cascade damping={0.5e-1} delay={100}>Foundation </Fade> </h3>
+                <h3 className={`${activeTheme ? "fontlight" : "brownGradient"} fs28 fs16 subfont fontlight`} >GK Group’s <br className="d-none"/>Foundation</h3>
               </Fade>
               <div className="devider">
               </div>

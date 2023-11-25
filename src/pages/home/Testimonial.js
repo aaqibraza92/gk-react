@@ -63,8 +63,8 @@ const Testimonial = () => {
           
                 <h2 className="colorWhite fs50 fontlight subfont mt10">
                 <Fade left cascade damping={1e-1} delay={100}>What </Fade> <br />
-                <Fade left cascade damping={1e-1} delay={100}>People      </Fade><br />
-                <Fade left cascade damping={1e-1} delay={100}>Say      </Fade>
+                <Fade left cascade damping={1e-1} delay={100}>People</Fade><br />
+                <Fade left cascade damping={1e-1} delay={100}>Say</Fade>
 
                   </h2>
              
@@ -77,8 +77,8 @@ const Testimonial = () => {
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
                 <Swiper
-                navigation={true}
-            
+                navigation={false}
+                pagination={true}
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
                   speed={1000}

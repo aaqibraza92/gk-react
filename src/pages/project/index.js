@@ -39,8 +39,8 @@ const Project = () => {
           </div>
         
         <Container>
-          <h2 className="fs70 mb0 brownGradient text-center mb70">  <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>Projects</Fade></h2>
-          <Reveal keyframes={customAnimation} delay={600}>
+        <Fade  bottom delay={100}> <h2 className="fs70 mb0 brownGradient text-center mb70">  Projects</h2> </Fade>
+          <Reveal keyframes={customAnimation} delay={400}>
 
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
@@ -49,7 +49,7 @@ const Project = () => {
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                          videoSrc={require("../../assets/video/casa.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/pr1.png")}
@@ -97,8 +97,7 @@ const Project = () => {
             </Row>
           </Reveal>
 
-          <Reveal keyframes={customAnimation} delay={600}>
-
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="#">
@@ -107,7 +106,7 @@ const Project = () => {
                       <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
 
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            videoSrc={require("../../assets/video/zenith.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/pr2.jpg")}
@@ -162,7 +161,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="#">
@@ -170,7 +169,7 @@ const Project = () => {
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                          videoSrc={require("../../assets/video/alam-villa.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/pr3.jpg")}
@@ -224,7 +223,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="#">
@@ -232,7 +231,7 @@ const Project = () => {
                     <div>
                       <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                        videoSrc={require("../../assets/video/festton.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/festoon.webp")}
@@ -283,7 +282,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="#">
@@ -291,7 +290,7 @@ const Project = () => {
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                         videoSrc={require("../../assets/video/triad.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/triad.webp")}
@@ -345,7 +344,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="#">
@@ -353,7 +352,7 @@ const Project = () => {
                     <div>
                       <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                           videoSrc={require("../../assets/video/pearl-enclave.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/pear.webp")}
@@ -404,7 +403,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={600}>
+          <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="#">
@@ -412,7 +411,7 @@ const Project = () => {
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
                         <HoverVideoPlayer
-                          videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                           videoSrc={require("../../assets/video/surya.mp4")}
                           pausedOverlay={
                             <img
                               src={require("../../assets/img/project/surya.webp")}
@@ -473,14 +472,14 @@ const Project = () => {
           } pt100 pb100 text-center  mt50`}
       >
         <Container>
-        <Fade bottom cascade damping={0.5e-1} delay={100}>
+        <Fade bottom delay={100}>
           <h2
             className={`${activeTheme ? "colorBlack" : "colorWhite"} fs50 mb55`}
           >
-             Looking for quality construction?
+           Looking for quality construction?
           </h2>
-          </Fade>
 
+          </Fade>
           <Fade>
             <Link
               className={`${activeTheme ? "bgBlack" : "bgBlack"

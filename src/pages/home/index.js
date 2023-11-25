@@ -1,46 +1,60 @@
-import React from 'react'
-import HomeBanner from './HomeBanner'
-import '../../assets/css/home.css'
+import React, { useEffect, useMemo, useState } from "react";
+import HomeBanner from "./HomeBanner";
+import "../../assets/css/home.css";
 import { Helmet } from "react-helmet";
-import AboutUs from './AboutUs';
-import Testimonial from './Testimonial';
-import WhoWeAre from './WhoWeAre';
-import WhyChooseUs from './WhyChooseUs';
-import OurProjects from './OurProjects';
-import VerticalImageSlider from './VerticalImageSlider';
-import HomeAnimate from './HomeAnimate';
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import AboutUs from "./AboutUs";
+import Testimonial from "./Testimonial";
+import WhoWeAre from "./WhoWeAre";
+import WhyChooseUs from "./WhyChooseUs";
+import OurProjects from "./OurProjects";
+import { useSelector } from "react-redux";
+import { useRef } from "react";
 
 const HomePage = () => {
-  const [isAnimate,setisAnimate]=useState(true);
-  const homeAnimate = useSelector((state) => {
-    return (
-      state && state?.persistedReducer?.theme?.flip
-    );
+  var myRef = useRef(null);
+  const [slideOpen, setslideOpen] = useState(false);
+  const viewPort = useSelector((state) => {
+    return state && state?.persistedReducer?.Slider?.viewPort;
   });
+
+  // useEffect(()=>{
+  //   setslideOpen(true);
+  // },[viewPort])
+
+  const executeScroll = () => {
+    myRef?.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const homeAnimate = useSelector((state) => {
+    return state && state?.persistedReducer?.theme?.flip;
+  });
+
   return (
     <>
       <Helmet>
         <title>Home - GK Builders & Developers</title>
       </Helmet>
       <main>
-      {/* {
-        homeAnimate &&  <HomeAnimate/>
-      } */}
-     
         <HomeBanner />
         <AboutUs />
-        <OurProjects/>
-        <WhyChooseUs/>
-        <WhoWeAre/>
-        <Testimonial/>
-      
+        <button
+          onClick={() => executeScroll()}
+          id="makeClick"
+          className="d-none"
+        >
+          Click to scroll
+        </button>
+        <OurProjects />
+
+        <WhyChooseUs />
+        {viewPort && (
+          <div ref={myRef && myRef}>
+            <WhoWeAre />
+            <Testimonial />
+          </div>
+        )}
       </main>
     </>
+  );
+};
 
-
-  )
-}
-
-export default HomePage
+export default HomePage;

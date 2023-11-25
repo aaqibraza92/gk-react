@@ -111,12 +111,20 @@ background: linear-gradient(90deg, #a07f50  58%, rgba(0,0,0,0) 58%);
     position: relative;
   }
   .bgfifty {
-    background: rgb(42,51,121);
-    background: #fff;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
   }
   .bgfiftymission {
     background: rgb(255,255,255);
-    background: #fff;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+  }
+  .bgfiftyBrown {
+    background: rgb(42,51,121);
+    background: linear-gradient(90deg, #a07f50 0%, #a07f50 100%);
+  }
+  .bgfiftymissionBrown{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, #a07f50 0%, #a07f50 100%);
   }
 }
 

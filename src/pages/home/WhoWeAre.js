@@ -1,29 +1,64 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
-import { useSelector } from "react-redux";
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/autoplay";
-import { Fade,Zoom } from "react-awesome-reveal";
-import { useEffect,useState } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { Fade, Zoom } from "react-awesome-reveal";
+import { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { EffectFade, Autoplay } from 'swiper';
+import { viewPortFunc } from '../../store/slices/UserSlices';
+
+
+
 const WhoWeAre = () => {
+    const [screenWidth, setScreenWidth] = useState(window.screen.width);
+    const resizeScreen = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    const ref1 = useRef(null);
+    const sectionEndRef = useRef(null);
+    const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
+    const dispatch= useDispatch();
+  
+    // useEffect(() => {
+    //   const observer = new IntersectionObserver(
+    //     ([entry]) => {
+    //       setIsSectionEndVisible(entry.isIntersecting);
+    //       dispatch(viewPortFunc(entry.isIntersecting));
+    //     },
+    //     {
+    //       root: null, 
+    //       rootMargin: '600px',
+    //       threshold: screenWidth > 767 ? 0.5 : 0.6, 
+    //     }
+    //   );
+  
+    //   if (sectionEndRef.current) {
+    //     observer.observe(sectionEndRef.current);
+    //   }
+  
+    //   return () => {
+    //     if (sectionEndRef.current) {
+    //       observer.unobserve(sectionEndRef.current);
+    //     }
+    //   };
+    // }, []); 
+
+    useEffect(() => {
+        resizeScreen();
+            window.addEventListener("resize", resizeScreen);
+            return () => {
+              window.removeEventListener("resize", resizeScreen);
+            };
+    },[]);
+          
 
     const [triggerHover, settriggerHover] = useState(false);
-    const [slide, setSlide] = useState("slide1");
-    useEffect(() => {
-        if(triggerHover){
-            const timeout = setTimeout(() => {
-                setSlide("slide2");
-              }, 10000);
-              return () => clearTimeout(timeout);
-        }
-     
-    }, [triggerHover]);
+
 
     const activeTheme = useSelector((state) => {
         return (
@@ -31,8 +66,13 @@ const WhoWeAre = () => {
         );
     });
 
+    const handleHover=()=>{
+        settriggerHover(true);
+       
+    }
+
     return (
-        <section className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
+        <section ref={sectionEndRef}  className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
                 <div className='text-center'>
                     <div className="">
@@ -40,74 +80,113 @@ const WhoWeAre = () => {
                             <img src={require('../../assets/img/home/three_dot.png')} className="img-fluid" alt="" />
                         </Zoom>
 
-                            <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs50 fontlight subfont text-center`}>
+                        <h2 className={`${activeTheme ? "colorBlack" : "colorWhite"} mb50 fs50 fontlight subfont text-center`}>
                             <Fade left cascade damping={1e-1} delay={100}>   who we are? </Fade>
-                            </h2>
+                        </h2>
 
                     </div>
-                    <Row className='align-items-center gy-4'>
+                    <Row className='align-items-center gy-4 mt20'>
                         <Col lg={4} md={6}>
-                            <Zoom top cascade>
+                        <Zoom>
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
+                             
+                                        {
+                                            triggerHover ? <div className='circleAnimate position-absolute'>
+                                            </div> : <div className='circleAnimate hideRotate position-absolute' onMouseOver={() => handleHover()}>
+                                            </div>
 
-                                    {
-                                        triggerHover ?   <div className='circleAnimate position-relative'>
-                                        </div> :   <div className='circleAnimate hideRotate position-relative' onMouseOver={()=>settriggerHover(true)}>
-                                        </div>
-                                    }
-                                        {
-                                            triggerHover && slide==="slide1" &&
-                                           
-                                            <div className='wrpCircle position-absolute'>
-                                                 <Fade bottom cascade>
-                                            <div className='mb0 lh50'>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                              4
-                                                </span>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
-                                                        <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                            Happy <br />
-                                            Families
-                                            </div>
-                                            </Fade>
-                                        </div>
-                                     
-                                        }
-                                        {
-                                            triggerHover && slide==="slide2" &&
                                          
-                                            <div className='wrpCircle position-absolute'>
-                                                   <Fade bottom cascade>
-                                            <div className='mb0 lh50'>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient fw500'>
-                                              8
-                                                </span>
-                                                <span className='fontlight subfont fs80 mobFs35 brownGradient'>
-                                                k <svg style={{ marginLeft: '-12px' }} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
-                                                        <g fill="#a07f50" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                            Lorem <br />
-                                            Ipsum
-                                            </div>
-                                            </Fade>
-                                        </div>
-                                 
                                         }
+
+                                        {
+                                            triggerHover ?
+                                                <Swiper
+                                                    autoplay={{
+                                                        delay: 2500,
+                                                        disableOnInteraction: false,
+                                                    }}
+                                                    spaceBetween={0}
+                                                    effect={'fade'}
+                                                    navigation={false}
+                                                    pagination={{
+                                                        clickable: false,
+                                                    }}
+                                                  
+                                                    modules={[EffectFade, Autoplay]}
+                                                    className="mySwiper swiperFadeEff"
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className='mb0 lh50'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                            4000
+                                                            </span>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
+                                                            </span>
+                                                        </div>
+                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                                            Happy <br />
+                                                            Families
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className='mb0 lh50'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                            63
+                                                            </span>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
+                                                            </span>
+                                                        </div>
+                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                                        Projects
+                                                        </div>
+                                                    </SwiperSlide>
+
+                                                    <SwiperSlide>
+                                                        <div className='mb0 lh50'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                            30
+                                                            </span>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
+                                                            </span>
+                                                        </div>
+                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                                        Years <br/> Expertise
+                                                        </div>
+                                                    </SwiperSlide>
+
+                                                    <SwiperSlide>
+                                                        <div className='mb0 lh50'>
+                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                            3M
+                                                            </span>
+                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                                + 
+                                                            </span>
+                                                        </div>
+                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                                        sq. ft Area <br/> Delivered
+                                                        </div>
+                                                    </SwiperSlide>
+
+                                                </Swiper> :
+                                                <div className='blankData'></div>
+
+                                        }
+                                           
+                                    
                                      
+
+
+
                                     </div>
                                 </div>
 
-                            </Zoom>
-
+                         
+</Zoom>
 
                         </Col>
                         <Col lg={7} md={6} className=''>
