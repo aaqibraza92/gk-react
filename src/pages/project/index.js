@@ -473,11 +473,13 @@ const Project = () => {
           } pt100 pb100 text-center  mt50`}
       >
         <Container>
+        <Fade bottom cascade damping={0.5e-1} delay={100}>
           <h2
             className={`${activeTheme ? "colorBlack" : "colorWhite"} fs50 mb55`}
           >
-            <Fade bottom cascade damping={0.5e-1} delay={100}> Looking for quality construction?</Fade>
+             Looking for quality construction?
           </h2>
+          </Fade>
 
           <Fade>
             <Link
