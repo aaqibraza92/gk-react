@@ -9,6 +9,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import OurProjects from "./OurProjects";
 import { useSelector } from "react-redux";
 import { useRef } from "react";
+import ScrollComp from "./ScrollComp";
 
 const HomePage = () => {
   var myRef = useRef(null);
@@ -36,6 +37,7 @@ const HomePage = () => {
       <main>
         <HomeBanner />
         <AboutUs />
+        <ScrollComp/>
         <button
           onClick={() => executeScroll()}
           id="makeClick"
