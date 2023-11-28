@@ -1038,12 +1038,50 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
     right: 18px;
 }
 
-  .panel {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-  }
-  .bgwrp{
-    background-repeat: repeat !important;
+/*tst*/
 
+
+
+
+.service {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    position: relative;
+}
+
+
+.services {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.service {
+  min-width: 100%;
+}
+
+.service h1 {
+  color: #000;
+  font-size: 40px;
+  padding: 70px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 100vh;
   }
+
+  .service h1 {
+    font-size: 90px;
+  }
+}
+/* .pin-spacer {
+  padding-bottom: 0px !important;
+} */
+/*tst*/
