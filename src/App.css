@@ -1029,3 +1029,11 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 }
 .swiper-pagination {
   text-align: right !important;}
+  .swiper-pagination-bullet:nth-child(1) {
+    position: relative;
+    left: 17px;
+}
+.swiper-pagination-bullet:nth-child(3) {
+    position: relative;
+    right: 18px;
+}
