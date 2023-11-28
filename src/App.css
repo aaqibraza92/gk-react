@@ -1035,3 +1035,7 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
     width: 100vw;
     text-align: center;
   }
+  .bgwrp{
+    background-repeat: repeat !important;
+
+  }

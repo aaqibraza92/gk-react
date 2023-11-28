@@ -2,7 +2,7 @@ import React from "react";
 import { Timeline, Tween } from "react-gsap";
 import { Controller, Scene } from "react-scrollmagic";
 import styled from "styled-components";
-import { Fade, Zoom } from "react-awesome-reveal";
+
 import { Col, Row } from "reactstrap";
 
 const SectionWipes2Styled = styled.div`
@@ -64,7 +64,7 @@ const ScrollComp = (props) => {
                 <Controller>
                     <Scene
                         triggerHook={0}
-                        duration="100%"
+                        duration="50%"
                         pin
                         pinSettings={{
                             pushFollowers: false,
@@ -72,28 +72,10 @@ const ScrollComp = (props) => {
                         }}
                         indicators={true}
                     >
-                        <div id="pinContainer" style={{
-                            backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                        }}>
+                        <div id="pinContainer" >
 
                             <section className="panelSec blue d-flex align-items-center">
                                 <div className="container-xxl">
-                                    <div className="text-center">
-                                        <Zoom left>
-                                            <img
-                                                src={require("../../assets/img/home/three_dot.png")}
-                                                className="img-fluid"
-                                                alt=""
-                                            />
-                                        </Zoom>
-                                        <Fade left cascade damping={1e-1} delay={100}>
-                                            <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-
-                                                why choose us?
-
-                                            </h2>
-                                        </Fade>
-                                    </div>
                                     <div className="cornerHandle">
                                         <div className="whyChsWrp">
                                             <Row className="align-items-center">
@@ -119,7 +101,7 @@ const ScrollComp = (props) => {
                     </Scene>
                     <Scene
                         triggerHook="onLeave"
-                        duration="100%"
+                        duration="50%"
                         pin
                         pinSettings={{
                             pushFollowers: false,
@@ -130,26 +112,8 @@ const ScrollComp = (props) => {
                         progressEvents={true}
                     >
                         {(propgress, event) => (
-                            <section id="pinContainer" style={{
-                                backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                            }} className="panelSec turqoise d-flex align-items-center">
+                            <section id="pinContainer"  className="panelSec turqoise d-flex align-items-center">
                          <div className="container-xxl">
-                                    <div className="text-center">
-                                        <Zoom left>
-                                            <img
-                                                src={require("../../assets/img/home/three_dot.png")}
-                                                className="img-fluid"
-                                                alt=""
-                                            />
-                                        </Zoom>
-                                        <Fade left cascade damping={1e-1} delay={100}>
-                                            <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-
-                                                why choose us?
-
-                                            </h2>
-                                        </Fade>
-                                    </div>
                                     <div className="cornerHandle">
                                         <div className="whyChsWrp">
                                             <Row className="align-items-center">
@@ -175,32 +139,14 @@ const ScrollComp = (props) => {
                     </Scene>
                     <Scene
                         triggerHook="onLeave"
-                        duration="100%"
+                        duration="50%"
                         pin
                         indicators={true}
                         classToggle={"opacity"}
                         reverse={false}
                     >
-                        <section id="pinContainer" style={{
-                            backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                        }} className="panelSec bordeaux d-flex align-items-center">
+                        <section id="pinContainer"  className="panelSec bordeaux d-flex align-items-center">
                         <div className="container-xxl">
-                                    <div className="text-center">
-                                        <Zoom left>
-                                            <img
-                                                src={require("../../assets/img/home/three_dot.png")}
-                                                className="img-fluid"
-                                                alt=""
-                                            />
-                                        </Zoom>
-                                        <Fade left cascade damping={1e-1} delay={100}>
-                                            <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-
-                                                why choose us?
-
-                                            </h2>
-                                        </Fade>
-                                    </div>
                                     <div className="cornerHandle">
                                         <div className="whyChsWrp">
                                             <Row className="align-items-center">
@@ -226,32 +172,15 @@ const ScrollComp = (props) => {
 
                     <Scene
                         triggerHook="onLeave"
-                        duration="100%"
+                        duration="50%"
                         pin
                         indicators={true}
                         classToggle={"opacity"}
                         reverse={false}
                     >
-                        <section id="pinContainer" style={{
-                            backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                        }} className="panelSec bordeaux d-flex align-items-center">
+                        <section id="pinContainer"  className="panelSec bordeaux d-flex align-items-center">
                         <div className="container-xxl">
-                                    <div className="text-center">
-                                        <Zoom left>
-                                            <img
-                                                src={require("../../assets/img/home/three_dot.png")}
-                                                className="img-fluid"
-                                                alt=""
-                                            />
-                                        </Zoom>
-                                        <Fade left cascade damping={1e-1} delay={100}>
-                                            <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-
-                                                why choose us?
-
-                                            </h2>
-                                        </Fade>
-                                    </div>
+                             
                                     <div className="cornerHandle">
                                         <div className="whyChsWrp">
                                             <Row className="align-items-center">
