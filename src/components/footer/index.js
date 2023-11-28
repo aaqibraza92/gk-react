@@ -65,7 +65,7 @@ const Footer = () => {
         </button>
       }
 
-<section className={`${location?.pathname==="/" && (viewPort ? "d-block" : "d-none")}`}>
+{/* <section className={`${location?.pathname==="/" && (viewPort ? "d-block" : "d-none")}`}> */}
 <footer className={`position-relative h-100 d-flex align-items-end mainFooer`}>
         {
           activeTheme ?
@@ -280,7 +280,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
-</section>
+{/* </section> */}
    
       
 

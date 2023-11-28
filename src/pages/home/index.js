@@ -37,23 +37,26 @@ const HomePage = () => {
       <main>
         <HomeBanner />
         <AboutUs />
-        <ScrollComp/>
-        <button
+     
+        {/* <button
           onClick={() => executeScroll()}
           id="makeClick"
           className="d-none"
         >
           Click to scroll
-        </button>
+        </button> */}
         <OurProjects />
 
         <WhyChooseUs />
-        {viewPort && (
+        <ScrollComp/>
+        {/* {viewPort && (
           <div ref={myRef && myRef}>
             <WhoWeAre />
             <Testimonial />
           </div>
-        )}
+        )} */}
+          <WhoWeAre />
+            <Testimonial />
       </main>
     </>
   );
