@@ -18,7 +18,7 @@ const SectionWipes2Styled = styled.div`
     position: absolute;
     text-align: center;
   }
-  .panel span {
+  .panelSec span {
     position: relative;
     display: block;
     top: 50%;
@@ -26,7 +26,7 @@ const SectionWipes2Styled = styled.div`
   }
 
 
-  .panel.opacity {
+  .panelSec.opacity {
     opacity: 1;
   }
 `;
@@ -76,7 +76,7 @@ const ScrollComp = (props) => {
                             backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
                         }}>
 
-                            <section className="panel blue d-flex align-items-center">
+                            <section className="panelSec blue d-flex align-items-center">
                                 <div className="container-xxl">
                                     <div className="text-center">
                                         <Zoom left>
@@ -132,7 +132,7 @@ const ScrollComp = (props) => {
                         {(propgress, event) => (
                             <section id="pinContainer" style={{
                                 backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                            }} className="panel turqoise d-flex align-items-center">
+                            }} className="panelSec turqoise d-flex align-items-center">
                          <div className="container-xxl">
                                     <div className="text-center">
                                         <Zoom left>
@@ -183,7 +183,7 @@ const ScrollComp = (props) => {
                     >
                         <section id="pinContainer" style={{
                             backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                        }} className="panel bordeaux d-flex align-items-center">
+                        }} className="panelSec bordeaux d-flex align-items-center">
                         <div className="container-xxl">
                                     <div className="text-center">
                                         <Zoom left>
@@ -234,7 +234,7 @@ const ScrollComp = (props) => {
                     >
                         <section id="pinContainer" style={{
                             backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-                        }} className="panel bordeaux d-flex align-items-center">
+                        }} className="panelSec bordeaux d-flex align-items-center">
                         <div className="container-xxl">
                                     <div className="text-center">
                                         <Zoom left>
