@@ -49,11 +49,12 @@ const HomePage = () => {
         </button> */}
         <OurProjects />
 
-        <WhyChooseUs />
-        {/* <HorScroll/> */}
-        <div className="bgwrp" style={{
+        {/* <WhyChooseUs /> */}
+        <div className="bgwrp pt100"
+         style={{
           backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-        }}>
+        }}
+        >
           <div className="container-xxl">
             <div className="text-center">
               <Zoom left>
@@ -64,7 +65,7 @@ const HomePage = () => {
                 />
               </Zoom>
               <Fade left cascade damping={1e-1} delay={100}>
-                <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
+                <h2 className="colorWhite mb0 pb-0 fs50 fontlight subfont text-center">
                   why choose us?
                 </h2>
               </Fade>
