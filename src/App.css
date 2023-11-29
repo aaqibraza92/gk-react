@@ -1043,18 +1043,33 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 
 
 
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+body {
+  overflow-y: visible;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .service {
     align-items: center;
     display: flex;
     justify-content: center;
     min-width: 100%;
     position: relative;
+    min-height: 100vh;
 }
 
-
+/* .first_service.service {
+  display: none;
+} */
 .services {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   overflow: hidden;
 }
 
@@ -1077,9 +1092,7 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
     height: 100vh;
   }
 
-  .service h1 {
-    font-size: 90px;
-  }
+
 }
 /* .pin-spacer {
   padding-bottom: 0px !important;

@@ -14,6 +14,18 @@ import { Fade, Zoom } from "react-awesome-reveal";
 import HorScroll from "./HorScroll";
 
 const HomePage = () => {
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  const resizeScreen = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    resizeScreen();
+    window.addEventListener("resize", resizeScreen);
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  });
+
   var myRef = useRef(null);
   const [slideOpen, setslideOpen] = useState(false);
   const viewPort = useSelector((state) => {
@@ -49,32 +61,16 @@ const HomePage = () => {
         </button> */}
         <OurProjects />
 
-        {/* <WhyChooseUs /> */}
-        <div className="bgwrp pt100"
-         style={{
-          backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
-        }}
-        >
-          <div className="container-xxl">
-            <div className="text-center">
-              <Zoom left>
-                <img
-                  src={require("../../assets/img/home/three_dot.png")}
-                  className="img-fluid"
-                  alt=""
-                />
-              </Zoom>
-              <Fade left cascade damping={1e-1} delay={100}>
-                <h2 className="colorWhite mb0 pb-0 fs50 fontlight subfont text-center">
-                  why choose us?
-                </h2>
-              </Fade>
-            </div>
-          </div>
+
+        {
+          screenWidth > 1200 ? <ScrollComp /> : <WhyChooseUs />
+        }
 
 
-          {/* <ScrollComp /> */}
-        </div>
+
+
+
+
 
         {/* {viewPort && (
           <div ref={myRef && myRef}>

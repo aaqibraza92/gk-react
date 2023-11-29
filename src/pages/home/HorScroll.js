@@ -2,7 +2,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HorScroll() {
@@ -34,7 +33,7 @@ export default function HorScroll() {
         <h1>Testing horizontal scrolling w/ three sections</h1>
         <h2>First Container</h2>
       </div>
-      <div ref={slider} className="container">
+      <div ref={slider} className="container11">
         <div className="description panel blue">
           <div>
             SCROLL DOWN

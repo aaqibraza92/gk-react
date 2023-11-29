@@ -36,7 +36,7 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
-  const [mouseWheel1,setmouseWheel]=useState(true);
+  // const [mouseWheel1,setmouseWheel]=useState(true);
  const dispatch= useDispatch();
   // const viewPort = useSelector((state) => {
   //   return state && state?.persistedReducer?.theme?.viewPort;
@@ -53,9 +53,8 @@ const WhyChooseUs = () => {
     if(e.activeIndex==3){
       setTimeout(() => {
         // document.getElementById("swiperInner").blur();
-        document.getElementById("target-section").focus();
-        setmouseWheel(false)
-        setSl(e.activeIndex);
+        // setmouseWheel(false)
+        // setSl(e.activeIndex);
       }, 1800);
       
       dispatch(viewPortFunc(true));
@@ -63,7 +62,7 @@ const WhyChooseUs = () => {
      
     }else{
       dispatch(viewPortFunc(false));
-      setmouseWheel(true)
+      // setmouseWheel(true)
     }
   };
 
@@ -124,7 +123,7 @@ const WhyChooseUs = () => {
             slidesPerView={1}
             centeredSlides={true}
             onSlideChange={(e) => slideHandle(e)}
-            mousewheel={mouseWheel1}
+            mousewheel={false}
             breakpoints={{
               // when window width is >= 640px
               300: {
