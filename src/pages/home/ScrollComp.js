@@ -46,12 +46,13 @@ const ScrollComp = () => {
         console.log(sections.length);
         const timeline = gsap.timeline();
         timeline.to(sections, {
-          xPercent: -100 * (sections.length - 1),
-          ease: "none",
+          xPercent: -180 * (sections.length - 1),
+          ease: "linear",
           scrollTrigger: {
             trigger: parentContainer.current,
             start: "top top",
             end: () => "+=" + parentContainer.current.offsetWidth,
+            // end: "top top",
             pin: true,
             scrub: 1,
             snap: 1 / (sections.length - 1),
