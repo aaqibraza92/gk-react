@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { useRef } from "react";
 import ScrollComp from "./ScrollComp";
 import { Fade, Zoom } from "react-awesome-reveal";
+import HorScroll from "./HorScroll";
 
 const HomePage = () => {
   var myRef = useRef(null);
@@ -49,6 +50,7 @@ const HomePage = () => {
         <OurProjects />
 
         <WhyChooseUs />
+        {/* <HorScroll/> */}
         <div className="bgwrp" style={{
           backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`,
         }}>
@@ -69,7 +71,8 @@ const HomePage = () => {
             </div>
           </div>
 
-          <ScrollComp />
+
+          {/* <ScrollComp /> */}
         </div>
 
         {/* {viewPort && (
