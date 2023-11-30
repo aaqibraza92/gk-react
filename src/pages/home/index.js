@@ -69,7 +69,7 @@ const HomePage = () => {
         } */}
 
         <VerticalSlider/>
-        <WhyChooseUs />
+        {/* <WhyChooseUs /> */}
         {/* <VerticalSl/>  */}
  
 
