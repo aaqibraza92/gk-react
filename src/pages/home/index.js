@@ -13,6 +13,7 @@ import ScrollComp from "./ScrollComp";
 import { Fade, Zoom } from "react-awesome-reveal";
 import HorScroll from "./HorScroll";
 import VerticalSl from "./verticalSlider/VerticalSl";
+import VerticalSlider from "./verticalSlider/VerticalSl";
 
 const HomePage = () => {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -67,7 +68,7 @@ const HomePage = () => {
           screenWidth > 1200 ? <ScrollComp /> : <WhyChooseUs />
         } */}
 
-
+        <VerticalSlider/>
         <WhyChooseUs />
         {/* <VerticalSl/>  */}
  
