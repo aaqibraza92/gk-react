@@ -7,7 +7,6 @@ import LookingForJob from "./LookingForJob";
 import LookingForTalent from "./LookingForTalent";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import VerticalImageSlider from "../home/VerticalImageSlider";
 const ContactUs = (props) => {
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;

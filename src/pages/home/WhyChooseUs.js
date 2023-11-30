@@ -157,7 +157,7 @@ const WhyChooseUs = () => {
                     <div className="whyChsWrp">
                       <Row className="align-items-center">
                         <Col lg={6} md={12}>
-                          <h3 className="brownGradient fs30 mb25 mobFs21">
+                          <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
                             {e.title}
                           </h3>
                           <p className="fs14">{e.para}</p>

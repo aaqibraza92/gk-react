@@ -62,14 +62,14 @@ const HomePage = () => {
         <OurProjects />
 
 
-        {
+        {/* {
           screenWidth > 1200 ? <ScrollComp /> : <WhyChooseUs />
-        }
+        } */}
 
 
+        <WhyChooseUs />
 
-
-
+ 
 
 
         {/* {viewPort && (
