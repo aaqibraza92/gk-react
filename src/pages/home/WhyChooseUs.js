@@ -110,17 +110,17 @@ const WhyChooseUs = () => {
             </Fade>
           </h2>
         </div>
-
+       
         <div className="wrapperData">
           <Swiper
             id="swiperInner"
             modules={[Navigation, Pagination, Mousewheel]}
-            //loop={true}
+            loop={true}
             speed={800}
             reachEnd={(e) => console.log("rr", e)}
-            //autoPlay={{ delay: 1000 }}
-            spaceBetween={30}
-            slidesPerView={1}
+            autoPlay={{ delay: 1000 }}
+            spaceBetween={0}
+            slidesPerView={3}
             centeredSlides={true}
             onSlideChange={(e) => slideHandle(e)}
             mousewheel={false}

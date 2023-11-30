@@ -448,7 +448,19 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   padding-bottom: 30px;
   width: 60%;
   margin: 0 auto;
+  height: 398px;
+  display: flex;
+  align-items: center;
 }
+li.slide .whyChsWrp {
+  width: 53%;
+  opacity: 0.5;
+}
+li.slide.selected .whyChsWrp {
+  width: 60%;
+  opacity: 1;
+}
+
 
 @media only screen and (min-width: 1200px) {
   .cornerHandle {
@@ -1132,5 +1144,11 @@ body {
 .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(5) {
   position: relative;
   left: 0px;
-  top: 33px;
+  top: 33px;
+}
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: left !important;
 }
