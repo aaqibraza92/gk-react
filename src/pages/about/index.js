@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { useSelector } from "react-redux";
 import ScrollTrigger from 'react-scroll-trigger';
 import Reveal, { Fade, Flip } from "react-awesome-reveal";
-
+import { keyframes } from "@emotion/react";
 
 const AboutUs = () => {
   const [vision, setvision] = useState(false);
@@ -28,15 +28,45 @@ const AboutUs = () => {
   const [playStatus, setplayStatus] = useState(false);
 
 
+  const customAnimation = keyframes`
+	from {
+		clip-path: inset(0 100% 0 0);
+    background-color: #222222;
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+    background-color: #222222;
+	}
+  0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+`;
 
   return (
     <>
-
       <Helmet>
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
-      <section className="heroSection aboutus">
-          <h1 className="text-white fs70 subfont text-uppercase reveal-text position-relative leftBorder pl20">About Us</h1>
+      <section className="heroSection aboutus position-relative d-flex align-items-center">
+      <Reveal keyframes={customAnimation} delay={400} >
+      <div className="w-100 position-absolute" style={{height: "50px"}}>
+         
+      </div>
+      </Reveal>
+      <h1 className="text-white fs70 subfont text-uppercase reveal-text1 position-relative leftBorder pl20">About Us</h1>
       </section>
 
 

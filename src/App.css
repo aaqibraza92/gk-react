@@ -828,7 +828,7 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
 /*slide reveal effect*/
  
 :root {
-	--delay: 0;
+	--delay: 500ms;
 	--duration: 800ms;
 	--iterations: 1;
 }
