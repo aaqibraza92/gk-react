@@ -1152,3 +1152,6 @@ body {
   position: relative;
   text-align: left !important;
 }
+.carousel-status {
+  display: none;
+}
