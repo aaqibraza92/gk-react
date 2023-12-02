@@ -61,12 +61,14 @@ const AboutUs = () => {
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
       <section className="heroSection aboutus position-relative d-flex align-items-center">
-      <Reveal keyframes={customAnimation} delay={400} >
-      <div className="w-100 position-absolute" style={{height: "50px"}}>
-         
+  
+      <h1 className="text-white fs70 subfont text-uppercase reveal-text1 position-relative leftBorder pl20">
+      <Reveal keyframes={customAnimation} delay={400} className="aniCl">
+      <div className="w-100 vHidden">
+          Lorem ipsum
       </div>
       </Reveal>
-      <h1 className="text-white fs70 subfont text-uppercase reveal-text1 position-relative leftBorder pl20">About Us</h1>
+      About Us</h1>
       </section>
 
 
@@ -142,7 +144,11 @@ const AboutUs = () => {
                   <ScrollTrigger onEnter={() => setvision(true)} >
                     {
                       vision && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
-                        <h3 className="fs45 subfont"> <Fade  bottom cascade damping={0.5e-1} delay={100}>Our Vision </Fade></h3>
+                        <h3 className="fs45 subfont position-relative">      <Reveal keyframes={customAnimation} delay={400} className="aniCl">
+      <div className="w-100 vHidden">
+      Our Vision
+      </div>
+      </Reveal> Our Vision </h3>
                         <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
 
                       </div>
@@ -165,7 +171,11 @@ const AboutUs = () => {
                 <ScrollTrigger onEnter={() => setvision1(true)} >
                   {
                     vision1 && <div className={`${activeTheme ? "bordernew" : "borderBlack"} reveal-text`}>
-                      <h3 className="fs45 subfont"> <Fade  bottom cascade damping={0.5e-1} delay={100}>Our Mission </Fade> </h3>
+                      <h3 className="fs45 subfont position-relative"> <Reveal keyframes={customAnimation} delay={400} className="aniCl">
+      <div className="w-100 vHidden">
+      Our Mission
+      </div>
+      </Reveal> Our Mission  </h3>
                       <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
 
                     </div>

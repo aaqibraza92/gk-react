@@ -69,7 +69,7 @@ const HomePage = () => {
           screenWidth > 1200 ? <ScrollComp /> : <WhyChooseUs />
         } */}
 <Vert2/>
-        <VerticalSlider/>
+        {/* <VerticalSlider/> */}
         {/* <WhyChooseUs /> */}
         {/* <VerticalSl/>  */}
  

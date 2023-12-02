@@ -442,11 +442,11 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .whyChsWrp {
   background: #ecf7fd;
   border-radius: 28px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   height: 398px;
   display: flex;
@@ -465,7 +465,7 @@ li.slide.selected .whyChsWrp {
 @media only screen and (min-width: 1200px) {
   .cornerHandle {
     margin-left: 30px;
-    margin-right: 70px;
+    margin-right: 0px;
   }
 }
 
@@ -1154,4 +1154,12 @@ body {
 }
 .carousel-status {
   display: none;
+}
+.aniCl {
+  position: absolute;
+  width: auto ;
+  height: 100%;
+}
+.vHidden{
+  visibility: hidden;
 }
