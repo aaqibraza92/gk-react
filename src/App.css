@@ -1174,6 +1174,8 @@ body {
   position: absolute;
   width: auto ;
   height: 100%;
+  color: #000;
+  background: #000 !important;
 }
 .vHidden{
   visibility: hidden;

@@ -149,7 +149,11 @@ const AboutUs = () => {
       Our Vision
       </div>
       </Reveal> Our Vision </h3>
-                        <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
+                        <p className={`position-relative ${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85 mb-0`}>
+                        <Reveal keyframes={customAnimation} delay={400} className="aniCl">
+                       Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.
+                      </Reveal>
+                        Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of Hyderabad and Secunderabad. We want to give our customers an experience of best branded materials and create a comfortable.</p>
 
                       </div>
                     }
@@ -176,7 +180,11 @@ const AboutUs = () => {
       Our Mission
       </div>
       </Reveal> Our Mission  </h3>
-                      <p className={`${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
+                      <p className={` position-relative ${activeTheme ? "colorLight" : "colorWhite"} fs16 w-85`}>
+                       <Reveal keyframes={customAnimation} delay={400} className="aniCl">
+                       Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.
+                      </Reveal>
+                      Our mission is to grow as a brand and become one of the leading developers in the industry. We aim to develop trust among our clientele and potential customers and create create a peerless reputation and track record.</p>
 
                     </div>
                   }
