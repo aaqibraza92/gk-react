@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import './slider.css'
 import { Fade, Zoom } from "react-awesome-reveal";
 // import "./styles.css";
-import { Pagination, Mousewheel, Navigation } from 'swiper';
+import { Pagination, Mousewheel, Navigation, Autoplay } from 'swiper';
 import { Col, Row } from "reactstrap";
 
 
@@ -51,7 +51,7 @@ const Vert2 = () => {
               alt=""
             />
           </Zoom>
-          <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
+          <h2 className="colorWhite mb50  fs50 fontlight subfont text-center">
             <Fade left cascade damping={1e-1} delay={100}>
               why choose us?
             </Fade>
@@ -60,9 +60,11 @@ const Vert2 = () => {
         </div>
   <div className=" slideronenew">
     <Swiper
-      slidesPerView={"3"}
+      slidesPerView={"1"}
       centeredSlides={true}
-      spaceBetween={0}
+      spaceBetween={10}
+      autoPlay={{ delay: 1500 }}
+      speed={1000}
       loop={true}
       navigation={true}
       mousewheel={true}
@@ -70,7 +72,7 @@ const Vert2 = () => {
         clickable: true,
       }}
      
-      modules={[Mousewheel, Pagination ,Navigation]}
+      modules={[Mousewheel, Pagination , Autoplay,Navigation]}
       className="mySwiper"
     >
             {data.map((e, i) => (
@@ -82,7 +84,7 @@ const Vert2 = () => {
                           <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
                             {e.title}
                           </h3>
-                          <p className="fs14">{e.para}</p>
+                          <p className="fs16">{e.para}</p>
                         </Col>
                         <Col lg={6} md={12}>
                           <img

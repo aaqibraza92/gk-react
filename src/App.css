@@ -444,13 +444,16 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   border-radius: 28px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
   width: 100%;
   margin: 0 auto;
   height: 398px;
   display: flex;
   align-items: center;
+  text-align: left;
+}
+.fs15{
+  font-size: 15px;
 }
 li.slide .whyChsWrp {
   width: 53%;
@@ -1049,7 +1052,19 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
     position: relative;
     right: 18px;
 }
+.swiper-pagination-bullet:nth-child(4) {
+  position: relative;
+  right: 33px;
+}
 
+.slideronenew .swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-left: 26px;
+  top: 15px !important;
+  padding-bottom: 16px;
+}
 /*tst*/
 
 
