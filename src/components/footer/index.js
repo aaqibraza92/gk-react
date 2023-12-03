@@ -20,6 +20,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { themeType } from "../../store/slices/UserSlices";
 import { Fade,Zoom } from "react-awesome-reveal";
 import { viewPortFunc } from "../../store/slices/SliderReducer";
+import { Player } from "video-react";
 
 const Footer = () => {
   const dispatch = useDispatch();
@@ -45,15 +46,15 @@ const Footer = () => {
     dispatch(themeType(val));
     window.location.reload();
   }
-  const videoRef = useRef(null);
-  const videoRef1 = useRef(null);
-  useEffect(() => {
-    if(videoRef && activeTheme){
-      videoRef?.current.play();
-    }else{
-      videoRef1?.current.play();
-    }
-  }, [videoRef]);
+  // const videoRef = useRef(null);
+  // const videoRef1 = useRef(null);
+  // useEffect(() => {
+  //   if(videoRef && activeTheme){
+  //     videoRef?.current.play();
+  //   }else{
+  //     videoRef1?.current.play();
+  //   }
+  // }, [videoRef]);
 
   return (
     <>
@@ -69,18 +70,19 @@ const Footer = () => {
 <footer className={`position-relative h-100 d-flex align-items-end mainFooer`}>
         {
           activeTheme ?
-          <video className="w-100" ref={videoRef} autoplay loop muted>
-            <source
-              src={require("../../assets/img/footer/footer-day.mp4")}
-              type="video/mp4"
-            />
-          </video> :
-          <video className="w-100" ref={videoRef1} autoplay loop muted>
-            <source
-              src={require("../../assets/img/footer/night-footer.mp4")}
-              type="video/mp4"
-            />
-          </video>
+      
+          <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                      <source
+                        src={require("../../assets/img/footer/footer-day.mp4")}
+                      />
+                    </Player>
+          :
+      
+          <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                      <source
+                       src={require("../../assets/img/footer/night-footer.mp4")}
+                      />
+                    </Player>
         }
         
           <div className="position-absolute absPos w-100">
