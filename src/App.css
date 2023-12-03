@@ -467,7 +467,7 @@ li.slide.selected .whyChsWrp {
 
 @media only screen and (min-width: 1200px) {
   .cornerHandle {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 0px;
   }
 }
@@ -485,9 +485,9 @@ li.slide.selected .whyChsWrp {
   body .swiperThumbnail .swiper-wrapper{
     width: 100%;
   }
-  body .swiperThumbnail .swiper-slide.swiper-slide-visible {
+  /* body .swiperThumbnail .swiper-slide.swiper-slide-visible {
     width: auto !important;
-  }
+  } */
   body .mainProSl img {
     height: 400px;
     object-fit: cover;

@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import './slider.css'
 import { Fade, Zoom } from "react-awesome-reveal";
 // import "./styles.css";
-import { Pagination, Mousewheel, Navigation, Autoplay } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 import { Col, Row } from "reactstrap";
 
 
@@ -66,13 +66,13 @@ const Vert2 = () => {
       autoPlay={{ delay: 1500 }}
       speed={1000}
       loop={true}
-      navigation={true}
+      navigation={false}
       mousewheel={true}
       pagination={{
         clickable: true,
       }}
      
-      modules={[Mousewheel, Pagination , Autoplay,Navigation]}
+      modules={[ Pagination , Autoplay,Navigation]}
       className="mySwiper"
     >
             {data.map((e, i) => (
