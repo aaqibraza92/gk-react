@@ -9,9 +9,20 @@
   font-style: italic;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fs16 {
+    font-size: 14px;
+  }
+  body .fs50 {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 767px) {
     body .mobFs9{
       font-size: 9px;
+    }
+    body .fs16 {
+      font-size: 14px;
     }
     body .fs50 {
       font-size: 26px;

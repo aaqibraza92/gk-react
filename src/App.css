@@ -447,7 +447,6 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   border-radius: 28px;
   padding-left: 0px;
   padding-right: 0px;
-
   width: 100%;
   margin: 0 auto;
   height: 398px;
@@ -476,13 +475,45 @@ li.slide.selected .whyChsWrp {
 }
 
 
+@media only screen and (max-width: 768px) {
+  body .whyChsWrp {
+    padding: 25px;
+    margin: 0 auto;
+    height: 398px;
+  }
+  body .slideronenew {
+    width: 92%;
+    margin: 0 auto;
+    padding: 15px 0px;
+  }
+  .heartAuthor {
+    top: 32px;
+    right: 0px;
+    width: 67px;
+    position: absolute;
+  }
+  .testimonial p.fs16 {
+    font-size: 12px;
+  }
+  .dataTesti {
+    padding-top: 103px;
+  }
+  .fs15 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
   body .bannerF {
     font-size: 16vw;
     line-height: 9vh;
   }
   .homeBanner .bannerImg {
-    height: 510px;
+    /* height: 510px; */
     object-fit: cover;
   }
   body .swiperThumbnail .swiper-wrapper{

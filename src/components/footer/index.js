@@ -88,7 +88,7 @@ const Footer = () => {
           <div className="position-absolute absPos w-100">
             <div className="container-xxl">
               <Row className="gy-3">
-                <Col lg={4} md={4} xl={4}>
+                <Col lg={4} md={6} xl={4}>
                 <Fade bottom >
                 <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                     <ul className="pl0 noUl fNav row">
@@ -146,7 +146,7 @@ const Footer = () => {
                
                 </Col>
   
-                <Col lg={4} md={4} xl={4}>
+                <Col lg={4} md={6} xl={4}>
                 <Fade bottom >
                 <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                     <div className="d-flex">
@@ -176,7 +176,7 @@ const Footer = () => {
               
                 </Col>
   
-                <Col lg={4} md={4} xl={4}>
+                <Col lg={4} md={6} xl={4}>
   
                 <Fade bottom >
                 <div className="radius30 fRounder pl30 pr30 pt60 pb60 mb30">
