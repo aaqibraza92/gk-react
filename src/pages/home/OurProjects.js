@@ -93,6 +93,7 @@ const OurProjects = () => {
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper swiperThumbnail"
+                allowTouchMove={false}
               >
                 <SwiperSlide>
                   <img
