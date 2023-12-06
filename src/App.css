@@ -157,6 +157,7 @@ border-color: #2C367A
 @media only screen and (max-width: 767px) {
   .swiperThumbnail .swiper-wrapper{
     max-width: 75% !important;
+    background-position: right !important;
   }
   body .formSection{
     margin-top: 0px;
