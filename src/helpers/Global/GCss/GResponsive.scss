@@ -316,6 +316,9 @@
 
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
+  body .newone{
+    position: static;
+  }
   body .slideronenew{
     width: 90%;
     }

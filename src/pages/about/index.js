@@ -178,7 +178,7 @@ const AboutUs = () => {
           <section className="mb30">
             <div className="container-xl">
               <Row className="align-items-center">
-                <Col lg={6} md={6}>
+                <Col lg={6} md={12} sm={12}>
                   <div className="visionvidio">
                     <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
@@ -202,7 +202,7 @@ const AboutUs = () => {
           >
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
-                <Col lg={6} md={6} sm={6} className="text-left aboutusnew">
+                <Col lg={6} md={12} sm={12} className="text-left aboutusnew">
                   <ScrollTrigger onEnter={() => setvision(true)}>
                     {vision && (
                       <div
@@ -255,7 +255,7 @@ const AboutUs = () => {
           >
             <div className="container-xl">
               <Row className="align-items-center gy-4">
-                <Col lg={6} md={6} sm={6} className="text-left">
+                <Col lg={6} md={12} sm={12} className="text-left">
                   <ScrollTrigger onEnter={() => setvision1(true)}>
                     {vision1 && (
                       <div
@@ -302,7 +302,7 @@ const AboutUs = () => {
           <section className="mainabhoutnew">
             <div className="container-xl">
               <Row className="align-items-center gy-4 ">
-                <Col lg={6} md={6} sm={6} className="secondaboutus">
+                <Col lg={6} md={12} sm={12} className="secondaboutus">
                   <div className="visionvidio">
                   <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
@@ -383,8 +383,8 @@ const AboutUs = () => {
 
                 <b className="colorWhite">
                   <Fade bottom cascade damping={0.5e-1} delay={100}>
-                    Late SRI. K Ramakrishnaian{" "}
-                  </Fade>{" "}
+                    Late SRI. K Ramakrishnaian
+                  </Fade>
                   <br></br>
                   Founder
                 </b>
@@ -413,8 +413,8 @@ const AboutUs = () => {
                 <Fade left>
                   <b className="colorWhite">
                     <Fade bottom cascade damping={0.5e-1} delay={100}>
-                      Mr.K. Hanumantha Rao{" "}
-                    </Fade>{" "}
+                      Mr.K. Hanumantha Rao
+                    </Fade>
                     <br></br>
                     Managing Partner
                   </b>
