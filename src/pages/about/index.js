@@ -167,6 +167,11 @@ const AboutUs = () => {
                   className="img-fluid"
                   alt=""
                 />
+                {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                      <source
+                        src={require("../../assets/video/settings.mp4")}
+                      />
+                    </Player> */}
               </Fade>
             </Col>
           </Row>

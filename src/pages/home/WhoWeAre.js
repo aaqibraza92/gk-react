@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Autoplay } from 'swiper';
 import { viewPortFunc } from '../../store/slices/UserSlices';
+import { Player } from 'video-react';
 
 
 
@@ -192,6 +193,11 @@ const WhoWeAre = () => {
                         <Col lg={7} md={6} className=''>
                             <div className='imgWrp mobMt30'>
                                 <Fade right cascade>
+                                {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                      <source
+                        src={require("../../assets/video/family.mp4")}
+                      />
+                    </Player> */}
                                     <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
                                 </Fade>
 
