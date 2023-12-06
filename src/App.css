@@ -408,7 +408,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   background: url('./assets/img/home/bg_ly.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+
 }
 
 .dataTesti {
@@ -595,9 +595,7 @@ li.slide.selected .whyChsWrp {
   body .wrapperContact {
     padding: 15px;
   }
-  .swiperThumbnail .swiper-wrapper {
-    background-position: right;
-  }
+  
   .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(4) {
     width: 46px !important;
     margin-top: 15px;
