@@ -474,12 +474,31 @@ li.slide.selected .whyChsWrp {
   }
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .bannerF {
+    font-size: 104px;
+    line-height: 89px;
+  }
+  .caption {
+    margin-top: 85px;
+  }
+  .testimonial p.fs16 {
+    font-size: 13px;
+  }
+  .dataTesti {
+    width: 45%;
+    padding-top: 174px;
+  }
+  .heartAuthor {
+    width: 84px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   body .whyChsWrp {
     padding: 25px;
     margin: 0 auto;
-    height: 398px;
+   
   }
   body .slideronenew {
     width: 92%;

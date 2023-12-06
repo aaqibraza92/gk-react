@@ -93,14 +93,54 @@ background: linear-gradient(90deg, #a07f50  58%, rgba(0,0,0,0) 58%);
     background-color: #323539;
     margin-bottom: 25px;
   }
-  .bgourteam {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(10,50,73,1) 20%);
-  }
+  
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .mainabhout {
+    width: 100%;
+    top: 16px;
+  }
+  .mainabhoutnew {
+    top: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+.bgourteam {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 40%, rgb(10, 50, 73) 40%);
+}
+.mainabhout {
+  position: relative;
+  width: 100%;
+  top: 0px;
+}
+.mainabhoutnew {
+  position: relative;
+}
+.bgfifty {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+}
+.bgfiftymission {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+}
+.bgfiftyBrown {
+  background: rgb(42,51,121);
+  background: linear-gradient(90deg, #a07f50 0%, #a07f50 100%);
+}
+.bgfiftymissionBrown{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, #a07f50 0%, #a07f50 100%);
+}
+.bgourteam {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(10,50,73,1) 20%);
+}
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
 
   .mainabhout {
     position: relative;
@@ -126,10 +166,8 @@ background: linear-gradient(90deg, #a07f50  58%, rgba(0,0,0,0) 58%);
     background: rgb(255,255,255);
     background: linear-gradient(90deg, #a07f50 0%, #a07f50 100%);
   }
-}
-@media screen and (max-width: 768px) {
-.bgourteam {
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 40%, rgb(10, 50, 73) 40%);
-}
+  .bgourteam {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(10,50,73,1) 20%);
+  }
 }

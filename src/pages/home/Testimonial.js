@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, Mousewheel } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import { useSelector } from "react-redux";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -82,7 +82,7 @@ const Testimonial = () => {
                   clickable: true,
                 }}
                 mousewheel={true}
-                  modules={[Navigation, Pagination, Autoplay, Mousewheel]}
+                  modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
                   speed={1000}
                   autoPlay={{ delay: 1500 }}
