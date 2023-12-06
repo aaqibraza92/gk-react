@@ -314,6 +314,16 @@
   }
 }
 
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  body .slideronenew{
+    width: 90%;
+    }
+    body .whyChsWrp {
+      padding-left: 30px;
+    }
+}
+
 /*All large Tablets*/
 
 /*Only large Tablets*/
@@ -327,6 +337,7 @@
   }
   body .whyChsWrp {
     width: 100%;
+    padding-left: 30px;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
