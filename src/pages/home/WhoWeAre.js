@@ -190,15 +190,15 @@ const WhoWeAre = () => {
 </Zoom>
 
                         </Col>
-                        <Col lg={7} md={6} className=''>
-                            <div className='imgWrp mobMt30'>
+                        <Col lg={6} md={6} className='m-auto'>
+                            <div className='imgWrp mobMt30 text-center'>
                                 <Fade right cascade>
                                 {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/video/family.mp4")}
                       />
                     </Player> */}
-                                    <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
+                                    <img className='img-fluid' src={require('../../assets/img/home/giffamily.gif')} alt="" />
                                 </Fade>
 
                             </div>
