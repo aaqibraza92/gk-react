@@ -163,7 +163,7 @@ const AboutUs = () => {
             <Col lg={5} md={5} className="text-center">
               <Fade right cascade delay={200}>
                 <img
-                  src={require("../../assets/img/aboutus/VectorSmartObject.webp")}
+                  src={require("../../assets/img/aboutus/settings.gif")}
                   className="img-fluid"
                   alt=""
                 />
