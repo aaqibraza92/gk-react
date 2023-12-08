@@ -1223,6 +1223,13 @@ body {
     left: 20px;
     top: 41px;
   }
+  .crcWrapper {
+    width: 53px;
+    height: 53px;
+  }
+  .crcWrapper img {
+    width: 20px;
+  }
  
 }
 

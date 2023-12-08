@@ -191,7 +191,7 @@ const WhoWeAre = () => {
 
                         </Col>
                         <Col lg={6} md={6} className='m-auto'>
-                            <div className='imgWrp mobMt30 text-center'>
+                            <div className='imgWrp mobPt70 text-center'>
                                 <Fade right cascade>
                                 {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
