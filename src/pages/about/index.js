@@ -368,7 +368,7 @@ const AboutUs = () => {
             <Col lg={5} md={5} className="text-center m-auto">
               <Fade bottom cascade>
                 <img
-                  src={require("../../assets/img/aboutus/teamone.webp")}
+                  src={require("../../assets/img/aboutus/teamone.png")}
                   className="img-fluid w-75"
                   alt=""
                 />
@@ -398,7 +398,7 @@ const AboutUs = () => {
             <Col lg={5} md={5} className="text-center m-auto">
               <Fade bottom cascade>
                 <img
-                  src={require("../../assets/img/aboutus/teamtwo.webp")}
+                  src={require("../../assets/img/aboutus/teamtwo.png")}
                   className="img-fluid w-75"
                   alt=""
                 />

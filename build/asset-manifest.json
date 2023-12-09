@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.93f81855.css",
-    "main.js": "/static/js/main.9163f84a.js",
+    "main.js": "/static/js/main.b917743f.js",
     "static/js/787.635b1f8e.chunk.js": "/static/js/787.635b1f8e.chunk.js",
     "static/media/night-footer.mp4": "/static/media/night-footer.9b0d93dd593a81d9114d.mp4",
     "static/media/Visionweb.mp4": "/static/media/Visionweb.d633c8350094b65ccfff.mp4",
@@ -23,8 +23,10 @@
     "static/media/festoon.webp": "/static/media/festoon.ac80b190affc03022cb6.webp",
     "static/media/surya.webp": "/static/media/surya.56c72e1305b97c7c4bca.webp",
     "static/media/triad.webp": "/static/media/triad.bad22571b97f26501add.webp",
+    "static/media/teamone.png": "/static/media/teamone.b2952bcbacc072b8f45c.png",
     "static/media/gmap.png": "/static/media/gmap.9b44fb6dc6dcfb4bf5a5.png",
     "static/media/nightviewalam.webp": "/static/media/nightviewalam.d9ecfe6fc9a9b9290d07.webp",
+    "static/media/teamtwo.png": "/static/media/teamtwo.4c9c33fcb461a1e07d05.png",
     "static/media/zenithday.webp": "/static/media/zenithday.d13061653024f7d3ffa1.webp",
     "static/media/zenithdaynight.webp": "/static/media/zenithdaynight.d13061653024f7d3ffa1.webp",
     "static/media/almvilladay.webp": "/static/media/almvilladay.6844d39401f735d65587.webp",
@@ -50,8 +52,6 @@
     "static/media/layer_building.png": "/static/media/layer_building.3b98802d11cc857b3372.png",
     "static/media/bgmission.webp": "/static/media/bgmission.7b19a6c08d08279a4376.webp",
     "static/media/transparency.png": "/static/media/transparency.6693f5b7f7963361dedc.png",
-    "static/media/teamtwo.webp": "/static/media/teamtwo.2960e855399e2857ff45.webp",
-    "static/media/teamone.webp": "/static/media/teamone.427f8745ac664dc867d5.webp",
     "static/media/heart_testi.png": "/static/media/heart_testi.5bcba8806066ecb1bb96.png",
     "static/media/Nephilm.otf": "/static/media/Nephilm.ef8b5d4d928c73d88bda.otf",
     "static/media/prj1.png": "/static/media/prj1.c2945797dcc6908c692b.png",
@@ -61,11 +61,11 @@
     "static/media/prj4.png": "/static/media/prj4.e2afaa36fa653ef9d520.png",
     "index.html": "/index.html",
     "main.93f81855.css.map": "/static/css/main.93f81855.css.map",
-    "main.9163f84a.js.map": "/static/js/main.9163f84a.js.map",
+    "main.b917743f.js.map": "/static/js/main.b917743f.js.map",
     "787.635b1f8e.chunk.js.map": "/static/js/787.635b1f8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93f81855.css",
-    "static/js/main.9163f84a.js"
+    "static/js/main.b917743f.js"
   ]
 }
