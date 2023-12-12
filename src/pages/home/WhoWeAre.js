@@ -94,7 +94,18 @@ const WhoWeAre = () => {
                             <Fade left cascade damping={1e-1} delay={100}>   who we are? </Fade>
                         </h2>
 
-                        <div class="circleAnimate position-relative">
+                       
+
+                    </div>
+                    <Row className='align-items-center gy-4 mt20'>
+                        <Col lg={4} md={6}>
+                            <Zoom>
+
+
+
+                                <div>
+
+                                <div class="circleAnimate position-relative">
                             <div class={`triggerCircle c1 position-absolute ${sl===0 ? "rippleEffect" : ""}`} onClick={() => setsl(0)}>
 
                             </div>
@@ -190,16 +201,8 @@ const WhoWeAre = () => {
 
 
                         </div>
-
-                    </div>
-                    <Row className='align-items-center gy-4 mt20'>
-                        <Col lg={4} md={6}>
-                            <Zoom>
-
-
-
-                                <div>
-                                    <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
+                                    
+                                    {/* <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
 
                                         {
                                             triggerHover ? <div className='circleAnimate position-absolute'>
@@ -290,7 +293,7 @@ const WhoWeAre = () => {
 
 
 
-                                    </div>
+                                    </div> */}
                                 </div>
 
 
