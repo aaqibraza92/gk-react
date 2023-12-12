@@ -1262,3 +1262,23 @@ body {
 .video-react-controls-enabled{
   padding: 0px !important;
 }
+.rippleEffect {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 160px auto;
+  animation: ripple 0.6s linear infinite;
+  border-radius: 50px;
+  background: rgba(204,205,205)
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204,205,205, 0.1), 0 0 0 10px rgba(204,205,205, 0.1), 0 0 0 20px rgba(204,205,205, 0.1), 0 0 0 30px rgba(204,205,205, 0.1);
+ }
+  100% {
+    box-shadow: 0 0 0 10px rgba(204,205,205, 0.1), 0 0 0 20px rgba(204,205,205, 0.1), 0 0 0 30px rgba(204,205,205, 0.1), 0 0 0 40px rgba(204,205,205, 0);
+ }
+}
+.z999{
+  z-index: 999;
+}

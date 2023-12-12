@@ -85,6 +85,10 @@ const WhoWeAre = () => {
                             <Fade left cascade damping={1e-1} delay={100}>   who we are? </Fade>
                         </h2>
 
+                        <span className='rippleEffect'>
+
+                        </span>
+
                     </div>
                     <Row className='align-items-center gy-4 mt20'>
                         <Col lg={4} md={6}>

@@ -72,7 +72,7 @@ const Header = () => {
   return (
     <>
       {
-        isAnimate &&         <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+        isAnimate &&  <Player className="w-100 position-relative z999" autoPlay={true} loop={true} muted={true} controls={false}>
         <source
           src={require("../../assets/video/loader.mp4")}
         />
