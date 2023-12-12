@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
     //   setSl(false);
     // }
     if(e.activeIndex==3){
-      setmouseWheel(false)
+      // setmouseWheel(false)
       setTimeout(() => {
         // document.getElementById("swiperInner").blur();
         // setmouseWheel(false)
