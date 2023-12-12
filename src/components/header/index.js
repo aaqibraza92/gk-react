@@ -4,6 +4,7 @@ import { Col, Container, Row } from "reactstrap";
 import "../../assets/css/header.css";
 import { useSelector } from "react-redux";
 import HomeAnimate from "../../pages/home/HomeAnimate";
+import { Player } from "video-react";
 
 const Header = () => {
   const [isAnimate,setisAnimate]=useState(true);
@@ -23,7 +24,7 @@ const Header = () => {
     setisAnimate(true);
     setTimeout(() => {
       setisAnimate(false);
-    }, 1200);
+    }, 2000);
   },[window.location.pathname])
   useEffect(() => {
     if(activeTheme){
@@ -71,7 +72,11 @@ const Header = () => {
   return (
     <>
       {
-        isAnimate &&  <HomeAnimate/>
+        isAnimate &&         <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+        <source
+          src={require("../../assets/video/loader.mp4")}
+        />
+      </Player>
       }
          <header
       className={`mainHeader transition ${stickyHeader} ${
