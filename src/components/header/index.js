@@ -7,6 +7,8 @@ import HomeAnimate from "../../pages/home/HomeAnimate";
 import { Player } from "video-react";
 
 const Header = () => {
+  const location= useLocation();
+  console.log("location",location?.pathname)
   const [isAnimate,setisAnimate]=useState(true);
   
   const activeTheme = useSelector((state) => {
@@ -24,7 +26,7 @@ const Header = () => {
     setisAnimate(true);
     setTimeout(() => {
       setisAnimate(false);
-    }, 2000);
+    }, 7000);
   },[window.location.pathname])
   useEffect(() => {
     if(activeTheme){
@@ -72,7 +74,7 @@ const Header = () => {
   return (
     <>
       {
-        isAnimate &&  <Player className="w-100 position-relative z999" autoPlay={true} loop={true} muted={true} controls={false}>
+        (isAnimate && location?.pathname==="/") &&  <Player className="w-100 position-relative z999" autoPlay={true} loop={true} muted={true} controls={false}>
         <source
           src={require("../../assets/video/loader.mp4")}
         />
