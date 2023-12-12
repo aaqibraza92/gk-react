@@ -335,7 +335,6 @@ background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1
   margin-left: 18%;
 }
 .circleAnimate {
-  
   border: 1px solid #bbbbbb;
   border-radius: 100%;
   width: 310px;
@@ -345,7 +344,7 @@ background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1
   justify-content: center;
   animation: spin 10s linear infinite;
 }
-.circleAnimate::before {
+/* .circleAnimate::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -359,7 +358,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   100% {
     transform: rotate(1turn);
   }
-}
+} */
 
 
 
@@ -1262,14 +1261,25 @@ body {
 .video-react-controls-enabled{
   padding: 0px !important;
 }
+.z999{
+  z-index: 999;
+}
+
 .rippleEffect {
   display: block;
   width: 30px;
   height: 30px;
-  margin: 160px auto;
   animation: ripple 0.6s linear infinite;
+  -webkit-border-radius: 50px;
   border-radius: 50px;
   background: rgba(204,205,205)
+}
+.triggerCircle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: rgba(204,205,205);
+  cursor: pointer;
 }
 @keyframes ripple {
   0% {
@@ -1279,6 +1289,16 @@ body {
     box-shadow: 0 0 0 10px rgba(204,205,205, 0.1), 0 0 0 20px rgba(204,205,205, 0.1), 0 0 0 30px rgba(204,205,205, 0.1), 0 0 0 40px rgba(204,205,205, 0);
  }
 }
-.z999{
-  z-index: 999;
+
+.c2 {
+  top: -15px;
+}
+.c3 {
+  right: -15px;
+}
+.c4 {
+  bottom: -15px;
+}
+.c1 {
+  left: -15px;
 }

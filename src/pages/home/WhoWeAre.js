@@ -17,14 +17,14 @@ import { Player } from 'video-react';
 const WhoWeAre = () => {
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
     const resizeScreen = () => {
-      setScreenWidth(window.innerWidth);
+        setScreenWidth(window.innerWidth);
     };
 
     const ref1 = useRef(null);
     const sectionEndRef = useRef(null);
     const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
-    const dispatch= useDispatch();
-  
+    const dispatch = useDispatch();
+
     // useEffect(() => {
     //   const observer = new IntersectionObserver(
     //     ([entry]) => {
@@ -37,11 +37,11 @@ const WhoWeAre = () => {
     //       threshold: screenWidth > 767 ? 0.5 : 0.6, 
     //     }
     //   );
-  
+
     //   if (sectionEndRef.current) {
     //     observer.observe(sectionEndRef.current);
     //   }
-  
+
     //   return () => {
     //     if (sectionEndRef.current) {
     //       observer.unobserve(sectionEndRef.current);
@@ -51,12 +51,12 @@ const WhoWeAre = () => {
 
     useEffect(() => {
         resizeScreen();
-            window.addEventListener("resize", resizeScreen);
-            return () => {
-              window.removeEventListener("resize", resizeScreen);
-            };
-    },[]);
-          
+        window.addEventListener("resize", resizeScreen);
+        return () => {
+            window.removeEventListener("resize", resizeScreen);
+        };
+    }, []);
+
 
     const [triggerHover, settriggerHover] = useState(false);
 
@@ -67,13 +67,13 @@ const WhoWeAre = () => {
         );
     });
 
-    const handleHover=()=>{
+    const handleHover = () => {
         settriggerHover(true);
-       
+
     }
 
     return (
-        <section ref={sectionEndRef}  className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
+        <section ref={sectionEndRef} className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
                 <div className='text-center'>
                     <div className="">
@@ -85,23 +85,35 @@ const WhoWeAre = () => {
                             <Fade left cascade damping={1e-1} delay={100}>   who we are? </Fade>
                         </h2>
 
-                        <span className='rippleEffect'>
+                        <div class="circleAnimate position-relative">
+                                    <div class="rippleEffect triggerCircle c1 position-absolute" onClick={()=>{}}>
 
-                        </span>
+                                    </div>
+                                    <div class="triggerCircle c2 position-absolute" onClick={()=>{}}>
+
+                                    </div>
+                                    <div class="triggerCircle c3 position-absolute" onClick={()=>{}}>
+
+                                    </div>
+                                    <div class="triggerCircle c4 position-absolute" onClick={()=>{}}>
+
+                                    </div>
+                                </div>
 
                     </div>
                     <Row className='align-items-center gy-4 mt20'>
                         <Col lg={4} md={6}>
-                        <Zoom>
+                            <Zoom>
+
+                            
+
                                 <div>
                                     <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
-                             
+
                                         {
                                             triggerHover ? <div className='circleAnimate position-absolute'>
                                             </div> : <div className='circleAnimate hideRotate position-absolute' onMouseOver={() => handleHover()}>
                                             </div>
-
-                                         
                                         }
 
                                         {
@@ -117,17 +129,17 @@ const WhoWeAre = () => {
                                                     pagination={{
                                                         clickable: false,
                                                     }}
-                                                  
+
                                                     modules={[EffectFade, Autoplay]}
                                                     className="mySwiper swiperFadeEff"
                                                 >
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            4000
+                                                                4000
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
@@ -138,42 +150,42 @@ const WhoWeAre = () => {
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            63
+                                                                63
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                        Projects
+                                                            Projects
                                                         </div>
                                                     </SwiperSlide>
 
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            30
+                                                                30
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                        Years <br/> Expertise
+                                                            Years <br /> Expertise
                                                         </div>
                                                     </SwiperSlide>
 
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            3M
+                                                                3M
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                        sq. ft Area <br/> Delivered
+                                                            sq. ft Area <br /> Delivered
                                                         </div>
                                                     </SwiperSlide>
 
@@ -181,23 +193,23 @@ const WhoWeAre = () => {
                                                 <div className='blankData'></div>
 
                                         }
-                                           
-                                    
-                                     
+
+
+
 
 
 
                                     </div>
                                 </div>
 
-                         
-</Zoom>
+
+                            </Zoom>
 
                         </Col>
                         <Col lg={6} md={6} className='m-auto'>
                             <div className='imgWrp mobPt70 text-center'>
                                 <Fade right cascade>
-                                {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                                    {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/video/family.mp4")}
                       />
