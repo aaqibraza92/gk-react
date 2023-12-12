@@ -8,7 +8,6 @@ import { Player } from "video-react";
 
 const Header = () => {
   const location= useLocation();
-  console.log("location",location?.pathname)
   const [isAnimate,setisAnimate]=useState(true);
   
   const activeTheme = useSelector((state) => {
@@ -73,13 +72,6 @@ const Header = () => {
 
   return (
     <>
-      {
-        (isAnimate && location?.pathname==="/") &&  <Player className="w-100 position-relative z999" autoPlay={true} loop={true} muted={true} controls={false}>
-        <source
-          src={require("../../assets/video/loader.mp4")}
-        />
-      </Player>
-      }
          <header
       className={`mainHeader transition ${stickyHeader} ${
         !activeTheme && "darkMode"
