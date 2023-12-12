@@ -36,7 +36,7 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
-  const [mouseWheel,setmouseWheel]=useState(false);
+  const [mouseWheel,setmouseWheel]=useState(true);
  const dispatch= useDispatch();
   // const viewPort = useSelector((state) => {
   //   return state && state?.persistedReducer?.theme?.viewPort;
@@ -51,6 +51,7 @@ const WhyChooseUs = () => {
     //   setSl(false);
     // }
     if(e.activeIndex==3){
+      setmouseWheel(false)
       setTimeout(() => {
         // document.getElementById("makeClick").click();
         setmouseWheel(false)
