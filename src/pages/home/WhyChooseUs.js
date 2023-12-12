@@ -36,7 +36,7 @@ let data = [
   },
 ];
 const WhyChooseUs = () => {
-  const [mouseWheel,setmouseWheel]=useState(true);
+  // const [mouseWheel1,setmouseWheel]=useState(true);
  const dispatch= useDispatch();
   // const viewPort = useSelector((state) => {
   //   return state && state?.persistedReducer?.theme?.viewPort;
@@ -53,16 +53,17 @@ const WhyChooseUs = () => {
     if(e.activeIndex==3){
       setmouseWheel(false)
       setTimeout(() => {
-        // document.getElementById("makeClick").click();
-        setmouseWheel(false)
-         
+        // document.getElementById("swiperInner").blur();
+        // setmouseWheel(false)
+        // setSl(e.activeIndex);
       }, 1800);
+      
       dispatch(viewPortFunc(true));
     
      
     }else{
       dispatch(viewPortFunc(false));
-      setmouseWheel(true)
+      // setmouseWheel(true)
     }
   };
 
@@ -110,19 +111,20 @@ const WhyChooseUs = () => {
             </Fade>
           </h2>
         </div>
-
+       
         <div className="wrapperData">
           <Swiper
+            id="swiperInner"
             modules={[Navigation, Pagination, Mousewheel]}
-            //loop={true}
+            loop={true}
             speed={800}
             reachEnd={(e) => console.log("rr", e)}
-            //autoPlay={{ delay: 1000 }}
-            spaceBetween={30}
-            slidesPerView={1}
+            autoPlay={{ delay: 1000 }}
+            spaceBetween={0}
+            slidesPerView={3}
             centeredSlides={true}
             onSlideChange={(e) => slideHandle(e)}
-            mousewheel={mouseWheel}
+            mousewheel={false}
             breakpoints={{
               // when window width is >= 640px
               300: {
@@ -156,7 +158,7 @@ const WhyChooseUs = () => {
                     <div className="whyChsWrp">
                       <Row className="align-items-center">
                         <Col lg={6} md={12}>
-                          <h3 className="brownGradient fs30 mb25 mobFs21">
+                          <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
                             {e.title}
                           </h3>
                           <p className="fs14">{e.para}</p>

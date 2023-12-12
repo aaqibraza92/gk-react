@@ -10,20 +10,30 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Autoplay } from 'swiper';
 import { viewPortFunc } from '../../store/slices/UserSlices';
+import { Player } from 'video-react';
 
 
 
 const WhoWeAre = () => {
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
     const resizeScreen = () => {
-      setScreenWidth(window.innerWidth);
+        setScreenWidth(window.innerWidth);
     };
+    const [sl, setsl] = useState(0);
 
     const ref1 = useRef(null);
     const sectionEndRef = useRef(null);
     const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
-    const dispatch= useDispatch();
-  
+    const dispatch = useDispatch();
+
+      useEffect(() => {
+        const interval = setInterval(() => {
+            setsl(prevCount => prevCount===3 ? 0 : prevCount + 1);
+        }, 4000); 
+    
+        return () => clearInterval(interval);
+      }, []);
+
     // useEffect(() => {
     //   const observer = new IntersectionObserver(
     //     ([entry]) => {
@@ -36,11 +46,11 @@ const WhoWeAre = () => {
     //       threshold: screenWidth > 767 ? 0.5 : 0.6, 
     //     }
     //   );
-  
+
     //   if (sectionEndRef.current) {
     //     observer.observe(sectionEndRef.current);
     //   }
-  
+
     //   return () => {
     //     if (sectionEndRef.current) {
     //       observer.unobserve(sectionEndRef.current);
@@ -50,12 +60,12 @@ const WhoWeAre = () => {
 
     useEffect(() => {
         resizeScreen();
-            window.addEventListener("resize", resizeScreen);
-            return () => {
-              window.removeEventListener("resize", resizeScreen);
-            };
-    },[]);
-          
+        window.addEventListener("resize", resizeScreen);
+        return () => {
+            window.removeEventListener("resize", resizeScreen);
+        };
+    }, []);
+
 
     const [triggerHover, settriggerHover] = useState(false);
 
@@ -66,13 +76,13 @@ const WhoWeAre = () => {
         );
     });
 
-    const handleHover=()=>{
+    const handleHover = () => {
         settriggerHover(true);
-       
+
     }
 
     return (
-        <section ref={sectionEndRef}  className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
+        <section ref={sectionEndRef} className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}>
             <Container>
                 <div className='text-center'>
                     <div className="">
@@ -84,19 +94,120 @@ const WhoWeAre = () => {
                             <Fade left cascade damping={1e-1} delay={100}>   who we are? </Fade>
                         </h2>
 
+                       
+
                     </div>
                     <Row className='align-items-center gy-4 mt20'>
                         <Col lg={4} md={6}>
-                        <Zoom>
+                            <Zoom>
+
+
+
                                 <div>
-                                    <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
-                             
+
+                                <div class="circleAnimate position-relative">
+                            <div class={`triggerCircle c1 position-absolute ${sl===0 ? "rippleEffect" : ""}`} onClick={() => setsl(0)}>
+
+                            </div>
+                            <div class={`triggerCircle c2 position-absolute ${sl===1 ? "rippleEffect" : ""}`} onClick={() => setsl(1)}>
+
+                            </div>
+                            <div class={`triggerCircle c3 position-absolute ${sl===2 ? "rippleEffect" : ""}`} onClick={() => setsl(2)}>
+
+                            </div>
+                            <div class={`triggerCircle c4 position-absolute ${sl===3 ? "rippleEffect" : ""}`} onClick={() => setsl(3)}>
+
+                            </div>
+
+                            {
+                                sl === 0 &&
+                                <Fade bottom>
+                                    <div>
+                                        <div className='mb0 lh50'>
+                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                4000
+                                            </span>
+                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                +
+                                            </span>
+                                        </div>
+                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                            Happy <br />
+                                            Families
+                                        </div>
+                                    </div>
+                                </Fade>
+
+                            }
+
+                            {
+                                sl === 1 &&
+                                <Fade bottom>
+                                    <div>
+                                        <div className='mb0 lh50'>
+                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                63
+                                            </span>
+                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                +
+                                            </span>
+                                        </div>
+                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                            Projects
+                                        </div>
+                                    </div>
+                                </Fade>
+
+                            }
+
+                            {
+                                sl === 2 &&
+                                <Fade bottom>
+                                    <div>
+                                        <div className='mb0 lh50'>
+                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                30
+                                            </span>
+                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                +
+                                            </span>
+                                        </div>
+                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                            Years <br /> Expertise
+                                        </div>
+                                    </div>
+                                </Fade>
+
+                            }
+                            {
+                                sl === 3 &&
+                                <Fade bottom>
+                                    <div>
+                                        <div className='mb0 lh50'>
+                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
+                                                3M
+                                            </span>
+                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
+                                                +
+                                            </span>
+                                        </div>
+                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
+                                            sq. ft Area <br /> Delivered
+                                        </div>
+                                    </div>
+                                </Fade>
+
+                            }
+
+
+                        </div>
+                                    
+                                    {/* <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
+
                                         {
                                             triggerHover ? <div className='circleAnimate position-absolute'>
                                             </div> : <div className='circleAnimate hideRotate position-absolute' onMouseOver={() => handleHover()}>
                                             </div>
-
-                                         
                                         }
 
                                         {
@@ -112,17 +223,17 @@ const WhoWeAre = () => {
                                                     pagination={{
                                                         clickable: false,
                                                     }}
-                                                  
+
                                                     modules={[EffectFade, Autoplay]}
                                                     className="mySwiper swiperFadeEff"
                                                 >
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            4000
+                                                                4000
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
@@ -133,42 +244,42 @@ const WhoWeAre = () => {
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            63
+                                                                63
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                        Projects
+                                                            Projects
                                                         </div>
                                                     </SwiperSlide>
 
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            30
+                                                                30
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                        Years <br/> Expertise
+                                                            Years <br /> Expertise
                                                         </div>
                                                     </SwiperSlide>
 
                                                     <SwiperSlide>
                                                         <div className='mb0 lh50'>
                                                             <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                            3M
+                                                                3M
                                                             </span>
                                                             <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                + 
+                                                                +
                                                             </span>
                                                         </div>
                                                         <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                        sq. ft Area <br/> Delivered
+                                                            sq. ft Area <br /> Delivered
                                                         </div>
                                                     </SwiperSlide>
 
@@ -176,23 +287,28 @@ const WhoWeAre = () => {
                                                 <div className='blankData'></div>
 
                                         }
-                                           
-                                    
-                                     
 
 
 
-                                    </div>
+
+
+
+                                    </div> */}
                                 </div>
 
-                         
-</Zoom>
+
+                            </Zoom>
 
                         </Col>
-                        <Col lg={7} md={6} className=''>
-                            <div className='imgWrp mobMt30'>
+                        <Col lg={6} md={6} className='m-auto'>
+                            <div className='imgWrp mobPt70 text-center'>
                                 <Fade right cascade>
-                                    <img className='img-fluid' src={require('../../assets/img/home/Family-Outline.png')} alt="" />
+                                    {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                      <source
+                        src={require("../../assets/video/family.mp4")}
+                      />
+                    </Player> */}
+                                    <img className='img-fluid' src={require('../../assets/img/home/giffamily.gif')} alt="" />
                                 </Fade>
 
                             </div>

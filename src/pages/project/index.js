@@ -32,10 +32,10 @@ const Project = () => {
 
       <section className="position-relative">
        
-          <div className="bigfont">
-             <Fade left>
+          <div className="bigfont position-fixed">
+             
             <h1>Our <br></br> Sparkling <br></br> Gems</h1>
-             </Fade>
+            
           </div>
         
         <Container>

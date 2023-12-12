@@ -3,6 +3,9 @@
   body .heroSection {
     height: 70vh;
   }
+  .mobPt70{
+    padding-top: 70px;
+  }
   .visionvidio {
     margin-top: 58px;
   }
@@ -31,10 +34,10 @@
     font-size: 18px;
   }
   .whyChsWrp {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 96%;
-    margin-left: 30px;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 13px;
   }
   header.transition {
     position: sticky;
@@ -248,11 +251,14 @@
     width: 100%;
   }
   body .bannerF {
-    font-size: 14vw;
-    line-height: 11vh;
+    font-size: 11vw;
+    line-height: 9vh;
+  }
+  .caption {
+    margin-top: 85px;
   }
   body .swiperThumbnail img {
-    width: 50px;
+    width: 110px;
   }
   body .titles h2 {
     font-size: 5vw;
@@ -314,6 +320,19 @@
   }
 }
 
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  body .newone{
+    position: static;
+  }
+  body .slideronenew{
+    width: 90%;
+    }
+    body .whyChsWrp {
+      padding-left: 30px;
+    }
+}
+
 /*All large Tablets*/
 
 /*Only large Tablets*/
@@ -327,6 +346,7 @@
   }
   body .whyChsWrp {
     width: 100%;
+    padding-left: 30px;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 992px) {

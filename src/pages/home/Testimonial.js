@@ -78,7 +78,10 @@ const Testimonial = () => {
               <div className="pl30 pr30 mobPlr0">
                 <Swiper
                 navigation={false}
-                pagination={true}
+                pagination={{
+                  clickable: true,
+                }}
+                mousewheel={true}
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
                   speed={1000}
@@ -134,12 +137,12 @@ const Testimonial = () => {
                                 <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
 
                                 <Row className="align-items-center">
-                                  <Col lg={4} md={4}>
+                                  <Col lg={4} md={2}>
                                     {/* <div className="fs18 fw600 colorWhite text-uppercase">
                                       {e?.tag}
                                     </div> */}
                                   </Col>
-                                  <Col lg={8} md={8}>
+                                  <Col lg={8} md={10}>
                                     <div className="fs18 fw600 colorWhite text-uppercase mb15">
                                       - {e?.author}
                                     </div>
