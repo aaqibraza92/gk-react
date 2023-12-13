@@ -1266,7 +1266,9 @@ body {
 .z999{
   z-index: 999;
 }
-
+.visionvidio video {
+  height: auto !important;
+}
 
 .rippleEffect {
   display: block;
