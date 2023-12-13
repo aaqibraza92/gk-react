@@ -416,9 +416,14 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   background: url('./assets/img/home/home_frame.png');
   background-size: 90%;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 100%;
   padding-top: 233px;
   margin-top: 85px;
+}
+.dotscss .swiper-pagination {
+  position: relative;
+  top: 13px;
+  padding-bottom: 25px;
 }
 /* .swiperThumbnail .swiper-wrapper img {
   width: 100px;
@@ -542,7 +547,7 @@ li.slide.selected .whyChsWrp {
     width: auto !important;
   } */
   body .mainProSl img {
-    height: 400px;
+    height: auto;
     object-fit: cover;
   }
   body .living {
@@ -556,7 +561,7 @@ li.slide.selected .whyChsWrp {
     font-size: 41px;
   }
   body .swiperThumbnail .swiper-wrapper img {
-    width: 50px;
+    width: 40px;
   }
   body .circleAnimate {
     width: 250px;
@@ -603,11 +608,11 @@ li.slide.selected .whyChsWrp {
   .heartAuthor {
     top: 30px;
     right: 0px;
-    width: 62px;
+    width: 87px;
     position: absolute;
   }
   .dataTesti {
-    padding-top: 92px;
+    padding-top: 125px;
     margin-top: 0px;
   }
 }
