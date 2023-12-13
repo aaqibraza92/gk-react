@@ -35,7 +35,7 @@ function App() {
   return (
     <>
   {
-        (isAnimate && location?.pathname==="/") &&  <Player className="w-100 position-relative z999" autoPlay={true} loop={true} muted={true} controls={false}>
+        (isAnimate && location?.pathname==="/") &&  <Player className="w-100 position-relative z999 customheight" autoPlay={true} loop={true} muted={true} controls={false}>
         <source
           src={require("./assets/video/loader.mp4")}
         />

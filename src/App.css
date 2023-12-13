@@ -1254,6 +1254,8 @@ body {
 }
 .video-react-controls-enabled video {
   width: 100% !important;
+  object-fit: cover;
+  height: 100vh;
 }
 .video-react-loading-spinner,.video-react-button,.video-react-control-bar{
   display: none !important;
@@ -1264,6 +1266,7 @@ body {
 .z999{
   z-index: 999;
 }
+
 
 .rippleEffect {
   display: block;

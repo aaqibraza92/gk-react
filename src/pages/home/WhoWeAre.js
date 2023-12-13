@@ -101,7 +101,7 @@ const WhoWeAre = () => {
             </h2>
           </div>
           <Row className="align-items-center gy-4 mt20">
-            <Col lg={4} md={6}>
+            <Col lg={4} md={6} className="m-auto">
               <Zoom>
                 <div>
                   <div class="circleAnimate position-relative">
