@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "../../assets/css/footer.css";
@@ -284,7 +285,11 @@ const Footer = () => {
         </footer>
 {/* </section> */}
    
-      
+
+      <Helmet>
+        <script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" type="text/javascript" data-bot="20472097"></script>
+      </Helmet>
+       
 
    
     </>

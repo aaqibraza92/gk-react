@@ -536,12 +536,17 @@ li.slide.selected .whyChsWrp {
     font-size: 16vw;
     line-height: 9vh;
   }
+  .swiperThumbnail .swiper-slide.swiper-slide-visible {
+    cursor: pointer;
+    height: auto;
+    width: auto !important;
+  }
   .homeBanner .bannerImg {
     /* height: 510px; */
     object-fit: cover;
   }
   body .swiperThumbnail .swiper-wrapper{
-    width: 100%;
+    width: 46%;
   }
   /* body .swiperThumbnail .swiper-slide.swiper-slide-visible {
     width: auto !important;
@@ -1227,6 +1232,11 @@ body {
     left: 20px;
     top: 41px;
   }
+  .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(4) {
+    position: relative;
+    left: -22px;
+  }
+ 
   .crcWrapper {
     width: 53px;
     height: 53px;
