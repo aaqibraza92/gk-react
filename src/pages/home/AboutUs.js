@@ -40,7 +40,7 @@ const AboutUs = () => {
 
             <h2 className="living mb20 text-uppercase colorBrown">
               <Fade className="headingFont"  bottom cascade damping={0.5e-1} delay={100}>
-                Livings
+                Living
               </Fade>
             </h2>
       
@@ -70,7 +70,7 @@ const AboutUs = () => {
 
             <div className="mt10">
               <Fade left>
-                <Link className="btnTransparent mr12 fMedium btnMob button button--calypso" to="/#">
+                <Link className="btnTransparent mr12 fMedium btnMob button button--calypso" to="/about-us">
                   <span
                     className={`${activeTheme ? "colorBlack" : "colorWhite"
                       } mr10`}

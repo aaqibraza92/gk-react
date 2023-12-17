@@ -6,7 +6,7 @@
   font-family: para;
   src: url('./assets/fonts/Sora-VariableFont_wght.ttf');
 }
-  
+
   body,html,li,a,p,div,.roboto{
     font-family: para;
   }
@@ -1205,7 +1205,7 @@ body {
 @media only screen and (min-width: 1024px) {
   .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(1) {
     position: relative;
-    left: -111px;
+    left: -127px;
   }
   .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(2) {
     position: relative;

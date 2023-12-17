@@ -95,7 +95,7 @@ const Footer = () => {
                     <ul className="pl0 noUl fNav row">
                       <li className="col-md-6 col-6">
                         <Link
-                          to="#"
+                          to="/about-us"
                           className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                         >
                           about us
@@ -103,7 +103,7 @@ const Footer = () => {
                       </li>
                       <li className="col-md-6 col-6">
                         <Link
-                          to="#"
+                          to="/project"
                           className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                         >
                           our projects
@@ -111,7 +111,7 @@ const Footer = () => {
                       </li>
                       <li className="col-md-6 col-6">
                         <Link
-                          to="#"
+                          to="#!"
                           className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                         >
                           why choose us?
@@ -119,7 +119,7 @@ const Footer = () => {
                       </li>
                       <li className="col-md-6 col-6">
                         <Link
-                          to="#"
+                          to="#!"
                           className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                         >
                           who we are?
@@ -127,7 +127,7 @@ const Footer = () => {
                       </li>
                       <li className="col-md-6 col-6">
                         <Link
-                          to="#"
+                          to="#!"
                           className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                         >
                           testimonials
@@ -135,7 +135,7 @@ const Footer = () => {
                       </li>
                       <li className="col-md-6 col-6">
                         <Link
-                          to="#"
+                          to="/contact-us"
                           className={`${activeTheme ? "colorLightBrown" : "colorGrey1"} position-relative pl17 fs16`}
                         >
                           contact us
@@ -204,27 +204,27 @@ const Footer = () => {
                     </div>
                     <div className="d-flex mt20">
                       <div className="mr12">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/gkbuilderanddevelopers/" target="_blank" rel="noopener noreferrer">
                           {fb}
                         </a>
                       </div>
                       <div className="mr12">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/GkbuildersD" target="_blank" rel="noopener noreferrer">
                           {twitter}
                         </a>
                       </div>
                       <div className="mr12">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/gk_builders_and_developers/" target="_blank" rel="noopener noreferrer">
                           {instagram}
                         </a>
                       </div>
                       <div className="mr12">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/channel/UCUOWq1ROcrULJNuVIs4n4Lw" target="_blank" rel="noopener noreferrer">
                           {yt}
                         </a>
                       </div>
                       <div>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/gk-builders-and-developers/about/" target="_blank" rel="noopener noreferrer">
                           {linkdin}
                         </a>
                       </div>

@@ -22,7 +22,7 @@ const Project = () => {
     opacity: 1;
     transform: translate3d( 0px, 0px, -200px);
   }
-`;
+  `;
 
   return (
     <>
@@ -44,7 +44,7 @@ const Project = () => {
 
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gkrajcasagrande.in/" target="_blank">
                   <div className=" d-flex justify-content-end">
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
@@ -64,7 +64,7 @@ const Project = () => {
                         </div>
 
                         <div className="viewLink  position-absolute content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gkrajcasagrande.in/" target="_blank" className="">
                             <div className="circleLink text-center">
                               <div className="crcWrapper">
                                 <img
@@ -100,7 +100,7 @@ const Project = () => {
           <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gkzenith.in/" target="_blank">
                   <div className=" d-flex">
                     <div>
                       <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
@@ -127,7 +127,7 @@ const Project = () => {
                         </div>
 
                         <div className="viewLink position-absolute content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gkzenith.in/" target="_blank" className="">
                             <div className="circleLink text-center">
                               <div className="crcWrapper">
                                 <img
@@ -164,7 +164,7 @@ const Project = () => {
           <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gkalamvilla.in/" target="_blank">
                   <div className=" d-flex justify-content-end">
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
@@ -189,7 +189,7 @@ const Project = () => {
                         </div>
 
                         <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gkalamvilla.in/" target="_blank" className="">
                             <div className="circleLink text-center ">
                               <div className="crcWrapper">
                                 <img
@@ -226,7 +226,7 @@ const Project = () => {
           <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gkfestoon.in/" target="_blank">
                   <div className=" d-flex">
                     <div>
                       <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
@@ -248,7 +248,7 @@ const Project = () => {
                         />
 
                         <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gkfestoon.in/" target="_blank" className="">
                             <div className="circleLink text-center">
                               <div className="crcWrapper">
                                 <img
@@ -285,7 +285,7 @@ const Project = () => {
           <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gktriad.in/" target="_blank">
                   <div className=" d-flex justify-content-end">
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
@@ -310,7 +310,7 @@ const Project = () => {
                         </div>
 
                         <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gktriad.in/" target="_blank" className="">
                             <div className="circleLink text-center ">
                               <div className="crcWrapper">
                                 <img
@@ -347,7 +347,7 @@ const Project = () => {
           <Reveal keyframes={customAnimation} delay={400}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gkpearlenclave.in/" target="_blank" >
                   <div className=" d-flex">
                     <div>
                       <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
@@ -369,7 +369,7 @@ const Project = () => {
                         />
 
                         <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gkpearlenclave.in/" target="_blank" className="">
                             <div className="circleLink text-center">
                               <div className="crcWrapper">
                                 <img
@@ -406,7 +406,7 @@ const Project = () => {
           <Reveal keyframes={customAnimation} delay={400}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
-                <Link to="#">
+                <Link to="https://gksuryaarcade.in/" target="_blank" >
                   <div className=" d-flex justify-content-end">
                     <div>
                       <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
@@ -431,7 +431,7 @@ const Project = () => {
                         </div>
 
                         <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="#" className="">
+                          <Link to="https://gksuryaarcade.in/" target="_blank" className="">
                             <div className="circleLink text-center ">
                               <div className="crcWrapper">
                                 <img
@@ -484,7 +484,7 @@ const Project = () => {
             <Link
               className={`${activeTheme ? "bgBlack" : "bgBlack"
                 } btnTheme mr12 fMedium btnMob button button--calypso`}
-              to="/#"
+              to="/contact-us"
             >
               <span
                 className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}
