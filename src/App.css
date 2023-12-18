@@ -1255,3 +1255,7 @@ body {
 .video-react-controls-enabled{
   padding: 0px !important;
 }
+.videoHandle video {
+  min-width: 100%;
+  width: 100% !important;
+}

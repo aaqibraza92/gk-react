@@ -59,6 +59,7 @@ const Project = () => {
                           }
                           loadingOverlay={""}
                           preload="metadata"
+                          className="videoHandle"
                         />
                         <div className="position-relative">
                         </div>
