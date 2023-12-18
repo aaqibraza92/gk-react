@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setisAnimate(false);
-    }, 700000);
+    }, 7000);
   }, [window.location.pathname]);
 
   const resizeScreen = () => {
@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       {isAnimate && location?.pathname === "/" && (
-        <div className="custom-div w-100" onMouseMove={(e) => moveText(e)} onMouseOut={(e)=>hideText(e)}>
+        <div className="custom-div w-100" onClick={(e)=>setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e)=>hideText(e)}>
         <span className="text">Click to close</span>
           <Player
             className="w-100 position-relative z999 customheight"
