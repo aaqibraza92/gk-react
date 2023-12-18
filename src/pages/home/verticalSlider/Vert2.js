@@ -127,6 +127,8 @@ const Vert2 = () => {
       </SwiperSlide> */}
       
     </Swiper>
+
+     
     </div>
    </div>
   

@@ -38,7 +38,7 @@ const HomeBanner = () => {
                 <Fade   left cascade damping={1e-1} delay={100}>
                 <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
-                    to="/#"
+                    to="/contact-us"
                   >
                     <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Know More</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
                   </Link>

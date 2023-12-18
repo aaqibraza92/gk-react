@@ -77,56 +77,24 @@ const Testimonial = () => {
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
                 <Swiper
-                navigation={false}
-                pagination={{
-                  clickable: true,
-                }}
-                mousewheel={true}
+                  slidesPerView={"1"}
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
                   speed={1000}
                   autoPlay={{ delay: 1500 }}
-                  spaceBetween={50}
-                  slidesPerView={1}
-                  onSlideChange={() => { }}
-                  onSwiper={() => { }}
-                  breakpoints={{
-                    // when window width is >= 640px
-                    300: {
-                      width: 300,
-                      slidesPerView: 1,
-                    },
-                    // when window width is >= 768px
-                    550: {
-                      width: 550,
-                      slidesPerView: 1,
-                    },
-                    992: {
-                      width: 992,
-                      slidesPerView: 1,
-                    },
-                    1201: {
-                      width: 1201,
-                      slidesPerView: 1,
-                    },
-                    1360: {
-                      width: 1360,
-                      slidesPerView: 1,
-                    },
+                  spaceBetween={8}
+                  pagination={{
+                    clickable: true,
                   }}
-                  className="testimonialSlider"
+                
+                  className="mySwiper dotscss"
                 >
                   <div className="bloggerList">
                     {data.map((e, i) => (
                       <SwiperSlide key={i}>
-                        <div className="test_wrapper position-relative d-flex align-items-end">
+                           <div className="test_wrapper position-relative d-flex align-items-end">
                           <div className="position-relative bg-home">
-                            {/* <img
-                              src={require("../../assets/img/home/home_frame.png")}
-                              className="img-fluid homeFrameImg"
-                              alt=""
-                            /> */}
-
+                          
                             <div className="dataTesti">
                               <img
                                 src={require("../../assets/img/home/heart_testi.png")}
@@ -138,9 +106,7 @@ const Testimonial = () => {
 
                                 <Row className="align-items-center">
                                   <Col lg={4} md={2}>
-                                    {/* <div className="fs18 fw600 colorWhite text-uppercase">
-                                      {e?.tag}
-                                    </div> */}
+                                    
                                   </Col>
                                   <Col lg={8} md={10}>
                                     <div className="fs18 fw600 colorWhite text-uppercase mb15">
@@ -152,14 +118,11 @@ const Testimonial = () => {
                                 </Row>
                               </div>
                             </div>
-
                           </div>
-
-
                         </div>
-                      </SwiperSlide>
-                    ))}
-                  </div>
+                     </SwiperSlide>
+                     ))}
+                   </div>
                 </Swiper>
               </div>
             </Col>
