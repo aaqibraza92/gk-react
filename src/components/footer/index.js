@@ -245,14 +245,14 @@ const Footer = () => {
   
                   <div className="d-flex flex-wrap">
                   <Link
-                      to="#"
+                      to="/privacy-policy"
                       className="colorGrey fs12 fRegular  mb0 mr10 text-uppercase"
                     >
                      <Fade bottom >Privacy Policy</Fade>  
                     </Link>
                  
                     <Link
-                      to="/#"
+                      to="/privacy-policy"
                       className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
                     >
                         <Fade bottom >  Terms & Condition    </Fade>

@@ -1,240 +1,118 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import BreadCrumb from "../../components/BreadCrumb";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Fade, Zoom, Reveal } from "react-awesome-reveal";
 
 const PrivacyPolicy = () => {
   return (
     <>
-  <Helmet>
+     <Helmet>
         <title>Privacy Policy - GK Builders & Developers</title>
       </Helmet>
      
-      <BreadCrumb
-        title="Privacy Policy"
-        items={[{ name: "Home", url: "/" },{ name: "Our Story", url: "/" },{ name: "Privacy Policy", url: "" }]}
-      />
      
-    <section className="pt80">
+     
+    <section className="">
         <Container>
+        <Fade  bottom delay={100}> <h2 className="fs70 mb0 brownGradient text-center mb70">  Privacy Policy</h2> </Fade>
         <Row className="mb30">
-            <Col lg={10} className="m-auto">
-            <div>
-       
-        <p className="colorPara">
-        Summary of changes: We have updated our privacy policy to more clearly show the information we collect, where we get it, and how we use it. We have also added information to help you make choices about your privacy. 
+        <Col className="m-auto" md={10}>
+                		<h3>PRIVACY POLICY</h3>
+                		 <p>This privacy policy sets out how “GK Builders and Developers” uses and protects any information that you give “GK Builders and Developers” when you use this website.</p>
+						<p>“GK Builders and Developers” is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used under this privacy statement.</p>
+						<p>“GK Builders and Developers” may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes.</p>
+						<p>This policy is effective from  1<sup>st</sup> March 2022.</p>
 
+						<h3>WHAT WE COLLECT</h3>
+						<p>We may collect the following information:</p>
+						<ul>
+							<li>Name and job title</li>
+							<li>Contact information including email address</li>
+							<li>Demographic information such as postcode, preferences and interests</li>
+							<li>Other information relevant to customer surveys/offers</li>
+						</ul>
 
+						<h3>WHAT WE DO WITH THE INFORMATION WE GATHER</h3>
+						<p>We require this information to understand your needs and provide you with a better service, in particular for the following reasons:</p>
+						<ul>
+							<li>Internal record keeping.</li>
+							<li>We may use the information to improve our products and services.</li>
+							<li>We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address you have provided.</li>
+							<li>From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail.</li>
+							<li>We may use the information to customize the website according to your interests.</li>
+						</ul>
 
-        </p>
-        <h2 className="colorBlue fs36 mobFs28 fBold mb20">
-        Your Privacy Rights
-        </h2>
+						<h3>SECURITY</h3>
+						<p>We are committed to ensuring that your information is secure. To prevent unauthorized access or disclosure we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.</p>
 
-        <h4 className="colorBlue fBold">Scope</h4>
-        <p>This privacy policy applies to all information collected by Unicon Pharma , Inc. (“Unicon Pharma”) and its subsidiaries. The privacy policy describes the personal information we collect, how we use it, and your rights regarding this information.</p>
-        <p>Personal information is information that identifies you. This policy applies to personal information we collect online and offline. We collect information online through our websites and mobile apps published and offline through Unicon Pharma. Our sites and apps may link to third party sites. Our privacy policy does not cover information collected about you on those sites. You are responsible for reviewing the privacy policy on those sites.
+                        <h3>HOW WE USE COOKIES</h3>
+                        <p>A cookie is a small file which asks permission to be placed on your computer’s hard drive. Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences.</p>
+                        <p>We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system. Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us.</p>
+                        <p>You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website.</p>
+                        <h3>LINKS TO OTHER WEBSITES</h3>
+                        <p>Our website may contain links to enable you to visit other websites of interest easily. However, once you have used these links to leave our site, you should note that we do not have any control over the other website. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question.</p>
+                        <h3>CONTROLLING YOUR PERSONAL INFORMATION</h3>
+                        <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+                        <ul>
+                        	<li>Whenever you are asked to fill in a form on the website, look for the box that you can click to indicate that you do not want the information to be used by anybody for direct marketing purposes</li>
+                        	<li>If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or email us</li>
+                        </ul>
+                        <p>We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.</p>
 
-        </p>
+                        <h3>TERMS &amp; CONDITIONS</h3>
+                        <p>To avail of the services offered at www.gkdevelopers.in, you must agree to the following terms and conditions:</p>
+                        <p>Please read the Terms and Conditions carefully. While using any current or future services offered by www.gkdevelopers.in, whether or not included in the www.gkdevelopers.in. Website, you will abide by these Terms &amp; Conditions the guidelines and conditions applicable to such service or business.</p>
 
-        <h4 className="colorBlue fBold">Overview</h4>
-        <p>We provide staffing services to clients and job services to candidates seeking current or future job opportunities. We collect personal information to help connect candidates with jobs at Unicon Pharma and Unicon Pharma clients. We collect this data through our website and apps, over the phone, and in person.
+                        <h3>Privacy Policy</h3>
+                        <p>Please review our Privacy Policy, which also governs your visit to www.gkdevelopers.in, to fully understand our practices.</p>
+                        <h3>Electronic Communication</h3>
+                        <p>When you visit www.gkdevelopers.in or voluntarily send emails to us, you are communicating with us electronically. We will keep a record of this information so that we can respond to you periodically. We only collect information from you when you register on our website or fill out a form. Also, when filling out a form on our website, you may be asked to enter your: Name, E-mail address or Phone / Mobile Number. You may, however, visit our website anonymously. By communicating with us and submitting your personal information and contact details, you consent to receive communication from us through Email, SMS, Call, WhatsApp or any other communication medium, even if your number has DND activated on it. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communication be in writing.</p>
 
-            </p>
-       <h4 className="colorBlue fBold">Information collection</h4>
-       <p>We collect information about you when you visit our website, use our services, visit our office locations, or when you provide it to us in any other way. We also collect information from third party sources.
-       </p>
+                        <h3>License and Website Access</h3>
+                        <h3>General</h3>
+                        <p><a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a> grants you a limited license to access and make personal use of this website and not to download (other than page caching) or modify it, or any portion of it, except with express written consent of <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a></p>
+                        <h3>No License For Commercial Sale</h3>
+                        <p>This license does not include any resale or commercial use of this website or its content; any collection and use of any product listing, description, or pricing; copying of account information for the benefit of another merchant; or any use of data mining, or similar data gathering and extraction tools.</p>
+                        <h3>No Reproduction</h3>
+                        <p>This website or any portion of this website may not be reproduced, duplicated, copied, sold, visited, or otherwise exploited for any commercial purpose without the express written consent of <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a></p>
+                        <h3>No Framing</h3>
+                        <p>You may not frame or utilize framing technologies to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of www.gkdevelopers.in without the express written consent.</p>
+                        <h3>Meta Tags</h3>
+                        <p>You may not use any metatags or any other 'hidden text' utilizing GK Builders and Developers’s name or trademarks without the express written consent of <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a>. Any unauthorized use terminates the permission or license granted by <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a></p>
+                        <p>Reviews, Comments, Communications, and other content</p>
+                        <h3>Nature Of Content</h3>
+                        <p>Visitors to <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a> may post content and other communications; and submit suggestions, ideas, comments, questions or other information, as long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights to otherwise injuries to a third party or objectionable and does not consist of or contains a software virus, political campaigning, commercial solicitation, mass mailing or any form of spam.</p>
+                        <h3>False Information</h3>
+                        <p>You may not use a false email address, impersonate any person or entity, or otherwise mislead as to the origin of a card or other content. www.gkdevelopers.in reserves the right (but not the obligation) to remove or edit such content but does not regularly review posted content.</p>
 
-       <b className="colorBlue fBold">We collect information when you choose to give it to us. This includes:</b>
+                        <h3>Rights Granted</h3>
+                        <p>If you do post content or submit material and unless we indicate otherwise, you grant www.gkdevelopers.in a non-exclusive, royalty free, perpetual, irrevocable, and fully sub-licensed right to use, reproduce, modify, adapt, publish, translate, create derivative work from, distribute, and display such content throughout the world in any media. You grant www.gkdevelopers.in the right to use the name that you submit in connection with such content if <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a> chooses.</p>
 
-       <ul>
-            <li>contact information like your name, phone number, and email address;</li>
-            <li>your work history, including your resume, cover letter, and previous job experience;</li>
-            <li>job application materials including the application form, cover letter, and other material you provide;</li>
-            <li>information you choose to import from third party services like file storage sites or single sign-on services;</li>
-            <li>your precise geographic location;</li>
-            <li>demographic information, including age, ethnicity, and gender. Providing this information is voluntary</li>
-            <li>and is only used by Unicon Pharma to meet diversity goals. We do not provide this information to hiring managers.</li>
-        </ul>
-     
-        <b className="colorBlue fBold">We collect information about you automatically when you visit our sites. This includes:</b>
+                        <h3>Right Owned</h3>
+                        <p>You represent and warrant that you own all the rights or control all of the rights to the content that you post; that the content is accurate; that the use of the content to supply does not violate this policy and will not cause injury to any person or entity and that you will indemnify www.gkdevelopers.in for all claims resulting from the content you supply. www.gkdevelopers.in has the right but not the obligation to monitor and edit or remove any activity or content. www.gk developers intakes no responsibility and assumes no liability for any content posted by you or any third party.</p>
 
-        <ul>
-            <li>contact information like your name, phone number, and email address;</li>
-            <li>your work history, including your resume, cover letter, and previous job experience;</li>
-            <li>job application materials including the application form, cover letter, and other material you provide;</li>
-            <li>information you choose to import from third party services like file storage sites or single sign-on services;</li>
-            <li>your precise geographic location;</li>
-        </ul>
-        <p>Demographic information, including age, ethnicity, and gender. Providing this information is voluntary and is only used by Unicon Pharma to meet diversity goals. We do not provide this information to hiring managers.</p>
-       <h4 className="colorBlue fBold">We collect information about you automatically when you visit our sites. This includes:</h4>
-       <ul>
-            <li>your IP address</li>
-            <li>your browser and operating system details;</li>
-           
-        </ul>
-        <b className="colorBlue fBold">Actions you take on the site.</b>
-        <ul>
-            <li>We collect information about you if you visit office. This includes:</li>
-            <li>your image from a security camera or if you interact with a virtual assistant;</li>
-           
-        </ul>
-        <p>any paper materials you provide to us.</p>
-        <p>Sources of information</p>
+                        <h3>Site Policies, Modification, and Severability</h3>
+                        <p>Please review our other policies. We reserve the right to make changes to our website, policies, and these Terms and Conditions at any time. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and will not affect the validity and enforceability of any remaining conditions.</p>
 
-        <ul>
-            <li>In addition to information we collect from you, we also may collect information about you from third party sources. These sources include:</li>
-            <li>third party websites and services like job boards and professional network sites;</li>
-            <li>background check providers;</li>
-            <li>your references;</li>
-            <li>business intelligence sources;</li>
-        </ul>
+                        <h3>INTELLECTUAL PROPERTY RIGHTS</h3>
+                        <h3>Copyright Protection</h3>
+                        <p>All content included on this site, such as text, graphics, logos, button icons, audio clips, digital downloads, data compilations and software, is the property of www.gkdevelopers.in and protected by the Indian Copyright law. The compilation of all the content on this site is the exclusive property of www.gkdevelopers.in and is protected by Indian Copyright law. All software used on this site is the property of www.gkdevelopers.in and is protected under Indian Copyright law.</p>
 
-        <p>Unicon Pharma affiliates, which are companies that own Unicon Pharma, that are owned by Unicon Pharma, or are under common ownership with Unicon Pharma.</p>
-        <p>information use We use the information we collect for our business purposes, which include:</p>
-        <p>Recruiting and hiring – We use contact information and job application data to contact and evaluate candidates for current and future job openings.</p>
+                        <h3>Trademarks</h3>
+                        <ul>
+                        	<li>Protected Marks:<a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a>, and other marks indicated on <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a> website are    registered trademarks of <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a></li>
+                        	<li>Protected Graphics:All <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a> graphics, logos, page headers, button icons, scripts and service names are trademarks of <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a>. <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a> trademarks may not be used in connections with any product or service that is not of <a target="_blank" href="https://gkdevelopers.in/">www.gkdevelopers.in</a>.</li>
+                        </ul>
 
-        <h4 className="colorBlue fBold">Providing our websites and mobile apps</h4>
-        <p>We use the information we collect about your device and the information you give us to allow you to create an account on our sites and apps.
-We use information you provide to us to administer the various services you opt in to, including emails and notifications about career opportunities and other developments.
-Product development and improvement – We use all personal data we collect to develop new products, tools, and services including chatbots and other uses of artificial intelligence.</p>
-       </div>
+                        <h3>Governing Law and Jurisdiction</h3>
+                        <p>These terms and conditions will be construed only in accordance with the laws of India. In respect of all matters/disputes arising out of, in connection with or in relation to these terms and conditions or any other conditions on this website, only the competent Courts at Hyderabad, Hyderabad shall have jurisdiction, to the exclusion of all other courts.</p>
 
-       <h4 className="colorBlue fBold">Sales and marketing</h4>
-       <p>We use contact information to make sales calls, and send out advertising materials to candidates, customers, and customer prospects
-If you create an account on our site, we will send you emails with job content
-We may use personal data to show you advertisements on our site</p>
+                        <h3>Disclaimer of warranties and Limitation of Liability</h3>
+                        <p><small>THIS SITE IS PROVIDED BY GK BUILDERS AND DEVELOPERS ON AN "AS IS" AND "AS AVAILABLE" BASIS. GK BUILDERS AND DEVELOPERS MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THIS SITE OR THE INFORMATION, CONTENT, MATERIALS, OR PRODUCTS INCLUDED ON THIS SITE. YOU EXPRESSLY AGREE THAT YOUR USE OF THIS SITE IS AT YOUR SOLE RISK.</small></p>
+                        <p><small>TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE LAW, WWW.GKDEVELOPERS.IN DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. WWW.GKDEVELOPERS.IT DOES NOT WARRANT THAT THE SITE, ITS SERVERS, OR EMAIL SENT FROM WWW.GKDEVELOPERS.IN ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. WWW.GKDEVELOPERS.IT WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF THIS SITE, INCLUDING, BUT NOT LIMITED TO DIRECT, INDIRECT, INCIDENTAL, PUNITIVE AND CONSEQUENTIAL DAMAGES.</small></p>
 
-<h4 className="colorBlue fBold">Analytics</h4>
-<p>We use the personal data we collect on our site and apps to profile the interests of employers and job seekers, and understand their interests</p>
-<p>We use information we collect about your device to generate statistics about how you use our site</p>
-<p>Security, fraud prevention, and legal compliance - We use personal data to ensure the security of our sites and services, to protect against fraud, and to comply with legal requirements.</p>
-<p>We may use your information for any other purpose that you choose to opt in to on our sites. We do not sell your data for their direct marketing purposes unless you opt in to such marketing. If you do not want to receive email from us, visit the “Opt Out” or “Unsubscribe” link at the bottom of any Unicon Pharma email to remove yourself from continued receipt of such email messages.
-
-</p>
-<p>information sharing with third parties</p>
-<p>We share personal information with clients, service providers, affiliated companies, and other third parties.
-
-</p>
-<h4 className="colorBlue fBold">Sharing with clients</h4>
-<p>With your permission, we may submit your resume, application and other information to a prospective employer on the basis that such prospective employer will not 1) disclose the fact that such job seeker is seeking employment and 2) share your personal data with any other person without job your consent or otherwise in compliance with applicable labor and employment laws.
-
-</p>
-<p>We may share your personal information, with sufficient information removed so that you are not readily identifiable, to prospective employers to solicit their potential interest in you as a job candidate.
-
-</p>
-
-<h4 className="colorBlue fBold">Sharing with service providers</h4>
-<p>We share personal information with service providers, which are companies that help us run our business. Service providers include companies that provide marketing services, IT services, HR services, and other business services. These companies will have access to your personal information as necessary to perform their functions, but they may not use that data for any other purpose. We require services providers to abide by the requirements of this privacy policy regarding the use of your personal information.
-</p>
-
-<h4 className="colorBlue fBold">sharing with affiliated companies</h4>
-<p>We share personal information with other Unicon Pharma companies to help provide our services to you, to improve our own products and services, and to
-sharing with other third parties.</p>
-
-<ul>
-	<li>We may share user information with third parties when we believe, in our sole discretion, that such sharing is appropriate:</li>
-	<li>to comply with the law, including but not limited to, in response to a subpoena served on Unicon Pharma;</li>
-	<li>to enforce or apply this privacy policy or other applicable terms, rules or policies;</li>
-	<li>to protect the rights, property or safety of Unicon Pharma, our users or others;</li>
-</ul>
-
-
-<p>or to prevent activity that we believe, in our sole discretion, may be or may become illegal, unethical or legally actionable (including exchanging user information with other companies and organizations for fraud protection).
-
-</p>
-
-<p>We will share personal information with a third party who acquires any or all of Unicon Pharma’s business units, whether such acquisition is by way of merger, consolidation or purchase of all or a substantial portion of our assets. In addition, in the event Unicon Pharma becomes the subject of an insolvency proceeding, personal information will be disposed of in a transaction approved by the court.
-</p>
-<p>Please note that if you post any information in a public area of the site the information that you share will be visible to other users and can be read, used, or collected by others. Unicon Pharma is not responsible for the way others may use data you post to public areas of the site.
-
-</p>
-<p>We may share aggregate personal data from you and others and share it with clients, advertisers, and other third parties. This information does not identify you personally.
-
-</p>
-
-<h4 className="colorBlue fBold">Information security</h4>
-<p>Unicon Pharma restricts access to the personal information it collects to those who have a valid business need to know that information. Access to personal information is granted based on the minimum access required to fulfill the business need and purpose for which it is collected, used and shared. We endeavor to use commercially reasonable security safeguards, practices and procedures, and we commit to the highest level of care to protect the privacy and integrity of personal information, throughout its useful life-cycle, from collection until destruction. You are responsible for keeping your account 
-credentials safe.</p>
-
-<h4 className="colorBlue fBold">information security incident response</h4>
-<p>If we discover that your personal information has been involved in a security incident, we will take appropriate steps to respond to the incident in a timely manner and, where legally required, notify you of the incident.
-
-</p>
-<p>retention of personal information
-
-</p>
-<p>Unicon Pharma will keep your personal information for as long as we have a business need and purpose to retain the information, including storage for auditing and archival purposes. When we believe we no longer need such information, we will destroy or otherwise dispose of your personal information in a manner intended to preserve your privacy and security.
-
-</p>
-
-<h4 className="colorBlue fBold">Accessing and updating your profile
-</h4>
-<p>You may review, update, or remove your job seeker profile directly on the website. You may also contact us and ask to see your job seeker profile and choices, and you may advise us of any changes or inaccuracies in such profile and choices and we will update or correct as appropriate.
-
-</p>
-
-<h4 className="colorBlue fBold">Consultant texting applicants & employees
-
-</h4>
-<p>You can opt in to receive text messages from Unicon Pharma. These text messages may include, but are not limited to, job postings, assignment updates, weather alerts, and reminders for upcoming events and services.
-
-</p>
-
-<p>If at any time you wish to stop receiving text messages, you will have the option to opt out by texting STOP in response to a text from Unicon Pharma. You can also contact Unicon Pharma and request to have your number opted out by calling Unicon Pharma at 848.666.0101.
-
-</p>
-<h4 className="colorBlue fBold">Children's privacy</h4>
-<p>Unicon Pharma’s services are only available to individuals over the age of 18. Unicon Pharma is not intended for and does not knowingly collect personal information from individuals under 18. If we believe you are under 18, we may delete your information at any time without notice to you.
-
-</p>
-
-<h4 className="colorBlue fBold">Changes to this policy</h4>
-<p>We may update this privacy policy to reflect changes in our information practices. If we make any material changes, we will notify you by email (sent to the email address specified in your account) where required, or by a notice on this website. We encourage you to periodically review this page for the latest information on our privacy practices.
-
-</p>
-<p>reporting fraudulent activities</p>
-<p>If you become aware of any potentially fraudulent activity on our website or in an email or text, please contact Unicon Pharma at 848.666.0101 so that we can follow up with appropriate actions.
-
-</p>
-<p>international data transfer
-
-</p>
-<p>Unicon Pharma’s website and services are provided in the United States. If you access the website from outside the United States, you consent that your information may be transferred to and maintained on computers and servers located in the United States. Unicon Pharma may further transfer personal information you provide to us to other countries.
-
-</p>
-<p>rights to request access to or deletion of your personal information
-
-</p>
-<p>You have the right to know whether Unicon Pharma has collected personal information from you. You may request that Unicon Pharma tell you:
-the categories or specific pieces of personal information that Unicon Pharma has collected about you;
-the categories of sources where Unicon Pharma obtained personal information about you;
-the business purposes for which Unicon Pharma collects your personal information; and
-the categories of third parties with which Unicon Pharma shares personal information</p>
-<p>You can make 2 such access requests every 12 months.
-
-</p>
-<p>You have the right to request that Unicon Pharma delete any of your personal information that Unicon Pharma has collected from you, with certain exceptions. We may refuse your deletion request if we are permitted by law to keep the information, or if the law otherwise permits us to keep information. If we deny a deletion request, we will tell you why the request was denied.
-
-</p>
-<p>To exercise your right to access or delete personal data, complete the form available at this link: <Link target="_blank" to="https://privacy-request.uniconpharma.com.">https://privacy-request.uniconpharma.com.</Link>
-</p>
-<p>Before we grant you access to or deletion of your personal information, we must verify your identity. To do this, we will ask you to confirm information we have previously collected about you.
-
-</p>
-
-<h4 className="colorBlue fBold">Contact us</h4>
-<p>If, at any time, you have questions or concerns about this privacy policy, please contact us online at: <Link  target="_blank" to="https://privacy-request.uniconpharma.com.">https://privacy-request.uniconpharma.com.</Link></p>
-<p>Privacy Office <br></br>
-Unicon Pharma<br></br>
-51 Cragwood Rd Suite 101<br></br>
-South Plainfield NJ 07080</p>
-
-
-
-
-            </Col>
+                    </Col>
         </Row>
     
       
