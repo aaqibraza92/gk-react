@@ -1322,3 +1322,36 @@ body {
 .c1 {
   left: -15px;
 }
+
+
+.custom-div {
+  position: relative;
+  width: calc(100vw / 3 - 2px);
+  height: 100vh;
+  padding: 0;
+  margin: -2px;
+  overflow: hidden;
+  outline: 1px white solid;
+  cursor: none;
+}
+
+.custom-div .text {
+  position: absolute;
+  white-space: nowrap;
+  background-color: transparent;
+  font-size: 14px !important;
+  display: none;
+  pointer-events: none;
+  color: #fff;
+  font-size: 1.5rem;
+  z-index: 999999;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
