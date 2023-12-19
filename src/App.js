@@ -13,11 +13,11 @@ function App() {
   const location = useLocation();
   const [isAnimate, setisAnimate] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setisAnimate(false);
-    }, 7000);
-  }, [window.location.pathname]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setisAnimate(false);
+  //   }, 7000);
+  // }, [window.location.pathname]);
 
   const resizeScreen = () => {
     setScreenWidth(window.innerWidth);
@@ -65,7 +65,7 @@ function App() {
           </Player>
         </div>
       )}
-      {!isAnimate && (
+   
         <div className="wrapperApp">
           <Routes>
             {RouterList &&
@@ -76,7 +76,7 @@ function App() {
               })}
           </Routes>
         </div>
-      )}
+   
 
       {/* </SmoothScroll> */}
     </>

@@ -31,87 +31,87 @@ const HomeAnimate = () => {
   return (
     <section className={`sectionAnimate d-flex align-items-center ${activeTheme ? "" : "bgBlack"}`}>
       <Container fluid>
-      <div id="load" class="wrapper containerAnimate row" onMouseEnter={(e)=>handleHover(e)}>
-        <div class=" col-md-2 col-2">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1">
+      <div id="load" className="wrapper containerAnimate row" onMouseEnter={(e)=>handleHover(e)}>
+        <div className=" col-md-2 col-2">
+          <div className="hover panel">
+            <div className="front">
+              <div className="box1">
            
               </div>
             </div>
-            <div class="back">
-              <div class="box2">
+            <div className="back">
+              <div className="box2">
               </div>
             </div>
           </div>
       </div>
 
-      <div class="col-md-2 col-2">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1">
+      <div className="col-md-2 col-2">
+          <div className="hover panel">
+            <div className="front">
+              <div className="box1">
            
               </div>
             </div>
-            <div class="back">
-              <div class="box2">
+            <div className="back">
+              <div className="box2">
               </div>
             </div>
           </div>
       </div>
 
-      <div class=" col-md-2 col-2">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1">
+      <div className=" col-md-2 col-2">
+          <div className="hover panel">
+            <div className="front">
+              <div className="box1">
            
               </div>
             </div>
-            <div class="back">
-              <div class="box2">
+            <div className="back">
+              <div className="box2">
               </div>
             </div>
           </div>
       </div>
   
-      <div class="col-md-2 col-2">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1">
+      <div className="col-md-2 col-2">
+          <div className="hover panel">
+            <div className="front">
+              <div className="box1">
            
               </div>
             </div>
-            <div class="back">
-              <div class="box2">
+            <div className="back">
+              <div className="box2">
                
               </div>
             </div>
           </div>
       </div>
   
-      <div class="col-md-2 col-2">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1">
+      <div className="col-md-2 col-2">
+          <div className="hover panel">
+            <div className="front">
+              <div className="box1">
            
               </div>
             </div>
-            <div class="back">
-              <div class="box2">
+            <div className="back">
+              <div className="box2">
                
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2 col-2">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1">
+        <div className="col-md-2 col-2">
+          <div className="hover panel">
+            <div className="front">
+              <div className="box1">
            
               </div>
             </div>
-            <div class="back">
-              <div class="box2">
+            <div className="back">
+              <div className="box2">
                
               </div>
             </div>

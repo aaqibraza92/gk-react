@@ -104,27 +104,27 @@ const WhoWeAre = () => {
             <Col lg={4} md={6} className="m-auto d-flex justify-content-center">
               <Zoom>
                 <div>
-                  <div class="circleAnimate position-relative">
+                  <div className="circleAnimate position-relative">
                     <div
-                      class={`triggerCircle c1 position-absolute ${
+                      className={`triggerCircle c1 position-absolute ${
                         sl === 0 ? "rippleEffect" : ""
                       }`}
                       onClick={() => setsl(0)}
                     ></div>
                     <div
-                      class={`triggerCircle c2 position-absolute ${
+                      className={`triggerCircle c2 position-absolute ${
                         sl === 1 ? "rippleEffect" : ""
                       }`}
                       onClick={() => setsl(1)}
                     ></div>
                     <div
-                      class={`triggerCircle c3 position-absolute ${
+                      className={`triggerCircle c3 position-absolute ${
                         sl === 2 ? "rippleEffect" : ""
                       }`}
                       onClick={() => setsl(2)}
                     ></div>
                     <div
-                      class={`triggerCircle c4 position-absolute ${
+                      className={`triggerCircle c4 position-absolute ${
                         sl === 3 ? "rippleEffect" : ""
                       }`}
                       onClick={() => setsl(3)}
