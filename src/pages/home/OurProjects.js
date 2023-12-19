@@ -64,6 +64,53 @@ const OurProjects = () => {
               />
             </SwiperSlide>
           ))}
+           
+           {/* <SwiperSlide>
+            
+              <div className="slidermainview" 
+              style={{
+                backgroundImage: `url(${activeTheme ? require("../../assets/img/home/home-porfolio/almvilladay.webp") : require("../../assets/img/home/home-porfolio/nightviewalam.webp")})`,
+              }}
+              ></div>
+           </SwiperSlide> */}
+           {/* <SwiperSlide>
+           <div className="slidermainview" 
+              style={{
+                backgroundImage: `url(${activeTheme ? require("../../assets/img/home/home-porfolio/casaday.webp") : require("../../assets/img/home/home-porfolio/casanight.webp")})`,
+              }}
+              ></div>
+
+           </SwiperSlide>
+           <SwiperSlide>
+           <div className="slidermainview" 
+              style={{
+                backgroundImage: `url(${activeTheme ? require("../../assets/img/home/home-porfolio/festoonday.webp") : require("../../assets/img/home/home-porfolio/festoonnight.webp")})`,
+              }}
+              ></div>
+
+           </SwiperSlide>
+           <SwiperSlide>
+           <div className="slidermainview" 
+              style={{
+                backgroundImage: `url(${activeTheme ? require("../../assets/img/home/home-porfolio/suryaday.webp") : require("../../assets/img/home/home-porfolio/suryanight.webp")})`,
+              }}
+              ></div>
+           </SwiperSlide>
+           <SwiperSlide>
+           <div className="slidermainview" 
+              style={{
+                backgroundImage: `url(${activeTheme ? require("../../assets/img/home/home-porfolio/triadday.webp") : require("../../assets/img/home/home-porfolio/traidnight.webp")})`,
+              }}
+              ></div>
+           </SwiperSlide>
+           <SwiperSlide>
+           <div className="slidermainview" 
+              style={{
+                backgroundImage: `url(${activeTheme ? require("../../assets/img/home/home-porfolio/zenithday.webp") : require("../../assets/img/home/home-porfolio/zenithdaynight.webp")})`,
+              }}
+              ></div>
+           </SwiperSlide> */}
+      
       </Swiper>
       <div className="slLayers position-absolute w-100 h-100">
         <Container className="h-100">
@@ -155,6 +202,7 @@ const OurProjects = () => {
         </Container>
       </div>
     </section>
+
   );
 };
 
