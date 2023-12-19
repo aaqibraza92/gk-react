@@ -22,7 +22,6 @@ const CustomSlider = () => {
 
   const ref1 = useRef(null);
   const sectionEndRef = useRef(null);
-  const [isSectionEndVisible, setIsSectionEndVisible] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -42,15 +41,11 @@ const CustomSlider = () => {
     };
   }, []);
 
-  const [triggerHover, settriggerHover] = useState(false);
 
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
 
-  const handleHover = () => {
-    settriggerHover(true);
-  };
 
   return (
     <section
