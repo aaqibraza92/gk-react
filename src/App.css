@@ -1387,3 +1387,12 @@ select.form-control {
 .nightText a{
   color: var(--colorBrown);
 }
+
+/*custome slider*/
+.activeSlide{
+  display: block;
+}
+.hideSlider{
+  display: none;
+}
+/*custome slider*/

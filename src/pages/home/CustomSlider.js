@@ -83,7 +83,7 @@ const CustomSlider = () => {
         backgroundImage: `url(${require("../../assets/img/home/ver_bg.jpg")})`
       }}
     >
-             <div className="container-xxl">
+      <div className="container-xxl">
         <div className="text-center">
           <Zoom left>
             <img
@@ -98,274 +98,52 @@ const CustomSlider = () => {
             </Fade>
           </h2>
         </div>
-        </div>
+      </div>
 
       <Container>
         <div className="text-center">
-          <Row className="align-items-center gy-4 mt20">
+          <Row className="align-items-center justify-content-center gy-4 mt20">
 
-          <Col lg={8} md={8} className="">
-          <Slide bottom>
-                Hello
-              </Slide>
-          </Col>
+            <Col lg={8} md={8} className="">
+              <div className="customSliderWrapper text-center">
+       
+                  <div className={sl === 0 ? "activeSlide" : "hideSlider"}>
+                    <Slide bottom>
 
-            <Col lg={4} md={6} className="m-auto d-flex justify-content-center">
-              <Zoom>
-                <div>
-                  <div className="circleAnimate position-relative">
-                    <div
-                      className={`triggerCircle c1 position-absolute ${
-                        sl === 0 ? "rippleEffect" : ""
-                      }`}
-                      onClick={() => setsl(0)}
-                    ></div>
-                    <div
-                      className={`triggerCircle c2 position-absolute ${
-                        sl === 1 ? "rippleEffect" : ""
-                      }`}
-                      onClick={() => setsl(1)}
-                    ></div>
-                    <div
-                      className={`triggerCircle c3 position-absolute ${
-                        sl === 2 ? "rippleEffect" : ""
-                      }`}
-                      onClick={() => setsl(2)}
-                    ></div>
-                    <div
-                      className={`triggerCircle c4 position-absolute ${
-                        sl === 3 ? "rippleEffect" : ""
-                      }`}
-                      onClick={() => setsl(3)}
-                    ></div>
+                      <img src="https://bit.ly/2YoJ77H" className="img-fluid" alt="" />
 
-                    {sl === 0 && (
-                      <Fade bottom>
-                        <div>
-                          <div className="mb0 lh50">
-                            <span className="fontlight subfont fs60 mobFs35 brownGradient fw500">
-                              4000
-                            </span>
-                            <span className="fontlight subfont fs80 mobFs35 brownGradient plusIcon">
-                              +
-                            </span>
-                          </div>
-                          <div
-                            className={`${
-                              activeTheme ? "colorBrown" : "colorWhite"
-                            }  text-uppercase fs30 lh39 fontlight`}
-                          >
-                            Happy <br />
-                            Families
-                          </div>
-                        </div>
-                      </Fade>
-                    )}
-
-                    {sl === 1 && (
-                      <Fade bottom>
-                        <div>
-                          <div className="mb0 lh50">
-                            <span className="fontlight subfont fs60 mobFs35 brownGradient fw500">
-                              63
-                            </span>
-                            <span className="fontlight subfont fs80 mobFs35 brownGradient plusIcon">
-                              +
-                            </span>
-                          </div>
-                          <div
-                            className={`${
-                              activeTheme ? "colorBrown" : "colorWhite"
-                            }  text-uppercase fs30 lh39 fontlight`}
-                          >
-                            Projects
-                          </div>
-                        </div>
-                      </Fade>
-                    )}
-
-                    {sl === 2 && (
-                      <Fade bottom>
-                        <div>
-                          <div className="mb0 lh50">
-                            <span className="fontlight subfont fs60 mobFs35 brownGradient fw500">
-                              30
-                            </span>
-                            <span className="fontlight subfont fs80 mobFs35 brownGradient plusIcon">
-                              +
-                            </span>
-                          </div>
-                          <div
-                            className={`${
-                              activeTheme ? "colorBrown" : "colorWhite"
-                            }  text-uppercase fs30 lh39 fontlight`}
-                          >
-                            Years <br /> Expertise
-                          </div>
-                        </div>
-                      </Fade>
-                    )}
-                    {sl === 3 && (
-                      <Fade bottom>
-                        <div>
-                          <div className="mb0 lh50">
-                            <span className="fontlight subfont fs60 mobFs35 brownGradient fw500">
-                              3M
-                            </span>
-                            <span className="fontlight subfont fs80 mobFs35 brownGradient plusIcon">
-                              +
-                            </span>
-                          </div>
-                          <div
-                            className={`${
-                              activeTheme ? "colorBrown" : "colorWhite"
-                            }  text-uppercase fs30 lh39 fontlight`}
-                          >
-                            sq. ft Area <br />
-                             Delivered
-                          </div>
-                        </div>
-                      </Fade>
-                    )}
+                    </Slide>
                   </div>
 
-                  {/* <div className='circleMainWrp position-relative d-flex align-items-center justify-content-center h-100'>
 
-                                        {
-                                            triggerHover ? <div className='circleAnimate position-absolute'>
-                                            </div> : <div className='circleAnimate hideRotate position-absolute' onMouseOver={() => handleHover()}>
-                                            </div>
-                                        }
+                  <div className={sl === 1 ? "activeSlide" : "hideSlider"}>
+                  <Slide bottom>
 
-                                        {
-                                            triggerHover ?
-                                                <Swiper
-                                                    autoplay={{
-                                                        delay: 2500,
-                                                        disableOnInteraction: false,
-                                                    }}
-                                                    spaceBetween={0}
-                                                    effect={'fade'}
-                                                    navigation={false}
-                                                    pagination={{
-                                                        clickable: false,
-                                                    }}
+                    <img src="https://bit.ly/2BteuF2" className="img-fluid" alt="" />
 
-                                                    modules={[EffectFade, Autoplay]}
-                                                    className="mySwiper swiperFadeEff"
-                                                >
-                                                    <SwiperSlide>
-                                                        <div className='mb0 lh50'>
-                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                                4000
-                                                            </span>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                +
-                                                            </span>
-                                                        </div>
-                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                            Happy <br />
-                                                            Families
-                                                        </div>
-                                                    </SwiperSlide>
-                                                    <SwiperSlide>
-                                                        <div className='mb0 lh50'>
-                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                                63
-                                                            </span>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                +
-                                                            </span>
-                                                        </div>
-                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                            Projects
-                                                        </div>
-                                                    </SwiperSlide>
+                  </Slide>
+                  </div>
 
-                                                    <SwiperSlide>
-                                                        <div className='mb0 lh50'>
-                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                                30
-                                                            </span>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                +
-                                                            </span>
-                                                        </div>
-                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                            Years <br /> Expertise
-                                                        </div>
-                                                    </SwiperSlide>
+                  <div className={sl === 2 ? "activeSlide" : "hideSlider"}>
+                  <Slide bottom>
 
-                                                    <SwiperSlide>
-                                                        <div className='mb0 lh50'>
-                                                            <span className='fontlight subfont fs60 mobFs35 brownGradient fw500'>
-                                                                3M
-                                                            </span>
-                                                            <span className='fontlight subfont fs80 mobFs35 brownGradient plusIcon'>
-                                                                +
-                                                            </span>
-                                                        </div>
-                                                        <div className={`${activeTheme ? "colorBrown" : "colorWhite"}  text-uppercase fs30 lh39 fontlight`}>
-                                                            sq. ft Area <br /> Delivered
-                                                        </div>
-                                                    </SwiperSlide>
+                    <img src="https://bit.ly/3fLJf72" className="img-fluid" alt="" />
 
-                                                </Swiper> :
-                                                <div className='blankData'></div>
-
-                                        }
+                  </Slide>
+                  </div>
 
 
+                  <div className={sl === 3 ? "activeSlide" : "hideSlider"}>
+                  <Slide bottom>
 
+                    <img src="https://bit.ly/2BteuF2" className="img-fluid" alt="" />
 
-
-
-                                    </div> */}
-                </div>
-              </Zoom>
-            </Col>
-            <Col lg={6} md={6} className="m-auto">
-              <div className="imgWrp mobPt70 text-center">
-                {sl === 0 && (
-                  <Fade right cascade>
-                    <img
-                      className="img-fluid"
-                      src={require("../../assets/img/home/giffamily.gif")}
-                      alt=""
-                    />
-                  </Fade>
-                )}
-                {sl === 1 && (
-                  <Fade right cascade>
-                    <img
-                      className="img-fluid"
-                      src={require("../../assets/video/sqftAreaDelivered.gif")}
-                      alt=""
-                    />
-                  </Fade>
-                )}
-
-                {sl === 2 && (
-                  <Fade right cascade>
-                    <img
-                      className="img-fluid"
-                      src={require("../../assets/video/63Projects.gif")}
-                      alt=""
-                    />
-                  </Fade>
-                )}
-
-                {sl === 3 && (
-                  <Fade right cascade>
-                    <img
-                      className="img-fluid"
-                      src={require("../../assets/video/03.gif")}
-                      alt=""
-                    />
-                  </Fade>
-                )}
+                  </Slide>
+                  </div>
               </div>
+
             </Col>
+
           </Row>
         </div>
       </Container>
