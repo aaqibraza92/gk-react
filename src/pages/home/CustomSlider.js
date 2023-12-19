@@ -33,29 +33,6 @@ const CustomSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsSectionEndVisible(entry.isIntersecting);
-  //       dispatch(viewPortFunc(entry.isIntersecting));
-  //     },
-  //     {
-  //       root: null,
-  //       rootMargin: '600px',
-  //       threshold: screenWidth > 767 ? 0.5 : 0.6,
-  //     }
-  //   );
-
-  //   if (sectionEndRef.current) {
-  //     observer.observe(sectionEndRef.current);
-  //   }
-
-  //   return () => {
-  //     if (sectionEndRef.current) {
-  //       observer.unobserve(sectionEndRef.current);
-  //     }
-  //   };
-  // }, []);
 
   useEffect(() => {
     resizeScreen();
