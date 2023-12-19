@@ -1364,3 +1364,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+textarea{
+  height: 150px;
+}
+.form-group{
+  margin-bottom: 15px;
+}
+.form-group label {
+  font-size: 14px;
+  color: #6c6c6c;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+select.form-control {
+  height: 47px;
+}
