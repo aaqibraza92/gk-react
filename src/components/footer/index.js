@@ -286,9 +286,7 @@ const Footer = () => {
 {/* </section> */}
    
 
-      <Helmet>
-        <script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" type="text/javascript" data-bot="20472097"></script>
-      </Helmet>
+
        
 
    
