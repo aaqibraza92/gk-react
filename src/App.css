@@ -185,6 +185,9 @@ border-color: #2C367A
   background-repeat: no-repeat;
   background-position: center;
 }
+.flight{
+  font-weight: lighter;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
