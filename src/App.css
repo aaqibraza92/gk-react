@@ -1381,3 +1381,9 @@ textarea{
 select.form-control {
   height: 47px;
 }
+.nightText *{
+  color:  #ddd;
+}
+.nightText a{
+  color: var(--colorBrown);
+}

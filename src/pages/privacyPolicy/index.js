@@ -3,8 +3,15 @@ import { Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Fade, Zoom, Reveal } from "react-awesome-reveal";
+import { useSelector } from "react-redux";
 
 const PrivacyPolicy = () => {
+  const activeTheme = useSelector((state) => {
+    return (
+      state && state?.persistedReducer?.theme?.dayTheme
+    );
+  });
+
   return (
     <>
      <Helmet>
@@ -13,7 +20,7 @@ const PrivacyPolicy = () => {
      
      
      
-    <section className="">
+    <section className={activeTheme ? "dayText" : "nightText"}>
         <Container>
         <Fade  bottom delay={100}> <h2 className="fs70 mb0 brownGradient text-center mb70">  Privacy Policy</h2> </Fade>
         <Row className="mb30">
