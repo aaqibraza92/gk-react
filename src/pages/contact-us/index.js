@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BreadCrumb from "../../components/BreadCrumb";
-import { Col, Container, Form, Label, Row } from "reactstrap";
+import { Button, Col, Container, Form, Label, Row } from "reactstrap";
 import '../../assets/css/contact.css';
 import { Helmet } from "react-helmet";
 import LookingForJob from "./LookingForJob";
@@ -39,48 +39,72 @@ const ContactUs = (props) => {
               <Col lg={9}>
                 <Form>
                   <Row>
-                    <Col lg={6} md={6}>
+                    <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                        <Label htmlFor="name">
-                          Name
-                        </Label>
-                        <input className="form-control" placeholder="Name" type="text" name="name" id="name" value="" />
+                        
+                        <input className="form-control customfiled" placeholder="Full Name" type="text" name="name" id="name" value="" />
                       </div>
                     </Col>
-                    <Col lg={6} md={6}>
+                    <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                        <Label htmlFor="email">
-                          Email
-                        </Label>
-                        <input className="form-control" placeholder="Email" type="email" name="email" id="email" value="" />
+                       
+                        <input className="form-control customfiled" placeholder="Email" type="email" name="email" id="email" value="" />
                       </div>
                     </Col>
-                    <Col lg={6} md={6}>
+                    <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                        <Label htmlFor="Phone">
-                          Phone
-                        </Label>
-                        <input className="form-control" placeholder="Phone" type="number" name="Phone" id="Phone" value="" />
+                        
+                        <input className="form-control customfiled" placeholder="Phone Number" type="tel" name="Phone" id="Phone" value="" />
                       </div>
                     </Col>
-                    <Col lg={6} md={6}>
+                    <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                        <Label htmlFor="project">
-                          Project of interest
-                        </Label>
-                        <select name="project" id="project" className="form-control">
+                       
+                        {/* <select name="project" id="project" className="form-control customfiled">
                           <option value="">Select Project of Interest</option>
-                        </select>
+                        </select> */}
+                        <select data-required="true" data-validator="string" className="form-control customfiled" name="sell_do[form][lead][project_id]">
+                          <option value="">Select project of interest</option>
+                          <option value="63e61e9b8eb6d81df3424152">TRAID</option>
+                          <option value="63e61ede8eb6d81daf4244ee">Pearl Enclave</option>
+                          <option value="63e61f588eb6d81daf424527">Zenith</option>
+                          <option value="63e61fab8eb6d801482cd5b7">Casa Grande</option>
+                          <option value="63e6205a8eb6d8015f2cbca8">Festoon</option>
+                          <option value="63e621cc8eb6d81df3424282">Park East End</option>
+                          <option value="63e622048eb6d812e037c0ac">SURYA ARCADE</option>
+                          <option value="63e6223a8eb6d86d02b4d8cc">Silver Leaf</option>
+                          <option value="63ef6770ed23e966057bbf8a">Casa Grande 1 </option>
+                          <option value="63ef67b7ed23e962a52d97a0">Casa Grande 2</option>
+                          <option value="63ef67f9ed23e9706613cf2e">Casa Grande 3 </option>
+                          <option value="63ef6852ed23e9719a5b73e4">Alam Villas</option>
+                          <option value="63ef771ced23e962bc2d9906">Ram Arcade</option>
+                          </select>
                       </div>
                     </Col>
-                    <Col lg={12} md={12}>
+                    <Col lg={12} md={12} className="mb-3">
                       <div className="form-group">
-                        <Label htmlFor="comment">
-                          Comment
-                        </Label>
-                        <textarea name="comment" placeholder="Comment" id="comment" className="form-control"></textarea>
+                       
+                        <textarea name="comment" placeholder="Comment" id="comment" rows={2} className="form-control customfiled"></textarea>
                       </div>
                     </Col>
+
+                    <Col lg={9} md={9} className="mb-3">
+                      <div className="form-group">
+                       <p>I authorize GK Builders and Developers and its representatives to Call, SMS, Email or WhatsApp me about its product and offers. The consent overrides any registration for DNC/NDNC.</p>
+                      </div>
+                    </Col>
+                    <Col lg={3} md={3} className="mb-3">
+                      <div className="form-group text-end">
+                    
+                      <Button
+                          className={`${activeTheme ? "bgBlack" : "bgBlack"} d-flex w-100 justify-content-center btnTheme mr12 fMedium btnMob button button--calypso`}
+                          to="#!"
+                        >
+                          <span className={`${activeTheme ? "brownGradient" : "colorWhite"} mr5`}>Submit</span> <img src={activeTheme ? require('../../assets/img/home/arrDiagonal.png') : require('../../assets/img/home/arrDiagonal.png')} className="img-fluid" alt="" />
+                        </Button>
+                      </div>
+                    </Col>
+
                   </Row>
                 </Form>
               </Col>

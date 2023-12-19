@@ -189,6 +189,23 @@ border-color: #2C367A
   font-weight: lighter;
 }
 
+
+.customfiled {
+  border: none !important;
+  border-bottom: 3px solid #b88a4c !important;
+  border-radius: 0px !important;
+  padding-left: 0px !important;
+  background-color: transparent !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: transparent;
+  /* border-color: var(--colorBlue) !important; */
+  outline: 0;
+  box-shadow: none !important;
+}
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -1366,9 +1383,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-textarea{
-  height: 150px;
-}
+
 .form-group{
   margin-bottom: 15px;
 }

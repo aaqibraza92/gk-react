@@ -36,7 +36,7 @@ const HomeBanner = () => {
                 </h2>
                 <div className="d-flex justify-content-end mt30">
                 <Fade   left cascade damping={1e-1} delay={100}>
-                <Link
+                  <Link
                     className={`${activeTheme ? "bgBlack" : "bgBlack"} btnTheme mr12 fMedium btnMob button button--calypso`}
                     to="/contact-us"
                   >
