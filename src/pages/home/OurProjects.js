@@ -50,7 +50,7 @@ const OurProjects = () => {
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2 mainProSl"
-      >
+      > 
         {bigImage?.map((e, i) => (
             <SwiperSlide key={i}>
               <img
