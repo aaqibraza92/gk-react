@@ -263,11 +263,20 @@ img.img-fluid.mainLogo {
 .home .mainHeader.transition,.\/gk\/ .mainHeader.transition, .\/gk\/about-us .mainHeader.transition{
   position: absolute;
   width: 100%;
-  top: 10px;
+  top: 0px;
   z-index: 1;
   background: transparent;
 }
-
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+  .home .mainHeader.transition,.\/gk\/ .mainHeader.transition, .\/gk\/about-us .mainHeader.transition{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+    background: transparent;
+  }
+ 
+}
 /*menu animated*/
 
 
