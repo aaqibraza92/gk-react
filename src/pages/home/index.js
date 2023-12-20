@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { useRef } from "react";
 import Vert2 from "./verticalSlider/Vert2";
 import CustomSlider from "./CustomSlider";
+import VerticalSlider from "./verticalSlider/VerticalSl";
 
 const HomePage = () => {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -66,6 +67,7 @@ const HomePage = () => {
         } */}
            {/* <CustomSlider/> */}
         <Vert2/>
+        <VerticalSlider/>
         {/* <VerticalSlider/> */}
         {/* <WhyChooseUs /> */}
         {/* <VerticalSl/>  */}

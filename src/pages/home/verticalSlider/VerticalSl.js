@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
 import { Col, Container, Row } from 'reactstrap';
-import { Fade, Zoom } from "react-awesome-reveal";
+import "./slider.css"
+import { Helmet } from 'react-helmet';
+import $ from 'jquery';
 
 let data = [
   {
@@ -29,35 +30,65 @@ let data = [
 ];
 
 export default function VerticalSlider() {
+
+  useEffect(()=>{
+    var titleMain  = $("#animatedHeading");
+var titleSubs  = titleMain.find("slick-active");
+
+if (titleMain.length) {
+
+  titleMain.slick({
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 3,
+    centerPadding: "10px",
+    draggable: false,
+    infinite: true,
+    pauseOnHover: false,
+    swipe: false,
+    touchMove: false,
+    vertical: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    useTransform: true,
+    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+    adaptiveHeight: true,
+  });
+
+  // On init
+  $(".slick-dupe").each(function(index, el) {
+    $("#animatedHeading").slick('slickAdd', "<div>" + el.innerHTML + "</div>");
+  });
+
+  // Manually refresh positioning of slick
+  titleMain.slick('slickPlay');
+};
+  },[])
+
+
   return (
     <>
-  <section
-  
-  id="target-section"
-  className="pt100 pb100"
-  style={{
-    backgroundImage: `url(${require("../../../assets/img/home/ver_bg.jpg")})`,
-  }}
->
-      <Container>
-      <div className="text-center">
-          <Zoom left>
-            <img
-              src={require("../../../assets/img/home/three_dot.png")}
-              className="img-fluid"
-              alt=""
-            />
-          </Zoom>
-          <h2 className="colorWhite mb50 pb-5 fs50 fontlight subfont text-center">
-            <Fade left cascade damping={1e-1} delay={100}>
-              why choose us?
-            </Fade>
-          </h2>
-        </div>
+    <Helmet>
+    </Helmet>
+      <section
 
-      </Container>
-    </section>
-  
+        id="target-section"
+        className="pt100 pb100"
+        style={{
+          backgroundImage: `url(${require("../../../assets/img/home/ver_bg.jpg")})`,
+        }}
+      >
+        <Container>
+          <div class="hero__title" id="animatedHeading">
+            <div class="slick-dupe"><span class="hero__title-misc  |  animate">1</span></div>
+            <div class="slick-dupe"><span class="hero__title-misc  |  animate">2</span></div>
+            <div class="slick-dupe"><span class="hero__title-misc  |  animate">3</span></div>
+          </div>
+
+        </Container>
+      </section>
+
     </>
   );
 }
