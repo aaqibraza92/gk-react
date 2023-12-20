@@ -32,7 +32,7 @@ const ContactUs = (props) => {
       <Container>
         <Row>
           <Col md={12}>
-            <div className=" pb60 text-center position-relative pt-5">
+            <div className=" pb60 text-center position-relative pt-3">
               <h2 className={`${activeTheme ? "contactusheading" : "contactusheadingdark"} fs90 mobFs32 colorprimary  mb-0`}>Contact Us</h2>
               <div className="bordercontactus"></div>
               <p className="fs30 colorLightBrown">Get in touch with us today</p>
