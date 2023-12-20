@@ -67,7 +67,7 @@ const HomePage = () => {
         } */}
            {/* <CustomSlider/> */}
         <Vert2/>
-        <VerticalSlider/>
+        {/* <VerticalSlider/> */}
         {/* <VerticalSlider/> */}
         {/* <WhyChooseUs /> */}
         {/* <VerticalSl/>  */}
