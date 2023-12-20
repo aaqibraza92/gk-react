@@ -260,7 +260,7 @@ img.img-fluid.mainLogo {
 .topDown .headerMenu {
   height: 50px;
 }
-.home .mainHeader.transition,.\/gk\/ .mainHeader.transition, .\/gk\/about-us .mainHeader.transition{
+.home .mainHeader.transition, .\/about-us .mainHeader.transition{
   position: absolute;
   width: 100%;
   top: 0px;
@@ -268,14 +268,13 @@ img.img-fluid.mainLogo {
   background: transparent;
 }
 @media only screen and (max-width: 1024px) and (min-width: 320px) {
-  .home .mainHeader.transition,.\/gk\/ .mainHeader.transition, .\/gk\/about-us .mainHeader.transition{
+  .home .mainHeader.transition,.\/gk\/ .mainHeader.transition,.\/about-us .mainHeader.transition{
     position: absolute;
     width: 100%;
     top: 10px;
     z-index: 1;
     background: transparent;
   }
- 
 }
 /*menu animated*/
 

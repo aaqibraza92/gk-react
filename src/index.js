@@ -10,10 +10,9 @@ import { store } from './store/slices/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-   <BrowserRouter basename='/gk'>
+   <BrowserRouter>
    <App />
    </BrowserRouter>
-     
   </Provider>
     
 );
