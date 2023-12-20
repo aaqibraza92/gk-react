@@ -1411,6 +1411,13 @@ select.form-control {
 .nightForm button.btnTheme {
   background: var(--colorBrown);
 }
+.bgImageSlider {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 /*custome slider*/
 .activeSlide{
   display: block;

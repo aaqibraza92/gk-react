@@ -53,7 +53,10 @@ const OurProjects = () => {
       > 
         {bigImage?.map((e, i) => (
             <SwiperSlide key={i}>
-              <img
+              <div className="bgImageSlider" style={{backgroundImage: `url(${activeTheme ? e?.dayImage : e?.nightImage})`}}>
+
+              </div>
+              {/* <img
                 src={
                   activeTheme
                     ? e?.dayImage
@@ -61,7 +64,7 @@ const OurProjects = () => {
                 }
                 className="img-fluid"
                 alt=""
-              />
+              /> */}
             </SwiperSlide>
           ))}
            
