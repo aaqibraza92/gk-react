@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import SmoothScroll from "./components/SmoothScoll";
 import { useEffect, useState } from "react";
 import { Player } from "video-react";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -51,6 +52,12 @@ function App() {
 
   return (
     <>
+    <Helmet>
+      {
+        !isAnimate &&   <script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" type="text/javascript" data-bot="20472097"></script> 
+      }
+  
+    </Helmet>
       {isAnimate && location?.pathname === "/" && (
         <div className="custom-div w-100" onClick={(e) => setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
           <span className="text text-center flight">Click <br></br> To Close</span>

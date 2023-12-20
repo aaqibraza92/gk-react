@@ -260,7 +260,7 @@ img.img-fluid.mainLogo {
 .topDown .headerMenu {
   height: 50px;
 }
-.home .mainHeader.transition, .\/about-us .mainHeader.transition{
+.home .mainHeader.transition, .\/gk\/about-us .mainHeader.transition{
   position: absolute;
   width: 100%;
   top: 10px;

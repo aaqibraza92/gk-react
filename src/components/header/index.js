@@ -29,10 +29,10 @@ const Header = () => {
   },[window.location.pathname])
   useEffect(() => {
     if(activeTheme){
-      document.body.className = window.location.pathname==="/" ? `home lightMode ` : window.location.pathname + ` lightMode`;
+      document.body.className = window.location.pathname==="/gk" ? `home lightMode ` : window.location.pathname + ` lightMode`;
     
     }else{
-      document.body.className = window.location.pathname==="/" ? ` home darkMode` : window.location.pathname + ` darkMode`;
+      document.body.className = window.location.pathname==="/gk" ? ` home darkMode` : window.location.pathname + ` darkMode`;
     }
     return () => { document.body.className = ''; }
   },[window.location.pathname]);
