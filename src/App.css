@@ -1399,10 +1399,18 @@ select.form-control {
 .nightText *{
   color:  #ddd;
 }
+.nightForm input,.nightForm textarea {
+  color: #ddd !important;
+}
+.nightForm select{
+  color: #ddd ;
+}
 .nightText a{
   color: var(--colorBrown);
 }
-
+.nightForm button.btnTheme {
+  background: var(--colorBrown);
+}
 /*custome slider*/
 .activeSlide{
   display: block;

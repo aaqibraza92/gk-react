@@ -52,8 +52,8 @@ function App() {
   return (
     <>
       {isAnimate && location?.pathname === "/" && (
-        <div className="custom-div w-100" onClick={(e)=>setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e)=>hideText(e)}>
-        <span className="text text-center flight">Click <br></br> To Close</span>
+        <div className="custom-div w-100" onClick={(e) => setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
+          <span className="text text-center flight">Click <br></br> To Close</span>
           <Player
             className="w-100 position-relative z999 customheight"
             autoPlay={true}
@@ -65,8 +65,9 @@ function App() {
           </Player>
         </div>
       )}
-   
-        <div className="wrapperApp">
+
+      {
+        (location?.pathname === "/" && isAnimate) ? "" : <div className="wrapperApp">
           <Routes>
             {RouterList &&
               RouterList.map((elem, ind) => {
@@ -76,7 +77,9 @@ function App() {
               })}
           </Routes>
         </div>
-   
+      }
+
+
 
       {/* </SmoothScroll> */}
     </>

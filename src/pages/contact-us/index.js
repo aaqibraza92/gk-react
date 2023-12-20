@@ -5,6 +5,7 @@ import '../../assets/css/contact.css';
 import { Helmet } from "react-helmet";
 import LookingForJob from "./LookingForJob";
 import LookingForTalent from "./LookingForTalent";
+import Select from "react-select";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const ContactUs = (props) => {
@@ -12,6 +13,8 @@ const ContactUs = (props) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
 
+
+  const [projectType, setprojectType] = useState([])
 
 
 
@@ -37,34 +40,43 @@ const ContactUs = (props) => {
 
             <Row className="justify-content-center">
               <Col lg={9}>
-                <Form>
+                <Form className={activeTheme ? "dayForm" : "nightForm"}>
                   <Row>
                     <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                        
-                        <input className="form-control customfiled" placeholder="Full Name" type="text" name="name" id="name" value="" />
+
+                        <input className="form-control customfiled" placeholder="Full Name" type="text" name="name" id="name" />
                       </div>
                     </Col>
                     <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                       
-                        <input className="form-control customfiled" placeholder="Email" type="email" name="email" id="email" value="" />
+
+                        <input className="form-control customfiled" placeholder="Email" type="email" name="email" id="email" />
                       </div>
                     </Col>
                     <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                        
-                        <input className="form-control customfiled" placeholder="Phone Number" type="tel" name="Phone" id="Phone" value="" />
+
+                        <input className="form-control customfiled" placeholder="Phone Number" type="tel" name="Phone" id="Phone" />
                       </div>
                     </Col>
                     <Col lg={6} md={6} className="mb-3">
                       <div className="form-group">
-                       
-                        {/* <select name="project" id="project" className="form-control customfiled">
-                          <option value="">Select Project of Interest</option>
-                        </select> */}
+
+                        {/* <Select
+                          classNamePrefix="themeSelect"
+                          className="themeSelect"
+                          options={[
+                            { value: "Permanent", label: "Permanent" },
+                            { value: "Contract", label: "Contract" },
+                            { value: "Not Sure", label: "Not Sure" }
+                          ]}
+                          value={projectType}
+                          placeholder={<div>Employment type *</div>}
+                          onChange={(e) => setprojectType(e)}
+                        /> */}
                         <select data-required="true" data-validator="string" className="form-control customfiled" name="sell_do[form][lead][project_id]">
-                          <option value="">Select project of interest</option>
+                          <option value="" disabled selected>Select project of interest</option>
                           <option value="63e61e9b8eb6d81df3424152">TRAID</option>
                           <option value="63e61ede8eb6d81daf4244ee">Pearl Enclave</option>
                           <option value="63e61f588eb6d81daf424527">Zenith</option>
@@ -78,25 +90,25 @@ const ContactUs = (props) => {
                           <option value="63ef67f9ed23e9706613cf2e">Casa Grande 3 </option>
                           <option value="63ef6852ed23e9719a5b73e4">Alam Villas</option>
                           <option value="63ef771ced23e962bc2d9906">Ram Arcade</option>
-                          </select>
+                        </select>
                       </div>
                     </Col>
                     <Col lg={12} md={12} className="mb-3">
                       <div className="form-group">
-                       
+
                         <textarea name="comment" placeholder="Comment" id="comment" rows={2} className="form-control customfiled"></textarea>
                       </div>
                     </Col>
 
                     <Col lg={9} md={9} className="mb-3">
                       <div className="form-group">
-                       <p>I authorize GK Builders and Developers and its representatives to Call, SMS, Email or WhatsApp me about its product and offers. The consent overrides any registration for DNC/NDNC.</p>
+                        <p>I authorize GK Builders and Developers and its representatives to Call, SMS, Email or WhatsApp me about its product and offers. The consent overrides any registration for DNC/NDNC.</p>
                       </div>
                     </Col>
                     <Col lg={3} md={3} className="mb-3">
                       <div className="form-group text-end">
-                    
-                      <Button
+
+                        <Button
                           className={`${activeTheme ? "bgBlack" : "bgBlack"} d-flex w-100 justify-content-center btnTheme mr12 fMedium btnMob button button--calypso`}
                           to="#!"
                         >

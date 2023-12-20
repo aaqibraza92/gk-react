@@ -78,7 +78,6 @@ const CustomSlider = () => {
 
             <Col lg={8} md={8} className="">
               <div className="customSliderWrapper text-center">
-       
                   <div className={sl === 0 ? "activeSlide" : "hideSlider"}>
                     <Slide bottom>
 
