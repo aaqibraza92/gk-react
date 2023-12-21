@@ -7,12 +7,12 @@ import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './slider.css'
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 // import "./styles.css";
 import { Pagination, Navigation, Autoplay } from 'swiper';
 import { Col, Row } from "reactstrap";
 import { keyframes } from "@emotion/react";
-import { Reveal } from "react-reveal";
+import Fade from 'react-reveal/Fade';
 
 
 let data = [
@@ -111,29 +111,27 @@ const Vert2 = () => {
                 <div className="whyChsWrp">
                   <Row className="align-items-center">
                     <Col lg={6} md={6}>
-                      <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
                       <Fade bottom cascade damping={0.5e-1} delay={100}>
-                      {e.title}
-                        </Fade>
-                       
-                      </h3>
-
+                        <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
+                          {e.title}
+                        </h3>
+                      </Fade>
 
                       <Fade bottom>
-                      <p className="fs16">{e.para}</p>
-                        </Fade>
+                        <p className="fs16">{e.para}</p>
+                      </Fade>
 
-                 
+
                     </Col>
                     <Col lg={6} md={6}>
-                    <Fade bottom>
-                    <img
-                        src={e.img}
-                        alt="building"
-                        className="img-fluid"
-                      />
+                      <Fade right>
+                        <img
+                          src={e.img}
+                          alt="building"
+                          className="img-fluid"
+                        />
                       </Fade>
-                  
+
                     </Col>
                   </Row>
                 </div>
@@ -141,7 +139,7 @@ const Vert2 = () => {
 
             </SwiperSlide>
           ))}
-        
+
 
         </Swiper>
 

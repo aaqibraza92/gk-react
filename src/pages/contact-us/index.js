@@ -95,13 +95,11 @@ const ContactUs = (props) => {
                     </Col>
                     <Col lg={12} md={12} className="mb-3">
                       <div className="form-group">
-
                         <textarea name="comment" placeholder="Comment" id="comment" rows={2} className="form-control customfiled"></textarea>
                       </div>
                     </Col>
-
                     <Col lg={9} md={9} className="mb-3">
-                      <div className="form-group">
+                      <div className={`form-group ${!activeTheme && "nightText"}`}>
                         <p>I authorize GK Builders and Developers and its representatives to Call, SMS, Email or WhatsApp me about its product and offers. The consent overrides any registration for DNC/NDNC.</p>
                       </div>
                     </Col>
