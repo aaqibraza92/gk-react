@@ -40,7 +40,7 @@ const Project = () => {
         
         <Container>
         <Fade  bottom delay={100}> <h2 className="fs70 mb0 brownGradient text-center mb70">  Projects</h2> </Fade>
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
 
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
@@ -98,7 +98,7 @@ const Project = () => {
             </Row>
           </Reveal>
 
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="https://gkzenith.in/" target="_blank">
@@ -162,7 +162,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="https://gkalamvilla.in/" target="_blank">
@@ -224,7 +224,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="https://gkfestoon.in/" target="_blank">
@@ -283,7 +283,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="https://gktriad.in/" target="_blank">
@@ -345,7 +345,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
             <Row className="projectMainList mb60">
               <Col lg={7}>
                 <Link to="https://gkpearlenclave.in/" target="_blank" >
@@ -404,7 +404,7 @@ const Project = () => {
           </Reveal>
 
 
-          <Reveal keyframes={customAnimation} delay={400}>
+          <Reveal keyframes={customAnimation} delay={100}>
             <Row className="justify-content-end mb60 projectMainList">
               <Col lg={7}>
                 <Link to="https://gksuryaarcade.in/" target="_blank" >

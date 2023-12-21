@@ -60,7 +60,7 @@ function App() {
     </Helmet>
       {isAnimate && location?.pathname === "/" && (
         <div className="custom-div w-100" onClick={(e) => setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
-          <span className="text text-center flight">Click <br></br> To Close</span>
+          <span className="text text-center flight">Click <br></br> To Open</span>
           <Player
             className="w-100 position-relative z999 customheight"
             autoPlay={true}
