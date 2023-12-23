@@ -50,10 +50,13 @@ const OurProjects = () => {
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2 mainProSl"
-      >
+      > 
         {bigImage?.map((e, i) => (
             <SwiperSlide key={i}>
-              <img
+              <div className="bgImageSlider" style={{backgroundImage: `url(${activeTheme ? e?.dayImage : e?.nightImage})`}}>
+
+              </div>
+              {/* <img
                 src={
                   activeTheme
                     ? e?.dayImage
@@ -61,9 +64,11 @@ const OurProjects = () => {
                 }
                 className="img-fluid"
                 alt=""
-              />
+              /> */}
             </SwiperSlide>
           ))}
+           
+         
       </Swiper>
       <div className="slLayers position-absolute w-100 h-100">
         <Container className="h-100">
@@ -155,6 +160,7 @@ const OurProjects = () => {
         </Container>
       </div>
     </section>
+
   );
 };
 

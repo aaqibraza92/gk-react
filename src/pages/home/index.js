@@ -9,12 +9,9 @@ import WhyChooseUs from "./WhyChooseUs";
 import OurProjects from "./OurProjects";
 import { useSelector } from "react-redux";
 import { useRef } from "react";
-import ScrollComp from "./ScrollComp";
-import { Fade, Zoom } from "react-awesome-reveal";
-import HorScroll from "./HorScroll";
-import VerticalSl from "./verticalSlider/VerticalSl";
-import VerticalSlider from "./verticalSlider/VerticalSl";
 import Vert2 from "./verticalSlider/Vert2";
+import CustomSlider from "./CustomSlider";
+import VerticalSlider from "./verticalSlider/VerticalSl";
 
 const HomePage = () => {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -68,7 +65,9 @@ const HomePage = () => {
         {/* {
           screenWidth > 1200 ? <ScrollComp /> : <WhyChooseUs />
         } */}
+           {/* <CustomSlider/> */}
         <Vert2/>
+        {/* <VerticalSlider/> */}
         {/* <VerticalSlider/> */}
         {/* <WhyChooseUs /> */}
         {/* <VerticalSl/>  */}
@@ -82,6 +81,7 @@ const HomePage = () => {
           </div>
         )} */}
         <WhoWeAre />
+     
         <Testimonial />
       </main>
     </>

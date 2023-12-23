@@ -112,16 +112,16 @@ const Header = () => {
                   {/* <button id="triggerToOpen" className="noBtn triggerMenu">
                     {burgerMenu}
                   </button> */}
-                  <span class="menuTrigger">
+                  <span className="menuTrigger">
                     <input
-                      class="menu-icon"
+                      className="menu-icon"
                       type="checkbox"
                       id="menu-icon"
                       name="menu-icon"
                     />
                     <label htmlFor="menu-icon"></label>
-                    <nav class="nav triggerMenu">
-                      <ul class="pt-5">
+                    <nav className="nav triggerMenu">
+                      <ul className="pt-5">
                         <li onClick={()=>closeMenu()} className="mb15">
                          <Link className="makeClose" to="/">Home</Link>
                         </li>

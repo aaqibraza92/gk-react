@@ -7,17 +7,18 @@ import AnimatedCursor from "react-animated-cursor";
 import SmoothScroll from "./components/SmoothScoll";
 import { useEffect, useState } from "react";
 import { Player } from "video-react";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const location = useLocation();
   const [isAnimate, setisAnimate] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setisAnimate(false);
-    }, 700000);
-  }, [window.location.pathname]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setisAnimate(false);
+  //   }, 7000);
+  // }, [window.location.pathname]);
 
   const resizeScreen = () => {
     setScreenWidth(window.innerWidth);
@@ -51,9 +52,15 @@ function App() {
 
   return (
     <>
+    <Helmet>
+      {
+        !isAnimate &&   <script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" type="text/javascript" data-bot="20472097"></script> 
+      }
+  
+    </Helmet>
       {isAnimate && location?.pathname === "/" && (
-        <div className="custom-div w-100" onMouseMove={(e) => moveText(e)} onMouseOut={(e)=>hideText(e)}>
-        <span className="text">Click to close</span>
+        <div className="custom-div w-100" onClick={(e) => setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
+          <span className="text text-center flight">Click <br></br> To Open</span>
           <Player
             className="w-100 position-relative z999 customheight"
             autoPlay={true}
@@ -65,8 +72,9 @@ function App() {
           </Player>
         </div>
       )}
-      {!isAnimate && (
-        <div className="wrapperApp">
+
+      {
+        (location?.pathname === "/" && isAnimate) ? "" : <div className="wrapperApp">
           <Routes>
             {RouterList &&
               RouterList.map((elem, ind) => {
@@ -76,7 +84,9 @@ function App() {
               })}
           </Routes>
         </div>
-      )}
+      }
+
+
 
       {/* </SmoothScroll> */}
     </>

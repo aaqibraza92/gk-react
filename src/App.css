@@ -178,6 +178,34 @@ border-color: #2C367A
   }
 }
 
+
+.slidermainview {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.flight{
+  font-weight: lighter;
+}
+
+
+.customfiled {
+  border: none !important;
+  border-bottom: 3px solid #b88a4c !important;
+  border-radius: 0px !important;
+  padding-left: 0px !important;
+  background-color: transparent !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: transparent;
+  /* border-color: var(--colorBlue) !important; */
+  outline: 0;
+  box-shadow: none !important;
+}
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -369,12 +397,12 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
   text-align: right;
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible {
-  width: 130px !important;
+  width: 110px !important;
   height: auto;
   cursor: pointer;
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible:nth-child(4) {
-  width: 254px !important;
+  width: 205px !important;
   margin-top: 25px;
 }
 .swiperThumbnail .swiper-slide.swiper-slide-visible img{
@@ -491,7 +519,7 @@ li.slide.selected .whyChsWrp {
     font-size: 13px;
   }
   .dataTesti {
-    width: 45%;
+    /* width: 45%; */
     padding-top: 174px;
   }
   .heartAuthor {
@@ -566,7 +594,7 @@ li.slide.selected .whyChsWrp {
     font-size: 41px;
   }
   body .swiperThumbnail .swiper-wrapper img {
-    width: 40px;
+    width: 45px;
   }
   body .circleAnimate {
     width: 250px;
@@ -1353,4 +1381,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+.form-group label {
+  font-size: 14px;
+  color: #6c6c6c;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+select.form-control {
+  height: 47px;
+}
+.nightText *{
+  color:  #ddd;
+}
+.nightForm input,.nightForm textarea {
+  color: #ddd !important;
+}
+.nightForm select{
+  color: #ddd ;
+}
+.nightText a{
+  color: var(--colorBrown);
+}
+.nightForm button.btnTheme {
+  background: var(--colorBrown);
+}
+.bgImageSlider {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 767px) {
+  .bgImageSlider {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bgImageSlider {
+    height: 60vh;
+  }
+}
+/*custome slider*/
+.activeSlide{
+  display: block;
+}
+.hideSlider{
+  display: none;
+}
+/*custome slider*/
+.darkMode .imgProject::after,.darkMode .imgProject2::after {
+  background: #fff;
 }

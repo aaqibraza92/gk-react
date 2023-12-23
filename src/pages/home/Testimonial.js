@@ -101,7 +101,7 @@ const Testimonial = () => {
                                 className="img-fluid  heartAuthor"
                                 alt=""
                               />
-                              <div class="testimonials">
+                              <div className="testimonials">
                                 <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
 
                                 <Row className="align-items-center">

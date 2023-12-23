@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import { Col, Container, Row } from 'reactstrap';
 import { Fade, Zoom } from "react-awesome-reveal";
 
@@ -55,37 +53,7 @@ export default function VerticalSlider() {
             </Fade>
           </h2>
         </div>
-      <Carousel verticalSwipe="natural" centerMode={true} axis="vertical" infiniteLoop={true} showThumbs={false} swipeScrollTolerance={3}>
 
-      {data.map((e, i) => (
-                <div key={i} >
-                  {/* <div className="container"> */}
-                  <div className="cornerHandle">
-                    <div className="whyChsWrp">
-                      <Row className="align-items-center">
-                        <Col lg={6} md={12}>
-                          <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
-                            {e.title}
-                          </h3>
-                          <p className="fs14">{e.para}</p>
-                        </Col>
-                        <Col lg={6} md={12}>
-                          <img
-                            src={e.img}
-                            alt="building"
-                            className="img-fluid"
-                          />
-                        </Col>
-                      </Row>
-                    </div>
-                  </div>
-                  {/* </div> */}
-              
-                </div>
-              ))}
-
-       
-            </Carousel>
       </Container>
     </section>
   
