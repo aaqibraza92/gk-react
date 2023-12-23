@@ -17,13 +17,13 @@ import Fade from 'react-reveal/Fade';
 
 let data = [
   {
-    title: "SUPERIOR CONSTRUCTION",
+    title: "SUPERIOR<br/>CONSTRUCTION",
     para: "With over three decades of unparalleled experience in construction and development, the GK group is one of the most trusted names amongst real estate developers in Hyderabad. Our name and brand are synonymous with superior quality of construction materials, best-in-industry practices and compliance with safety protocol.",
     img: require("../../../assets/img/home/layer_building.png"),
     class: "firstSlide",
   },
   {
-    title: "VALUE FOR MONEY",
+    title: "VALUE FOR <br/> MONEY",
     para: "Even as we remain steadfast in our goal to develop Hyderabad’s most luxurious projects, our prices are among the most competitive in today’s market. We offer our customers the best value for their money and investment. While no compromises are made in the quality of construction, every effort is made to optimise costs and pass on the benefit to the customer.",
     img: require("../../../assets/img/home/valueformoney.png"),
   },
@@ -68,6 +68,8 @@ const customAnimation = keyframes`
 `;
 
 const Vert2 = () => {
+
+
   return (
     <div className="pt100 pb100 " style={{
       backgroundImage: `url(${require("../../../assets/img/home/ver_bg.jpg")})`,
@@ -111,9 +113,10 @@ const Vert2 = () => {
                 <div className="whyChsWrp">
                   <Row className="align-items-center">
                     <Col lg={6} md={6}>
-                      <Fade bottom cascade damping={0.5e-1} delay={100}>
+                      <Fade bottom  delay={100}>
                         <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
-                          {e.title}
+                    
+                        <div dangerouslySetInnerHTML={{ __html: e.title }} />   
                         </h3>
                       </Fade>
 
