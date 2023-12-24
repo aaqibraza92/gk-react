@@ -12,12 +12,13 @@ export default function VerticalSlider() {
     arrows: true,
     dots: false,
     slidesToShow: 3,
+    centerMode: true,
     centerPadding: "10px",
-    draggable: false,
+    draggable: true,
     infinite: false,
     pauseOnHover: false,
-    swipe: false,
-    touchMove: false,
+    swipe: true,
+    touchMove: true,
     vertical: true,
     speed: 1000,
     autoplaySpeed: 2000,
@@ -45,6 +46,9 @@ export default function VerticalSlider() {
       </div>
       <div>
         <h3 className='text-light'>5</h3>
+      </div>
+      <div>
+        <h3 className='text-light'>6</h3>
       </div>
       <div>
         <h3 className='text-light'>6</h3>

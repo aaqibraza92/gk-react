@@ -1,5 +1,4 @@
-/** * Title: * Animations * Description: * List all the animations of the site in one file * Sections: * $. Keyframes * $. Classes */
-/* $. Keyframes \*----------------------------------------------------------------*/
+/* 
 @keyframes shrink {
     0% {
         color: green;
@@ -20,7 +19,6 @@
         color: green;
    }
 }
-/* $. Classes \*----------------------------------------------------------------*/
 .animate {
     transform: translate3d(0, 0, 0);
     perspective: 1000;
@@ -39,7 +37,7 @@
     animation-timing-function: 'linear';
     animation-name: grow;
 }
-/* Slider */
+
 .slick-slider {
     position: relative;
     display: block;
@@ -131,13 +129,7 @@
 .hero__title [aria-hidden] {
     transition: 1s;
 }
-/* .hero__title [aria-hidden="false"]{
-    opacity: 1;
-}
-.hero__title [aria-hidden="true"] {
-    opacity: 0;
-}
-*/
+
 .hero__title .slick-current > span {
     box-sizing: border-box;
     display: block;
@@ -150,4 +142,14 @@
     font-size: 24px;
     font-weight: bold;
     color: grey;
-}
+} */
+.slick-slide {
+    display: none;
+  }
+  .slick-slide.slick-active {
+    display: block;
+  }
+  .slick-list {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
