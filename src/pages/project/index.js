@@ -134,9 +134,8 @@ const Project = () => {
                                   }  fs40 fw500 mb0 text-uppercase`}
                               >
                                 <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
-                                  {
-                                    e?.title?.rendered
-                                  }
+                                 
+                                  <div className="headingFont" dangerouslySetInnerHTML={{ __html: e?.title?.rendered }} />
                                 </Fade>
                               </h3>
                               <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
@@ -197,7 +196,7 @@ const Project = () => {
                                 className={`${activeTheme ? "colorBlack" : "colorWhite"
                                   }  fs40 fw500 mb0 text-uppercase`}
                               >
-                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.title?.rendered}</Fade>
+                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}><div className="headingFont" dangerouslySetInnerHTML={{ __html: e?.title?.rendered }} /></Fade>
                               </h3>
                               <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.acf?.address}</Fade></p>
                             </div>
