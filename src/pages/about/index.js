@@ -82,9 +82,7 @@ const AboutUs = () => {
       <Helmet>
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
-      {
-        console.log("aa", data)
-      }
+   
       <section className="heroSection aboutus position-relative d-flex align-items-center">
         <h1 className="text-white fs70 subfont text-uppercase reveal-text1 position-relative leftBorder pl20">
           <Reveal keyframes={customAnimation} delay={400} className="aniCl">
