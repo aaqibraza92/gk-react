@@ -85,9 +85,9 @@ const Project = () => {
               <Reveal keyframes={customAnimation} delay={100}>
               <Row className="projectMainList mb60">
                 <Col lg={7}>
-                  <Link to="https://gkzenith.in/" target="_blank">
+                  <Link to={e?.acf?.external_link} target="_blank">
                     <div className=" d-flex">
-                      <div>
+                      <div className="w-100">
                         <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
 
                           <HoverVideoPlayer
@@ -105,6 +105,7 @@ const Project = () => {
                               </div>
                             }
                             preload="metadata"
+                            className="w-100"
                           />
 
                           <div className="position-relative">
@@ -134,13 +135,15 @@ const Project = () => {
                             className={`${activeTheme ? "colorBlack" : "colorWhite"
                               }  fs40 fw500 mb0 text-uppercase`}
                           >
-                            <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>   {
+                            <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}> 
+                             {
                               e?.title?.rendered
-                            }</Fade>
+                            }
+                            </Fade>
                           </h3>
-                          <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>   {
-                            e?.acf?.address
-                          }</Fade></p>
+                          <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
+                            {e?.acf?.address}
+                            </Fade></p>
                         </div>
                       </div>
                     </div>
@@ -153,9 +156,9 @@ const Project = () => {
 
 <Row className="justify-content-end mb60 projectMainList">
   <Col lg={7}>
-    <Link to="https://gkrajcasagrande.in/" target="_blank">
+    <Link to={e?.acf?.external_link} target="_blank">
       <div className=" d-flex justify-content-end">
-        <div>
+        <div className="w-100">
           <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
             <HoverVideoPlayer
               videoSrc={e?.acf?.video?.link}
@@ -168,7 +171,7 @@ const Project = () => {
               }
               loadingOverlay={""}
               preload="metadata"
-              className="videoHandle"
+              className="videoHandle w-100"
             />
             <div className="position-relative">
             </div>
