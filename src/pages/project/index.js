@@ -53,9 +53,6 @@ const Project = () => {
       <Helmet>
         <title>Projects - GK Builders & Developers</title>
       </Helmet>
-      {/* {
-        console.log("aa", data)
-      } */}
       <section className="position-relative">
 
         <div className="bigfont position-fixed">
@@ -82,559 +79,137 @@ const Project = () => {
           {
             data.length > 0 && data?.map((e, i) => (
               i % 2 ?
-              <Reveal keyframes={customAnimation} delay={100}>
-              <Row className="projectMainList mb60">
-                <Col lg={7}>
-                  <Link to={e?.acf?.external_link} target="_blank">
-                    <div className=" d-flex">
-                      <div className="w-100">
-                        <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
+                <Reveal keyframes={customAnimation} delay={100}>
+                  <Row className="projectMainList mb60">
+                    {e?.acf?.video?.link}
+                    <Col lg={7}>
+                      <Link to={e?.acf?.external_link} target="_blank">
+                        <div className=" d-flex">
+                          <div className="w-100">
+                            <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
 
-                          <HoverVideoPlayer
-                            videoSrc={e?.acf?.video?.link}
-                            pausedOverlay={
-                              <img
-                                src={e?.x_featured_media_large}
-                                className="img-fluid w-100 h-100"
-                                alt=""
-                              />
-                            }
-                            loadingOverlay={
-                              <div className="loading-overlay">
-                                <div className="loading-spinner" />
-                              </div>
-                            }
-                            preload="metadata"
-                            className="w-100"
-                          />
-
-                          <div className="position-relative">
-
-                          </div>
-
-                          <div className="viewLink position-absolute content-details fadeIn-bottom">
-                            <Link to={e?.acf?.external_link} target="_blank" className="">
-                              <div className="circleLink text-center">
-                                <div className="crcWrapper">
+                              <HoverVideoPlayer
+                                videoSrc={e?.acf?.video?.url}
+                                pausedOverlay={
                                   <img
-                                    src={require("../../assets/img/home/arrowBlack.png")}
-                                    className="img-fluid"
+                                    src={e?.x_featured_media_large}
+                                    className="img-fluid w-100 h-100"
                                     alt=""
                                   />
-                                </div>
+                                }
+                                loadingOverlay={
+                                  <div className="loading-overlay">
+                                    <div className="loading-spinner" />
+                                  </div>
+                                }
+                                preload="metadata"
+                                className="w-100"
+                              />
 
-                                <div className="colorWhite textLink fs18 fw600">
-                                  View Project
-                                </div>
+                              <div className="position-relative">
+
                               </div>
-                            </Link>
+
+                              <div className="viewLink position-absolute content-details fadeIn-bottom">
+                                <Link to={e?.acf?.external_link} target="_blank" className="">
+                                  <div className="circleLink text-center">
+                                    <div className="crcWrapper">
+                                      <img
+                                        src={require("../../assets/img/home/arrowBlack.png")}
+                                        className="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+
+                                    <div className="colorWhite textLink fs18 fw600">
+                                      View Project
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
+                            <div className="mt10">
+                              <h3
+                                className={`${activeTheme ? "colorBlack" : "colorWhite"
+                                  }  fs40 fw500 mb0 text-uppercase`}
+                              >
+                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
+                                  {
+                                    e?.title?.rendered
+                                  }
+                                </Fade>
+                              </h3>
+                              <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
+                                {e?.acf?.address}
+                              </Fade></p>
+                            </div>
                           </div>
                         </div>
-                        <div className="mt10">
-                          <h3
-                            className={`${activeTheme ? "colorBlack" : "colorWhite"
-                              }  fs40 fw500 mb0 text-uppercase`}
-                          >
-                            <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}> 
-                             {
-                              e?.title?.rendered
-                            }
-                            </Fade>
-                          </h3>
-                          <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
-                            {e?.acf?.address}
-                            </Fade></p>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Reveal>
+                :
+                <Reveal keyframes={customAnimation} delay={100}>
+
+                  <Row className="justify-content-end mb60 projectMainList">
+                    <Col lg={7}>
+                      <Link to={e?.acf?.external_link} target="_blank">
+                        <div className=" d-flex justify-content-end">
+                          <div className="w-100">
+                            <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
+                              <HoverVideoPlayer
+                                videoSrc={e?.acf?.video?.url}
+                                pausedOverlay={
+                                  <img
+                                    src={e?.x_featured_media_large}
+                                    className="img-fluid w-100 h-100"
+                                    alt=""
+                                  />
+                                }
+                                loadingOverlay={""}
+                                preload="metadata"
+                                className="videoHandle w-100"
+                              />
+                              <div className="position-relative">
+                              </div>
+
+                              <div className="viewLink  position-absolute content-details fadeIn-bottom">
+                                <Link to={e?.acf?.external_link} target="_blank" className="">
+                                  <div className="circleLink text-center">
+                                    <div className="crcWrapper">
+                                      <img
+                                        src={require("../../assets/img/home/arrowBlack.png")}
+                                        className="img-fluid"
+                                        alt=""
+                                      />
+                                    </div>
+
+                                    <div className="colorWhite textLink fs18 fw600">
+                                      View Project
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
+                            <div className="text-end mt10">
+                              <h3
+                                className={`${activeTheme ? "colorBlack" : "colorWhite"
+                                  }  fs40 fw500 mb0 text-uppercase`}
+                              >
+                                <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.title?.rendered}</Fade>
+                              </h3>
+                              <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.acf?.address}</Fade></p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </Link>
-                </Col>
-              </Row>
-            </Reveal>
-                : 
-<Reveal keyframes={customAnimation} delay={100}>
-
-<Row className="justify-content-end mb60 projectMainList">
-  <Col lg={7}>
-    <Link to={e?.acf?.external_link} target="_blank">
-      <div className=" d-flex justify-content-end">
-        <div className="w-100">
-          <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-            <HoverVideoPlayer
-              videoSrc={e?.acf?.video?.link}
-              pausedOverlay={
-                <img
-                  src={e?.x_featured_media_large}
-                  className="img-fluid w-100 h-100"
-                  alt=""
-                />
-              }
-              loadingOverlay={""}
-              preload="metadata"
-              className="videoHandle w-100"
-            />
-            <div className="position-relative">
-            </div>
-
-            <div className="viewLink  position-absolute content-details fadeIn-bottom">
-              <Link to={e?.acf?.external_link} target="_blank" className="">
-                <div className="circleLink text-center">
-                  <div className="crcWrapper">
-                    <img
-                      src={require("../../assets/img/home/arrowBlack.png")}
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-
-                  <div className="colorWhite textLink fs18 fw600">
-                    View Project
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="text-end mt10">
-            <h3
-              className={`${activeTheme ? "colorBlack" : "colorWhite"
-                }  fs40 fw500 mb0 text-uppercase`}
-            >
-              <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.title?.rendered}</Fade>
-            </h3>
-            <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.acf?.address}</Fade></p>
-          </div>
-        </div>
-      </div>
-    </Link>
-  </Col>
-</Row>
-</Reveal>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Reveal>
             ))
           }
-          <Reveal keyframes={customAnimation} delay={100}>
-
-            <Row className="justify-content-end mb60 projectMainList">
-              <Col lg={7}>
-                <Link to="https://gkrajcasagrande.in/" target="_blank">
-                  <div className=" d-flex justify-content-end">
-                    <div>
-                      <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/casa.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/pr1.png")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={""}
-                          preload="metadata"
-                          className="videoHandle"
-                        />
-                        <div className="position-relative">
-                        </div>
-
-                        <div className="viewLink  position-absolute content-details fadeIn-bottom">
-                          <Link to="https://gkrajcasagrande.in/" target="_blank" className="">
-                            <div className="circleLink text-center">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="text-end mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Casa Grande</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
-
-          <Reveal keyframes={customAnimation} delay={100}>
-            <Row className="projectMainList mb60">
-              <Col lg={7}>
-                <Link to="https://gkzenith.in/" target="_blank">
-                  <div className=" d-flex">
-                    <div>
-                      <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/zenith.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/pr2.jpg")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                          preload="metadata"
-                        />
-
-                        <div className="position-relative">
-
-                        </div>
-
-                        <div className="viewLink position-absolute content-details fadeIn-bottom">
-                          <Link to="https://gkzenith.in/" target="_blank" className="">
-                            <div className="circleLink text-center">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Zenith</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
-
-
-          <Reveal keyframes={customAnimation} delay={100}>
-            <Row className="justify-content-end mb60 projectMainList">
-              <Col lg={7}>
-                <Link to="https://gkalamvilla.in/" target="_blank">
-                  <div className=" d-flex justify-content-end">
-                    <div>
-                      <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/alam-villa.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/pr3.jpg")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                          preload="metadata"
-                        />
-
-                        <div className="position-relative">
-                        </div>
-
-                        <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="https://gkalamvilla.in/" target="_blank" className="">
-                            <div className="circleLink text-center ">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="text-end mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Alam Villas</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
-
-
-          <Reveal keyframes={customAnimation} delay={100}>
-            <Row className="projectMainList mb60">
-              <Col lg={7}>
-                <Link to="https://gkfestoon.in/" target="_blank">
-                  <div className=" d-flex">
-                    <div>
-                      <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/festton.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/festoon.webp")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                          preload="metadata"
-                        />
-
-                        <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="https://gkfestoon.in/" target="_blank" className="">
-                            <div className="circleLink text-center">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK's Festoon</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL ROAD, SANIKPURI</Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
-
-
-          <Reveal keyframes={customAnimation} delay={100}>
-            <Row className="justify-content-end mb60 projectMainList">
-              <Col lg={7}>
-                <Link to="https://gktriad.in/" target="_blank">
-                  <div className=" d-flex justify-content-end">
-                    <div>
-                      <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/triad.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/triad.webp")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                          preload="metadata"
-                        />
-
-                        <div className="position-relative">
-                        </div>
-
-                        <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="https://gktriad.in/" target="_blank" className="">
-                            <div className="circleLink text-center ">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="text-end mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK'S TRIAD</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>KAPRA, SECUNDERABAD</Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
-
-
-          <Reveal keyframes={customAnimation} delay={100}>
-            <Row className="projectMainList mb60">
-              <Col lg={7}>
-                <Link to="https://gkpearlenclave.in/" target="_blank" >
-                  <div className=" d-flex">
-                    <div>
-                      <div className="imgProject2 position-relative pt20 pb20 pl20 d-flex align-items-center justify-content-center content_wrp">
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/pearl-enclave.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/pear.webp")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                          preload="metadata"
-                        />
-
-                        <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="https://gkpearlenclave.in/" target="_blank" className="">
-                            <div className="circleLink text-center">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK'S PEARL ENCLAVE</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"> <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>KAPRA, SECUNDERABAD</Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
-
-
-          <Reveal keyframes={customAnimation} delay={100}>
-            <Row className="justify-content-end mb60 projectMainList">
-              <Col lg={7}>
-                <Link to="https://gksuryaarcade.in/" target="_blank" >
-                  <div className=" d-flex justify-content-end">
-                    <div>
-                      <div className="imgProject position-relative pt20 pb20 pr20 d-flex align-items-center justify-content-center content_wrp">
-                        <HoverVideoPlayer
-                          videoSrc={require("../../assets/video/surya.mp4")}
-                          pausedOverlay={
-                            <img
-                              src={require("../../assets/img/project/surya.webp")}
-                              className="img-fluid w-100 h-100"
-                              alt=""
-                            />
-                          }
-                          loadingOverlay={
-                            <div className="loading-overlay">
-                              <div className="loading-spinner" />
-                            </div>
-                          }
-                          preload="metadata"
-                        />
-
-                        <div className="position-relative">
-                        </div>
-
-                        <div className="viewLink position-absolute  content-details fadeIn-bottom">
-                          <Link to="https://gksuryaarcade.in/" target="_blank" className="">
-                            <div className="circleLink text-center ">
-                              <div className="crcWrapper">
-                                <img
-                                  src={require("../../assets/img/home/arrowBlack.png")}
-                                  className="img-fluid"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div className="colorWhite textLink fs18 fw600">
-                                View Project
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="text-end mt10">
-                        <h3
-                          className={`${activeTheme ? "colorBlack" : "colorWhite"
-                            }  fs40 fw500 mb0 text-uppercase`}
-                        >
-                          <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>GK'S SURYA ARCADE</Fade>
-                        </h3>
-                        <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>YAPRAL, SECUNDERABAD </Fade></p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
-          </Reveal>
+         
 
         </Container>
       </section>
