@@ -8,11 +8,14 @@ import ScrollTrigger from "react-scroll-trigger";
 import Reveal, { Fade, Flip } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Player } from "video-react";
+import axios from "axios";
+import { TEAM_URL } from "../../helpers/apiurls";
 
 const AboutUs = () => {
   const [vision, setvision] = useState(false);
   const [vision1, setvision1] = useState(false);
-
+  const [loader, setloader] = useState(true);
+  const [data, setdata] = useState([]);
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
@@ -55,11 +58,33 @@ const AboutUs = () => {
 	}
 `;
 
+  useEffect(() => {
+    getAbout()
+  }, [])
+  const getAbout = async () => {
+    const options = {
+      method: "GET",
+      headers: {
+        Accept: "application/json"
+      },
+    };
+
+    await axios.get(TEAM_URL, options).then((res) => {
+      if (res && res.status === 200) {
+        setdata(res?.data);
+        setloader(false);
+      }
+    });
+  };
+
   return (
     <>
       <Helmet>
         <title>About Us - GK Builders & Developers</title>
       </Helmet>
+      {
+        console.log("aa", data)
+      }
       <section className="heroSection aboutus position-relative d-flex align-items-center">
         <h1 className="text-white fs70 subfont text-uppercase reveal-text1 position-relative leftBorder pl20">
           <Reveal keyframes={customAnimation} delay={400} className="aniCl">
@@ -70,27 +95,24 @@ const AboutUs = () => {
       </section>
 
       <div
-        className={`${
-          activeTheme ? "bgWhite" : "bgBlueGradient"
-        } pt80 pb80 mobPb30`}
+        className={`${activeTheme ? "bgWhite" : "bgBlueGradient"
+          } pt80 pb80 mobPb30`}
       >
         <div className="container-xl">
           <Row className="align-items-center gy-4">
             <Col lg={7} md={7}>
               <Fade bottom cascade>
                 <h3
-                  className={`${
-                    activeTheme ? "colorBlack" : "brownGradient"
-                  } fs50 mobFs30`}
+                  className={`${activeTheme ? "colorBlack" : "brownGradient"
+                    } fs50 mobFs30`}
                 >
                   Our legacy <br></br> dates back to
                 </h3>
               </Fade>
               <Fade left cascade>
                 <h3
-                  className={`${
-                    activeTheme ? "colorBlack" : "brownGradient"
-                  } fs140`}
+                  className={`${activeTheme ? "colorBlack" : "brownGradient"
+                    } fs140`}
                 >
                   {" "}
                   <br style={{ display: "none" }} />
@@ -102,9 +124,8 @@ const AboutUs = () => {
               </Fade>
               <Fade bottom delay={100}>
                 <p
-                  className={`${
-                    activeTheme ? "colorBlack" : "colorWhite"
-                  } fs15`}
+                  className={`${activeTheme ? "colorBlack" : "colorWhite"
+                    } fs15`}
                 >
                   When it comes to real estate developers in Hyderabad providing
                   quality, transparency, and professionalism, the name that
@@ -116,9 +137,8 @@ const AboutUs = () => {
               </Fade>
               <Fade bottom delay={100}>
                 <p
-                  className={`${
-                    activeTheme ? "colorBlack" : "colorWhite"
-                  } fs15`}
+                  className={`${activeTheme ? "colorBlack" : "colorWhite"
+                    } fs15`}
                 >
                   Over a period of three and half decades GK BUILDERS AND
                   DEVELOPERS has carved a distinct niche for itself through
@@ -130,9 +150,8 @@ const AboutUs = () => {
               </Fade>
               <Fade bottom delay={100}>
                 <p
-                  className={`${
-                    activeTheme ? "colorBlack" : "colorWhite"
-                  } fs15`}
+                  className={`${activeTheme ? "colorBlack" : "colorWhite"
+                    } fs15`}
                 >
                   Having developed about 3 million sq ft., GK BUILDERS AND
                   DEVELOPERS is now focusing on developing large housing schemes
@@ -146,9 +165,8 @@ const AboutUs = () => {
               </Fade>
               <Fade bottom delay={100}>
                 <p
-                  className={`${
-                    activeTheme ? "colorBlack" : "colorWhite"
-                  } fs15`}
+                  className={`${activeTheme ? "colorBlack" : "colorWhite"
+                    } fs15`}
                 >
                   Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK
                   BUILDERS AND DEVELOPERS groomed many young people to become
@@ -211,32 +229,30 @@ const AboutUs = () => {
                   <ScrollTrigger onEnter={() => setvision(true)}>
                     {vision && (
                       <div
-                        className={`position-relative ${
-                          activeTheme ? "bordernew" : "borderBlack"
-                        } `}
+                        className={`position-relative ${activeTheme ? "bordernew" : "borderBlack"
+                          } `}
                       >
-                            <Reveal
-                            keyframes={customAnimation}
-                            delay={400}
-                            className="aniCl"
-                          > 
+                        <Reveal
+                          keyframes={customAnimation}
+                          delay={400}
+                          className="aniCl"
+                        >
 
                           Our vision is to enhance the quality of living by
                           offering the best living spaces in the twin cities of
                           Hyderabad and Secunderabad. We want to give our
                           customers an experience of best branded materials and
                           create a comfortable.
-                          </Reveal>
+                        </Reveal>
                         <h3 className="fs45 subfont position-relative">
-                    
+
                           Our Vision
                         </h3>
                         <p
-                          className={`position-relative ${
-                            activeTheme ? "colorLight" : "colorWhite"
-                          } fs16 w-85 mb-0`}
+                          className={`position-relative ${activeTheme ? "colorLight" : "colorWhite"
+                            } fs16 w-85 mb-0`}
                         >
-                
+
                           Our vision is to enhance the quality of living by
                           offering the best living spaces in the twin cities of
                           Hyderabad and Secunderabad. We want to give our
@@ -254,9 +270,8 @@ const AboutUs = () => {
 
         <div className="position-relative mb60">
           <section
-            className={`${
-              activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"
-            }  pb40 pt40 newone`}
+            className={`${activeTheme ? "bgfiftymission" : "bgfiftymissionBrown"
+              }  pb40 pt40 newone`}
           >
             <div className="container-xl">
               <Row className="align-items-center gy-4">
@@ -264,32 +279,30 @@ const AboutUs = () => {
                   <ScrollTrigger onEnter={() => setvision1(true)}>
                     {vision1 && (
                       <div
-                        className={`position-relative ${
-                          activeTheme ? "bordernew" : "borderBlack"
-                        } `}
+                        className={`position-relative ${activeTheme ? "bordernew" : "borderBlack"
+                          } `}
                       >
-                     <Reveal
-                            keyframes={customAnimation}
-                            delay={400}
-                            className="aniCl"
-                          > 
+                        <Reveal
+                          keyframes={customAnimation}
+                          delay={400}
+                          className="aniCl"
+                        >
 
                           Our vision is to enhance the quality of living by
                           offering the best living spaces in the twin cities of
                           Hyderabad and Secunderabad. We want to give our
                           customers an experience of best branded materials and
                           create a comfortable.
-                          </Reveal>
+                        </Reveal>
                         <h3 className="fs45 subfont position-relative">
-                   
+
                           Our Mission{" "}
                         </h3>
                         <p
-                          className={` position-relative ${
-                            activeTheme ? "colorLight" : "colorWhite"
-                          } fs16 w-85`}
+                          className={` position-relative ${activeTheme ? "colorLight" : "colorWhite"
+                            } fs16 w-85`}
                         >
-              
+
                           Our mission is to grow as a brand and become one of
                           the leading developers in the industry. We aim to
                           develop trust among our clientele and potential
@@ -309,7 +322,7 @@ const AboutUs = () => {
               <Row className="align-items-center gy-4 ">
                 <Col lg={6} md={12} sm={12} className="secondaboutus">
                   <div className="visionvidio">
-                  <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                    <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
                       />
@@ -335,18 +348,16 @@ const AboutUs = () => {
       </div>
 
       <div
-        className={`${
-          activeTheme ? "bgourteam" : "bgBlueGradient"
-        } pt80 pb80 mobPb30`}
+        className={`${activeTheme ? "bgourteam" : "bgBlueGradient"
+          } pt80 pb80 mobPb30`}
       >
         <div className="container-xl">
           <Row className="align-items-center gy-4  ">
             <Col lg={12} md={12} className="text-center">
               <Fade bottom cascade>
                 <h3
-                  className={`${
-                    activeTheme ? "fontlight" : "brownGradient"
-                  } fs50 mobFs30  text-uppercase subfont `}
+                  className={`${activeTheme ? "fontlight" : "brownGradient"
+                    } fs50 mobFs30  text-uppercase subfont `}
                 >
                   Our
                   <br className="d-none" /> Pillars{" "}
@@ -354,9 +365,8 @@ const AboutUs = () => {
               </Fade>
               <Fade bottom cascade>
                 <h3
-                  className={`${
-                    activeTheme ? "fontlight" : "brownGradient"
-                  } fs28 fs16 subfont fontlight`}
+                  className={`${activeTheme ? "fontlight" : "brownGradient"
+                    } fs28 fs16 subfont fontlight`}
                 >
                   GK Group’s <br className="d-none" />
                   Foundation
@@ -364,68 +374,50 @@ const AboutUs = () => {
               </Fade>
               <div className="devider"></div>
             </Col>
-
-            <Col lg={5} md={5} className="text-center m-auto">
-              <Fade bottom cascade>
-                <img
-                  src={require("../../assets/img/aboutus/teamone.png")}
-                  className="img-fluid w-75"
-                  alt=""
-                />
-              </Fade>
-              <div className={` text-start mt20 border-start pl30 `}>
-                <Fade bottom>
-                  <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
-                    Our respected founder Late Sri K Ramakrishnaiah was a
-                    retired Subedar in the Indian Army with a prolific record of
-                    service spanning 28 years. A visionary and philanthropist,
-                    he donated two acres of prime land to a trust to develop
-                    educational institutions. He also gifted 1000 square yards
-                    of land abutting the main road to a church and provided a
-                    place for Brahmakumaris to conduct their programs.
-                  </p>
-                </Fade>
-
-                <b className="colorWhite">
-                  <Fade bottom cascade damping={0.5e-1} delay={100}>
-                    Late SRI. K Ramakrishnaian
+            {
+              loader && <Row className="gy-3">
+                {
+                  Array(2).fill().map((e, i) => {
+                    <Col lg={6} md={6} key={i}>
+                      <div className="skeleton" style={{ height: "400px" }}></div>
+                    </Col>
+                  })
+                }
+              </Row>
+            }
+            {
+              data.length > 0 && data?.map((e, i) => (
+                <Col key={i} lg={5} md={5} className="text-center m-auto mb30">
+                  <Fade bottom cascade>
+                    <img
+                      src={e?.x_featured_media_large}
+                      className="img-fluid w-75"
+                      alt=""
+                    />
                   </Fade>
-                  <br></br>
-                  Founder
-                </b>
-              </div>
-            </Col>
-            <Col lg={5} md={5} className="text-center m-auto">
-              <Fade bottom cascade>
-                <img
-                  src={require("../../assets/img/aboutus/teamtwo.png")}
-                  className="img-fluid w-75"
-                  alt=""
-                />
-              </Fade>
-              <div className="text-start mt20 border-start pl30 text-white">
-                <Fade bottom>
-                  <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
-                    A civil engineer from Osmania University Hyderabad, Mr. Rao
-                    has more than three decades of experience and involvement in
-                    construction of residential complexes. A leader by example,
-                    he takes active interest in resolving various issues
-                    concerning the development of projects. Mr. Rao also
-                    participates in deliberations with the government and other
-                    agencies for the welfare of builders’ community.
-                  </p>
-                </Fade>
-                <Fade left>
-                  <b className="colorWhite">
-                    <Fade bottom cascade damping={0.5e-1} delay={100}>
-                      Mr.K. Hanumantha Rao
+                  <div className={` text-start mt20 border-start pl30 `}>
+                    <Fade bottom>
+                      <p className={`${activeTheme ? "text-white" : "paraGrey"}`}>
+                        <div dangerouslySetInnerHTML={{ __html: e?.content?.rendered }} />
+                      </p>
                     </Fade>
-                    <br></br>
-                    Managing Partner
-                  </b>
-                </Fade>
-              </div>
-            </Col>
+
+                    <b className="colorWhite">
+                      <Fade bottom cascade damping={0.5e-1} delay={100}>
+                        {
+                          e?.title?.rendered
+                        }
+                      </Fade>
+                      <br></br>
+                      {
+                        e?.acf?.designation
+                      }
+                    </b>
+                  </div>
+                </Col>
+              ))
+            }
+
           </Row>
         </div>
       </div>
