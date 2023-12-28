@@ -13,7 +13,7 @@ import { Pagination, Navigation, Autoplay } from 'swiper';
 import { Col, Row } from "reactstrap";
 import { keyframes } from "@emotion/react";
 import Fade from 'react-reveal/Fade';
-
+import HeadShake from 'react-reveal/HeadShake';
 
 let data = [
   {
@@ -90,7 +90,7 @@ const Vert2 = () => {
           </h2>
         </div>
       </div>
-      <div className=" slideronenew">
+      <div className=" slideronenew position-relative">
         <Swiper
           slidesPerView={"1"}
           centeredSlides={true}
@@ -145,7 +145,9 @@ const Vert2 = () => {
 
 
         </Swiper>
-
+              <div className="nextText">
+              <span className="shake">Click to Next</span>
+              </div>
 
       </div>
     </div>

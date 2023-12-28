@@ -153,3 +153,10 @@
     margin-top: 50px;
     margin-bottom: 100px;
   }
+  /* .sliderAttender{
+    min-height: 700px;
+    overflow: hidden;
+  } */
+  .sliderAttender{
+    padding: 50px;
+  }
