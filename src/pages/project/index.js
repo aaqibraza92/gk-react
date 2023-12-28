@@ -81,7 +81,6 @@ const Project = () => {
               i % 2 ?
                 <Reveal keyframes={customAnimation} delay={100}>
                   <Row className="projectMainList mb60">
-                    {e?.acf?.video?.link}
                     <Col lg={7}>
                       <Link to={e?.acf?.external_link} target="_blank">
                         <div className=" d-flex">
