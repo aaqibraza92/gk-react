@@ -83,11 +83,11 @@ const Vert2 = () => {
               alt=""
             />
           </Zoom>
+          <Fade left cascade damping={1e-1} delay={100}>
           <h2 className="colorWhite mb50  fs50 fontlight subfont text-center">
-            <Fade left cascade damping={1e-1} delay={100}>
               why choose us?
-            </Fade>
           </h2>
+          </Fade>
         </div>
       </div>
       <div className=" slideronenew position-relative">

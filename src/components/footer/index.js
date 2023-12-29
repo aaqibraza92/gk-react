@@ -92,7 +92,7 @@ const Footer = () => {
                 <Col lg={4} md={6} xl={4}>
                 <Fade bottom >
                 <div className="radius30 fRounder pl30 pr30 pt60 pb60">
-                    <ul className="pl0 noUl fNav row">
+                    <ul className="pl0 noUl fNav row cssfont">
                       <li className="col-md-6 col-6">
                         <Link
                           to="/about-us"

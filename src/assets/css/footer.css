@@ -25,6 +25,9 @@
 footer ul li a:hover{
   color: var(--colorBrown) !important;
 }
+.cssfont a {
+  text-transform: capitalize;
+}
 .themeInput {
   width: 100%;
   height: 45px;
