@@ -27,7 +27,7 @@ const WhoWeAre = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setsl((prevCount) => (prevCount === 3 ? 0 : prevCount + 1));
-    }, 6000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

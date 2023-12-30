@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -67,8 +67,18 @@ const customAnimation = keyframes`
  }
 `;
 
-const Vert2 = () => {
 
+
+const Vert2 = () => {
+  const [sl, setSl] = useState("");
+  const slideHandle = (e) => {
+    setSl(e.activeIndex);
+  }
+
+  useMemo(() => {
+    
+    console.log("sl",sl)
+  }, [sl]);
 
   return (
     <div className="pt100 pb100 " style={{
@@ -103,6 +113,7 @@ const Vert2 = () => {
           pagination={{
             clickable: true,
           }}
+          onSlideChange={(e) => slideHandle(e)}
 
           modules={[Pagination, Autoplay, Navigation]}
           className="mySwiper"
@@ -112,30 +123,39 @@ const Vert2 = () => {
               <div className="cornerHandle box">
                 <div className="whyChsWrp">
                   <Row className="align-items-center">
-                    <Col lg={6} md={6}>
-                      <Fade bottom  delay={100}>
-                        <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
+                  {
+                      (sl===i+1 || i===3) && <>
+
+                      <Col lg={6} md={6}>
+                 
                     
-                        <div dangerouslySetInnerHTML={{ __html: e.title }} />   
-                        </h3>
-                      </Fade>
+                 <Fade bottom  delay={100}>
+                   <h3 className="brownGradient subfont  fs30 mb25 mobFs21">
+               
+                   <div dangerouslySetInnerHTML={{ __html: e.title }} />   
+                   </h3>
+                 </Fade>
 
-                      <Fade bottom>
-                        <p className="fs16">{e.para}</p>
-                      </Fade>
+                 <Fade bottom>
+                   <p className="fs16">{e.para}</p>
+                 </Fade>
 
 
-                    </Col>
-                    <Col lg={6} md={6}>
-                      <Fade right>
-                        <img
-                          src={e.img}
-                          alt="building"
-                          className="img-fluid"
-                        />
-                      </Fade>
+               </Col>
+               <Col lg={6} md={6}>
+                 <Fade right>
+                   <img
+                     src={e.img}
+                     alt="building"
+                     className="img-fluid"
+                   />
+                 </Fade>
 
-                    </Col>
+               </Col>
+                      </>
+
+                    }
+              
                   </Row>
                 </div>
               </div>

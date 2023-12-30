@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -9,7 +9,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import { Fade,Zoom } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
+import axios from "axios";
+import { TESTIMONIAL_URL } from "../../helpers/apiurls";
 
 let data = [
   {
@@ -34,45 +36,68 @@ let data = [
 
 const Testimonial = () => {
   const activeTheme = useSelector((state) => {
-    return (
-      state && state?.persistedReducer?.theme?.dayTheme
-    );
+    return state && state?.persistedReducer?.theme?.dayTheme;
   });
+  const [loader, setloader] = useState(true);
+  const [data1, setdata1] = useState([]);
+
+  useEffect(() => {
+    getAbout();
+  }, []);
+  const getAbout = async () => {
+    const options = {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+    };
+
+    await axios.get(TESTIMONIAL_URL, options).then((res) => {
+      if (res && res.status === 200) {
+        setdata1(res?.data);
+        setloader(false);
+      }
+    });
+  };
 
   return (
     <section
       className="testimonial d-flex h-100 pt100 pb100"
       style={{
-        backgroundImage: `url(${activeTheme ? require("../../assets/img/home/what_say.jpg") : require("../../assets/img/home/test_night.jpg")})`,
+        backgroundImage: `url(${
+          activeTheme
+            ? require("../../assets/img/home/what_say.jpg")
+            : require("../../assets/img/home/test_night.jpg")
+        })`,
       }}
     >
       <div className="wrapper_what_people w-100">
         <Container>
           <Row>
             <Col lg={2} md={2} xl={2}>
-
-              <div >
-              <Zoom left>
-              <img
-                  src={require("../../assets/img/home/three_dot.png")}
-                  className="img-fluid"
-                  alt=""
-                />
+              <div>
+                <Zoom left>
+                  <img
+                    src={require("../../assets/img/home/three_dot.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
                 </Zoom>
-              
-          
+
                 <h2 className="colorWhite fs50 fontlight subfont mt10">
-                <Fade left cascade damping={1e-1} delay={100}>What </Fade> <br />
-                <Fade left cascade damping={1e-1} delay={100}>People</Fade><br />
-                <Fade left cascade damping={1e-1} delay={100}>Say</Fade>
-
-                  </h2>
-             
-                 
+                  <Fade left cascade damping={1e-1} delay={100}>
+                    What{" "}
+                  </Fade>{" "}
+                  <br />
+                  <Fade left cascade damping={1e-1} delay={100}>
+                    People
+                  </Fade>
+                  <br />
+                  <Fade left cascade damping={1e-1} delay={100}>
+                    Say
+                  </Fade>
+                </h2>
               </div>
-
-
-
             </Col>
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0">
@@ -86,43 +111,44 @@ const Testimonial = () => {
                   pagination={{
                     clickable: true,
                   }}
-                
                   className="mySwiper dotscss"
                 >
                   <div className="bloggerList">
-                    {data.map((e, i) => (
-                      <SwiperSlide key={i}>
-                           <div className="test_wrapper position-relative d-flex align-items-end">
-                          <div className="position-relative bg-home">
-                          
-                            <div className="dataTesti">
-                              <img
-                                src={require("../../assets/img/home/heart_testi.png")}
-                                className="img-fluid  heartAuthor"
-                                alt=""
-                              />
-                              <div className="testimonials">
-                                <p className="fs16 fs12 colorWhite mb30">{e?.para}</p>
+                    {data1.length > 0 &&
+                      data1?.map((e, i) => (
+                        <SwiperSlide key={i}>
+                          <div className="test_wrapper position-relative d-flex align-items-end">
+                            <div className="position-relative bg-home">
+                              <div className="dataTesti">
+                                <img
+                                  src={e?.x_featured_media_large}
+                                  className="img-fluid  heartAuthor"
+                                  alt=""
+                                />
+                                <div className="testimonials">
+                                  <p className="fs16 fs12 colorWhite mb30">
+                                  <div dangerouslySetInnerHTML={{ __html: e?.content?.rendered }} />
+                                  </p>
 
-                                <Row className="align-items-center">
-                                  <Col lg={4} md={2}>
-                                    
-                                  </Col>
-                                  <Col lg={8} md={10}>
-                                    <div className="fs18 fw600 colorWhite text-uppercase mb15">
-                                      - {e?.author}
-                                    </div>
+                                  <Row className="align-items-center">
+                                    <Col lg={4} md={2}></Col>
+                                    <Col lg={8} md={10}>
+                                      <div className="fs18 fw600 colorWhite text-uppercase mb15">
+                                        - {e?.title?.rendered}
+                                      </div>
 
-                                    <p className="colorWhite fs16 fs12 ">{e?.position}</p>
-                                  </Col>
-                                </Row>
+                                      <p className="colorWhite fs16 fs12 ">
+                                        {e?.acf?.position}
+                                      </p>
+                                    </Col>
+                                  </Row>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                     </SwiperSlide>
-                     ))}
-                   </div>
+                        </SwiperSlide>
+                      ))}
+                  </div>
                 </Swiper>
               </div>
             </Col>

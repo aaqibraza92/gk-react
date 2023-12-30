@@ -67,19 +67,9 @@ const WhyChooseUs = () => {
     }
   };
 
-  useMemo(() => {
+  useEffect(() => {
     
-    // if (viewPort && sl) {
-    //   document.body.style.overflow = "auto";
-    // }else if(!viewPort){
-    //   document.body.style.overflow = "auto";
-    // } else {
-    //   document.body.style.overflow = "hidden";
-    // }
-    // console.log("sl",sl);
-    // if(sl==3){
-    //   document.getElementById("makeClick").click();
-    // }
+    console.log("sl",sl)
   }, [sl]);
 
   const activeTheme = useSelector((state) => {
