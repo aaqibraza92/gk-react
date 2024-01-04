@@ -123,9 +123,6 @@ const Vert2 = () => {
               <div className="cornerHandle box">
                 <div className="whyChsWrp">
                   <Row className="align-items-center">
-                  {
-                      (sl===i+1 || i===3) && <>
-
                       <Col lg={6} md={6}>
                  
                     
@@ -152,9 +149,6 @@ const Vert2 = () => {
                  </Fade>
 
                </Col>
-                      </>
-
-                    }
               
                   </Row>
                 </div>
