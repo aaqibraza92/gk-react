@@ -341,8 +341,8 @@ background: linear-gradient(to right,  rgba(234,220,202,1) 0%,rgba(179,156,122,1
   padding: 15px 20px;
 }
 .heartAuthor {
-  top: 49px;
-  right: 0px;
+  top: 72px;
+  right: 42px;
   width: 150px;
   position: absolute;
 }
@@ -514,11 +514,23 @@ li.slide.selected .whyChsWrp {
   }
 }
 
+.dataTesti > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   body .whyChsWrp {
     padding: 25px;
     margin: 0 auto;
    
+  }
+  .dataTesti > img {
+    width: 60px;
+    height: 60px;
   }
   body .slideronenew {
     width: 92%;
@@ -1474,13 +1486,7 @@ select.form-control {
 		transform: translateX(0);
 	}
 }
-.dataTesti > img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
+
 .thankyouPage::after {
   content: "";
   position: absolute;

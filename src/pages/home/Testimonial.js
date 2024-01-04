@@ -86,8 +86,8 @@ const Testimonial = () => {
 
                 <h2 className="colorWhite fs50 fontlight subfont mt10">
                   <Fade left cascade damping={1e-1} delay={100}>
-                    What{" "}
-                  </Fade>{" "}
+                    What
+                  </Fade>
                   <br />
                   <Fade left cascade damping={1e-1} delay={100}>
                     People

@@ -68,13 +68,15 @@ const ContactUs = (props) => {
             </div>
 
             <Row className="justify-content-center">
-              <Col lg={9}>
+              <Col lg={10} className="uifrom"> 
                 <script src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"
                   crossorigin="anonymous" async></script>
              
                 <Form className={activeTheme ? "dayForm" : "nightForm"}>
 
                 </Form>
+                <p className="m-auto w-98 text-white">I authorize GK Builders and Developers and its representatives to Call, SMS, Email or WhatsApp me about its product and offers. The consent overrides any registration for DNC/NDNC.
+</p>
               </Col>
             </Row>
 
