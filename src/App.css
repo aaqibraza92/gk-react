@@ -1506,3 +1506,9 @@ select.form-control {
 .thankyouPage {
   min-height: 100vh;
 }
+
+@media only screen and (max-width: 768px) {
+  .customhome video {
+    height: auto;
+  }
+}
