@@ -106,5 +106,16 @@
       top: -18px;
       z-index: -1;
     }
-    
+    .uifrom {
+      background-color: var(--colorBlue);
+      padding: 16px;
+      border-radius: 8px;
+    }
+    .selldof_row {
+      width: 100%;
+      display: inline-flex;
+    }
+    .selldof_row:nth-child(7) {
+      width: 100%;
+    }
   }

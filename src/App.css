@@ -528,6 +528,9 @@ li.slide.selected .whyChsWrp {
     margin: 0 auto;
    
   }
+  .customhome video {
+    height: auto;
+  }
   .dataTesti > img {
     width: 60px;
     height: 60px;
