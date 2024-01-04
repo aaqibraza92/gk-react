@@ -308,7 +308,7 @@
   }
   header.transition {
     position: sticky;
-    top: 10px;
+    top: 10px !important;
     width: 100%;
     background: #fff;
     z-index: 9999;

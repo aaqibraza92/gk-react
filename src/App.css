@@ -521,7 +521,9 @@ li.slide.selected .whyChsWrp {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-
+.thankyouPage {
+  background-position: center;
+}
 @media only screen and (max-width: 768px) {
   body .whyChsWrp {
     padding: 25px;
