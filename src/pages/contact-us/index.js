@@ -7,30 +7,40 @@ import LookingForJob from "./LookingForJob";
 import LookingForTalent from "./LookingForTalent";
 import Select from "react-select";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const ContactUs = (props) => {
+
+  const location= useLocation();
+
+  const [loc,setLoc]=useState(null);
+
   const activeTheme = useSelector((state) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
 
-  useEffect(() => {
-    // Create a script element
-    const script = document.createElement('script');
+  // useEffect(() => {
+  //   if(location.pathname==="/contact-us"){
+  //  const scriptMain = document.createElement('script');
+  //  scriptMain.src = 'https://forms.cdn.sell.do/t/63e46f684443ae6f461f3ca5.js';
+  //  const script = document.createElement('script');
 
-    // Set the script attributes (e.g., type, src, async, etc.)
-    script.crossorigin = 'anonymous';
-    script.src = 'https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js';
-    script.async = true;
-    script.setAttribute('data-form-id', '63e470054443ae6f791f2d04');
+  //  script.crossorigin = 'anonymous';
+  //  script.src = 'https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js';
+  //  script.async = true;
+  //  script.setAttribute('data-form-id', '63e470054443ae6f791f2d04');
 
-    // Append the script to the body
-    document.body.appendChild(script);
+  //  document.body.appendChild(script);
+  //  document.body.appendChild(scriptMain);
 
-    // Clean up the script when the component unmounts
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //  return () => {
+  //    document.body.removeChild(script);
+  //    document.body.removeChild(scriptMain);
+  //  };
+  //   }
+
+  //   setLoc(location.pathname)
+ 
+  // }, [location]);
 
   const [projectType, setprojectType] = useState([])
 
@@ -40,6 +50,10 @@ const ContactUs = (props) => {
     <>
       <Helmet>
         <title>Contact Us - GK Builders & Developers</title>
+
+<script src='//forms.cdn.sell.do/t/63e46f684443ae6f461f3ca5.js'></script>
+
+<script src='//forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js' data-form-id='63e470054443ae6f791f2d04'></script>
 
       </Helmet>
 
@@ -57,6 +71,7 @@ const ContactUs = (props) => {
               <Col lg={9}>
                 <script src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"
                   crossorigin="anonymous" async></script>
+             
                 <Form className={activeTheme ? "dayForm" : "nightForm"}>
 
                 </Form>
