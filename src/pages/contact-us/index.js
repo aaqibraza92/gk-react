@@ -13,6 +13,10 @@ const ContactUs = (props) => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
 
+  const scriptTagWithAttributes = `
+  <script src="https://forms.cdn.sell.do/t/forms/63e46f684443ae6f461f3ca5/63e470054443ae6f791f2d04.js" data-form-id="63e470054443ae6f791f2d04"
+  crossorigin="anonymous" async></script>
+`;
 
   const [projectType, setprojectType] = useState([])
 
@@ -32,6 +36,7 @@ const ContactUs = (props) => {
       <Container>
         <Row>
           <Col md={12}>
+          <div dangerouslySetInnerHTML={{ __html: scriptTagWithAttributes }} />
             <div className=" pb60 text-center position-relative pt-3">
               <h2 className={`${activeTheme ? "contactusheading" : "contactusheadingdark"} fs90 mobFs32 colorprimary  mb-0`}>Contact Us</h2>
               <div className="bordercontactus"></div>
