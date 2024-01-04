@@ -1481,3 +1481,18 @@ select.form-control {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
+.thankyouPage::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+.thankH{
+  z-index: 2;
+  color: #fff;
+}
+.thankyouPage {
+  min-height: 70vh;
+}

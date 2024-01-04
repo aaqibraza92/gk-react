@@ -11,6 +11,7 @@ import AboutUs from "../../pages/about";
 import ContactUs from "../../pages/contact-us";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import Project from "../../pages/project";
+import Thankyou from "../../pages/thankyou";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -65,6 +66,11 @@ let RouterList = [
   {
     element: <GetRoute isprivate={false} role="Default" page={Project} />,
     path: "/project",
+    isAdmin: false,
+  },
+  {
+    element: <GetRoute isprivate={false} role="Default" page={Thankyou} />,
+    path: "/thankyou",
     isAdmin: false,
   },
   {
