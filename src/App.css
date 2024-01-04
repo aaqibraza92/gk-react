@@ -1487,18 +1487,17 @@ select.form-control {
 	}
 }
 
-.thankyouPage::after {
+/* .thankyouPage::after {
   content: "";
   position: absolute;
   top: 0px;
   background: rgba(0,0,0,0.5);
   height: 100%;
   width: 100%;
-}
+} */
 .thankH{
-  z-index: 2;
   color: #fff;
 }
 .thankyouPage {
-  min-height: 70vh;
+  min-height: 100vh;
 }

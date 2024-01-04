@@ -260,7 +260,7 @@ img.img-fluid.mainLogo {
 .topDown .headerMenu {
   height: 50px;
 }
-.home .mainHeader.transition, .\/about-us .mainHeader.transition{
+.home .mainHeader.transition, .\/about-us .mainHeader.transition,.\/thankyou .mainHeader.transition{
   position: absolute;
   width: 100%;
   top: 0px;
@@ -512,4 +512,10 @@ img.img-fluid.mainLogo {
 }
 .lightMode .topDown {
   background: #fff !important;
+}
+.\/thankyou .headerMenu > li > a {
+  color: #fff;
+}
+.\/thankyou .mainLogo img{
+  filter: brightness(0) invert(1);
 }
