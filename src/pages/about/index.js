@@ -304,7 +304,7 @@ const AboutUs = () => {
                           Our mission is to grow as a brand and become one of
                           the leading developers in the industry. We aim to
                           develop trust among our clientele and potential
-                          customers and create create a peerless reputation and
+                          customers and create a peerless reputation and
                           track record.
                         </p>
                       </div>

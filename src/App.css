@@ -669,7 +669,7 @@ li.slide.selected .whyChsWrp {
   z-index: -1;
 }
 .bigfont h1 {
-  font-size: 230px;
+  font-size: 190px;
   text-align: left;
   position: absolute;
   left: 0px;
@@ -677,7 +677,7 @@ li.slide.selected .whyChsWrp {
   -webkit-text-stroke: 2px #b88b4c;
   z-index: -1;
   font-family: para;
-  line-height: 240px;
+  line-height: 201px;
   top: 70px;
   opacity: 0.6;
 }
