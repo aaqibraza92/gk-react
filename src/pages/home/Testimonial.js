@@ -100,9 +100,10 @@ const Testimonial = () => {
               </div>
             </Col>
             <Col lg={7} md={7} xl={7}>
-              <div className="pl30 pr30 mobPlr0">
+              <div className="pl30 pr30 mobPlr0 position-relative">
                 <Swiper
                   slidesPerView={"1"}
+                  centeredSlides={true}
                   modules={[Navigation, Pagination, Autoplay]}
                   loop={true}
                   speed={1000}
@@ -133,7 +134,7 @@ const Testimonial = () => {
                                   <Row className="align-items-center">
                                     <Col lg={4} md={2}></Col>
                                     <Col lg={8} md={10}>
-                                      <div className="fs18 fw600 colorWhite text-uppercase mb15">
+                                      <div className="fs18 fw600 colorWhite text-uppercase mb-1">
                                         - {e?.title?.rendered}
                                       </div>
 
@@ -150,6 +151,9 @@ const Testimonial = () => {
                       ))}
                   </div>
                 </Swiper>
+                <div className="nextText">
+                <span className="shake">Click to Next</span>
+                </div>
               </div>
             </Col>
           </Row>

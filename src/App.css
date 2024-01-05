@@ -438,7 +438,7 @@ background: linear-gradient(135deg,  rgba(204,205,205,1) 0%,rgba(129,129,129,1) 
 .dotscss .swiper-pagination {
   position: relative;
   top: 13px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
 }
 /* .swiperThumbnail .swiper-wrapper img {
   width: 100px;
