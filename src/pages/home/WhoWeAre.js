@@ -76,6 +76,7 @@ const WhoWeAre = () => {
 
   return (
     <section
+    id="who-we-are"
       ref={sectionEndRef}
       className={`${activeTheme ? "bgPink" : "bgFullBlack"} pt100 pb100 `}
     >

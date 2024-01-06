@@ -77,11 +77,10 @@ const Vert2 = () => {
 
   useMemo(() => {
     
-    console.log("sl",sl)
   }, [sl]);
 
   return (
-    <div className="pt100 pb100 " style={{
+    <div id="choose-us" className="pt100 pb100 " style={{
       backgroundImage: `url(${require("../../../assets/img/home/ver_bg.jpg")})`,
     }}>
       <div className="container-xxl">

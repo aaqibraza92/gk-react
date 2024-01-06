@@ -235,12 +235,9 @@ const AboutUs = () => {
                           delay={400}
                           className="aniCl"
                         >
-
-                          Our vision is to enhance the quality of living by
-                          offering the best living spaces in the twin cities of
-                          Hyderabad and Secunderabad. We want to give our
-                          customers an experience of best branded materials and
-                          create a comfortable.
+Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of
+Hyderabad and Secunderabad. We want to give our customers an experience of best branded
+materials and create a comfortable and safe living space at a competitive price.
                         </Reveal>
                         <h3 className="fs45 subfont position-relative">
 
@@ -250,12 +247,9 @@ const AboutUs = () => {
                           className={`position-relative ${activeTheme ? "colorLight" : "colorWhite"
                             } fs16 w-85 mb-0`}
                         >
-
-                          Our vision is to enhance the quality of living by
-                          offering the best living spaces in the twin cities of
-                          Hyderabad and Secunderabad. We want to give our
-                          customers an experience of best branded materials and
-                          create a comfortable.
+Our vision is to enhance the quality of living by offering the best living spaces in the twin cities of
+Hyderabad and Secunderabad. We want to give our customers an experience of best branded
+materials and create a comfortable and safe living space at a competitive price.
                         </p>
                       </div>
                     )}
@@ -286,11 +280,9 @@ const AboutUs = () => {
                           className="aniCl"
                         >
 
-                          Our vision is to enhance the quality of living by
-                          offering the best living spaces in the twin cities of
-                          Hyderabad and Secunderabad. We want to give our
-                          customers an experience of best branded materials and
-                          create a comfortable.
+Our mission is to extend our horizons beyond the existing areas and continue our legacy as the
+most trusted developer in Telangana. We aim to foster trust among our clientele, potential
+customers and create an unparalleled reputation and track record.
                         </Reveal>
                         <h3 className="fs45 subfont position-relative">
 
@@ -301,11 +293,9 @@ const AboutUs = () => {
                             } fs16 w-85`}
                         >
 
-                          Our mission is to grow as a brand and become one of
-                          the leading developers in the industry. We aim to
-                          develop trust among our clientele and potential
-                          customers and create a peerless reputation and
-                          track record.
+Our mission is to extend our horizons beyond the existing areas and continue our legacy as the
+most trusted developer in Telangana. We aim to foster trust among our clientele, potential
+customers and create an unparalleled reputation and track record.
                         </p>
                       </div>
                     )}

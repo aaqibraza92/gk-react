@@ -62,6 +62,7 @@ const Testimonial = () => {
 
   return (
     <section
+    id="testimonial"
       className="testimonial d-flex h-100 pt100 pb100"
       style={{
         backgroundImage: `url(${

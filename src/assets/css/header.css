@@ -513,9 +513,9 @@ img.img-fluid.mainLogo {
 .lightMode .topDown {
   background: #fff !important;
 }
-.\/thankyou .headerMenu > li > a {
+/* .\/thankyou .headerMenu > li > a {
   color: #fff;
 }
 .\/thankyou .mainLogo img{
   filter: brightness(0) invert(1);
-}
+} */

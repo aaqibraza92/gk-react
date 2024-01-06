@@ -1450,7 +1450,7 @@ select.form-control {
   right: 130px;
 }
 .nextText {
-  color: #929292;
+  color: #fff;
 }
 .shake {
 	animation: shake 3000ms ease-out infinite;
