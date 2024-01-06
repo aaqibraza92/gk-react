@@ -50,6 +50,14 @@ function App() {
     // text.style.display = "none";
   }
 
+  const videoHide=()=>{
+    setisAnimate(false)
+    sessionStorage.setItem("videoHide","true")
+  }
+
+  const videoEnable=  sessionStorage.getItem("videoHide");
+
+
   return (
     <>
     <Helmet>
@@ -58,8 +66,10 @@ function App() {
       }
   
     </Helmet>
-      {isAnimate && location?.pathname === "/" && (
-        <div className="custom-div w-100" onClick={(e) => setisAnimate(false)} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
+
+    {
+      videoEnable!=="true" &&     (isAnimate && location?.pathname === "/") && (
+        <div className="custom-div w-100" onClick={(e) => videoHide()} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
           <span className="text text-center flight">Click <br></br> To Open</span>
           <Player
             className="w-100 position-relative z999 customheight"
@@ -71,10 +81,12 @@ function App() {
             <source src={require("./assets/video/loader.mp4")} />
           </Player>
         </div>
-      )}
+      )
+    }
+  
 
       {
-        (location?.pathname === "/" && isAnimate) ? "" : <div className="wrapperApp">
+        (location?.pathname === "/" && videoEnable!=="true") ? "" : <div className="wrapperApp">
           <Routes>
             {RouterList &&
               RouterList.map((elem, ind) => {
