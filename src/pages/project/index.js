@@ -57,7 +57,7 @@ const Project = () => {
 
         <div className="bigfont position-fixed">
 
-          <h1>Our <br></br> Sparkling <br></br> Gems</h1>
+          <h1>Our <br></br> Versatile  <br></br> Addresses</h1>
 
         </div>
 

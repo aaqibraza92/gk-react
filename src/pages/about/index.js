@@ -125,12 +125,8 @@ const AboutUs = () => {
                   className={`${activeTheme ? "colorBlack" : "colorWhite"
                     } fs15`}
                 >
-                  When it comes to real estate developers in Hyderabad providing
-                  quality, transparency, and professionalism, the name that
-                  garners unflinching trust is GK BUILDERS AND DEVELOPERS.
-                  Committed to creating well-landscaped luxurious abodes for the
-                  elite of the city, the company follows customer-friendly
-                  policies and best-in-industry practices.
+                  As real estate developers in Hyderabad committed to delivering quality, transparency, and professionalism, we, GK BUILDERS AND DEVELOPERS, proudly stand as a trusted name. Our dedication lies in crafting opulent residences for the city's elite, following customer-friendly policies and industry-leading practices.
+
                 </p>
               </Fade>
               <Fade bottom delay={100}>
@@ -138,12 +134,8 @@ const AboutUs = () => {
                   className={`${activeTheme ? "colorBlack" : "colorWhite"
                     } fs15`}
                 >
-                  Over a period of three and half decades GK BUILDERS AND
-                  DEVELOPERS has carved a distinct niche for itself through
-                  several projects spread over mainly in Sainikpuri zone of
-                  Secunderabad. The very fact that two colonies have been named
-                  after this group shows the strong presence it has in this
-                  zone.
+                  Over the past three and a half decades, we have forged a unique identity with numerous projects primarily in the Sainikpuri zone of Secunderabad. The fact that two colonies bear our name speaks volumes about our significant presence in this area.
+
                 </p>
               </Fade>
               <Fade bottom delay={100}>
@@ -151,14 +143,8 @@ const AboutUs = () => {
                   className={`${activeTheme ? "colorBlack" : "colorWhite"
                     } fs15`}
                 >
-                  Having developed about 3 million sq ft., GK BUILDERS AND
-                  DEVELOPERS is now focusing on developing large housing schemes
-                  in the form of gated communities in the peripheral areas of
-                  the twin cities, which are fast developing to meet the housing
-                  requirements of middle and upper middle-class customers. From
-                  project to project, they strengthened their customer base by
-                  improving quality and design as per the changing needs and
-                  tastes of the modern customers.
+                  With an impressive portfolio of 3 million sq ft., we now shift our focus to developing expansive housing schemes, specifically gated communities in the outskirts of the twin cities. Project after project, we have fortified our customer base by enhancing quality and design to align with the evolving preferences of modern homeowners.
+
                 </p>
               </Fade>
               <Fade bottom delay={100}>
@@ -166,12 +152,7 @@ const AboutUs = () => {
                   className={`${activeTheme ? "colorBlack" : "colorWhite"
                     } fs15`}
                 >
-                  Founded 36 years ago by Late Sri.K. Ramakrishnaiah, GK
-                  BUILDERS AND DEVELOPERS groomed many young people to become
-                  independent builders by themselves. Many of the reputed
-                  builders in this area have their roots with the organisation
-                  for whom construction is a profession and community work a
-                  passion.
+                 Founded 36 years ago by the late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS have not only shaped remarkable projects but have also nurtured numerous individuals, empowering them to become independent builders. Many esteemed builders in this region trace their roots back to our organization, where construction is not just a profession but a passion for community service.
                 </p>
               </Fade>
             </Col>
