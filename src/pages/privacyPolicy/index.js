@@ -67,7 +67,9 @@ const PrivacyPolicy = () => {
                         </ul>
                         <p>We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.</p>
 
-                        <h3>TERMS &amp; CONDITIONS</h3>
+                       
+                         <h3 >TERMS &amp; CONDITIONS</h3> 
+                         
                         <p>To avail of the services offered at www.gkdevelopers.in, you must agree to the following terms and conditions:</p>
                         <p>Please read the Terms and Conditions carefully. While using any current or future services offered by www.gkdevelopers.in, whether or not included in the www.gkdevelopers.in. Website, you will abide by these Terms &amp; Conditions the guidelines and conditions applicable to such service or business.</p>
 

@@ -159,7 +159,7 @@ const WhoWeAre = () => {
                         <div>
                           <div className="mb0 lh50">
                             <span className="fontlight subfont fs60 mobFs35 brownGradient fw500">
-                              63
+                              75
                             </span>
                             <span className="fontlight subfont fs80 mobFs35 brownGradient plusIcon">
                               +
@@ -181,7 +181,7 @@ const WhoWeAre = () => {
                         <div>
                           <div className="mb0 lh50">
                             <span className="fontlight subfont fs60 mobFs35 brownGradient fw500">
-                              30
+                              35
                             </span>
                             <span className="fontlight subfont fs80 mobFs35 brownGradient plusIcon">
                               +

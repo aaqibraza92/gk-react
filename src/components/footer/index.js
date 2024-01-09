@@ -226,7 +226,7 @@ const Footer = () => {
                         } fs16`}
                       >
                         <a
-                          href="tel:+918951761122"
+                          href="tel:+91 8951761122"
                           className={`${
                             activeTheme ? "colorLightBrown" : "colorGrey1"
                           } fs16`}
@@ -265,7 +265,7 @@ const Footer = () => {
                           {fb}
                         </a>
                       </div>
-                      <div className="mr12">
+                      <div className="mr12 whitesvg">
                         <a
                           href="https://twitter.com/GkbuildersD"
                           target="_blank"
@@ -318,12 +318,18 @@ const Footer = () => {
                       <Fade bottom>Privacy Policy</Fade>
                     </Link>
 
-                    <Link
+                    {/* <Link
                       to="/privacy-policy"
                       className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
                     >
                       <Fade bottom> Terms & Condition </Fade>
-                    </Link>
+                    </Link> */}
+                       {/* <HashLink
+                         className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
+                          to="/#terms"
+                        >
+                        <Fade bottom> Terms & Condition</Fade> 
+                        </HashLink> */}
                   </div>
                 </Col>
                 <Col lg={8}>

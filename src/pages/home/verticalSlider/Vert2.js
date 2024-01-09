@@ -18,7 +18,7 @@ import HeadShake from 'react-reveal/HeadShake';
 let data = [
   {
     title: "SUPERIOR<br/>CONSTRUCTION",
-    para: "With 30+ years in construction, GK Group stands as a trusted name in Hyderabad's real estate. Renowned for quality materials, industry-leading practices, and strict safety compliance, our brand symbolizes excellence and reliability in development.",
+    para: "With 35+ years in construction, GK Group stands as a trusted name in Hyderabad's real estate. Renowned for quality materials, industry-leading practices, and strict safety compliance, our brand symbolizes excellence and reliability in development.",
     img: require("../../../assets/img/home/layer_building.png"),
     class: "firstSlide",
   },

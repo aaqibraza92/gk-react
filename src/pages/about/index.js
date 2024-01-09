@@ -143,7 +143,7 @@ const AboutUs = () => {
                   className={`${activeTheme ? "colorBlack" : "colorWhite"
                     } fs15`}
                 >
-                  With an impressive portfolio of 3 million sq ft., we now shift our focus to developing expansive housing schemes, specifically gated communities in the outskirts of the twin cities. Project after project, we have fortified our customer base by enhancing quality and design to align with the evolving preferences of modern homeowners.
+                  With an impressive portfolio of 3 million sq ft., we now shift our focus to developing expansive housing schemes, specifically gated communities in the  of the twin cities. Project after project, we have fortified our customer base by enhancing quality and design to align with the evolving preferences of modern homeowners.
 
                 </p>
               </Fade>
