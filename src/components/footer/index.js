@@ -298,27 +298,21 @@ const Footer = () => {
               <Row className="align-items-center">
                 <Col lg={4}>
                   <div className="d-flex flex-wrap">
-
+                      <Link
+                      to="/privacy-policy"
+                      className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
+                    >
+                      <Fade bottom> Privacy Policy</Fade>
+                    </Link> 
                     <HashLink
                       className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
                         } colorGrey fs12 fRegular  mb0 mr10 text-uppercase`}
                       to="/privacy-policy/#terms-conditions"
                     >
-                      Privacy Policy
+                     <Fade bottom> Terms & Condition</Fade>
                     </HashLink>
 
-                    {/* <Link
-                      to="/privacy-policy"
-                      className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
-                    >
-                      <Fade bottom> Terms & Condition </Fade>
-                    </Link> */}
-                    {/* <HashLink
-                         className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
-                          to="/#terms"
-                        >
-                        <Fade bottom> Terms & Condition</Fade> 
-                        </HashLink> */}
+                    
                   </div>
                 </Col>
                 <Col lg={8}>
