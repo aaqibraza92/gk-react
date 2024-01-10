@@ -50,6 +50,7 @@ const Header = () => {
         setstickyHeader("topUp");
       }
     });
+    setstickyHeader("topUp");
   }, [pathname]);
   
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
