@@ -11,30 +11,44 @@ import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
 import { Fade, Zoom } from "react-awesome-reveal";
 
-let bigImage = [{
+let bigImage = [
+  {
+    dayImage: require("../../assets/img/home/home-porfolio/casaday.webp"),
+    nightImage: require("../../assets/img/home/home-porfolio/casanight.webp"),
+  },
+  {
+    dayImage: require("../../assets/img/home/home-porfolio/zenithday.webp"),
+    nightImage: require("../../assets/img/home/home-porfolio/zenithdaynight.webp"),
+  },
+  {
+    dayImage: require("../../assets/img/home/home-porfolio/triadday.webp"),
+    nightImage: require("../../assets/img/home/home-porfolio/traidnight.webp"),
+  },
+  {
+    dayImage: require("../../assets/img/home/home-porfolio/ramday.webp"),
+    nightImage: require("../../assets/img/home/home-porfolio/ramnight.webp"),
+  },
+  {
+    dayImage: require("../../assets/img/home/home-porfolio/suryaday.webp"),
+    nightImage: require("../../assets/img/home/home-porfolio/suryanight.webp"),
+  },
+  {
   dayImage: require("../../assets/img/home/home-porfolio/almvilladay.webp"),
   nightImage: require("../../assets/img/home/home-porfolio/nightviewalam.webp"),
 },
 {
-  dayImage: require("../../assets/img/home/home-porfolio/casaday.webp"),
-  nightImage: require("../../assets/img/home/home-porfolio/casanight.webp"),
+  dayImage: require("../../assets/img/home/home-porfolio/gkpearlenclaveday.webp"),
+  nightImage: require("../../assets/img/home/home-porfolio/gkpearlenclavenight.webp"),
 },
+
 {
   dayImage: require("../../assets/img/home/home-porfolio/festoonday.webp"),
   nightImage: require("../../assets/img/home/home-porfolio/festoonnight.webp"),
 },
-{
-  dayImage: require("../../assets/img/home/home-porfolio/suryaday.webp"),
-  nightImage: require("../../assets/img/home/home-porfolio/suryanight.webp"),
-},
-{
-  dayImage: require("../../assets/img/home/home-porfolio/triadday.webp"),
-  nightImage: require("../../assets/img/home/home-porfolio/traidnight.webp"),
-},
-{
-  dayImage: require("../../assets/img/home/home-porfolio/zenithday.webp"),
-  nightImage: require("../../assets/img/home/home-porfolio/zenithdaynight.webp"),
-}]
+
+
+
+]
 
 const OurProjects = () => {
   const activeTheme = useSelector((state) => {
@@ -100,14 +114,7 @@ const OurProjects = () => {
                 className="mySwiper swiperThumbnail"
                 allowTouchMove={false}
               >
-                <SwiperSlide>
-                  <img
-                    src={require("../../assets/img/home/home-porfolio/prj1.png")}
-                    className="img-fluid"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
+                  <SwiperSlide>
                   <img
                     src={require("../../assets/img/home/home-porfolio/prj2.png")}
                     className="img-fluid"
@@ -116,14 +123,7 @@ const OurProjects = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/home-porfolio/prj3.png")}
-                    className="img-fluid"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src={require("../../assets/img/home/home-porfolio/prj4.png")}
+                    src={require("../../assets/img/home/home-porfolio/prj6.png")}
                     className="img-fluid"
                     alt=""
                   />
@@ -137,11 +137,44 @@ const OurProjects = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../../assets/img/home/home-porfolio/prj6.png")}
+                    src={require("../../assets/img/home/home-porfolio/ramvw.png")}
                     className="img-fluid"
                     alt=""
                   />
                 </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/home-porfolio/prj4.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/home-porfolio/prj1.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/home-porfolio/pearlogo.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+               
+                <SwiperSlide>
+                  <img
+                    src={require("../../assets/img/home/home-porfolio/prj3.png")}
+                    className="img-fluid"
+                    alt=""
+                  />
+                </SwiperSlide>
+                
+              
+               
+               
               </Swiper>
 
               <div className="titles">

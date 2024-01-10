@@ -177,7 +177,7 @@ const Footer = () => {
                       </div>
                       <div
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } fs16`}
+                          } fs15`}
                       >
                         35-8, Aasta 2nd floor Beside GK Saraswati Function Hall, GK Colony, Sainikpuri Post, Secunderabad-500094, T.S.
                       </div>
