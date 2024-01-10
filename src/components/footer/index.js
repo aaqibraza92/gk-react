@@ -179,8 +179,7 @@ const Footer = () => {
                         className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
                           } fs16`}
                       >
-                        35-8, Beside GK Saraswati Function Hall, GK Colony,
-                        Sainikpuri Post, Secunderabad-500094, T.S.
+                        35-8, Aasta 2nd floor Beside GK Saraswati Function Hall, GK Colony, Sainikpuri Post, Secunderabad-500094, T.S.
                       </div>
                     </div>
                     <div className="d-flex">
@@ -221,7 +220,7 @@ const Footer = () => {
                             } fs16`}
                         >
                           {" "}
-                          +91 895 176 1122
+                          +91 89517 61122
                         </a>
                       </div>
                     </div>
