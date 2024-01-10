@@ -23,12 +23,8 @@
   -webkit-box-shadow: 0px 0px 10px #b0bac554;
   box-shadow: 0px 0px 10px #b0bac554;
 }
-.home.lightMode .topUp .headerMenu > li > a {
-  color: #fff;
-}
-.home.lightMode .topUp img {
-  filter: brightness(0) invert(1);
-}
+
+
 
 
 /*menu*/
@@ -274,6 +270,8 @@ img.img-fluid.mainLogo {
   z-index: 1;
   background: transparent;
 }
+
+
 @media only screen and (max-width: 1024px) and (min-width: 320px) {
   .home .mainHeader.transition,.\/gk\/ .mainHeader.transition,.\/about-us .mainHeader.transition{
     position: absolute;
