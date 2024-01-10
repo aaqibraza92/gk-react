@@ -524,3 +524,10 @@ img.img-fluid.mainLogo {
 .\/thankyou .mainLogo img{
   filter: brightness(0) invert(1);
 } */
+
+.home .topUp img.img-fluid.mainLogo{
+  filter: brightness(0) invert(1);
+}
+.home .topUp .headerMenu > li > a {
+  color: #fff;
+}

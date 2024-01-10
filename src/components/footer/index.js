@@ -109,9 +109,8 @@ const Footer = () => {
                       <li className="col-md-6 col-6">
                         <Link
                           to="/about-us"
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } position-relative pl17 fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } position-relative pl17 fs16`}
                         >
                           about us
                         </Link>
@@ -119,52 +118,47 @@ const Footer = () => {
                       <li className="col-md-6 col-6">
                         <Link
                           to="/project"
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } position-relative pl17 fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } position-relative pl17 fs16`}
                         >
                           our projects
                         </Link>
                       </li>
                       <li className="col-md-6 col-6">
                         <HashLink
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } position-relative pl17 fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } position-relative pl17 fs16`}
                           to="/#choose-us"
                         >
                           why choose us?
                         </HashLink>
                       </li>
-                      
+
                       <li className="col-md-6 col-6">
-                      <HashLink
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } position-relative pl17 fs16`}
+                        <HashLink
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } position-relative pl17 fs16`}
                           to="/#who-we-are"
                         >
-                           who we are?
+                          who we are?
                         </HashLink>
-                
+
                       </li>
                       <li className="col-md-6 col-6">
-                      <HashLink
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } position-relative pl17 fs16`}
+                        <HashLink
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } position-relative pl17 fs16`}
                           to="/#testimonial"
                         >
-                         testimonials
+                          testimonials
                         </HashLink>
 
                       </li>
                       <li className="col-md-6 col-6">
                         <Link
                           to="/contact-us"
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } position-relative pl17 fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } position-relative pl17 fs16`}
                         >
                           contact us
                         </Link>
@@ -182,9 +176,8 @@ const Footer = () => {
                         {locationSvg}
                       </div>
                       <div
-                        className={`${
-                          activeTheme ? "colorLightBrown" : "colorGrey1"
-                        } fs16`}
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          } fs16`}
                       >
                         35-8, Beside GK Saraswati Function Hall, GK Colony,
                         Sainikpuri Post, Secunderabad-500094, T.S.
@@ -195,15 +188,13 @@ const Footer = () => {
                         {globleSvg}
                       </div>
                       <div
-                        className={`${
-                          activeTheme ? "colorLightBrown" : "colorGrey1"
-                        } fs16`}
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          } fs16`}
                       >
                         <a
                           href="https://gkdevelopers.in/"
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } fs16`}
                         >
                           www.gkdevelopers.in
                         </a>
@@ -221,15 +212,13 @@ const Footer = () => {
                         {callSvg}
                       </div>
                       <div
-                        className={`${
-                          activeTheme ? "colorLightBrown" : "colorGrey1"
-                        } fs16`}
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          } fs16`}
                       >
                         <a
                           href="tel:+91 8951761122"
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } fs16`}
                         >
                           {" "}
                           +91 895 176 1122
@@ -241,15 +230,13 @@ const Footer = () => {
                         {envelopSvg}
                       </div>
                       <div
-                        className={`${
-                          activeTheme ? "colorLightBrown" : "colorGrey1"
-                        } fs16`}
+                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          } fs16`}
                       >
                         <a
                           href="mailto:salesteam@gkdevelopers.in"
-                          className={`${
-                            activeTheme ? "colorLightBrown" : "colorGrey1"
-                          } fs16`}
+                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                            } fs16`}
                         >
                           salesteam@gkdevelopers.in
                         </a>
@@ -311,12 +298,14 @@ const Footer = () => {
               <Row className="align-items-center">
                 <Col lg={4}>
                   <div className="d-flex flex-wrap">
-                    <Link
-                      to="/privacy-policy"
-                      className="colorGrey fs12 fRegular  mb0 mr10 text-uppercase"
+
+                    <HashLink
+                      className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                        } colorGrey fs12 fRegular  mb0 mr10 text-uppercase`}
+                      to="/privacy-policy/#terms-conditions"
                     >
-                      <Fade bottom>Privacy Policy</Fade>
-                    </Link>
+                      Privacy Policy
+                    </HashLink>
 
                     {/* <Link
                       to="/privacy-policy"
@@ -324,7 +313,7 @@ const Footer = () => {
                     >
                       <Fade bottom> Terms & Condition </Fade>
                     </Link> */}
-                       {/* <HashLink
+                    {/* <HashLink
                          className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
                           to="/#terms"
                         >
