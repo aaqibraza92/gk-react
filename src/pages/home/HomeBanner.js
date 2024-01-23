@@ -17,7 +17,7 @@ const HomeBanner = () => {
   });
 
   return (
-    <Player className="w-100 customhome" autoPlay={true} loop={true} muted={true} controls={false}>
+    <Player className="w-100 customhome" autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}>
     <source
       src={require("../../assets/video/home_banner.mp4")}
     />

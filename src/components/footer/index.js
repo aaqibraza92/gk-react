@@ -80,20 +80,14 @@ const Footer = () => {
         {activeTheme ? (
           <Player
             className="w-100"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            controls={false}
+            autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}
           >
             <source src={require("../../assets/img/footer/footer-day.mp4")} />
           </Player>
         ) : (
           <Player
             className="w-100"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            controls={false}
+            autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}
           >
             <source src={require("../../assets/img/footer/night-footer.mp4")} />
           </Player>
