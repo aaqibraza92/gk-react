@@ -73,10 +73,8 @@ function App() {
           <span className="text text-center flight">Click <br></br> To Open</span>
           <Player
             className="w-100 position-relative z999 customheight"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            controls={false}
+            height={700}
+            autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}
           >
             <source src={require("./assets/video/loader.mp4")} />
           </Player>
