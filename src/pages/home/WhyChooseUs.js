@@ -106,39 +106,46 @@ const WhyChooseUs = () => {
           <Swiper
             id="swiperInner"
             modules={[Navigation, Pagination, Mousewheel]}
-            loop={true}
+            // loop={true}
             speed={800}
-            reachEnd={(e) => console.log("rr", e)}
-            autoPlay={{ delay: 1000 }}
-            spaceBetween={0}
-            slidesPerView={3}
-            centeredSlides={true}
-            onSlideChange={(e) => slideHandle(e)}
-            mousewheel={false}
-            breakpoints={{
-              // when window width is >= 640px
-              300: {
-                width: 300,
-                slidesPerView: 1,
-              },
-              // when window width is >= 768px
-              550: {
-                width: 550,
-                slidesPerView: 1,
-              },
-              992: {
-                width: 992,
-                slidesPerView: 1,
-              },
-              1201: {
-                width: 1201,
-                slidesPerView: 1,
-              },
-              1360: {
-                width: 1360,
-                slidesPerView: 1,
-              },
+            // reachEnd={(e) => console.log("rr", e)}
+            // autoPlay={{ delay: 1000 }}
+            // spaceBetween={0}
+            // slidesPerView={3}
+            // centeredSlides={true}
+            // onSlideChange={(e) => slideHandle(e)}
+            // mousewheel={false}
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
             }}
+            navigation={true}
+            // breakpoints={{
+            //   // when window width is >= 640px
+            //   300: {
+            //     width: 300,
+            //     slidesPerView: 1,
+            //   },
+            //   // when window width is >= 768px
+            //   550: {
+            //     width: 550,
+            //     slidesPerView: 1,
+            //   },
+            //   992: {
+            //     width: 992,
+            //     slidesPerView: 1,
+            //   },
+            //   1201: {
+            //     width: 1201,
+            //     slidesPerView: 1,
+            //   },
+            //   1360: {
+            //     width: 1360,
+            //     slidesPerView: 1,
+            //   },
+            // }}
           >
             <div className="wWrp">
               {data.map((e, i) => (
