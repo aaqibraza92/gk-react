@@ -182,7 +182,7 @@ const AboutUs = () => {
               <Row className="align-items-center">
                 <Col lg={6} md={12} sm={12}>
                   <div className="visionvidio">
-                    <Player className="w-100" autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}>
+                    <Player height={360} className="w-100"  autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/img/home/Visionweb.mp4")}
                       />
@@ -291,7 +291,7 @@ customers and create an unparalleled reputation and track record.
               <Row className="align-items-center gy-4 ">
                 <Col lg={6} md={12} sm={12} className="secondaboutus">
                   <div className="visionvidio">
-                    <Player className="w-100" autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}>
+                    <Player height={360} className="w-100"  autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
                       />
