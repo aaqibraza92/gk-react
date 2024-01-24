@@ -102,7 +102,7 @@ const Footer = () => {
                 <Fade bottom>
                   <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                     <ul className="pl0 noUl fNav row cssfont">
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" onClick={()=>window.scrollTo(0,0)}>
                         <Link
                           to="/about-us"
                           className={`${activeTheme ? "text-white" : "colorGrey1"
@@ -111,7 +111,7 @@ const Footer = () => {
                           about us
                         </Link>
                       </li>
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" onClick={()=>window.scrollTo(0,0)}>
                         <Link
                           to="/project"
                           className={`${activeTheme ? "text-white" : "colorGrey1"
@@ -120,7 +120,7 @@ const Footer = () => {
                           our projects
                         </Link>
                       </li>
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" >
                         <HashLink
                           className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
@@ -150,7 +150,7 @@ const Footer = () => {
                         </HashLink>
 
                       </li>
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" onClick={()=>window.scrollTo(0,0)}>
                         <Link
                           to="/contact-us"
                           className={`${activeTheme ? "text-white" : "colorGrey1"
@@ -292,7 +292,7 @@ const Footer = () => {
             <div className="copyright mt20 pt20 pb20 mb20">
               <Row className="align-items-center">
                 <Col lg={4}>
-                  <div className="d-flex flex-wrap">
+                  <div className="d-flex flex-wrap" onClick={()=>window.scrollTo(0,0)}>
                       <Link
                       to="/privacy-policy"
                       className="text-white fs12 fRegular mb0 mr10 text-uppercase"
