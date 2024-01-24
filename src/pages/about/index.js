@@ -12,6 +12,8 @@ import axios from "axios";
 import { TEAM_URL } from "../../helpers/apiurls";
 
 const AboutUs = () => {
+
+
   const [vision, setvision] = useState(false);
   const [vision1, setvision1] = useState(false);
   const [loader, setloader] = useState(true);
@@ -166,8 +168,7 @@ const AboutUs = () => {
                   className={`${activeTheme ? "colorBlack" : "colorWhite"
                     } fs15`}
                 >
-                 Founded 36 years ago by the late Sri.K. Ramakrishnaiah, GK BUILDERS AND DEVELOPERS have not only shaped remarkable projects but have also nurtured numerous individuals, empowering them to become independent builders. Many esteemed builders in this region trace their roots back to our organization, where construction is not just a profession but a passion for community service.
-                </p>
+                 With over 38 years of unwavering commitment to excellence, our construction company has proudly completed 75+ remarkable projects, shaping the landscape with innovation and precision. Currently, we have over 3 million square feet area under construction, a testament to our dedication in creating enduring structures that stand the test of time.</p>
               </Fade>
             </Col>
 
@@ -190,7 +191,7 @@ const AboutUs = () => {
       </div>
 
       <div className="bgmission pt80 pb80 ">
-        <div className="position-relative mobPb30 mb60">
+        <div className="position-relative mobPb30 mb60 mobilereversevission">
           <section className="mb30">
             <div className="container-xl">
               <Row className="align-items-center">

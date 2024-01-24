@@ -25,6 +25,18 @@ import { Player } from "video-react";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  const resizeScreen = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    resizeScreen();
+    window.addEventListener("resize", resizeScreen);
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
+
   const dispatch = useDispatch();
   const location = useLocation();
   useEffect(() => {
@@ -55,18 +67,7 @@ const Footer = () => {
     }
   }, [videoRef]);
 
-  const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
-  const resizeScreen = () => {
-    setScreenWidth(window.innerWidth);
-  };
-  useEffect(() => {
-    resizeScreen();
-    window.addEventListener("resize", resizeScreen);
-    return () => {
-      window.removeEventListener("resize", resizeScreen);
-    };
-  }, []);
 
   return (
     <>
@@ -107,11 +108,9 @@ const Footer = () => {
  
         ) : (
           <Player
+          height={700}
             className="w-100"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            controls={false}
+            autoPlay={screenWidth > 1100 ? true : false} playsinline={screenWidth > 1100 ? true : false} loop={screenWidth > 1100 ? true : false} muted={true} controls={screenWidth > 1100 ? false : true}
           >
             <source src={require("../../assets/img/footer/night-footer.mp4")} />
           </Player>
@@ -124,27 +123,27 @@ const Footer = () => {
                 <Fade bottom>
                   <div className="radius30 fRounder pl30 pr30 pt60 pb60">
                     <ul className="pl0 noUl fNav row cssfont">
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" onClick={()=>window.scrollTo(0,0)}>
                         <Link
                           to="/about-us"
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
                         >
                           about us
                         </Link>
                       </li>
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" onClick={()=>window.scrollTo(0,0)}>
                         <Link
                           to="/project"
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
                         >
                           our projects
                         </Link>
                       </li>
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" >
                         <HashLink
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
                           to="/#choose-us"
                         >
@@ -154,7 +153,7 @@ const Footer = () => {
 
                       <li className="col-md-6 col-6">
                         <HashLink
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
                           to="/#who-we-are"
                         >
@@ -164,7 +163,7 @@ const Footer = () => {
                       </li>
                       <li className="col-md-6 col-6">
                         <HashLink
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
                           to="/#testimonial"
                         >
@@ -172,10 +171,10 @@ const Footer = () => {
                         </HashLink>
 
                       </li>
-                      <li className="col-md-6 col-6">
+                      <li className="col-md-6 col-6" onClick={()=>window.scrollTo(0,0)}>
                         <Link
                           to="/contact-us"
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } position-relative pl17 fs16`}
                         >
                           contact us
@@ -194,7 +193,7 @@ const Footer = () => {
                         {locationSvg}
                       </div>
                       <div
-                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                        className={`${activeTheme ? "text-white" : "colorGrey1"
                           } fs15`}
                       >
                         35-8, Aasta 2nd floor Beside GK Saraswati Function Hall, GK Colony, Sainikpuri Post, Secunderabad-500094, T.S.
@@ -205,12 +204,12 @@ const Footer = () => {
                         {globleSvg}
                       </div>
                       <div
-                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                        className={`${activeTheme ? "text-white" : "colorGrey1"
                           } fs16`}
                       >
                         <a
                           href="https://gkdevelopers.in/"
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } fs16`}
                         >
                           www.gkdevelopers.in
@@ -229,12 +228,12 @@ const Footer = () => {
                         {callSvg}
                       </div>
                       <div
-                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                        className={`${activeTheme ? "text-white" : "colorGrey1"
                           } fs16`}
                       >
                         <a
                           href="tel:+91 8951761122"
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } fs16`}
                         >
                           {" "}
@@ -247,12 +246,12 @@ const Footer = () => {
                         {envelopSvg}
                       </div>
                       <div
-                        className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                        className={`${activeTheme ? "text-white" : "colorGrey1"
                           } fs16`}
                       >
                         <a
                           href="mailto:salesteam@gkdevelopers.in"
-                          className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                          className={`${activeTheme ? "text-white" : "colorGrey1"
                             } fs16`}
                         >
                           salesteam@gkdevelopers.in
@@ -314,28 +313,26 @@ const Footer = () => {
             <div className="copyright mt20 pt20 pb20 mb20">
               <Row className="align-items-center">
                 <Col lg={4}>
-                  <div className="d-flex flex-wrap">
+                  <div className="d-flex flex-wrap" onClick={()=>window.scrollTo(0,0)}>
                       <Link
                       to="/privacy-policy"
-                      className="colorGrey fs12 fRegular mb0 mr10 text-uppercase"
+                      className="text-white fs12 fRegular mb0 mr10 text-uppercase"
                     >
                       <Fade bottom> Privacy Policy</Fade>
                     </Link> 
                     <HashLink
-                      className={`${activeTheme ? "colorLightBrown" : "colorGrey1"
+                      className={`${activeTheme ? "text-white" : "colorGrey1"
                         } colorGrey fs12 fRegular  mb0 mr10 text-uppercase`}
                       to="/privacy-policy/#terms-conditions"
                     >
                      <Fade bottom> Terms & Condition</Fade>
                     </HashLink>
-
-                    
                   </div>
                 </Col>
                 <Col lg={8}>
                   <Fade bottom>
                     <div className="d-flex justify-content-lg-end">
-                      <p className="colorGrey fs12 fsm14 fRegular itemLightwhite mb0 text-uppercase">
+                      <p className="text-white fs12 fsm14 fRegular itemLightwhite mb0 text-uppercase">
                         &#169; {new Date().getFullYear()} GK GROUP ALL RIGHTS
                         RESERVED. DESIGNED AND MANAGED BY{" "}
                         <a

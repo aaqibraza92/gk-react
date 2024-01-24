@@ -159,6 +159,10 @@ border-color: #2C367A
     max-width: 75% !important;
     background-position: right !important;
   }
+  .mobilereversevission{
+    display: flex;
+    flex-direction: column-reverse;
+  }
   body .formSection{
     margin-top: 0px;
     padding-top: 30px;

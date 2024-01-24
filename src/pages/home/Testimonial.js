@@ -103,16 +103,23 @@ const Testimonial = () => {
             <Col lg={7} md={7} xl={7}>
               <div className="pl30 pr30 mobPlr0 position-relative">
                 <Swiper
-                  slidesPerView={"1"}
-                  centeredSlides={true}
+                  // slidesPerView={"1"}
+                  // centeredSlides={true}
                   modules={[Navigation, Pagination, Autoplay]}
+                  // loop={true}
+                  // speed={1000}
+                  // autoPlay={{ delay: 1500 }}
+                  // spaceBetween={8}
+                  // pagination={{
+                  //   clickable: true,
+                  // }}
+                  slidesPerView={1}
+                  spaceBetween={30}
                   loop={true}
-                  speed={1000}
-                  autoPlay={{ delay: 1500 }}
-                  spaceBetween={8}
                   pagination={{
                     clickable: true,
                   }}
+                  navigation={false}
                   className="mySwiper dotscss"
                 >
                   <div className="bloggerList">

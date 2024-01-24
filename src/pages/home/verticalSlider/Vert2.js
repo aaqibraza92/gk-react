@@ -106,7 +106,7 @@ const Vert2 = () => {
           spaceBetween={10}
           autoPlay={{ delay: 1500 }}
           speed={1000}
-          loop={true}
+          // loop={true}
           navigation={false}
           mousewheel={true}
           pagination={{
