@@ -12,6 +12,18 @@ import axios from "axios";
 import { TEAM_URL } from "../../helpers/apiurls";
 
 const AboutUs = () => {
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  const resizeScreen = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    resizeScreen();
+    window.addEventListener("resize", resizeScreen);
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
+
   const [vision, setvision] = useState(false);
   const [vision1, setvision1] = useState(false);
   const [loader, setloader] = useState(true);
@@ -181,7 +193,7 @@ const AboutUs = () => {
               <Row className="align-items-center">
                 <Col lg={6} md={12} sm={12}>
                   <div className="visionvidio">
-                    <Player height={360} className="w-100"  autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}>
+                    <Player height={360} className="w-100"   autoPlay={screenWidth > 1100 ? true : false} playsinline={screenWidth > 1100 ? true : false} loop={screenWidth > 1100 ? true : false} muted={true} controls={screenWidth > 1100 ? false : true}>
                       <source
                         src={require("../../assets/img/home/Visionweb.mp4")}
                       />
@@ -290,7 +302,7 @@ customers and create an unparalleled reputation and track record.
               <Row className="align-items-center gy-4 ">
                 <Col lg={6} md={12} sm={12} className="secondaboutus">
                   <div className="visionvidio newmission">
-                    <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                    <Player className="w-100"  autoPlay={screenWidth > 1100 ? true : false} playsinline={screenWidth > 1100 ? true : false} loop={screenWidth > 1100 ? true : false} muted={true} controls={screenWidth > 1100 ? false : true}>
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
                       />

@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
@@ -25,6 +25,18 @@ import { Player } from "video-react";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
+  const resizeScreen = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    resizeScreen();
+    window.addEventListener("resize", resizeScreen);
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
+
   const dispatch = useDispatch();
   const location = useLocation();
   useEffect(() => {
@@ -81,7 +93,7 @@ const Footer = () => {
           <Player
             className="w-100"
             height={700}
-            autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}
+            autoPlay={screenWidth > 1100 ? true : false} playsinline={screenWidth > 1100 ? true : false} loop={screenWidth > 1100 ? true : false} muted={true} controls={screenWidth > 1100 ? false : true}
           >
             <source src={require("../../assets/img/footer/footer-day.mp4")} />
           </Player>
@@ -89,7 +101,7 @@ const Footer = () => {
           <Player
           height={700}
             className="w-100"
-            autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}
+            autoPlay={screenWidth > 1100 ? true : false} playsinline={screenWidth > 1100 ? true : false} loop={screenWidth > 1100 ? true : false} muted={true} controls={screenWidth > 1100 ? false : true}
           >
             <source src={require("../../assets/img/footer/night-footer.mp4")} />
           </Player>
@@ -306,8 +318,6 @@ const Footer = () => {
                     >
                      <Fade bottom> Terms & Condition</Fade>
                     </HashLink>
-
-                    
                   </div>
                 </Col>
                 <Col lg={8}>
