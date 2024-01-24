@@ -20,15 +20,29 @@ const AboutUs = () => {
     return state && state?.persistedReducer?.theme?.dayTheme;
   });
 
-  // const videoRef = useRef(null);
-  // useEffect(() => {
-  //   videoRef.current.play();
-  // }, [videoRef]);
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
 
-  // const videoRefn = useRef(null);
-  // useEffect(() => {
-  //   videoRefn.current.play();
-  // }, [videoRefn]);
+  const resizeScreen = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    resizeScreen();
+    window.addEventListener("resize", resizeScreen);
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
+
+
+  const videoRef = useRef(null);
+  useEffect(() => {
+    videoRef.current.play();
+  }, [videoRef]);
+
+  const videoRefn = useRef(null);
+  useEffect(() => {
+    videoRefn.current.play();
+  }, [videoRefn]);
   const [playStatus, setplayStatus] = useState(false);
 
   const customAnimation = keyframes`
@@ -182,17 +196,23 @@ const AboutUs = () => {
               <Row className="align-items-center">
                 <Col lg={6} md={12} sm={12}>
                   <div className="visionvidio">
-                    <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                    {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/img/home/Visionweb.mp4")}
                       />
-                    </Player>
-                    {/* <video className="w-100" ref={videoRef} autoplay loop muted>
+                    </Player> */}
+                    <video className="w-100" ref={videoRef} 
+                         muted={true}
+      autoPlay={screenWidth > 1100 ? true : false}
+      playsInline={screenWidth > 1100 ? true : false}
+      loop={screenWidth > 1100 ? true : false}
+      controls={screenWidth > 1100 ? false: true}
+                    >
                       <source
                         src={require("../../assets/img/home/Visionweb.mp4")}
                         type="video/mp4"
                       />
-                    </video> */}
+                    </video>
                   </div>
                 </Col>
               </Row>
@@ -291,23 +311,25 @@ customers and create an unparalleled reputation and track record.
               <Row className="align-items-center gy-4 ">
                 <Col lg={6} md={12} sm={12} className="secondaboutus">
                   <div className="visionvidio">
-                    <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
+                    {/* <Player className="w-100" autoPlay={true} loop={true} muted={true} controls={false}>
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
                       />
-                    </Player>
-                    {/* <video
+                    </Player> */}
+                    <video
                       className="w-100"
                       ref={videoRefn}
-                      autoplay
-                      loop
-                      muted
+                      muted={true}
+      autoPlay={screenWidth > 1100 ? true : false}
+      playsInline={screenWidth > 1100 ? true : false}
+      loop={screenWidth > 1100 ? true : false}
+      controls={screenWidth > 1100 ? false: true}
                     >
                       <source
                         src={require("../../assets/img/home/Missionweb.mp4")}
                         type="video/mp4"
                       />
-                    </video> */}
+                    </video>
                   </div>
                 </Col>
               </Row>

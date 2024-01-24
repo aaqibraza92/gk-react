@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
@@ -43,15 +43,30 @@ const Footer = () => {
     dispatch(themeType(val));
     window.location.reload();
   };
-  // const videoRef = useRef(null);
-  // const videoRef1 = useRef(null);
-  // useEffect(() => {
-  //   if(videoRef && activeTheme){
-  //     videoRef?.current.play();
-  //   }else{
-  //     videoRef1?.current.play();
-  //   }
-  // }, [videoRef]);
+  const videoRef = useRef(null);
+  const videoRef1 = useRef(null);
+  useEffect(() => {
+    if(videoRef && activeTheme){
+      screenWidth > 1100 &&
+      videoRef?.current.play()
+    }else{
+      screenWidth > 1100 &&
+      videoRef1?.current.play();
+    }
+  }, [videoRef]);
+
+  const [screenWidth, setScreenWidth] = useState(window.screen.width);
+
+  const resizeScreen = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    resizeScreen();
+    window.addEventListener("resize", resizeScreen);
+    return () => {
+      window.removeEventListener("resize", resizeScreen);
+    };
+  }, []);
 
   return (
     <>
@@ -78,15 +93,18 @@ const Footer = () => {
         className={`position-relative h-100 d-flex align-items-end mainFooer`}
       >
         {activeTheme ? (
-          <Player
-            className="w-100"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            controls={false}
-          >
-            <source src={require("../../assets/img/footer/footer-day.mp4")} />
-          </Player>
+          <video
+           className="w-100"
+      ref={videoRef}
+      muted={true}
+      autoPlay={screenWidth > 1100 ? true : false}
+      playsInline={screenWidth > 1100 ? true : false}
+      loop={screenWidth > 1100 ? true : false}
+      controls={screenWidth > 1100 ? false: true}
+    >
+      <source src={require("../../assets/img/footer/footer-day.mp4")} type="video/mp4" />
+    </video>
+ 
         ) : (
           <Player
             className="w-100"
