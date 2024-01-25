@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.61043bb0.css",
-    "main.js": "/static/js/main.4442b8c6.js",
+    "main.css": "/static/css/main.bc761b67.css",
+    "main.js": "/static/js/main.349a0ba6.js",
     "static/js/787.a0bf84f3.chunk.js": "/static/js/787.a0bf84f3.chunk.js",
     "static/media/night-footer.mp4": "/static/media/night-footer.9b0d93dd593a81d9114d.mp4",
     "static/media/03.gif": "/static/media/03.0cb0725d1108577a0bda.gif",
@@ -31,7 +31,7 @@
     "static/media/thankyou.jpg": "/static/media/thankyou.fabfe264afc3205220e2.jpg",
     "static/media/traidnight.webp": "/static/media/traidnight.0e3c77cc02a34ca08a78.webp",
     "static/media/suryaday.webp": "/static/media/suryaday.8654e715dee83b517ae5.webp",
-    "static/media/casaday.webp": "/static/media/casaday.867f1ee84bddf4ae35e6.webp",
+    "static/media/casaday.webp": "/static/media/casaday.c0304c28ca5a3329da51.webp",
     "static/media/festoonnight.webp": "/static/media/festoonnight.997e8b3a362d84901329.webp",
     "static/media/festoonday.webp": "/static/media/festoonday.a76e245ba751a50ff9c7.webp",
     "static/media/ramday.webp": "/static/media/ramday.81304178969fd2b27194.webp",
@@ -53,12 +53,12 @@
     "static/media/prj6.png": "/static/media/prj6.ed60165f4d71bbd4e13f.png",
     "static/media/prj4.png": "/static/media/prj4.e2afaa36fa653ef9d520.png",
     "index.html": "/index.html",
-    "main.61043bb0.css.map": "/static/css/main.61043bb0.css.map",
-    "main.4442b8c6.js.map": "/static/js/main.4442b8c6.js.map",
+    "main.bc761b67.css.map": "/static/css/main.bc761b67.css.map",
+    "main.349a0ba6.js.map": "/static/js/main.349a0ba6.js.map",
     "787.a0bf84f3.chunk.js.map": "/static/js/787.a0bf84f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61043bb0.css",
-    "static/js/main.4442b8c6.js"
+    "static/css/main.bc761b67.css",
+    "static/js/main.349a0ba6.js"
   ]
 }
