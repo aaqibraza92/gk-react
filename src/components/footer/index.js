@@ -95,6 +95,7 @@ const Footer = () => {
       >
         {activeTheme ? (
           <video
+          poster={require("../../assets/video/f_poster.jpg")}
            className="w-100"
       ref={videoRef}
       muted={true}
@@ -107,13 +108,19 @@ const Footer = () => {
     </video>
  
         ) : (
-          <Player
-          height={700}
-            className="w-100"
-            autoPlay={screenWidth > 1100 ? true : false} playsinline={screenWidth > 1100 ? true : false} loop={screenWidth > 1100 ? true : false} muted={true} controls={screenWidth > 1100 ? false : true}
-          >
-            <source src={require("../../assets/img/footer/night-footer.mp4")} />
-          </Player>
+          <video
+          poster={require("../../assets/video/f_poster_night.jpg")}
+           className="w-100"
+      ref={videoRef1}
+      muted={true}
+      autoPlay={screenWidth > 1100 ? true : false}
+      playsInline={screenWidth > 1100 ? true : false}
+      loop={screenWidth > 1100 ? true : false}
+      controls={screenWidth > 1100 ? false: true}
+    >
+      <source src={require("../../assets/img/footer/night-footer.mp4")} type="video/mp4" />
+    </video>
+       
         )}
 
         <div className="position-absolute absPos w-100">

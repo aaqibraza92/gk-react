@@ -38,11 +38,13 @@ const AboutUs = () => {
 
   const videoRef = useRef(null);
   useEffect(() => {
+    screenWidth > 1100 &&
     videoRef.current.play();
   }, [videoRef]);
 
   const videoRefn = useRef(null);
   useEffect(() => {
+    screenWidth > 1100 &&
     videoRefn.current.play();
   }, [videoRefn]);
   const [playStatus, setplayStatus] = useState(false);
@@ -208,6 +210,7 @@ const AboutUs = () => {
       playsInline={screenWidth > 1100 ? true : false}
       loop={screenWidth > 1100 ? true : false}
       controls={screenWidth > 1100 ? false: true}
+      poster={require("../../assets/video/poster_vision.jpg")}
                     >
                       <source
                         src={require("../../assets/img/home/Visionweb.mp4")}
@@ -318,6 +321,7 @@ customers and create an unparalleled reputation and track record.
                       />
                     </Player> */}
                     <video
+                     poster={require("../../assets/video/poster_mission.jpg")}
                       className="w-100"
                       ref={videoRefn}
                       muted={true}
