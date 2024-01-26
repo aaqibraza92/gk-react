@@ -71,13 +71,11 @@ function App() {
       videoEnable!=="true" &&     (isAnimate && location?.pathname === "/") && (
         <div className="custom-div w-100" onClick={(e) => videoHide()} onMouseMove={(e) => moveText(e)} onMouseOut={(e) => hideText(e)}>
           <span className="text text-center flight">Click <br></br> To Open</span>
+
           <Player
-            className="w-100 position-relative z999 customheight"
-            height={700}
-            autoPlay={true} playsinline={true} loop={true} muted={true} controls={false}
-          >
-            <source src={require("./assets/video/loader.mp4")} />
-          </Player>
+          className="w-100 customhome"  height={700} muted={true} playsInline={true} autoPlay={true} loop={true} controls={false}>
+          <source src={require("./assets/video/loader.mp4")} />
+        </Player>
         </div>
       )
     }
