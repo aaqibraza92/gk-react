@@ -55,17 +55,17 @@ const Footer = () => {
     dispatch(themeType(val));
     window.location.reload();
   };
-  const videoRef = useRef(null);
-  const videoRef1 = useRef(null);
-  useEffect(() => {
-    if(videoRef && activeTheme){
-      screenWidth > 1100 &&
-      videoRef?.current.play()
-    }else{
-      screenWidth > 1100 &&
-      videoRef1?.current.play();
-    }
-  }, [videoRef]);
+  // const videoRef = useRef(null);
+  // const videoRef1 = useRef(null);
+  // useEffect(() => {
+  //   if(videoRef && activeTheme){
+  //     screenWidth > 1100 &&
+  //     videoRef?.current.play()
+  //   }else{
+  //     screenWidth > 1100 &&
+  //     videoRef1?.current.play();
+  //   }
+  // }, [videoRef]);
 
 
 
@@ -94,32 +94,40 @@ const Footer = () => {
         className={`position-relative h-100 d-flex align-items-end mainFooer`}
       >
         {activeTheme ? (
-          <video
-          poster={require("../../assets/video/f_poster.jpg")}
-           className="w-100"
-      ref={videoRef}
-      muted={true}
-      autoPlay={screenWidth > 1100 ? true : false}
-      playsInline={screenWidth > 1100 ? true : false}
-      loop={screenWidth > 1100 ? true : false}
-      controls={screenWidth > 1100 ? false: true}
-    >
-      <source src={require("../../assets/img/footer/footer-day.mp4")} type="video/mp4" />
-    </video>
+              <Player
+              className="w-100 customhome"  height={700} muted={true} playsInline={true} autoPlay={true} loop={true} controls={false}>
+              <source src={require("../../assets/img/footer/footer-day.mp4")} />
+            </Player>
+    //       <video
+    //       poster={require("../../assets/video/f_poster.jpg")}
+    //        className="w-100"
+    //   ref={videoRef}
+    //   muted={true}
+    //   autoPlay={screenWidth > 1100 ? true : false}
+    //   playsInline={screenWidth > 1100 ? true : false}
+    //   loop={screenWidth > 1100 ? true : false}
+    //   controls={screenWidth > 1100 ? false: true}
+    // >
+    //   <source src={require("../../assets/img/footer/footer-day.mp4")} type="video/mp4" />
+    // </video>
  
         ) : (
-          <video
-          poster={require("../../assets/video/f_poster_night.jpg")}
-           className="w-100"
-      ref={videoRef1}
-      muted={true}
-      autoPlay={screenWidth > 1100 ? true : false}
-      playsInline={screenWidth > 1100 ? true : false}
-      loop={screenWidth > 1100 ? true : false}
-      controls={screenWidth > 1100 ? false: true}
-    >
-      <source src={require("../../assets/img/footer/night-footer.mp4")} type="video/mp4" />
-    </video>
+          <Player
+          className="w-100 customhome"  height={700} muted={true} playsInline={true} autoPlay={true} loop={true} controls={false}>
+          <source src={require("../../assets/img/footer/night-footer.mp4")} />
+        </Player>
+    //       <video
+    //       poster={require("../../assets/video/f_poster_night.jpg")}
+    //        className="w-100"
+    //   ref={videoRef1}
+    //   muted={true}
+    //   autoPlay={screenWidth > 1100 ? true : false}
+    //   playsInline={screenWidth > 1100 ? true : false}
+    //   loop={screenWidth > 1100 ? true : false}
+    //   controls={screenWidth > 1100 ? false: true}
+    // >
+    //   <source src={require("../../assets/img/footer/night-footer.mp4")} type="video/mp4" />
+    // </video>
        
         )}
 
