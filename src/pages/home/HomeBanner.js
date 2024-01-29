@@ -18,7 +18,7 @@ const HomeBanner = () => {
 
   return (
     <Player
-    className="w-100 customhome"  height={700} muted={true} playsInline={true} autoPlay={true} loop={true} controls={false}>
+    className="w-100 customhome" poster={require("../../assets/img/home/home_banner_thumb.jpg")}  height={700} muted={true} playsInline={true} autoPlay={true} loop={true} controls={false}>
     <source src={require("../../assets/video/home_banner.mp4")} />
   </Player>
     // <div className="position-relative homeBanner d-flex align-items-center bgLightBlue">
