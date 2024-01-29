@@ -86,19 +86,20 @@ const Testimonial = () => {
                 </Zoom>
 
                 <h2 className="colorWhite fs50 fontlight subfont mt10">
-                 <div className="mr-1"> <Fade left cascade damping={1e-1} delay={100}>
+                 <Fade left cascade damping={1e-1} delay={100}>
                     What
-                  </Fade></div>
-                  <br />
-                 <div className="mr-1"> <Fade left cascade damping={1e-1} delay={100}>
-                    People
                   </Fade>
-                  </div>
-                  <br />
-                  <div className="mr-1"> <Fade left cascade damping={1e-1} delay={100}>
+                  </h2>
+                  <h2 className="colorWhite fs50 fontlight subfont">  <Fade left cascade damping={1e-1} delay={100}>
+                    People
+                  </Fade> </h2>
+                 
+                  <h2 className="colorWhite fs50 fontlight subfont">  <Fade left cascade damping={1e-1} delay={100}>
                     Say
-                  </Fade></div>
-                </h2>
+                  </Fade></h2>
+               
+
+
               </div>
             </Col>
             <Col lg={7} md={7} xl={7}>
