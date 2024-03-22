@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { Player } from "video-react";
 import { Helmet } from "react-helmet";
 
+
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.screen.width);
   const location = useLocation();
