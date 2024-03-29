@@ -694,9 +694,11 @@ li.slide.selected .whyChsWrp {
   font-family: para;
   line-height: 201px;
   top: 70px;
-  opacity: 0.6;
+  opacity: 0.2;
 }
-
+.font-weight-bold {
+  font-weight: bold;
+}
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
   width: 10px;

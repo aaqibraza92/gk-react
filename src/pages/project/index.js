@@ -55,11 +55,11 @@ const Project = () => {
       </Helmet>
       <section className="position-relative">
 
-        <div className="bigfont position-fixed">
+        {/* <div className="bigfont position-fixed">
 
           <h1>Our <br></br> Versatile  <br></br> Addresses</h1>
 
-        </div>
+        </div> */}
 
         <Container>
           <Fade bottom delay={100}> <h2 className="fs70 mb0 brownGradient text-center mb70">  Projects</h2> </Fade>
@@ -130,14 +130,14 @@ const Project = () => {
                             <div className="mt10">
                               <h3
                                 className={`${activeTheme ? "colorBlack" : "colorWhite"
-                                  }  fs40 fw500 mb0 text-uppercase`}
+                                  }  fs40 font-weight-bold mb0 text-uppercase`}
                               >
                                 <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
                                  
                                   <div className="headingFont" dangerouslySetInnerHTML={{ __html: e?.title?.rendered }} />
                                 </Fade>
                               </h3>
-                              <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
+                              <p className="fs25 font-weight-bold colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>
                                 {e?.acf?.address}
                               </Fade></p>
                             </div>
@@ -193,11 +193,11 @@ const Project = () => {
                             <div className="text-end mt10">
                               <h3
                                 className={`${activeTheme ? "colorBlack" : "colorWhite"
-                                  }  fs40 fw500 mb0 text-uppercase`}
+                                  }  fs40  font-weight-bold mb0 text-uppercase`}
                               >
                                 <Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}><div className="headingFont" dangerouslySetInnerHTML={{ __html: e?.title?.rendered }} /></Fade>
                               </h3>
-                              <p className="fs22 colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.acf?.address}</Fade></p>
+                              <p className="fs25 font-weight-bold colorBrown"><Fade className="headingFont" bottom cascade damping={0.5e-1} delay={100}>{e?.acf?.address}</Fade></p>
                             </div>
                           </div>
                         </div>
