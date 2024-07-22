@@ -161,8 +161,8 @@ const Testimonial = () => {
                       ))}
                   </div>
                 </Swiper>
-                <div className="nextText">
-                <span className="shake">Click to Next</span>
+                <div className="nextText testimonialsv">
+                <span className="shake ">Click to Next</span>
                 </div>
               </div>
             </Col>

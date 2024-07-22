@@ -133,6 +133,9 @@ const Header = () => {
                         <Link className="makeClose" to="/project">Our Projects</Link>
                         </li>
                         <li onClick={()=>closeMenu()} className="mb15">
+                        <Link className="makeClose" to="/blogs">Blog</Link>
+                        </li>
+                        <li onClick={()=>closeMenu()} className="mb15">
                         <Link className="makeClose" to="/contact-us">Contact Us</Link>
                         </li>
                       </ul>
@@ -202,6 +205,17 @@ const Navbar = (props) => {
                 } clickToClose`}
               >
                 our projects
+              </Link>
+            </li>
+
+            <li className="mr15">
+              <Link
+                to="/blogs"
+                className={`${
+                  activeTheme ? "colorBlack" : "colorWhite"
+                } clickToClose`}
+              >
+                blog
               </Link>
             </li>
 

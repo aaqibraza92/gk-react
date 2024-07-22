@@ -12,6 +12,9 @@ import ContactUs from "../../pages/contact-us";
 import PrivacyPolicy from "../../pages/privacyPolicy";
 import Project from "../../pages/project";
 import Thankyou from "../../pages/thankyou";
+import Blogs from "../../pages/blogs";
+import BlogSingle from "../../pages/blogs/blogSingle";
+import BlogSecond from "../../pages/blogs/blogsecond";
 
 const GetRoute = ({ isprivate: isPrivate, page: Page, ...rest }) => {
 
@@ -74,6 +77,21 @@ let RouterList = [
     isAdmin: false,
   },
   {
+    element: <GetRoute isprivate={false} role="Default" page={Blogs} />,
+    path: "/blogs",
+    isAdmin: false,
+  },
+  {
+  element: <GetRoute isprivate={false} role="Default" page={BlogSingle} />,
+  path: "/blog-single",
+  isAdmin: false,
+  },
+  {
+    element: <GetRoute isprivate={false} role="Default" page={BlogSecond} />,
+    path: "/current-real-estate-market-trends-in-hyderabad",
+    isAdmin: false,
+    },
+  {
     element: (
       <GetRoute isprivate={false} role="Default" page={PageNotFound} hideHeaderFooter={true} />
     ),
@@ -81,6 +99,7 @@ let RouterList = [
     isAdmin: false,
     
   },
+
   
 ];
 

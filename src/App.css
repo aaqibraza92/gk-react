@@ -677,7 +677,13 @@ li.slide.selected .whyChsWrp {
   scrollbar-width: thin;
   scrollbar-color: 8e7653 #f6f3f0;
 }
-
+.blogimage {
+  height: 256px !important;
+  object-fit: cover;
+}
+.border-radius {
+  border-radius: 16px;
+}
 .bigfont {
   position: sticky;
   top: 80px;
@@ -1166,6 +1172,14 @@ background: linear-gradient(to bottom,  #070707 0%,#010733 100%); /* W3C, IE10+,
   position: relative;
   right: 33px;
 }
+.swiper-pagination-bullet:nth-child(5) {
+  position: relative;
+  right: 50px;
+}
+.swiper-pagination-bullet:nth-child(6) {
+  position: relative;
+  right: 68px;
+}
 
 .slideronenew .swiper-pagination {
   position: relative;
@@ -1505,6 +1519,9 @@ select.form-control {
   position: absolute;
   bottom: 20px;
   right: 130px;
+}
+.nextText.testimonialsv {
+  right: 240px;
 }
 .nextText {
   color: #fff;
