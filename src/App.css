@@ -1492,7 +1492,9 @@ select.form-control {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+.viewLink {
+  z-index: 9;
+}
 @media only screen and (max-width: 767px) {
   .bgImageSlider {
     height: 50vh;

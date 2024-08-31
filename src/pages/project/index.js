@@ -40,7 +40,7 @@ const Project = () => {
       },
     };
 
-    await axios.get(PROJECT_URL, options).then((res) => {
+    await axios.get(PROJECT_URL+"?per_page=20", options).then((res) => {
       if (res && res.status === 200) {
         setdata(res?.data);
         setloader(false);
