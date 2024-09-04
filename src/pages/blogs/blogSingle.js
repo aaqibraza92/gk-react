@@ -24,7 +24,9 @@ const BlogSingle = () => {
               />
             </Fade>
 
-           
+           <div class="bgblog pt-5">
+             <h4 class="text-white">1 June 2024</h4>
+           </div>
 
 
 

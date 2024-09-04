@@ -24,6 +24,10 @@ const BlogSecond = () => {
               />
             </Fade>
 
+            <div class="bgblog pt-5">
+             <h4 class="text-white">1 August 2024</h4>
+           </div>
+
            
 
 
